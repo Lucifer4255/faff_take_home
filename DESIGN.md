@@ -118,7 +118,7 @@ Implemented as a **Mastra workflow suspend/resume**: the confirm step declares a
 - **Next.js (App Router)** — the whole runtime and UI in one app. Hosts the `/api` route handlers *and* the React web client, with **Mastra running in-process** (imported into the handlers, not a separate server). One deploy, one dev command.
 - **Mastra v1.50** (agent framework) — three of its primitives map directly onto our design:
   - **`Agent` + `createTool`** — the bounded ReAct controller (§3), with `maxSteps` as the hard step cap.
-  - **Workflow `suspend`/`resume`** *is* the EXECUTE gate (§5) — park the run, wait for approval, resume, and it **survives a process restart** because snapshots persist to storage. No hand-rolled state machine.
+  - **Native tool approval** (`requireApproval` → `tool-call-approval` chunk → `approveToolCall`/`declineToolCall`) *is* the EXECUTE gate (§5) — the run parks before the irreversible tool executes, waits for approval, and **survives a process restart** because the approval snapshot (incl. `requestContext`) persists to storage. Simpler than the workflow wrapper we first assumed; no hand-rolled state machine. *(Implemented and verified with a `kill -9` restart.)*
   - **Built-in observability + Mastra Studio** *is* the teardown log — every agent step, tool call, I/O, and token count is captured and replayable, and half the deliverable is *how* we cracked each target.
   - Also: TypeScript-native, Zod-native schemas (already our stage-boundary types), and built *on* the Vercel AI SDK, so streaming to the clients is first-class.
 - **LLM via OpenRouter** — `@openrouter/ai-sdk-provider`; Mastra accepts a Vercel AI SDK model instance directly in `Agent.model` (and also supports `openrouter/<provider>/<model>` router strings), so we keep OpenRouter with **no capability loss**. Model id in the `MODEL` env; direct Anthropic is a fallback. *Note:* Anthropic's structured-output endpoint rejects `minimum`/`exclusiveMinimum` on integers — LLM-facing Zod schemas must express bounds in `.describe()` text, not constraints.
@@ -185,3 +185,56 @@ We then revised the stack to **Next.js + Mastra v1.50** because Mastra provides,
 3. **Streaming + tool loop** → `Agent`/`createTool` on the AI SDK Mastra already sits on.
 
 The move was made *before* any real adapter existed — the cheapest possible moment — and it makes the code match this design rather than deviate from it. OpenRouter is preserved (Mastra accepts our AI-SDK model instance). The earlier Fastify spike is preserved in git history / a backup bundle, not in the live tree.
+
+---
+
+## 12. Blinkit implementation plan (P3) — the reference adapter
+
+The harness is proven (Phase 0 done: interpret → tool loop → native EXECUTE gate → restart-durable approve → order, over web + CLI, with traces). Blinkit is now just an `Adapter` that implements the same tool surface (`search_catalog`, `add_to_cart`, `get_state`, `confirm`) against real endpoints. Plan below; **items marked ⟨capture⟩ are confirmed from live network traffic, not assumed.**
+
+### 12.1 Recon → capture (B1)
+
+Blinkit's web app (`blinkit.com`) is a JS SPA that calls internal JSON APIs. The web flow is **location-first**: no catalog is served until a delivery location is set, because availability and pricing are per–dark-store. So the capture sequence mirrors a real order:
+
+1. **Set location** → ⟨capture⟩ the geocode/serviceability call (address/latlng → store/merchant id + serviceability). Note where `lat`/`lon` live (query, headers, or body).
+2. **Search a product** → ⟨capture⟩ the catalog-search endpoint: request shape (query, store id, pagination) and response (product id, name, `price`/`mrp`, `inventory`/availability, unit/variant, image).
+3. **Open a product** → ⟨capture⟩ product-detail (may be optional if search returns enough).
+4. **Add to cart** → ⟨capture⟩ the cart mutation: does it need auth? what item identifier (product id vs variant/merchant-product id)? request/response cart shape.
+5. **View cart / checkout page** → ⟨capture⟩ cart-state read and the pre-payment checkout call (the last step *before* payment — this is our EXECUTE gate boundary).
+
+For each: record method, URL, required **headers** (the interesting part — quick-commerce APIs gate on things like `lat`/`lon`, `app_client`/platform, a device/session id, and an `auth_key`/access token), query params, and body. Capture via the browser's network log; save a redacted HAR-style note into the teardown.
+
+**Auth boundary ⟨capture⟩:** determine exactly where login is required. Hypothesis to confirm: browse + search + build cart may work as guest with just location + device headers; **placing the order** needs a logged-in session (phone + OTP). If so, only B4 (real order) needs auth — B1–B3 (checkout-ready cart, the graded core) may not.
+
+### 12.2 Typed HTTP client (B2)
+
+- A small `blinkitClient` (plain `fetch`, no SDK) that carries the ⟨capture⟩'d required headers, holds location (store id + latlng) and, if needed, the captured session token.
+- One typed function per endpoint, Zod-validated response → our internal shape. Captured requests lift straight into this (the TS-throughout payoff).
+- **Good-citizen:** a shared rate-limiter/backoff, realistic `User-Agent`, no parallel hammering. Credentials/token from env or a gitignored session file, never committed.
+
+### 12.3 Adapter wiring (B3, B3a)
+
+Map the client onto the `Adapter` tool impls (`ctx.sessionId` keys the cart, exactly like the mock):
+- `search_catalog(query)` → search endpoint → `[{ id, name, price, inStock, unit }]`. **This is all the agent needs** — the substitution/unavailable logic already works (proven on the mock); it just consumes real results now.
+- `add_to_cart(itemId, qty)` → cart mutation → updated cart state.
+- `get_state()` → cart read → `{ items, total, currency }` (+ a checkout-ready **cart link** so a human can finish in-app even in dry-run).
+- `confirm(summary)` → the pre-payment/checkout call, **behind the gate** (B4, bonus).
+
+Location handling: the intent carries a free-text address; resolve it to Blinkit's store/latlng once at the start of the run (a `resolve_location`-style step or a first client call), then thread the store id through the client.
+
+### 12.4 Order + fallback (B4, B5)
+
+- **B4 (bonus, real spend):** cross the EXECUTE gate → the checkout call → stop one step short of payment if possible (a "cart link / order draft"), or place the cheapest real order within the ₹1,000 cap, **once**, with the cancel path checked first. Idempotent by `sessionId` (native — confirm runs once per approval).
+- **B5 (fallback):** if any step is gated by bot-detection or a dynamic/signed token we can't replay cleanly, drive *that step* with Playwright (reuse a captured browser session) and keep the rest on the API. The adapter interface doesn't change — only the impl of the gated tool.
+
+### 12.5 Teardown (B6)
+
+Sourced from the Mastra traces + the ⟨capture⟩ notes: the endpoint map, the header/auth scheme we had to satisfy, and the edge cases hit "the hard way" (location-gating, auth boundary, any token signing, out-of-stock behaviour).
+
+### 12.6 Open questions the capture must answer
+
+- Exact search/cart endpoint URLs + the required header set (esp. any `auth_key`/token and how `lat`/`lon` are passed). ⟨capture⟩
+- Guest vs. logged-in boundary — can a checkout-ready cart be built without login? ⟨capture⟩
+- Item identity: single product id vs. variant/merchant-product id for cart adds. ⟨capture⟩
+- Any anti-automation (Cloudflare, signed params, device attestation) that forces the Playwright fallback. ⟨capture⟩
+- Is there a shareable **cart/checkout link** we can surface as the dry-run deliverable? ⟨capture⟩
