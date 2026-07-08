@@ -8,12 +8,14 @@ next-env.d.ts
 
 # build
 dist/
+tsconfig.tsbuildinfo
 
 # env & secrets — never commit
 .env
 .env*.local
 
-# mastra storage (workflow snapshots + traces) — runtime, out of repo
+# mastra storage + mock/runtime state — out of repo
+.data/
 *.db
 *.db-*
 .mastra/
