@@ -1,0 +1,27 @@
+# deps
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# build
+dist/
+
+# env & secrets — never commit
+.env
+.env*.local
+
+# mastra storage (workflow snapshots + traces) — runtime, out of repo
+*.db
+*.db-*
+.mastra/
+mastra.db*
+
+# playwright captured auth / browser state — never commit
+.playwright/
+*.storageState.json
+
+# os
+.DS_Store
