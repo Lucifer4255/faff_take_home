@@ -3,10 +3,25 @@ import { RequestContext } from '@mastra/core/di'
 import { interpret } from '@/mastra/agents'
 import { controllerAgent } from '@/mastra/index'
 import type { AgentEvent } from './events'
+import { JsonStore } from './store'
 
 type Listener = (event: AgentEvent) => void
 
 const APPROVE = /^(confirm|yes|y|approve|ok|go)$/i
+
+/**
+ * Durable gate checkpoint (DESIGN.md §5): when a run parks at the EXECUTE gate
+ * we record enough to resume it after a process restart — the Mastra runId
+ * (its snapshot, incl. requestContext, lives in libSQL) plus the service and a
+ * display summary. Cleared when the run finishes.
+ */
+interface GateCheckpoint {
+  runId: string
+  service: string
+  summary: string
+  amount?: number
+}
+const gateStore = new JsonStore<GateCheckpoint>('.data/gates.json')
 
 /**
  * One session = one run of the pipeline. Bridges Mastra's agent stream to the
@@ -16,20 +31,50 @@ const APPROVE = /^(confirm|yes|y|approve|ok|go)$/i
  * run via approveToolCall/declineToolCall (a fresh stream it keeps pumping).
  */
 export class Session {
-  readonly id = randomUUID()
+  readonly id: string
   private readonly events: AgentEvent[] = []
   private readonly listeners = new Set<Listener>()
   // biome-ignore lint: Mastra's Agent/stream types are structural; kept loose at this boundary
   private agent: any
+  private service?: string
   private runId?: string
   private pending: 'approval' | null = null
   private textBuf = ''
   private finished = false
 
+  constructor(id: string = randomUUID()) {
+    this.id = id
+  }
+
+  /**
+   * Rebuild a session for a gate checkpoint left on disk by a prior process
+   * (server restart). Its agent loop is gone; it exists to let a reconnecting
+   * client see the pending gate and approve/decline it — the resume runs against
+   * the Mastra snapshot in libSQL. Returns null if no checkpoint for this id.
+   */
+  static recover(id: string): Session | null {
+    const cp = gateStore.get(id)
+    if (!cp) return null
+    const session = new Session(id)
+    session.service = cp.service
+    session.agent = controllerAgent(cp.service)
+    session.runId = cp.runId
+    session.pending = 'approval'
+    session.emit({
+      type: 'agent_message',
+      text: 'Recovered a pending confirmation after a restart. Approve to complete it, or cancel.',
+    })
+    session.emit({ type: 'awaiting_confirmation', summary: cp.summary, amount: cp.amount, currency: 'INR' })
+    return session
+  }
+
   emit(event: AgentEvent): void {
     this.events.push(event)
     for (const listener of this.listeners) listener(event)
-    if (event.type === 'done' || event.type === 'error') this.finished = true
+    if (event.type === 'done' || event.type === 'error') {
+      this.finished = true
+      gateStore.delete(this.id) // run reached a terminal state — no gate to recover
+    }
   }
 
   /** Subscribe with full replay; returns an unsubscribe function. */
@@ -49,6 +94,7 @@ export class Session {
       this.emit({ type: 'action', label: 'Interpreting request' })
       const intent = await interpret(input.text, input.address)
       this.emit({ type: 'state_update', state: { intent } })
+      this.service = intent.service
       this.agent = controllerAgent(intent.service)
       this.emit({ type: 'agent_message', text: `Routed to the ${intent.service} adapter.` })
 
@@ -119,6 +165,11 @@ export class Session {
         this.runId = chunk.runId ?? p.runId ?? this.runId
         const summary: string = p.args?.summary ?? 'Confirm this action?'
         const amount = parseAmount(summary)
+        // Persist the checkpoint BEFORE emitting, so an approval still completes
+        // if the process dies here (DESIGN.md §5, restart-durable gate).
+        if (this.runId && this.service) {
+          gateStore.set(this.id, { runId: this.runId, service: this.service, summary, amount })
+        }
         this.emit({ type: 'awaiting_confirmation', summary, amount, currency: 'INR' })
         break
       }
@@ -149,3 +200,13 @@ function parseAmount(summary: string): number | undefined {
  */
 const globalForSessions = globalThis as unknown as { __faffSessions?: Map<string, Session> }
 export const sessions: Map<string, Session> = (globalForSessions.__faffSessions ??= new Map())
+
+/** Look up a live session, or rebuild one from a persisted gate checkpoint after
+ * a server restart (DESIGN.md §5). */
+export function getOrRecover(id: string): Session | undefined {
+  const existing = sessions.get(id)
+  if (existing) return existing
+  const recovered = Session.recover(id)
+  if (recovered) sessions.set(id, recovered)
+  return recovered ?? undefined
+}

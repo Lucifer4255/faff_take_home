@@ -1,15 +1,16 @@
-import { sessions } from '@/core/session'
+import { getOrRecover } from '@/core/session'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-// GET /api/sessions/:id/stream → SSE event stream (replays history on connect)
+// GET /api/sessions/:id/stream → SSE event stream (replays history on connect;
+// rebuilds a pending gate after a server restart)
 export async function GET(
   req: Request,
   { params }: { params: Promise<{ id: string }> },
 ): Promise<Response> {
   const { id } = await params
-  const session = sessions.get(id)
+  const session = getOrRecover(id)
   if (!session) return new Response('no such session', { status: 404 })
 
   const encoder = new TextEncoder()
