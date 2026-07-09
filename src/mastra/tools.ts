@@ -10,6 +10,10 @@ const SCHEMAS = {
     itemId: z.string(),
     qty: z.number().int().default(1).describe('quantity, at least 1'),
   }),
+  remove_from_cart: z.object({
+    itemId: z.string(),
+    qty: z.number().int().optional().describe('how many to remove; omit to remove the whole line'),
+  }),
   select_slot: z.object({ slotId: z.string() }),
   request_quote: z.object({ pickup: z.string(), drop: z.string() }),
   get_state: z.object({}),
@@ -22,6 +26,7 @@ const DESCRIPTIONS: Record<keyof AdapterTools, string> = {
   search_catalog: 'Search the target catalog for candidate items / services / routes',
   resolve_location: 'Geocode a messy address to coordinates + confidence',
   add_to_cart: 'Add an item (by id from a prior search) to the cart',
+  remove_from_cart: 'Remove an item (by id) from the cart, or reduce its quantity. Use with add_to_cart to replace an item.',
   select_slot: 'Select an availability slot (by id from a prior search)',
   request_quote: 'Get a price quote for a pickup → drop route',
   get_state: 'Read the current cart / slot / ride state',
@@ -34,6 +39,12 @@ export function sessionIdFrom(ctx: unknown): string {
   const c = ctx as { requestContext?: { get?(k: string): unknown; sessionId?: unknown }; threadId?: string; runId?: string }
   const fromReq = c?.requestContext?.get?.('sessionId') ?? c?.requestContext?.sessionId
   return String(fromReq ?? c?.threadId ?? c?.runId ?? 'default')
+}
+
+/** The stable per-user id (account/login key), forwarded via requestContext. */
+export function userIdFrom(ctx: unknown): string {
+  const c = ctx as { requestContext?: { get?(k: string): unknown } }
+  return String(c?.requestContext?.get?.('userId') ?? sessionIdFrom(ctx))
 }
 
 /**
@@ -53,7 +64,7 @@ export function buildTools(adapter: Adapter): Record<string, ReturnType<typeof c
       inputSchema: SCHEMAS[name],
       ...(name === 'confirm' ? { requireApproval: true } : {}),
       execute: async (input: unknown, ctx: unknown) => {
-        const toolCtx: ToolCtx = { sessionId: sessionIdFrom(ctx) }
+        const toolCtx: ToolCtx = { sessionId: sessionIdFrom(ctx), userId: userIdFrom(ctx) }
         return (impl as (i: unknown, c: ToolCtx) => Promise<unknown>)(input, toolCtx)
       },
     })

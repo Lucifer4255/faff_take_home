@@ -55,6 +55,15 @@ export const mockQuickcommerce: Adapter = {
       carts.set(ctx.sessionId, lines)
       return cartState(ctx.sessionId)
     },
+    remove_from_cart: async ({ itemId, qty }, ctx) => {
+      const lines = carts.get(ctx.sessionId) ?? []
+      const line = lines.find((l) => l.id === itemId)
+      if (!line) return { error: `item ${itemId} is not in the cart` }
+      if (qty && qty < line.qty) line.qty -= qty
+      else lines.splice(lines.indexOf(line), 1)
+      carts.set(ctx.sessionId, lines)
+      return cartState(ctx.sessionId)
+    },
     get_state: async (_input, ctx) => cartState(ctx.sessionId),
     confirm: async (_input, ctx) => {
       const order = { orderId: `mock-${ctx.sessionId.slice(0, 8)}`, ...cartState(ctx.sessionId) }

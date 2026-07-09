@@ -1,6 +1,6 @@
 import type { Adapter } from '@/core/adapter'
 import { JsonStore } from '@/core/store'
-import { getLocation, searchRaw, setLocation } from './client'
+import { createSharedCart, getLocation, hasPinnedLocation, pinByPlaceId, searchRaw, setLocation, suggestAddresses } from './client'
 import { type BlinkitProduct, extractProducts } from './parse'
 
 /**
@@ -21,7 +21,7 @@ import { type BlinkitProduct, extractProducts } from './parse'
  * logged-in session and lives behind confirm; guest mode stops one step short.
  */
 
-type Line = { id: string; name: string; price: number; qty: number; unit?: string }
+type Line = { id: string; name: string; price: number; qty: number; unit?: string; mrp?: number; imageUrl?: string }
 const carts = new JsonStore<Line[]>('.data/blinkit-carts.json')
 
 // Per-session cache of the last search results, so add_to_cart can resolve an
@@ -59,12 +59,51 @@ async function cartState(sessionId: string) {
   }
 }
 
+// Blinkit's search tokenizes quantity/unit words poorly ("1 litre milk",
+// "dozen eggs" → 0 hits), so strip them to the core product term. The right
+// size is chosen from the results; quantity is applied at add_to_cart.
+const QUERY_STOPWORDS = new Set([
+  'a', 'an', 'some', 'of', 'the', 'pack', 'packet', 'loaf', 'bottle', 'box', 'dozen', 'half',
+  'litre', 'liter', 'ltr', 'l', 'ml', 'kg', 'g', 'gm', 'gms', 'gram', 'grams', 'pcs', 'pc', 'piece', 'pieces', 'x',
+])
+function normalizeQuery(query: string): string {
+  const cleaned = query
+    .toLowerCase()
+    .replace(/\d+(\.\d+)?\s*(litre|liter|ltr|ml|kg|gms?|grams?|l|g|pcs?|pieces?|dozen)?/g, ' ') // "1 litre", "500ml", "2l", "12"
+    .split(/\s+/)
+    .filter((w) => w && !QUERY_STOPWORDS.has(w))
+    .join(' ')
+    .trim()
+  return cleaned || query.trim()
+}
+
 export const blinkit: Adapter = {
   service: 'quickcommerce',
+  // Location-first: pin the client-captured coords to the right dark store before
+  // any search. Persisted by the client, so later runs reuse it (DESIGN §12.3).
+  configureLocation: async (lat, lon) => {
+    const loc = await setLocation(lat, lon)
+    return { label: loc.address ?? loc.city, serviceable: loc.serviceable }
+  },
+  hasLocation: () => hasPinnedLocation(),
+  // Address disambiguation for the geolocation-denied fallback — the harness
+  // (Session) drives the ask/pick UX; here we just supply candidates + pin one.
+  suggestLocations: async (text) => {
+    const cands = await suggestAddresses(text)
+    return cands.map((c) => ({ ref: c.placeId, label: c.label, area: c.area }))
+  },
+  pinLocation: async (ref) => {
+    const loc = await pinByPlaceId(ref)
+    return { label: loc.address ?? loc.city, serviceable: loc.serviceable }
+  },
   tools: {
     search_catalog: async ({ query }, ctx) => {
-      const layout = await searchRaw(query)
-      const products = extractProducts(layout)
+      const cleaned = normalizeQuery(query)
+      let products = extractProducts(await searchRaw(cleaned))
+      // Fall back to the raw query if stripping quantity words found nothing.
+      if (products.length === 0 && cleaned !== query.trim().toLowerCase()) {
+        products = extractProducts(await searchRaw(query))
+      }
       remember(ctx.sessionId, products)
       // Hand the agent exactly what it needs to match/substitute (DESIGN §12.3).
       return products.map(({ id, name, price, inStock, unit, brand }) => ({
@@ -84,13 +123,23 @@ export const blinkit: Adapter = {
       const lines = carts.get(ctx.sessionId) ?? []
       const existing = lines.find((l) => l.id === itemId)
       if (existing) existing.qty += qty
-      else lines.push({ id: itemId, name: product.name, price: product.price, qty, unit: product.unit })
+      else lines.push({ id: itemId, name: product.name, price: product.price, qty, unit: product.unit, mrp: product.mrp, imageUrl: product.imageUrl })
+      carts.set(ctx.sessionId, lines)
+      return cartState(ctx.sessionId)
+    },
+
+    remove_from_cart: async ({ itemId, qty }, ctx) => {
+      const lines = carts.get(ctx.sessionId) ?? []
+      const line = lines.find((l) => l.id === itemId)
+      if (!line) return { error: `item ${itemId} is not in the cart` }
+      if (qty && qty < line.qty) line.qty -= qty // reduce quantity
+      else lines.splice(lines.indexOf(line), 1) // drop the whole line
       carts.set(ctx.sessionId, lines)
       return cartState(ctx.sessionId)
     },
 
     get_state: async (_input, ctx) => cartState(ctx.sessionId),
-    // NB: add_to_cart/get_state return the Promise from cartState directly.
+    // NB: add_to_cart/remove_from_cart/get_state return the Promise from cartState.
 
     // Crosses the EXECUTE gate (native tool approval). In guest mode this
     // finalizes the checkout-ready cart — the real deliverable — and hands off to
@@ -98,11 +147,36 @@ export const blinkit: Adapter = {
     // real paid order (B4, bonus) slots in here behind the same gate once a
     // logged-in session is captured.
     confirm: async (_input, ctx) => {
+      const lines = carts.get(ctx.sessionId) ?? []
       const state = await cartState(ctx.sessionId)
-      const order = {
-        status: 'checkout-ready',
-        note: 'Cart assembled from live Blinkit inventory. Finish payment in-app (login required at checkout).',
-        ...state,
+
+      // Create a Blinkit SHARED CART (guest, no login) → a deep link that opens an
+      // "Items shared with you!" sheet with the items + Add-to-Cart, so the user
+      // reviews and pays in-app. Nothing is charged; this is the checkout handoff.
+      let order: Record<string, unknown>
+      if (lines.length) {
+        const items = lines.map((l) => ({
+          product_id: l.id,
+          quantity: l.qty,
+          mrp: l.mrp ?? l.price,
+          name: l.name,
+          image_url: l.imageUrl ?? '',
+        }))
+        const res = await createSharedCart(items, state.total)
+        order = res.link
+          ? {
+              status: 'cart-shared',
+              note: 'Open this Blinkit link to review the items and pay — nothing is charged until you do.',
+              ...state,
+              checkoutUrl: res.link, // the shareable cart deep link
+            }
+          : {
+              status: 'checkout-ready',
+              note: `Couldn't create a share link (${res.error}). Cart assembled from live inventory.`,
+              ...state,
+            }
+      } else {
+        order = { status: 'empty', note: 'Cart is empty.', ...state }
       }
       carts.delete(ctx.sessionId)
       searchCache.delete(ctx.sessionId)

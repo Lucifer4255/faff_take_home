@@ -1,8 +1,9 @@
 import './preload'
-import { closeClient, getLocation, searchRaw } from '../src/adapters/blinkit/client'
+import { closeClient, currentIdentity, getLocation, searchRaw } from '../src/adapters/blinkit/client'
 import { extractProducts } from '../src/adapters/blinkit/parse'
 
 async function main() {
+  console.log('IDENTITY:', await currentIdentity())
   const loc = await getLocation()
   console.log('LOCATION:', JSON.stringify(loc))
   for (const q of ['milk', 'brown bread', 'eggs']) {

@@ -30,6 +30,12 @@ export const mastra = new Mastra({
   }),
 })
 
+/** The adapter backing a given service (for non-tool capabilities like
+ * configureLocation). */
+export function adapterFor(service: string): Adapter | undefined {
+  return ADAPTERS.find((a) => a.service === service)
+}
+
 /** The controller agent id for a given service. */
 export function agentIdFor(service: string): string {
   return `${service}-agent`

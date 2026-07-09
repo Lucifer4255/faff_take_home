@@ -14,6 +14,7 @@
     "@mastra/core": "^1.50.1",
     "@mastra/libsql": "^1.15.1",
     "@mastra/loggers": "^1.2.0",
+    "@mastra/memory": "^1.22.2",
     "@mastra/observability": "^1.16.0",
     "next": "^15.5.20",
     "playwright": "^1.61.1",
