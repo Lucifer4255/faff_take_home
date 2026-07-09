@@ -20,7 +20,7 @@ tsconfig.tsbuildinfo
 *.db-*
 .mastra/
 mastra.db*
-
+scratchpad/
 # playwright captured auth / browser state — never commit
 .playwright/
 *.storageState.json

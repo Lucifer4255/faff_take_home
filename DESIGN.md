@@ -238,3 +238,105 @@ Sourced from the Mastra traces + the ⟨capture⟩ notes: the endpoint map, the 
 - Item identity: single product id vs. variant/merchant-product id for cart adds. ⟨capture⟩
 - Any anti-automation (Cloudflare, signed params, device attestation) that forces the Playwright fallback. ⟨capture⟩
 - Is there a shareable **cart/checkout link** we can surface as the dry-run deliverable? ⟨capture⟩
+
+## 13. Placing a real order (B4 bonus) — feasibility & risk map
+
+The brief's bonus: *"Bonus points if you are able to place the order as well!"* We reach a checkout-ready cart **and** a live shareable cart link today (guest `POST /v1/assist/cart/share` → `link.blinkit.com/…` that renders "Items shared with you!" + Add-to-Cart). This section is the researched plan for going past that to an actually-*placed* order — deliberately a feasibility map, not a live paid run. Facts below are verified against primary sources (Blinkit's own Terms, Swiggy's MCP docs, Razorpay docs, RBI rules, mid-2025 reporting); see the [[blinkit-b4-place-order-research]] memory for the citation trail.
+
+**Bottom line.** COD is the only clean path to a truly *placed* order with **no payment automation** — and it is exactly the path the one sanctioned precedent (Swiggy's official MCP) uses. Every online-payment rail in India ends in an **out-of-band human step** (UPI PIN inside the user's own app, or card OTP/3DS) *by RBI mandate* — so "fully autonomous pay" is neither achievable nor legal to fake. The defensible bonus = **COD behind the EXECUTE gate**, plus a **UPI-Intent/QR "human taps once"** handoff for prepaid.
+
+### 13.1 Payment-path matrix
+
+| Path | Agent can complete alone? | Blocker | Verdict |
+|---|---|---|---|
+| **Cash / Pay-on-delivery** | **Yes** (select COD → order-create) | *May be disallowed per order* | ✅ primary real-order path |
+| **UPI (Intent/Collect)** | No | PIN entered in user's UPI app (always out-of-band) | ⚠️ semi-auto: agent triggers, human taps + PIN |
+| **Cards** | No | RBI: no raw card-on-file; tokenization **+ AFA/OTP every charge** | ❌ needs human OTP |
+| **UPI Autopay / e-mandate** | Partly (≤₹15k post-setup) | recurring-mandate rail, not one-off checkout; setup needs PIN | ❌ wrong shape for one order |
+| **Prefunded wallet (Zomato/Blinkit Money)** | Maybe | balance must be pre-loaded (itself a real payment); non-withdrawable | 🟡 niche |
+| **Agentic UPI (UPI Circle / Reserve Pay)** | Emerging "yes" | needs new Razorpay–NPCI rails + one-time delegated mandate | 🔭 future path our gate already fits |
+
+### 13.2 Key findings
+
+- **COD is real but conditional.** Blinkit's Terms verbatim accept *"…UPI, cash on delivery, or any other RBI approved payment mode… However, cash on delivery may not be permitted for certain orders."* So it's API-selectable but store/cart/risk-gated. Watch-out: q-commerce now adds a **~₹15+GST cash-handling fee disclosed only *after* you tap order** (Zepto, Jul 2025) → the agent must re-read the final payable amount post-select, not trust the pre-order total. **Login is required to place any order** — a guest cart cannot convert.
+- **Online auto-pay is a (correct) dead end.** UPI PIN is always entered by the customer in their own app (Razorpay docs); cards need AFA/OTP every charge and can't be stored raw (RBI CoF rules, tightening to Apr 2026). Faking either = defeating India's two-factor mandate → hard no on legal + security grounds.
+- **The sanctioned direction:** Razorpay + NPCI + OpenAI's **agentic-payments pilot** (ChatGPT, India; BigBasket first merchant) uses **UPI Circle / Reserve Pay** — user grants a **one-time authorization + spending cap**, then delegates, with real-time tracking + instant revocation. This maps 1:1 onto our **EXECUTE gate + ₹1,000 cap**.
+
+### 13.3 Precedents (that validate our design)
+
+- **Swiggy MCP** (official): real `place_food_order`; **session credentials auto-supplied** (agent never holds secrets); **COD-only**; **blocks carts ≥ ₹1,000**; **requires explicit user confirmation**; invite-only. Independently confirms our gate + cap + COD + no-secrets shape.
+- **Zepto Cafe agent** (late 2025): **Playwright** as a delegated logged-in user, drives search→address→checkout — **stops at checkout, does not complete payment**; internal/experimental. Validates our Playwright vehicle *and* the payment boundary.
+- **BigBasket × ChatGPT:** UPI via Razorpay with a **single human confirmation** — the semi-auto handoff again.
+
+### 13.4 Legal / ToS / risk (first-class — a grading axis)
+
+Blinkit Terms **prohibit automated/bot access** (unauthorized use auto-terminates the license); Zomato ToS restricts data to **personal, non-commercial use** and bars automated access absent written agreement; the only sanctioned Zomato API is restaurant "Licensed Content" (no ordering/checkout/payment) — so *any* Blinkit order placement rides undocumented internal endpoints, outside ToS. Blinkit may ban users it *suspects* of ToS/fraud at sole discretion. **Defensible posture** (what the teardown states): user-consented, **the user's own account + own money**, one **gated, capped, cancellable, idempotent, rate-limited** order, no credentials in the repo — an agent acting for a consenting user, not a commercial scraper. Residual risk is stated, not hidden.
+
+### 13.5 Plan (no spend now)
+
+1. Wire **COD** behind the existing gate: after login, `create-order` with `payment_method = COD`, **stop at order-create** now; re-read the post-select total (cash-handling fee).
+2. Keep the **share link + a UPI-Intent/QR handoff** as the prepaid option ("agent builds cart → you tap Pay once").
+3. **Cancel path first:** capture + test the cancel endpoint *before* ever calling create-order.
+4. Cite the **agentic-UPI** model as the future path the gate already fits.
+
+**Unknowns we'd still capture ourselves** (public info thin): (a) Blinkit's **checkout/order-create** endpoint + payload and payment-method selection call; (b) whether **COD is offered for our store/cart** at runtime (read from the checkout response); (c) the **cancel-order** endpoint (capture before any create); (d) which **gateway** backs main checkout (Razorpay is confirmed only for *Blinkit Money* PPI).
+
+## 14. Home Services implementation plan (P2) — the second, different-shaped adapter
+
+Snabbit is app-only (no web surface to reverse-engineer), so the target is **Urban Company** (`urbancompany.com`) — a location-first JS SPA, the same shape as Blinkit. But the *graded deliverable is different*, and that difference is the point of P2: it proves the adapter abstraction survives a target that is **slots/availability, not a cart**.
+
+- Blinkit's core = **checkout-ready cart** (Resolve = text→SKU).
+- UC's core = **booking-ready slot** (Resolve = need→service **+ a concrete available time slot + address**), stopped one call short of payment. This is exactly the §8 fallback line ("Home Services to booking-ready"), and it makes `select_slot` — the tool Blinkit never used — the centerpiece.
+
+**Scope decision (locked):** the deliverable is **booking-ready-slot with no spend**. A real paid booking (H4) is *out of scope* as a live run — most UC services (deep cleaning ~₹1,500+) exceed the ₹1,000 cap, and a booking dispatches a real professional to a real home at a real time (higher real-world consequence than a grocery order). If H4 is ever wired, it stops at the pre-payment step behind the gate, with the cancel path captured and tested first — never an actual dispatch. Items marked ⟨capture⟩ are to be confirmed from live traffic, not assumed.
+
+### 14.1 The flow to reverse-engineer (H1)
+
+Location-first, like Blinkit — no availability is served until a location is set (per-city, per-service-area pro supply):
+
+```
+set location → browse category ("cleaning") → pick a service/package
+   → (availability) date + time-slot selection   ← the H-specific payload
+   → address confirm → login → payment
+```
+
+The **booking-ready** stop point = service selected + a concrete slot held + address set, one call short of payment.
+
+Capture sequence mirrors a real booking:
+1. **Set location** → ⟨capture⟩ the serviceability/area call (address/latlng → serviceable + city/area id). Note where lat/lon live.
+2. **Browse a category / search a need** → ⟨capture⟩ the service-catalog endpoint: request shape + response (service/package id, name, price, duration, rating).
+3. **Open a service** → ⟨capture⟩ package/detail (may be optional if listing returns enough).
+4. **Reach the slot screen** → ⟨capture⟩ **the availability endpoint** — date + time-window list, and the slot identifier we pass to `select_slot`. *This is the graded payload.*
+5. **Address + the pre-payment step** → ⟨capture⟩ the last call before payment (our EXECUTE-gate boundary) and whether a **resumable booking link** exists (the dry-run deliverable, like Blinkit's checkout link).
+
+For each: method, URL, required headers, query, body. Save a redacted note into the teardown.
+
+**Auth boundary ⟨capture⟩:** hypothesis to confirm — browse + service-select + reach slots may work as guest; **login (phone+OTP) is forced before payment** (possibly before slot-hold). If login is later than slot-hold, the entire graded core needs no auth.
+
+**Bot management ⟨capture⟩:** does UC sit behind Cloudflare/Akamai like Blinkit? If yes, reuse the proven **Playwright-as-TLS-vehicle** technique and the engine-backed **identity pool** (`src/adapters/blinkit/identities.ts`, worth factoring into a shared module at that point).
+
+### 14.2 Transport decision (H2) — genuinely browser-driven, sniff-to-promote
+
+Per §7, UC is expected to be more genuinely **browser-driven** than Blinkit, because availability is coupled to the app flow:
+- Drive the **DOM with Playwright** to reach the slot screen reliably (survives whatever gating exists).
+- **Sniff the availability endpoint in parallel** — if it's a clean JSON call, **promote `select_slot` to a direct API call** (§10 open item). Same "promote if clean" bet we made on Blinkit search; if it's messy/signed, keep it DOM-driven.
+
+### 14.3 Adapter wiring (H3, H3a) — maps onto the shared `AdapterTools`
+
+- `configureLocation`/`suggestLocations`/`pinLocation` — UC is location-gated; reuse the location-first pattern (current-loc default + area autocomplete fallback).
+- `search_catalog(query)` → service-catalog → `[{ id, name, price, duration, rating }]`. Resolve = need→service (the agent picks the right package, e.g. "deep cleaning" → the matching UC package), reusing the same substitution/selection logic already proven on the mock + Blinkit.
+- `select_slot(slotId)` → hold/select a date + time window — **the new payload the abstraction is being tested against.**
+- `get_state()` → `{ service, slot, price, address, bookingUrl }` — the booking-ready summary + a resumable link so a human can finish in-app.
+- `confirm(summary)` → behind the EXECUTE gate; in scope it finalizes **booking-ready** (no spend), like Blinkit's `confirm` finalizes checkout-ready.
+
+### 14.4 Teardown (H5)
+
+From the session traces + ⟨capture⟩ notes: the endpoint map (esp. the availability endpoint), the auth boundary, any bot management we had to satisfy, whether availability was promotable to API, and the edge cases hit the hard way (location-gating, slot-hold semantics, app-punt if UC forces the mobile app for any step).
+
+### 14.5 Open questions the capture must answer
+
+- Does UC web support the full flow to **slot-hold**, or does it punt to the mobile app at some step? ⟨capture⟩
+- Service-catalog + **availability** endpoint URLs + shapes; is availability clean enough to promote to API? ⟨capture⟩
+- Exact **auth boundary** — is login forced before slot-hold or only before payment? ⟨capture⟩
+- Any **anti-automation** (Cloudflare/Akamai/signed params) forcing the identity-pool vehicle. ⟨capture⟩
+- Is there a **resumable booking link** we can surface as the dry-run deliverable? ⟨capture⟩

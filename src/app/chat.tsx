@@ -166,7 +166,15 @@ export default function Chat() {
       sessionId.current = id
       const es = new EventSource(`/api/sessions/${id}/stream`)
       for (const t of EVENT_TYPES) {
-        es.addEventListener(t, (m) => handle(JSON.parse((m as MessageEvent).data)))
+        es.addEventListener(t, (m) => {
+          // EventSource fires a *native* 'error' event (no .data) on any
+          // connection drop/reconnect — it shares the name of our app-level
+          // 'error' event but carries no payload. Skip dataless events so we
+          // don't JSON.parse(undefined); the listener below handles the
+          // connection itself.
+          const data = (m as MessageEvent).data
+          if (typeof data === 'string' && data) handle(JSON.parse(data))
+        })
       }
       es.addEventListener('error', () => es.close())
     },
