@@ -16,6 +16,7 @@
     "@mastra/loggers": "^1.2.0",
     "@mastra/observability": "^1.16.0",
     "next": "^15.5.20",
+    "playwright": "^1.61.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "zod": "^3.25.0"
