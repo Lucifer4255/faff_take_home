@@ -108,9 +108,12 @@ async function ensureReady() {
   return ready
 }
 
-/** POST a UC api/v2 endpoint from inside the page (real TLS + CF cookies). */
-async function apiPost(path: string, body: unknown): Promise<{ status: number; json: unknown }> {
+/** POST a UC api/v2 endpoint from inside the page (real TLS + CF cookies).
+ * Cloudflare is cleared by our headless identity; `token` (a captured Bearer
+ * token) adds account auth — the two are independent (CF ⊥ auth). */
+export async function apiPost(path: string, body: unknown, token?: string): Promise<{ status: number; json: unknown }> {
   const { page } = await ensureReady()
+  const headers = { ...apiHeaders(), ...(token ? { authorization: `Bearer ${token}` } : {}) }
   return page.evaluate(
     async ({ url, headers, body }) => {
       const res = await fetch(url, { method: 'POST', credentials: 'omit', headers, body: JSON.stringify(body) })
@@ -122,8 +125,12 @@ async function apiPost(path: string, body: unknown): Promise<{ status: number; j
       }
       return { status: res.status, json }
     },
-    { url: `https://www.urbanclap.com/api/v2/${path}`, headers: apiHeaders(), body },
+    { url: `https://www.urbanclap.com/api/v2/${path}`, headers, body },
   )
+}
+
+export function currentCoords(): { lat: number; lon: number } {
+  return { lat: city.lat, lon: city.lon }
 }
 
 /** Catalog search (our search_catalog) → discoverySearch layout JSON. Guest. */
