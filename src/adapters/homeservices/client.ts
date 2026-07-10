@@ -183,6 +183,14 @@ export function setCoords(lat: number, lon: number): { label: string; km: number
 export function hasLocation(): boolean {
   return true // a serviceable metro is always established by default
 }
+/** Same resolution as `setCoords`, but read-only — for a one-off address (e.g.
+ * a booking-address override that differs from the session's search location)
+ * without mutating the module-global `city` every other call in this session
+ * relies on. */
+export function nearestMetroFor(lat: number, lon: number): { label: string; cityKey: string; slug: string; km: number; serviceable: boolean } {
+  const { city: m, km } = nearestMetro(lat, lon)
+  return { label: m.label, cityKey: m.cityKey, slug: m.slug, km, serviceable: km <= 150 }
+}
 export function currentCity(): { label: string; cityKey: string; slug: string } {
   return { label: city.label, cityKey: city.cityKey, slug: city.slug }
 }

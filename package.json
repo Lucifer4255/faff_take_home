@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start -p 3123",
     "cli": "tsx src/cli.ts",
+    "studio": "mastra dev --env .env.studio",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "@types/node": "^22.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "mastra": "^1.18.2",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0"
   }

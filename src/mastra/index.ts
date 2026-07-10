@@ -1,3 +1,5 @@
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { Mastra } from '@mastra/core'
 import { LibSQLStore } from '@mastra/libsql'
 import { MastraStorageExporter, Observability } from '@mastra/observability'
@@ -18,11 +20,19 @@ const serviceAgents = Object.fromEntries(
   ADAPTERS.map((a) => [`${a.service}-agent`, buildAgent(a)]),
 )
 
+// Resolved relative to THIS file, not process.cwd() — `mastra dev`'s bundled
+// server runs with its cwd pointed at an internal Studio asset dir, so a
+// cwd-relative path would silently open/create a fresh, empty DB there
+// instead of the real one, breaking both trace visibility in Studio and the
+// EXECUTE gate's restart-durability guarantee (DESIGN.md §5).
+const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
+const defaultDbUrl = `file:${path.join(projectRoot, '.data/mastra.db')}`
+
 export const mastra = new Mastra({
   agents: { interpreter, ...serviceAgents },
   // Snapshots for tool-approval (the EXECUTE gate) + traces persist here, so a
   // suspended gate survives a process restart (DESIGN.md §5).
-  storage: new LibSQLStore({ id: 'faff', url: process.env.MASTRA_DB_URL || 'file:./.data/mastra.db' }),
+  storage: new LibSQLStore({ id: 'faff', url: process.env.MASTRA_DB_URL || defaultDbUrl }),
   // Built-in tracing → the teardown log (DESIGN.md §6): every agent step, tool
   // call, I/O and token count is captured to storage and viewable in Studio.
   observability: new Observability({

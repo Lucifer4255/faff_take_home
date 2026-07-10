@@ -14,7 +14,13 @@ const SCHEMAS = {
     itemId: z.string(),
     qty: z.number().int().optional().describe('how many to remove; omit to remove the whole line'),
   }),
-  select_slot: z.object({ slotId: z.string() }),
+  select_slot: z.object({
+    slotId: z.string(),
+    address: z
+      .string()
+      .optional()
+      .describe('a specific delivery/service address for this booking, ONLY if the user asked for somewhere other than their current location (e.g. "book it for my mom\'s place at ...")'),
+  }),
   request_quote: z.object({ pickup: z.string(), drop: z.string() }),
   get_state: z.object({}),
   confirm: z.object({
@@ -27,7 +33,7 @@ const DESCRIPTIONS: Record<keyof AdapterTools, string> = {
   resolve_location: 'Geocode a messy address to coordinates + confidence',
   add_to_cart: 'Add an item (by id from a prior search) to the cart',
   remove_from_cart: 'Remove an item (by id) from the cart, or reduce its quantity. Use with add_to_cart to replace an item.',
-  select_slot: 'Select an availability slot (by id from a prior search)',
+  select_slot: 'Select an availability slot (by id from a prior search). Pass `address` only if the user wants this booked somewhere other than their current location.',
   request_quote: 'Get a price quote for a pickup → drop route',
   get_state: 'Read the current cart / slot / ride state',
   confirm: 'Execute the irreversible action (place order / book / dispatch). Requires human approval.',

@@ -1,3 +1,5 @@
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { Agent } from '@mastra/core/agent'
 import { LibSQLStore } from '@mastra/libsql'
 import { Memory } from '@mastra/memory'
@@ -7,13 +9,21 @@ import { Intent, type Service } from '@/core/intent'
 /** Mastra model-router string; OpenRouter reads OPENROUTER_API_KEY. */
 export const MODEL = process.env.MODEL || 'openrouter/anthropic/claude-sonnet-4.5'
 
+// Resolved relative to THIS file, not process.cwd() — see the matching note in
+// mastra/index.ts (`mastra dev`'s bundled server runs with a different cwd,
+// which would otherwise silently point this at a fresh, empty DB). Uses
+// `path` math off `fileURLToPath(import.meta.url)` rather than
+// `new URL('../..', import.meta.url)` — webpack statically intercepts the
+// latter for asset bundling and fails on a pure `..` traversal.
+const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
+
 /** Conversation memory so a session is a real back-and-forth: the agent recalls
  * prior turns (incl. tool results — the products it just showed) when the user
  * follows up ("add the Nandini"). Message-history only — no vector store /
  * embedder (semanticRecall off), so it needs no extra services. Keyed by the
  * Session's id as the thread (see core/session.ts). */
 const conversationMemory = new Memory({
-  storage: new LibSQLStore({ id: 'faff-memory', url: process.env.MASTRA_MEMORY_URL || 'file:./.data/memory.db' }),
+  storage: new LibSQLStore({ id: 'faff-memory', url: process.env.MASTRA_MEMORY_URL || `file:${path.join(projectRoot, '.data/memory.db')}` }),
   options: { lastMessages: 30, semanticRecall: false, workingMemory: { enabled: false } },
 })
 
@@ -51,6 +61,20 @@ function instructions(service: Service): string {
       '- confirm places the order and needs human approval — only call it when the user wants to order. If declined, ask what to change; never retry confirm unchanged.',
       '- Whenever you present or finalize a cart, include the checkout link (checkoutUrl, e.g. https://blinkit.com/cart).',
       '- Keep replies concise.',
+    ].join('\n')
+  }
+  if (service === 'homeservices') {
+    return [
+      "You are a helpful home-services booking assistant operating Urban Company on the user's behalf.",
+      `Goal: ${GOALS.homeservices}`,
+      '',
+      'Rules:',
+      ...COMMON,
+      '- search_catalog for the same general need (e.g. "full house cleaning") can return SEVERAL packages that differ meaningfully in scope and price, not just size/duration variants — e.g. a full-apartment package vs. a "partial"/"by-room" build-your-own combo vs. an unfurnished-home variant. Read each result\'s name carefully; do not assume the first or cheapest result matches what was asked.',
+      '- If one result\'s name clearly and specifically matches the request\'s scope (e.g. "full home cleaning" → a package literally named "…Home deep cleaning", not "Partial home cleaning"), select it directly. Otherwise, list the 2-4 most relevant distinct options (name — price — one-line scope) and ask which one before calling select_slot — do not silently guess.',
+      '- When the goal state is reached, call get_state, then you MUST call confirm with a one-line summary (incl. total amount if known). Do not just describe the slot/quote in text and stop.',
+      '- confirm requires human approval before it runs. If it is declined, ask what to change or wrap up — never retry confirm unchanged.',
+      '- After confirm completes (approved or declined), finish with a short plain-text summary.',
     ].join('\n')
   }
   // Transactional services — reach the goal state, then confirm.

@@ -78,7 +78,21 @@ export interface ProxyCfg {
  * Engine-aware stealth is applied before any page script runs. */
 export async function launchIdentity(
   identity: Identity,
-  opts: { headless: boolean; proxy?: ProxyCfg; geolocation?: { latitude: number; longitude: number }; channel?: string },
+  opts: {
+    headless: boolean
+    proxy?: ProxyCfg
+    geolocation?: { latitude: number; longitude: number }
+    channel?: string
+    /** Skip the fingerprint patches below. Use for a genuinely real, installed
+     * browser (`channel` set) driven headful for a human to interact with
+     * directly — the patches exist to make BUNDLED headless Chromium look
+     * real; applied to an already-real Chrome they do the opposite; they're
+     * CDP-injected script overrides (navigator.webdriver, window.chrome,
+     * WebGL) that a real browser doesn't have and doesn't need, so injecting
+     * them is itself a tell (observed: tripped Turnstile on a real-Chrome,
+     * human-interactive login that should have passed cleanly). */
+    skipStealth?: boolean
+  },
 ): Promise<{ browser: Browser; ctx: BrowserContext }> {
   const engine = ENGINES[identity.engine]
   const browser = await engine.launch({
@@ -101,7 +115,7 @@ export async function launchIdentity(
     timezoneId: 'Asia/Kolkata',
     ...(opts.geolocation ? { geolocation: opts.geolocation, permissions: ['geolocation'] } : {}),
   })
-  await applyStealth(ctx, identity)
+  if (!opts.skipStealth) await applyStealth(ctx, identity)
   return { browser, ctx }
 }
 

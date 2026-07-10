@@ -342,14 +342,21 @@ function StateCard({ state }: { state: unknown }) {
     price?: string
     earliestSlot?: string
     city?: string
+    status?: string
+    loggedInAs?: string
+    packageBooked?: string
+    selectedSlot?: string
+    amountToPay?: string
   }
+  const isReadyToPay = c.status === 'ready-to-pay'
   // Home-services booking-ready card (service + slot, not a cart of items).
-  if (c && c.service && (c.checkoutUrl || c.earliestSlot)) {
+  if (c && c.service && (c.checkoutUrl || c.earliestSlot || isReadyToPay)) {
     return (
       <div className="card">
-        <h4>Booking-ready</h4>
-        <div className="deliverto">🧹 {c.service}</div>
+        <h4>{isReadyToPay ? 'Booked — ready to pay' : 'Booking-ready'}</h4>
+        <div className="deliverto">🧹 {c.packageBooked ?? c.service}</div>
         {c.category ? <div>{c.category}</div> : null}
+        {c.loggedInAs ? <div>Signed in as {c.loggedInAs}</div> : null}
         <table>
           <tbody>
             {c.price ? (
@@ -358,10 +365,21 @@ function StateCard({ state }: { state: unknown }) {
                 <td>{c.price}</td>
               </tr>
             ) : null}
-            {c.earliestSlot ? (
+            {c.selectedSlot ? (
+              <tr>
+                <td>Slot</td>
+                <td>{c.selectedSlot}</td>
+              </tr>
+            ) : c.earliestSlot ? (
               <tr>
                 <td>Earliest slot</td>
                 <td>{c.earliestSlot}</td>
+              </tr>
+            ) : null}
+            {c.amountToPay ? (
+              <tr className="total">
+                <td>Amount to pay</td>
+                <td>{c.amountToPay}</td>
               </tr>
             ) : null}
             {c.city ? (
@@ -372,6 +390,9 @@ function StateCard({ state }: { state: unknown }) {
             ) : null}
           </tbody>
         </table>
+        {isReadyToPay ? (
+          <div className="deliverto">A real, logged-in browser window is open on this machine — click "Proceed to pay" there.</div>
+        ) : null}
         {c.checkoutUrl ? (
           <a className="checkout" href={c.checkoutUrl} target="_blank" rel="noreferrer">
             🧹 Open on Urban Company →

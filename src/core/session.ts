@@ -44,6 +44,7 @@ export class Session {
   private pendingIntent?: Intent
   private locationCandidates: Array<{ ref: string; label: string; area?: string }> = []
   private loginPhone?: string
+  private loginPollActive = false
   private requestText = ''
   private textBuf = ''
   private finished = false
@@ -247,37 +248,50 @@ export class Session {
       return
     }
     // Account login (parked after gate-approval so the order goes to the user's
-    // own account): phone → OTP → then the deferred approval executes.
+    // own account): phone → sign in (in-chat OTP relay, or the adapter's own
+    // out-of-band flow — see `instructions`) → then the deferred approval executes.
     if (this.pending === 'login-phone') {
       this.pending = null
       const adapter = adapterFor(this.service ?? '')
-      this.emit({ type: 'action', label: 'Sending OTP…' })
+      this.emit({ type: 'action', label: 'Preparing sign-in…' })
       const res = (await adapter?.sendLoginCode?.(text.trim())) ?? { ok: false, error: 'login unavailable' }
       if (!res.ok) {
-        this.emit({ type: 'agent_message', text: res.error ?? "Couldn't send the OTP." })
+        this.emit({ type: 'agent_message', text: res.error ?? "Couldn't start sign-in." })
         this.askForPhone()
         return
       }
+      if (res.instructions) this.emit({ type: 'agent_message', text: res.instructions })
       this.loginPhone = text.trim()
       this.pending = 'login-otp'
-      this.emit({ type: 'question', text: 'Enter the OTP sent to your phone.' })
+      // Adapters that hand back `instructions` (e.g. homeservices — see
+      // auth.ts) have nothing for the user to type back at all: login happens
+      // out-of-band in their own browser. Poll in the background instead of
+      // waiting on a chat reply, so "done" isn't a step the user has to
+      // remember — a manual reply still works too (belt and suspenders; first
+      // one to land wins, guarded by `pending`/`loginPollActive` below).
+      if (res.instructions) this.startLoginPoller()
+      this.emit({ type: 'question', text: res.instructions ? 'Take your time — I\'ll notice once you\'re signed in.' : 'Enter the code sent to your phone.' })
       return
     }
     if (this.pending === 'login-otp') {
       this.pending = null
+      this.loginPollActive = false
       const adapter = adapterFor(this.service ?? '')
       if (/^resend$/i.test(text.trim())) {
-        await adapter?.sendLoginCode?.(this.loginPhone ?? '')
+        const res = (await adapter?.sendLoginCode?.(this.loginPhone ?? '')) ?? { ok: false, error: 'login unavailable' }
+        if (res.instructions) this.emit({ type: 'agent_message', text: res.instructions })
         this.pending = 'login-otp'
-        this.emit({ type: 'question', text: 'OTP re-sent. Enter it.' })
+        if (res.instructions) this.startLoginPoller()
+        this.emit({ type: 'question', text: res.instructions ? 'Take your time — I\'ll notice once you\'re signed in.' : 'Code re-sent. Enter it.' })
         return
       }
-      this.emit({ type: 'action', label: 'Verifying OTP…' })
+      this.emit({ type: 'action', label: 'Checking sign-in…' })
       const res = (await adapter?.verifyLoginCode?.(this.userId, this.loginPhone ?? '', text.trim())) ?? { ok: false, error: 'login unavailable' }
       if (!res.ok) {
-        this.emit({ type: 'agent_message', text: res.error ?? "That OTP didn't work." })
+        this.emit({ type: 'agent_message', text: res.error ?? "That didn't work." })
         this.pending = 'login-otp'
-        this.emit({ type: 'question', text: 'Re-enter the OTP (or type "resend").' })
+        this.startLoginPoller()
+        this.emit({ type: 'question', text: 'Reply here once you\'re signed in (or type "resend").' })
         return
       }
       this.emit({ type: 'agent_message', text: '✓ Logged in. Placing your cart…' })
@@ -308,7 +322,7 @@ export class Session {
     // their account), then execute the gate. Guest / already-logged-in → straight through.
     const adapter = adapterFor(this.service ?? '')
     if (adapter?.needsLogin?.(this.userId)) {
-      this.emit({ type: 'agent_message', text: 'To place this in your Blinkit cart, log in once.' })
+      this.emit({ type: 'agent_message', text: 'To place this under your own account, log in once.' })
       this.askForPhone()
       return
     }
@@ -318,7 +332,43 @@ export class Session {
   /** Ask for the login phone number (parked before executing the gate). */
   private askForPhone(): void {
     this.pending = 'login-phone'
-    this.emit({ type: 'question', text: 'What mobile number is your Blinkit account on? (10 digits)' })
+    this.emit({ type: 'question', text: 'What mobile number is your account on? (10 digits)' })
+  }
+
+  /** Background poll for `verifyLoginCode` to succeed, replacing the need for
+   * the user to type "done" once they finish an out-of-band login (see
+   * homeservices/auth.ts's real-Chrome flow — there's no OTP to relay through
+   * chat at all). Self-terminates on timeout, on session end, or the instant
+   * `pending` moves off `'login-otp'` for any other reason (a manual reply
+   * landing first, a decline, etc.) — `loginPollActive` + the `pending` check
+   * make the manual and automatic paths mutually exclusive without a lock. */
+  private startLoginPoller(timeoutMs = 300_000): void {
+    if (this.loginPollActive) return
+    this.loginPollActive = true
+    const adapter = adapterFor(this.service ?? '')
+    const phone = this.loginPhone ?? ''
+    const deadline = Date.now() + timeoutMs
+    const tick = async () => {
+      if (!this.loginPollActive || this.pending !== 'login-otp' || this.finished) return
+      if (Date.now() > deadline) {
+        this.loginPollActive = false
+        return // the manual "reply here" / "resend" path is still live
+      }
+      try {
+        const res = await adapter?.verifyLoginCode?.(this.userId, phone, '')
+        if (res?.ok && this.loginPollActive && this.pending === 'login-otp') {
+          this.loginPollActive = false
+          this.pending = null
+          this.emit({ type: 'agent_message', text: '✓ Signed in. Placing your cart…' })
+          await this.doApprove()
+          return
+        }
+      } catch {
+        /* not ready yet, or a transient error — keep polling till the deadline */
+      }
+      if (this.loginPollActive) setTimeout(tick, 4000)
+    }
+    setTimeout(tick, 4000)
   }
 
   /** Execute the approved gate (confirm) — runs after login is settled. */
@@ -371,8 +421,13 @@ export class Session {
         break
       case 'tool-result': {
         const result = p.result ?? p
-        const url = (result as { checkoutUrl?: string })?.checkoutUrl
+        // `null` (not just absent) explicitly clears a link an EARLIER tool
+        // call this turn already set (e.g. select_slot's guest-style link,
+        // superseded by confirm's authenticated result, which has no
+        // equivalent shareable link — see homeservices/index.ts's confirm).
+        const url = (result as { checkoutUrl?: string | null })?.checkoutUrl
         if (typeof url === 'string') this.turnCheckoutUrl = url
+        else if (url === null) this.turnCheckoutUrl = undefined
         this.emit({ type: 'state_update', state: result })
         break
       }

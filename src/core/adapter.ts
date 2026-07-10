@@ -24,7 +24,7 @@ export interface AdapterTools {
   add_to_cart?: Impl<{ itemId: string; qty: number }>
   /** Remove an item (or `qty` of it) from the cart — enables replacing items. */
   remove_from_cart?: Impl<{ itemId: string; qty?: number }>
-  select_slot?: Impl<{ slotId: string }>
+  select_slot?: Impl<{ slotId: string; address?: string }>
   request_quote?: Impl<{ pickup: string; drop: string }>
   get_state?: Impl<Record<string, never>>
   /** crosses the EXECUTE gate — the only path to an irreversible action */
@@ -60,6 +60,9 @@ export interface Adapter {
   /** Per-user account login (browser-assisted OTP), so an order can go under the
    * user's own account. Optional — guest-only adapters omit these. */
   needsLogin?(userId: string): boolean
-  sendLoginCode?(phone: string): Promise<{ ok: boolean; error?: string }>
+  /** `instructions`, if present, is shown to the user before the harness asks
+   * its follow-up question — e.g. a command to run in their own terminal, for
+   * adapters where login can't be driven by us at all (see homeservices/auth.ts). */
+  sendLoginCode?(phone: string): Promise<{ ok: boolean; error?: string; instructions?: string }>
   verifyLoginCode?(userId: string, phone: string, code: string): Promise<{ ok: boolean; error?: string }>
 }
