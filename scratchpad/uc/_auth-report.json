@@ -1,0 +1,17 @@
+{
+  "customerIds": [],
+  "authHeaderNames": [
+    "authorization"
+  ],
+  "authCookieNames": [
+    "_uca_session_id",
+    "_uc_ga_client_id",
+    "_uc_user_id",
+    "_uc_user_name",
+    "_uc_user_phone",
+    "_uc_user_token",
+    "_uc_user_access_token"
+  ],
+  "authLocalKeys": [],
+  "allLocalKeys": []
+}

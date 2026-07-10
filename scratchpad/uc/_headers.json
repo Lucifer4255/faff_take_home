@@ -1,0 +1,18 @@
+{
+  "sec-ch-ua-platform": "\"macOS\"",
+  "x-device-id": "v-1783622663",
+  "x-device-os": "desktop_web",
+  "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "application/json, text/plain, */*",
+  "content-type": "application/json",
+  "react-bundle-version": "798",
+  "x-brand-key": "urbanCompany",
+  "cache-control": "no-cache",
+  "referer": "",
+  "accept-language": "en-IN",
+  "x-version-code": "4.273.58",
+  "x-preferred-language": "english",
+  "x-version-name": "web_v4.273.58",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+}

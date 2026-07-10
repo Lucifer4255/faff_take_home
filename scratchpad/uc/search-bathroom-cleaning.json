@@ -1,0 +1,1 @@
+{"isError":true,"error_obj":{"error_message":".success.data should have required property 'dataStore',.success.data should have required property 'layout'","is_silent":false,"status_code":500},"err_message":".success.data should have required property 'dataStore',.success.data should have required property 'layout'","err_type":"rpc_response_invalid_error"}

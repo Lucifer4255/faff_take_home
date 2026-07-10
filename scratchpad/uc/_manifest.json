@@ -1,0 +1,54 @@
+[
+  {
+    "i": 0,
+    "method": "POST",
+    "url": "https://www.urbanclap.com/api/v2/growth/customerHomescreen/getDiscoveryScreen",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"cityKey\":\"city_bangalore_v2\",\"customerId\":\"\",\"seoURL\":\"https://www.urbancompany.com/bangalore\",\"countryKey\":\"IND\",\"locationDetails\":{\"lat\":12.961947,\"long\":77.603264},\"placeId\":\"ChIJrT4dCtQVrjsRPRIJt171Zw8\",\"homescreenAddress\":{\"ucAddress\":{},\"placeId\":\"ChIJrT4dCtQVrjsRPRIJt171Zw8\"",
+    "topKeys": [
+      "isError",
+      "success"
+    ],
+    "phase": "load"
+  },
+  {
+    "i": 1,
+    "method": "POST",
+    "url": "https://www.urbanclap.com/api/v2/marketplace/booking/getHomescreenRequestStateWidget",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"cityKey\":\"city_bangalore_v2\"}",
+    "phase": "load"
+  },
+  {
+    "i": 2,
+    "method": "POST",
+    "url": "https://www.urbanclap.com/api/v2/growth/customerJourney/getPersistentCartIconData",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"locationDetails\":{\"cityKey\":\"city_bangalore_v2\",\"placeId\":\"ChIJrT4dCtQVrjsRPRIJt171Zw8\",\"coordinates\":{\"lat\":12.961947,\"long\":77.603264}}}",
+    "topKeys": [
+      "isError",
+      "success"
+    ],
+    "phase": "load"
+  },
+  {
+    "i": 3,
+    "method": "POST",
+    "url": "https://www.urbanclap.com/api/v2/marketplace/booking/getHomescreenRequestStateWidget",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"cityKey\":\"city_bangalore_v2\"}",
+    "phase": "load"
+  },
+  {
+    "i": 4,
+    "method": "POST",
+    "url": "https://www.urbanclap.com/api/v2/growth/search/discoverySearch",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"location\":{\"longitude\":77.603264,\"latitude\":12.961947},\"cityKey\":\"city_bangalore_v2\",\"searchToken\":\"\",\"source\":\"homescreen\",\"sourceMetadata\":{\"pageName\":\"homescreen\"},\"recentSearches\":[]}",
+    "topKeys": [
+      "isError",
+      "success"
+    ],
+    "phase": "load"
+  }
+]

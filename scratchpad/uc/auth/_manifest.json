@@ -1,0 +1,42 @@
+[
+  {
+    "i": 0,
+    "method": "POST",
+    "url": "…/growth/customerHomescreen/getDiscoveryScreen",
+    "status": 200,
+    "auth": true,
+    "userData": false
+  },
+  {
+    "i": 1,
+    "method": "POST",
+    "url": "…/growth/customerJourney/getPersistentCartIconData",
+    "status": 200,
+    "auth": true,
+    "userData": false
+  },
+  {
+    "i": 2,
+    "method": "POST",
+    "url": "…/marketplace/booking/getHomescreenRequestStateWidget",
+    "status": 200,
+    "auth": true,
+    "userData": false
+  },
+  {
+    "i": 3,
+    "method": "POST",
+    "url": "…/marketplace/booking/getHomescreenRequestStateWidget",
+    "status": 200,
+    "auth": true,
+    "userData": false
+  },
+  {
+    "i": 4,
+    "method": "POST",
+    "url": "…/growth/search/discoverySearch",
+    "status": 200,
+    "auth": true,
+    "userData": false
+  }
+]

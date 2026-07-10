@@ -1,0 +1,82 @@
+[
+  {
+    "i": 0,
+    "tag": "cat",
+    "method": "POST",
+    "url": "…/growth/customerJourney/initiateSeoJourney",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"url\":\"https://www.urbancompany.com/bangalore-home-cleaning\",\"utmContext\":{\"utmCampaign\":null,\"utmContent\":null,\"utmMedium\":null,\"utmSource\":null,\"utmTerm\":null,\"userLanding\":null,\"us",
+    "topKeys": [
+      "isUcLiveErrorPL",
+      "layout",
+      "dataStore",
+      "layoutTransformerConfig"
+    ]
+  },
+  {
+    "i": 1,
+    "tag": "cat",
+    "method": "POST",
+    "url": "…/growth/customerJourney/initiateSeoJourney",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"url\":\"https://www.urbancompany.com/bangalore-full-home-cleaning\",\"utmContext\":{\"utmCampaign\":null,\"utmContent\":null,\"utmMedium\":null,\"utmSource\":\"direct\",\"utmTerm\":null,\"userLanding\"",
+    "topKeys": [
+      "isUcLiveErrorPL",
+      "layout",
+      "dataStore",
+      "layoutTransformerConfig"
+    ]
+  },
+  {
+    "i": 2,
+    "tag": "cat",
+    "method": "POST",
+    "url": "…/growth/customerJourney/initiateSeoJourney",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"url\":\"https://www.urbancompany.com/bangalore-professional-home-cleaning\",\"utmContext\":{\"utmCampaign\":null,\"utmContent\":null,\"utmMedium\":null,\"utmSource\":\"direct\",\"utmTerm\":null,\"user",
+    "topKeys": [
+      "layout",
+      "layoutTransformerConfig",
+      "dataStore",
+      "journeyConfig",
+      "event"
+    ]
+  },
+  {
+    "i": 3,
+    "tag": "cat",
+    "method": "POST",
+    "url": "…/growth/search/discoverySearch",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"location\":{\"longitude\":77.603264,\"latitude\":12.961947},\"cityKey\":\"city_bangalore_v2\",\"searchToken\":\"\",\"source\":\"cart\",\"splId\":\"6634\",\"categoryKey\":\"professional_home_cleaning\",\"recen",
+    "topKeys": [
+      "layout",
+      "dataStore"
+    ]
+  },
+  {
+    "i": 4,
+    "tag": "cat",
+    "method": "POST",
+    "url": "…/growth/customerJourney/getEditablePackageDetailScreen",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":75316,\"cityKey\":\"city_bangalore_v2\",\"sourceScreen\":\"myop\",\"categoryKey\":\"professional_home_cleaning\",\"location\":{\"lat\":12.961947,\"long\":77.603264},\"userId\":\"\",\"packageData",
+    "topKeys": [
+      "layout",
+      "dataStore"
+    ]
+  },
+  {
+    "i": 5,
+    "tag": "cat",
+    "method": "POST",
+    "url": "…/growth/customerJourney/getRatingsAndReviews",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"category\":\"professional_home_cleaning\",\"country\":\"IND\",\"variants\":[47256,47261,47267,47268,47269,47277,47290,65980,47292,47291,65979,47274,47293,47294],\"location\":{\"lat\":12.961947,\"l",
+    "topKeys": [
+      "layout",
+      "dataStore",
+      "event"
+    ]
+  }
+]

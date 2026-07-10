@@ -1,0 +1,185 @@
+[
+  {
+    "i": 0,
+    "step": "load",
+    "method": "POST",
+    "url": "…/growth/customerJourney/initiateSeoJourney",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"url\":\"https://www.urbancompany.com/bangalore-professional-home-cleaning\",\"utmContext\":{\"utmCampaign\":null,\"utmContent\":null,\"utmMedium\":null,\"utmSource\":null,\"utmTerm\":null,\"userLanding\":null,\"userNew\":",
+    "topKeys": [
+      "layout",
+      "layoutTransformerConfig",
+      "dataStore",
+      "journeyConfig",
+      "event"
+    ]
+  },
+  {
+    "i": 1,
+    "step": "load",
+    "method": "POST",
+    "url": "…/growth/search/discoverySearch",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"location\":{\"longitude\":77.603264,\"latitude\":12.961947},\"cityKey\":\"city_bangalore_v2\",\"searchToken\":\"\",\"source\":\"cart\",\"splId\":\"8898\",\"categoryKey\":\"professional_home_cleaning\",\"recentSearches\":[]}",
+    "topKeys": [
+      "layout",
+      "dataStore"
+    ]
+  },
+  {
+    "i": 2,
+    "step": "step0",
+    "method": "POST",
+    "url": "…/growth/customerJourney/getEditablePackageDetailScreen",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"cityKey\":\"city_bangalore_v2\",\"sourceScreen\":\"myop\",\"categoryKey\":\"professional_home_cleaning\",\"location\":{\"lat\":12.961947,\"long\":77.603264},\"userId\":\"\",\"packageData\":{\"componentId\":544",
+    "topKeys": [
+      "layout",
+      "dataStore"
+    ]
+  },
+  {
+    "i": 3,
+    "step": "step2",
+    "method": "POST",
+    "url": "…/growth/qna/updateScreenOnCustomizationStepModification",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"categoryKey\":\"professional_home_cleaning\",\"dimensions\":{\"city\":\"city_bangalore_v2\"},\"sourceScreen\":\"customizationWidget\",\"coordinates\":{\"lat\":12.961947,\"lng\":77.603264},\"draftOrderId\":",
+    "topKeys": [
+      "editablePackageOfferStripV2",
+      "customizationWidgetPricingFooter",
+      "estimatePackagePricingStrip",
+      "customizationWidgetHeader",
+      "customizationWidget",
+      "commonInfo",
+      "selectedVariantsMap",
+      "variantOptionSectionNameMap",
+      "toggleHeadingsMap",
+      "selectedPlansMap",
+      "nextStepId"
+    ]
+  },
+  {
+    "i": 4,
+    "step": "step3",
+    "method": "POST",
+    "url": "…/growth/qna/updateScreenOnCustomizationStepModification",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"categoryKey\":\"professional_home_cleaning\",\"dimensions\":{\"city\":\"city_bangalore_v2\"},\"sourceScreen\":\"customizationWidget\",\"coordinates\":{\"lat\":12.961947,\"lng\":77.603264},\"draftOrderId\":",
+    "topKeys": [
+      "editablePackageOfferStripV2",
+      "customizationWidgetPricingFooter",
+      "estimatePackagePricingStrip",
+      "customizationWidgetHeader",
+      "customizationWidget",
+      "commonInfo",
+      "selectedVariantsMap",
+      "variantOptionSectionNameMap",
+      "toggleHeadingsMap",
+      "selectedPlansMap"
+    ]
+  },
+  {
+    "i": 5,
+    "step": "step4",
+    "method": "POST",
+    "url": "…/growth/qna/updateScreenOnCustomizationStepModification",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"categoryKey\":\"professional_home_cleaning\",\"dimensions\":{\"city\":\"city_bangalore_v2\"},\"sourceScreen\":\"customizationWidget\",\"coordinates\":{\"lat\":12.961947,\"lng\":77.603264},\"draftOrderId\":",
+    "topKeys": [
+      "editablePackageOfferStripV2",
+      "customizationWidgetPricingFooter",
+      "estimatePackagePricingStrip",
+      "customizationWidgetHeader",
+      "customizationWidget",
+      "commonInfo",
+      "selectedVariantsMap",
+      "variantOptionSectionNameMap",
+      "toggleHeadingsMap",
+      "selectedPlansMap",
+      "nextStepId"
+    ]
+  },
+  {
+    "i": 6,
+    "step": "step5",
+    "method": "POST",
+    "url": "…/growth/qna/updateScreenOnCustomizationStepModification",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"categoryKey\":\"professional_home_cleaning\",\"dimensions\":{\"city\":\"city_bangalore_v2\"},\"sourceScreen\":\"customizationWidget\",\"coordinates\":{\"lat\":12.961947,\"lng\":77.603264},\"draftOrderId\":",
+    "topKeys": [
+      "editablePackageOfferStripV2",
+      "customizationWidgetPricingFooter",
+      "estimatePackagePricingStrip",
+      "customizationWidgetHeader",
+      "customizationWidget",
+      "commonInfo",
+      "selectedVariantsMap",
+      "variantOptionSectionNameMap",
+      "toggleHeadingsMap",
+      "selectedPlansMap"
+    ]
+  },
+  {
+    "i": 7,
+    "step": "step6",
+    "method": "POST",
+    "url": "…/growth/qna/updateScreenOnCustomizationStepModification",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"categoryKey\":\"professional_home_cleaning\",\"dimensions\":{\"city\":\"city_bangalore_v2\"},\"sourceScreen\":\"customizationWidget\",\"coordinates\":{\"lat\":12.961947,\"lng\":77.603264},\"draftOrderId\":",
+    "topKeys": [
+      "editablePackageOfferStripV2",
+      "customizationWidgetPricingFooter",
+      "estimatePackagePricingStrip",
+      "customizationWidgetHeader",
+      "customizationWidget",
+      "commonInfo",
+      "selectedVariantsMap",
+      "variantOptionSectionNameMap",
+      "toggleHeadingsMap",
+      "selectedPlansMap",
+      "nextStepId"
+    ]
+  },
+  {
+    "i": 8,
+    "step": "step7",
+    "method": "POST",
+    "url": "…/growth/qna/updateScreenOnCustomizationStepModification",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"categoryKey\":\"professional_home_cleaning\",\"dimensions\":{\"city\":\"city_bangalore_v2\"},\"sourceScreen\":\"customizationWidget\",\"coordinates\":{\"lat\":12.961947,\"lng\":77.603264},\"draftOrderId\":",
+    "topKeys": [
+      "editablePackageOfferStripV2",
+      "customizationWidgetPricingFooter",
+      "estimatePackagePricingStrip",
+      "customizationWidgetHeader",
+      "customizationWidget",
+      "commonInfo",
+      "selectedVariantsMap",
+      "variantOptionSectionNameMap",
+      "toggleHeadingsMap",
+      "selectedPlansMap"
+    ]
+  },
+  {
+    "i": 9,
+    "step": "step8",
+    "method": "POST",
+    "url": "…/growth/qna/updateScreenOnCustomizationStepModification",
+    "status": 200,
+    "reqBody": "{\"city_key\":null,\"packageId\":54437,\"categoryKey\":\"professional_home_cleaning\",\"dimensions\":{\"city\":\"city_bangalore_v2\"},\"sourceScreen\":\"customizationWidget\",\"coordinates\":{\"lat\":12.961947,\"lng\":77.603264},\"draftOrderId\":",
+    "topKeys": [
+      "editablePackageOfferStripV2",
+      "customizationWidgetPricingFooter",
+      "estimatePackagePricingStrip",
+      "customizationWidgetHeader",
+      "customizationWidget",
+      "commonInfo",
+      "selectedVariantsMap",
+      "variantOptionSectionNameMap",
+      "toggleHeadingsMap",
+      "selectedPlansMap",
+      "nextStepId"
+    ]
+  }
+]
