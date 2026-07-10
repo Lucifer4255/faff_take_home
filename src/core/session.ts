@@ -341,7 +341,10 @@ export class Session {
     if (!this.pending && !this.finished) {
       // Guarantee the cart link when this turn touched the cart — independent of
       // whether the LLM remembered to include it in its own summary.
-      if (this.turnCheckoutUrl) this.emit({ type: 'agent_message', text: `🛒 Checkout-ready cart: ${this.turnCheckoutUrl}` })
+      if (this.turnCheckoutUrl) {
+        const label = this.service === 'homeservices' ? '🧹 Booking-ready — open to pick your slot, sign in & confirm' : '🛒 Checkout-ready cart'
+        this.emit({ type: 'agent_message', text: `${label}: ${this.turnCheckoutUrl}` })
+      }
       this.emit({ type: 'done', summary: 'complete' })
     }
   }

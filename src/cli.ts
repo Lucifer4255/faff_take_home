@@ -91,8 +91,9 @@ function render(event: AgentEvent): void {
       break
     case 'state_update': {
       console.log(`\n📦 ${JSON.stringify(event.state)}`)
-      const url = (event.state as { checkoutUrl?: string; order?: { checkoutUrl?: string } })?.checkoutUrl ?? (event.state as { order?: { checkoutUrl?: string } })?.order?.checkoutUrl
-      if (url) console.log(`🛒 cart link: ${url}`)
+      const st = event.state as { checkoutUrl?: string; service?: string; order?: { checkoutUrl?: string } }
+      const url = st?.checkoutUrl ?? st?.order?.checkoutUrl
+      if (url) console.log(`${st?.service ? '🧹 booking link' : '🛒 cart link'}: ${url}`)
       break
     }
     case 'awaiting_confirmation':

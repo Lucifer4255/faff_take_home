@@ -336,6 +336,49 @@ function StateCard({ state }: { state: unknown }) {
     orderId?: string
     checkoutUrl?: string
     deliverTo?: { address?: string; city?: string }
+    // home-services booking shape
+    service?: string
+    category?: string
+    price?: string
+    earliestSlot?: string
+    city?: string
+  }
+  // Home-services booking-ready card (service + slot, not a cart of items).
+  if (c && c.service && (c.checkoutUrl || c.earliestSlot)) {
+    return (
+      <div className="card">
+        <h4>Booking-ready</h4>
+        <div className="deliverto">🧹 {c.service}</div>
+        {c.category ? <div>{c.category}</div> : null}
+        <table>
+          <tbody>
+            {c.price ? (
+              <tr>
+                <td>Price</td>
+                <td>{c.price}</td>
+              </tr>
+            ) : null}
+            {c.earliestSlot ? (
+              <tr>
+                <td>Earliest slot</td>
+                <td>{c.earliestSlot}</td>
+              </tr>
+            ) : null}
+            {c.city ? (
+              <tr>
+                <td>City</td>
+                <td>{c.city}</td>
+              </tr>
+            ) : null}
+          </tbody>
+        </table>
+        {c.checkoutUrl ? (
+          <a className="checkout" href={c.checkoutUrl} target="_blank" rel="noreferrer">
+            🧹 Open on Urban Company →
+          </a>
+        ) : null}
+      </div>
+    )
   }
   if (c && Array.isArray(c.items)) {
     return (

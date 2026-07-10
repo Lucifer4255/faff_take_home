@@ -47,7 +47,7 @@ async function main() {
         const res = await fetch('https://www.urbanclap.com/api/v2/growth/search/discoverySearch', {
           method: 'POST',
           credentials: 'omit',
-          headers,
+          headers: headers as Record<string, string>,
           body: JSON.stringify({
             city_key: null,
             location: { longitude: 77.603264, latitude: 12.961947 },
