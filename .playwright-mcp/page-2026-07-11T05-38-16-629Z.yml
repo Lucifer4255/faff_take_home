@@ -1,0 +1,2050 @@
+- generic [active] [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e9]:
+      - generic [ref=e13]:
+        - img [ref=e23] [cursor=pointer]:
+          - img "Urban Company logo" [ref=e25]
+        - paragraph [ref=e48] [cursor=pointer]: 3, Norris Rd, Richmond Town, Bengaluru, Karnataka 560025, India
+        - textbox "Search in AC" [ref=e74]
+      - generic [ref=e87]:
+        - generic [ref=e89]:
+          - generic [ref=e94]:
+            - generic [ref=e97] [cursor=pointer]:
+              - generic [ref=e98]:
+                - heading "AC" [level=2] [ref=e99]
+                - paragraph [ref=e105]: 4.77 (13.6 M bookings)
+              - generic [ref=e108]:
+                - paragraph [ref=e113]: Instant
+                - paragraph [ref=e115]: In 46 mins
+            - generic [ref=e122] [cursor=pointer]:
+              - paragraph [ref=e127]: UC COVER
+              - generic [ref=e130]:
+                - paragraph [ref=e133]: Upto 30 days warranty on repairs
+                - paragraph [ref=e136]: Upto 30 days warranty on repairs
+          - generic [ref=e153]:
+            - paragraph [ref=e156]: Select a service
+            - generic [ref=e161]:
+              - generic [ref=e163]:
+                - generic "Super saver packages" [ref=e165] [cursor=pointer]:
+                  - img:
+                    - img "Super saver packages" [ref=e167]
+                  - paragraph [ref=e169]: Super saver packages
+                - generic "Service" [ref=e171] [cursor=pointer]:
+                  - img:
+                    - img "Service" [ref=e173]
+                  - paragraph [ref=e175]: Service
+                - generic "Repair & gas refill" [ref=e177] [cursor=pointer]:
+                  - img:
+                    - img "Repair & gas refill" [ref=e179]
+                  - paragraph [ref=e181]: Repair & gas refill
+              - generic "Installation/uninstallation" [ref=e185] [cursor=pointer]:
+                - img:
+                  - img "Installation/uninstallation" [ref=e187]
+                - paragraph [ref=e189]: Installation/uninstallation
+        - generic [ref=e200]:
+          - generic [ref=e208]:
+            - generic [ref=e211] [cursor=pointer]:
+              - generic:
+                - img "AC 0"
+              - generic:
+                - img "AC 1"
+              - img "AC 2" [ref=e3986]
+            - button "Button Double Tap to perform action" [ref=e222]
+            - button "Button Double Tap to perform action" [ref=e225]
+          - generic [ref=e230]:
+            - generic [ref=e237]:
+              - heading "Super saver packages" [level=2] [ref=e249]
+              - generic [ref=e252]:
+                - img "Super saver packages - Foam-jet service (2 ACs)" [ref=e255] [cursor=pointer]
+                - generic [ref=e257] [cursor=pointer]:
+                  - generic [ref=e258]:
+                    - generic "Foam-jet service (2 ACs), Your service will take around 2 hrs! with a price of ₹1,198 !" [ref=e259]:
+                      - paragraph [ref=e261]: Foam-jet service (2 ACs)
+                      - paragraph [ref=e264]: 4.76 (2.8M reviews)
+                      - generic [ref=e266]:
+                        - paragraph [ref=e267]: ₹1,198
+                        - paragraph [ref=e269]: ₹1,298
+                        - paragraph [ref=e271]: 2 hrs
+                      - paragraph [ref=e274]: ₹599 per AC
+                    - generic [ref=e278]:
+                      - generic:
+                        - button "Add" [disabled]:
+                          - paragraph: Add
+                      - generic [ref=e281]:
+                        - button "Foam-jet service (2 ACs) Total item count will become0" [ref=e3989]
+                        - generic [ref=e3990]:
+                          - paragraph [ref=e3992]: "1"
+                          - generic "Foam-jet service (2 ACs) Total number of items present in your cart is 1" [ref=e3993]:
+                            - paragraph [ref=e3994]: "1"
+                          - paragraph [ref=e3996]: "0"
+                        - button "Foam-jet service (2 ACs) Total item count will become2" [ref=e3997]
+                  - generic "Applicable for both window or split ACs, Indoor unit deep cleaning with foam & jet spray," [ref=e284]:
+                    - paragraph [ref=e290]: Applicable for both window or split ACs
+                    - paragraph [ref=e294]: Indoor unit deep cleaning with foam & jet spray
+                  - button "View Details" [ref=e297]:
+                    - paragraph [ref=e299]: View details
+              - generic [ref=e306] [cursor=pointer]:
+                - generic "Foam-jet service (3 ACs), Your service will take around 3 hrs! with a price of ₹1,647 !" [ref=e307]:
+                  - paragraph [ref=e309]: Foam-jet service (3 ACs)
+                  - paragraph [ref=e312]: 4.76 (2.8M reviews)
+                  - generic [ref=e314]:
+                    - paragraph [ref=e315]: ₹1,647
+                    - paragraph [ref=e317]: ₹1,947
+                    - paragraph [ref=e319]: 3 hrs
+                  - paragraph [ref=e322]: ₹549 per AC
+                  - generic [ref=e323]:
+                    - generic "Bullet list defining packages"
+                    - button "View Details" [ref=e325]:
+                      - paragraph [ref=e327]: View details
+                - generic [ref=e329]:
+                  - img "Super saver packages - Foam-jet service (3 ACs)" [ref=e333]
+                  - generic [ref=e336]:
+                    - button "Add" [ref=e337]:
+                      - paragraph [ref=e338]: Add
+                    - generic [ref=e339]:
+                      - button "Foam-jet service (3 ACs) Total item count will become-1" [ref=e340]
+                      - button "Foam-jet service (3 ACs) Total item count will become1" [ref=e341]
+              - generic [ref=e348] [cursor=pointer]:
+                - generic "Foam-jet service (4 ACs), Your service will take around 4 hrs! with a price of ₹1,996 !" [ref=e349]:
+                  - paragraph [ref=e351]: Foam-jet service (4 ACs)
+                  - paragraph [ref=e354]: 4.76 (2.8M reviews)
+                  - generic [ref=e356]:
+                    - paragraph [ref=e357]: ₹1,996
+                    - paragraph [ref=e359]: ₹2,596
+                    - paragraph [ref=e361]: 4 hrs
+                  - paragraph [ref=e364]: ₹499 per AC
+                  - generic [ref=e365]:
+                    - generic "Bullet list defining packages"
+                    - button "View Details" [ref=e367]:
+                      - paragraph [ref=e369]: View details
+                - generic [ref=e371]:
+                  - img "Super saver packages - Foam-jet service (4 ACs)" [ref=e375]
+                  - generic [ref=e378]:
+                    - button "Add" [ref=e379]:
+                      - paragraph [ref=e380]: Add
+                    - generic [ref=e381]:
+                      - button "Foam-jet service (4 ACs) Total item count will become-1" [ref=e382]
+                      - button "Foam-jet service (4 ACs) Total item count will become1" [ref=e383]
+              - generic [ref=e390] [cursor=pointer]:
+                - generic "Foam-jet service (5 ACs), Your service will take around 5 hrs! with a price of ₹2,495 !" [ref=e391]:
+                  - paragraph [ref=e393]: Foam-jet service (5 ACs)
+                  - paragraph [ref=e396]: 4.76 (2.8M reviews)
+                  - generic [ref=e398]:
+                    - paragraph [ref=e399]: ₹2,495
+                    - paragraph [ref=e401]: ₹3,245
+                    - paragraph [ref=e403]: 5 hrs
+                  - paragraph [ref=e406]: ₹499 per AC
+                  - generic [ref=e407]:
+                    - generic "Bullet list defining packages"
+                    - button "View Details" [ref=e409]:
+                      - paragraph [ref=e411]: View details
+                - generic [ref=e413]:
+                  - img "Super saver packages - Foam-jet service (5 ACs)" [ref=e417]
+                  - generic [ref=e420]:
+                    - button "Add" [ref=e421]:
+                      - paragraph [ref=e422]: Add
+                    - generic [ref=e423]:
+                      - button "Foam-jet service (5 ACs) Total item count will become-1" [ref=e424]
+                      - button "Foam-jet service (5 ACs) Total item count will become1" [ref=e425]
+              - heading "Service" [level=2] [ref=e442]
+              - generic [ref=e445]:
+                - img "Service - Foam-jet AC service" [ref=e448] [cursor=pointer]
+                - generic [ref=e450] [cursor=pointer]:
+                  - generic [ref=e451]:
+                    - generic "Foam-jet AC service, Your service will take around 45 hrs! with a price of Starts at ₹649 !" [ref=e452]:
+                      - paragraph [ref=e454]: Foam-jet AC service
+                      - paragraph [ref=e457]: 4.76 (2.8M reviews)
+                      - paragraph [ref=e460]: Starts at ₹649
+                      - paragraph [ref=e464]: Add more & save up to 23%
+                    - generic [ref=e465]:
+                      - generic [ref=e468]:
+                        - button "Add" [ref=e469]:
+                          - paragraph [ref=e470]: Add
+                        - generic [ref=e471]:
+                          - button "Foam-jet AC service Total item count will become-1" [ref=e472]
+                          - button "Foam-jet AC service Total item count will become1" [ref=e473]
+                      - paragraph [ref=e475]: 9 options
+                  - generic "Applicable for both window & split ACs, Indoor unit deep cleaning with foam & jet spray," [ref=e476]:
+                    - paragraph [ref=e482]: Applicable for both window & split ACs
+                    - paragraph [ref=e486]: Indoor unit deep cleaning with foam & jet spray
+                  - button "View Details" [ref=e489]:
+                    - paragraph [ref=e491]: View details
+              - heading "Repair & gas refill" [level=2] [ref=e508]
+              - generic [ref=e513] [cursor=pointer]:
+                - generic "AC repair with a price of Starts at ₹299 !" [ref=e514]:
+                  - link "AC repair" [ref=e516]:
+                    - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-repair-near-me
+                  - paragraph [ref=e519]: 4.73 (838K reviews)
+                  - paragraph [ref=e522]: Starts at ₹299
+                  - generic [ref=e524]:
+                    - generic "Complete check-up to identify issues before repair," [ref=e525]:
+                      - paragraph [ref=e531]: Complete check-up to identify issues before repair
+                    - button "View Details" [ref=e533]:
+                      - paragraph [ref=e535]: View details
+                - generic [ref=e536]:
+                  - generic [ref=e537]:
+                    - img "Repair & gas refill - AC repair" [ref=e541]
+                    - generic [ref=e544]:
+                      - button "Add" [ref=e545]:
+                        - paragraph [ref=e546]: Add
+                      - generic [ref=e547]:
+                        - button "AC repair Total item count will become-1" [ref=e548]
+                        - button "AC repair Total item count will become1" [ref=e549]
+                  - paragraph [ref=e551]: 4 options
+              - generic [ref=e558] [cursor=pointer]:
+                - generic "Gas refill & check-up, Your service will take around 2 hrs 30 mins! with a price of ₹2,800 !" [ref=e559]:
+                  - link "Gas refill & check-up" [ref=e561]:
+                    - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-gas-refill-near-me
+                  - paragraph [ref=e564]: 4.77 (113K reviews)
+                  - generic [ref=e566]:
+                    - paragraph [ref=e567]: ₹2,800
+                    - paragraph [ref=e569]: 2 hrs 30 mins
+                  - generic [ref=e570]:
+                    - generic "Bullet list defining packages"
+                    - button "View Details" [ref=e572]:
+                      - paragraph [ref=e574]: View details
+                - generic [ref=e576]:
+                  - img "Repair & gas refill - Gas refill & check-up" [ref=e580]
+                  - generic [ref=e583]:
+                    - button "Add" [ref=e584]:
+                      - paragraph [ref=e585]: Add
+                    - generic [ref=e586]:
+                      - button "Gas refill & check-up Total item count will become-1" [ref=e587]
+                      - button "Gas refill & check-up Total item count will become1" [ref=e588]
+              - heading "Installation/uninstallation" [level=2] [ref=e605]
+              - generic [ref=e610] [cursor=pointer]:
+                - generic "AC installation, Your service will take around 2 hrs 30 mins! with a price of Starts at ₹1,299 !" [ref=e611]:
+                  - link "AC installation" [ref=e613]:
+                    - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-installation-near-me
+                  - paragraph [ref=e616]: 4.69 (147K reviews)
+                  - paragraph [ref=e619]: Starts at ₹1,299
+                  - generic [ref=e621]:
+                    - generic "Installation of indoor & outdoor units with free gas check," [ref=e622]:
+                      - paragraph [ref=e628]: Installation of indoor & outdoor units with free gas check
+                    - button "View Details" [ref=e630]:
+                      - paragraph [ref=e632]: View details
+                - generic [ref=e633]:
+                  - generic [ref=e634]:
+                    - img "Installation/uninstallation - AC installation" [ref=e638]
+                    - generic [ref=e641]:
+                      - button "Add" [ref=e642]:
+                        - paragraph [ref=e643]: Add
+                      - generic [ref=e644]:
+                        - button "AC installation Total item count will become-1" [ref=e645]
+                        - button "AC installation Total item count will become1" [ref=e646]
+                  - paragraph [ref=e648]: 2 options
+              - generic [ref=e655] [cursor=pointer]:
+                - generic "AC uninstallation, Your service will take around 60 mins! with a price of Starts at ₹899 !" [ref=e656]:
+                  - link "AC uninstallation" [ref=e658]:
+                    - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-uninstallation-near-me
+                  - paragraph [ref=e661]: 4.80 (138K reviews)
+                  - paragraph [ref=e664]: Starts at ₹899
+                  - generic [ref=e666]:
+                    - generic "Uninstallation of both indoor & outdoor units," [ref=e667]:
+                      - paragraph [ref=e673]: Uninstallation of both indoor & outdoor units
+                    - button "View Details" [ref=e675]:
+                      - paragraph [ref=e677]: View details
+                - generic [ref=e678]:
+                  - generic [ref=e679]:
+                    - img "Installation/uninstallation - AC uninstallation" [ref=e683]
+                    - generic [ref=e686]:
+                      - button "Add" [ref=e687]:
+                        - paragraph [ref=e688]: Add
+                      - generic [ref=e689]:
+                        - button "AC uninstallation Total item count will become-1" [ref=e690]
+                        - button "AC uninstallation Total item count will become1" [ref=e691]
+                  - paragraph [ref=e693]: 2 options
+            - generic [ref=e702]:
+              - paragraph [ref=e732]: No items in your cart
+              - generic [ref=e741]:
+                - generic:
+                  - generic [ref=e742]:
+                    - img:
+                      - img "Offer icon" [ref=e744]
+                  - generic [ref=e746]:
+                    - paragraph [ref=e748]: Buy more save more
+                    - paragraph [ref=e750]: ₹300 off 2nd item onwards
+              - generic [ref=e757]:
+                - generic [ref=e759]:
+                  - heading "UC Promise" [level=4] [ref=e760]
+                  - paragraph [ref=e767]: Verified Professionals
+                  - paragraph [ref=e773]: Hassle Free Booking
+                  - paragraph [ref=e779]: Transparent Pricing
+                - img:
+                  - img "Urban Company Trust Marker" [ref=e782]
+      - generic [ref=e791]:
+        - generic [ref=e803]:
+          - heading "Frequently asked questions" [level=2] [ref=e808]
+          - generic [ref=e809]:
+            - generic [ref=e812]:
+              - paragraph [ref=e816] [cursor=pointer]: What safety measures does Urban Company follow, especially during the COVID-19 pandemic?
+              - paragraph [ref=e821]: Urban Company prioritizes the safety of both our customers and professionals. We follow strict COVID-19 guidelines, including mandatory mask-wearing, sanitisation, and social distancing. Our professionals are equipped with necessary protective gear to ensure a safe service experience.
+            - generic [ref=e825]:
+              - paragraph [ref=e829] [cursor=pointer]: Are there any warranties provided for the services?
+              - paragraph [ref=e834]: Yes, Urban Company provides a 30-day warranty on all our AC services. This ensures that you have peace of mind and can rely on the quality of our workmanship.
+            - generic [ref=e838]:
+              - paragraph [ref=e842] [cursor=pointer]: Can I request the same professional for future services?
+              - paragraph [ref=e847]: Yes, Urban Company allows you to request the same professional for future services if you're satisfied with their work. We understand the importance of building trust and rapport with our customers.
+            - generic [ref=e851]:
+              - paragraph [ref=e855] [cursor=pointer]: How does the pricing of AC services work?
+              - paragraph [ref=e860]: The pricing of our AC services depends solely on the type of service you require. We offer transparent pricing, ensuring you know exactly what to expect without any hidden costs.
+            - generic [ref=e864]:
+              - paragraph [ref=e868] [cursor=pointer]: What types of AC services does Urban Company offer?
+              - paragraph [ref=e873]: Urban Company offers a comprehensive range of AC services(window ac service & split ac service) including foam & power jet cleaning, power jet servicing(jet pump ac service), anti-rust deep clean, AC repair for both split and window units, gas leak fixing & ac gas refill, split AC installation / uninstallation, window AC installation / uninstallation, ac pcb repair, ac filter cleaning, ac vent cleaning etc.
+            - generic [ref=e877]:
+              - paragraph [ref=e881] [cursor=pointer]: How can I book AC Service and AC Repair near me with Urban Company?
+              - paragraph [ref=e886]: Booking your AC Service and Repair with Urban Company is simple and hassle-free. You can do it through our app or website. Just select the service you need, choose a convenient time slot, and we'll assign a skilled professional to take care of your AC needs.
+            - generic [ref=e890]:
+              - paragraph [ref=e894] [cursor=pointer]: Can I trust the professionals sent by Urban Company?
+              - paragraph [ref=e899]: Absolutely! We understand the importance of safety and trust. All our professionals are background verified, and our platform provides full insurance coverage. Additionally, you can communicate directly with the assigned professional through our app for added peace of mind.
+            - generic [ref=e903]:
+              - paragraph [ref=e907] [cursor=pointer]: How can I reach Urban Company's support team if I have any questions or concerns?
+              - paragraph [ref=e912]: If you have any questions or concerns, you can easily reach out to our support team through our app or website. Our dedicated support agents are available to assist you from 8 a.m. to 10 p.m. daily, ensuring prompt resolution of any issues you may encounter.
+            - generic [ref=e916]:
+              - paragraph [ref=e920] [cursor=pointer]: What if I need to reschedule or cancel my booking?
+              - paragraph [ref=e925]: Urban Company understands that plans can change. You can easily reschedule or cancel your booking through our app or website. We provide flexibility to adjust your service as needed without any hassle.
+        - generic [ref=e937]:
+          - generic [ref=e942]:
+            - heading "Ac in Bangalore, India" [level=2] [ref=e947]
+            - paragraph [ref=e952]: Get your window or split AC service in Bangalore, India done by Urban Company's Power Jet AC Service technicians. We offer you a 90 Day service guarantee with INR 10k insurance against damage for every AC serviced. Also get a no questions asked 90 day revisit policy. Only genuine spare parts are supplied with fixed pricing. Urban Company will help you connect with the best AC services to cater your needs, right at your doorstep.
+          - generic [ref=e960]:
+            - heading "You are here" [level=2] [ref=e961]
+            - generic [ref=e965]:
+              - link "Home" [ref=e966] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/
+              - paragraph [ref=e967]: /
+              - link "Bangalore" [ref=e968] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore
+              - paragraph [ref=e969]: /
+              - link "Ac in Bangalore" [ref=e970] [cursor=pointer]:
+                - /url: https://www.urbanclap.com/bangalore-ac-service-repair
+              - paragraph [ref=e971]
+      - generic [ref=e988]:
+        - generic [ref=e990]:
+          - paragraph [ref=e992]: Customer reviews
+          - generic [ref=e995]:
+            - paragraph [ref=e998]: "4.77"
+            - paragraph [ref=e999]: 1.4 M reviews
+          - generic [ref=e1000]:
+            - paragraph [ref=e1002]: ★ 5
+            - paragraph [ref=e1006]: 1.3 M
+          - generic [ref=e1007]:
+            - paragraph [ref=e1009]: ★ 4
+            - paragraph [ref=e1013]: 36K
+          - generic [ref=e1014]:
+            - paragraph [ref=e1016]: ★ 3
+            - paragraph [ref=e1020]: 15K
+          - generic [ref=e1021]:
+            - paragraph [ref=e1023]: ★ 2
+            - paragraph [ref=e1027]: 11K
+          - generic [ref=e1028]:
+            - paragraph [ref=e1030]: ★ 1
+            - paragraph [ref=e1034]: 44K
+        - generic [ref=e1035]:
+          - generic [ref=e1038]:
+            - generic [ref=e1039]:
+              - img:
+                - img "Anitha" [ref=e1041]
+              - generic [ref=e1044]:
+                - paragraph [ref=e1045]: Anitha
+                - paragraph [ref=e1048]: July 2026 • Bengaluru, Ganakal Village, Karnataka 560060, India
+              - paragraph [ref=e1054]: "5"
+            - paragraph [ref=e1056]: Happy with the Job
+          - generic [ref=e1061]:
+            - generic [ref=e1062]:
+              - img:
+                - img "Sai" [ref=e1064]
+              - generic [ref=e1067]:
+                - paragraph [ref=e1068]: Sai
+                - paragraph [ref=e1071]: July 2026 • V G S Layout, Ejjipura Venkappa Garden, Koramangala, Bengaluru, Karnataka 560047, India
+              - paragraph [ref=e1077]: "5"
+            - paragraph [ref=e1079]: Excellent work !
+          - generic [ref=e1084]:
+            - generic [ref=e1085]:
+              - img:
+                - img "Prasanna" [ref=e1087]
+              - generic [ref=e1090]:
+                - paragraph [ref=e1091]: Prasanna
+                - paragraph [ref=e1094]: July 2026 • Bengaluru, Doddathoguru, Karnataka 560100, India
+              - paragraph [ref=e1100]: "5"
+            - paragraph [ref=e1102]: On time and excellent service
+          - generic [ref=e1107]:
+            - generic [ref=e1108]:
+              - img:
+                - img "Laxmi" [ref=e1110]
+              - generic [ref=e1113]:
+                - paragraph [ref=e1114]: Laxmi
+                - paragraph [ref=e1117]: July 2026 • LIC Colony, HAL 3rd Stage, Sector 11, Jeevan Bima Nagar, Bengaluru, Karnataka, India
+              - paragraph [ref=e1123]: "5"
+            - paragraph [ref=e1125]: Work is done in proper way.Very happy with the service done by Uc professional Thanks UC
+          - generic [ref=e1130]:
+            - generic [ref=e1131]:
+              - img:
+                - img "Kalyani" [ref=e1133]
+              - generic [ref=e1136]:
+                - paragraph [ref=e1137]: Kalyani
+                - paragraph [ref=e1140]: July 2026 • Krishnarajapuram, J.I.Domsandra, Karnataka, India
+              - paragraph [ref=e1146]: "5"
+            - paragraph [ref=e1148]: Good professional
+        - generic [ref=e1151]:
+          - generic [ref=e1154]:
+            - generic [ref=e1155]:
+              - img:
+                - img "Anandhan" [ref=e1157]
+              - generic [ref=e1160]:
+                - paragraph [ref=e1161]: Anandhan
+                - paragraph [ref=e1164]: July 2026 • Narayanappa Garden, Whitefield, Bengaluru, Karnataka, India
+              - paragraph [ref=e1170]: "5"
+            - paragraph [ref=e1172]: Service is good
+          - generic [ref=e1177]:
+            - generic [ref=e1178]:
+              - img:
+                - img "Shivi" [ref=e1180]
+              - generic [ref=e1183]:
+                - paragraph [ref=e1184]: Shivi
+                - paragraph [ref=e1187]: July 2026 • Sector 2, HSR Layout, Bengaluru, Karnataka 560102, India
+              - paragraph [ref=e1193]: "5"
+            - paragraph [ref=e1195]: Very professional and helpful
+          - generic [ref=e1200]:
+            - generic [ref=e1201]:
+              - img:
+                - img "Vasantha" [ref=e1203]
+              - generic [ref=e1206]:
+                - paragraph [ref=e1207]: Vasantha
+                - paragraph [ref=e1210]: July 2026 • Bengaluru, Karnataka 560100, India
+              - paragraph [ref=e1216]: "4"
+            - paragraph [ref=e1218]: Gas filling rate not correct. PSI has reduced but to refill gas proportionately full price 3200 rs was quoted. I didn't go for it as I wasn't convinced. With improved weather usage of AC is less now and cooling effect is also good. So, we will refill during next service. Then the plastic parts were not cleaned well as even after washing looks dirty with black spots.
+          - generic [ref=e1223]:
+            - generic [ref=e1224]:
+              - img:
+                - img "Lopamudra" [ref=e1226]
+              - generic [ref=e1229]:
+                - paragraph [ref=e1230]: Lopamudra
+                - paragraph [ref=e1233]: July 2026 • Horamavu, Bengaluru, Karnataka 560043, India
+              - paragraph [ref=e1239]: "5"
+            - paragraph [ref=e1241]: Good work done
+      - generic [ref=e1247]:
+        - generic [ref=e1263]:
+          - paragraph [ref=e1266]: Explore Bangalore, India's latest addition—immerse in the Wood Polish experience.
+          - paragraph [ref=e1269]: "Unveiling premium services in Bangalore, India: check out the newly launched Appliance Repair."
+        - generic [ref=e1284]:
+          - heading "#1 AC cleaning services by Urban Company" [level=2] [ref=e1285]
+          - paragraph [ref=e1288]: "Explore our comprehensive range of AC cleaning services! If you're searching for 'split ac service near me' or 'window ac service near me' or any related query, you've landed in the right place. Our mission is to ensure your AC operates at its peak efficiency, providing you with cool comfort throughout the year. Explore our range of AC service options:"
+        - generic [ref=e1293]:
+          - generic [ref=e1302]:
+            - img:
+              - img "Best AC service with foam jet technology in Bangalore, India" [ref=e1304]
+          - generic [ref=e1318]:
+            - heading "Foam & power jet AC service in Bangalore, India" [level=3] [ref=e1319]
+            - paragraph [ref=e1322]: "Your AC unit's performance is affected by dust and debris from surroundings. Our foam & power jet AC service protects your AC from the clutches of dirt and grime, by ensuring the best AC filter cleaning. This service includes:"
+            - generic [ref=e1324]:
+              - paragraph [ref=e1326]: "1."
+              - paragraph [ref=e1328]: "Mess-free experience: Say goodbye to spills with our unique AC jacket, ensuring a tidy workspace post-service."
+            - generic [ref=e1329]:
+              - paragraph [ref=e1331]: "2."
+              - paragraph [ref=e1333]: "Final checks: We wrap up the service by ensuring proper functioning, checking for pipe blockages and drain tray leakages."
+            - generic [ref=e1334]:
+              - paragraph [ref=e1336]: "3."
+              - paragraph [ref=e1338]: "2X deeper dust removal: With our innovative foam + power jet technology, we ensure a thorough cleaning, leaving no particle behind."
+            - generic [ref=e1339]:
+              - paragraph [ref=e1341]: "4."
+              - paragraph [ref=e1343]: "Pre-service checks: Our technicians conduct detailed inspections, including AC gas checks, to pinpoint any potential repairs."
+            - generic [ref=e1344]:
+              - paragraph [ref=e1346]: "5."
+              - paragraph [ref=e1348]: "Comprehensive indoor & outdoor cleaning: From meticulously cleaning the indoor unit to powerfully rinsing the outdoor unit, we cover every nook and cranny."
+        - generic [ref=e1353]:
+          - generic [ref=e1367]:
+            - heading "Anti-rust deep clean AC service" [level=3] [ref=e1368]
+            - paragraph [ref=e1371]: Our anti-rust deep clean AC service safeguards your AC's longevity and performance by eliminating rust-induced gas leakages.
+            - generic [ref=e1373]:
+              - paragraph [ref=e1375]: "1."
+              - paragraph [ref=e1377]: "Prevents gas leakages: Our unique anti-rust formula shields your AC from frequent gas leakages, ensuring long-lasting performance."
+            - generic [ref=e1378]:
+              - paragraph [ref=e1380]: "2."
+              - paragraph [ref=e1382]: "Applicable on split & window ACs: Whether you own a split or window AC, our anti-rust treatment has got you covered."
+          - generic [ref=e1397]:
+            - heading "Power jet AC service" [level=3] [ref=e1398]
+            - paragraph [ref=e1401]: When it comes to enhancing cooling performance, our power jet AC service stands out in the market. Bid farewell to AC cooling issues with our specialized power jet AC servicing.
+            - generic [ref=e1403]:
+              - paragraph [ref=e1405]: "1."
+              - paragraph [ref=e1407]: "Indoor & basic outdoor cleaning: While we focus on intensively cleaning the indoor unit, we ensure a basic cleanup for the outdoor counterpart."
+            - generic [ref=e1408]:
+              - paragraph [ref=e1410]: "2."
+              - paragraph [ref=e1412]: "Enhanced cooling performance: Say hello to a refreshing breeze as we work our magic with power jet AC servicing."
+            - generic [ref=e1413]:
+              - paragraph [ref=e1415]: "3."
+              - paragraph [ref=e1417]: "Pre & post service checks: Our technicians leave no stone unturned, conducting thorough inspections before and after the service to ensure optimal functionality."
+        - generic [ref=e1432]:
+          - heading "Here are 4 ways in which Urban Company provides the best AC service & repair near you" [level=2] [ref=e1433]
+          - paragraph [ref=e1436]: "1. Advanced cleaning tools: Say goodbye to manual cleaning techniques, we harness the power of foam cleaning & power jet technology for unmatched results."
+          - paragraph [ref=e1439]: "2. Comprehensive internal cleaning: Unlike competitors, we ensure thorough cleaning of all internal parts including ac filter cleaning, leaving no corner untouched."
+          - paragraph [ref=e1442]: "3. Pre & post service checks: From start to finish, we prioritize meticulous inspections to guarantee a job well done."
+          - paragraph [ref=e1445]: "4. Affordable rates: Ran out of your free AC services? Urban Company provides affordable at home AC service eliminating the need of contacting AC service centres in Bangalore, India."
+          - paragraph [ref=e1448]: Looking for the best ac service centre near you? Book your next AC service request with Urban Company today and experience reliability, efficiency, and cool comfort like never before!
+        - generic [ref=e1463]:
+          - heading "Your comprehensive guide for AC repairs in Bangalore, India" [level=2] [ref=e1464]
+          - paragraph [ref=e1467]: We offer a range of AC repair services in Bangalore, India, which are aimed to keep your AC in top-notch condition. Whether you are looking for a "split ac repair near me" or a "window ac repair near me", we've got you covered with our meticulous AC repair service.
+        - generic [ref=e1472]:
+          - generic [ref=e1486]:
+            - heading "Understanding the scope" [level=3] [ref=e1487]
+            - paragraph [ref=e1490]: When it comes to AC repair, precision is important. Our skilled technicians delve deep into the heart of your air conditioner to diagnose and resolve issues promptly, ensuring optimal performance. From minor adjustments to complex fixes, we handle it all with finesse.
+            - heading "Inclusions and exclusions" [level=3] [ref=e1492]
+            - paragraph [ref=e1495]: Our AC repair service leaves no stone unturned. We meticulously inspect every component, from the coils to the filters, ensuring thorough cleaning and maintenance. However, please note that certain parts, such as spare components beyond our standard toolkit may require additional charges, for example, AC pcb repairs, etc.
+            - heading "Benefits unveiled" [level=3] [ref=e1497]
+            - paragraph [ref=e1500]: Experience the difference with our AC repair services near you. Enjoy uninterrupted cooling and enhanced energy efficiency as our experts fine-tune your unit to perfection. Say goodbye to unwanted noise, erratic cooling, and pesky leaks with our comprehensive repair solutions.
+            - heading "The procedure unveiled" [level=3] [ref=e1502]
+            - paragraph [ref=e1505]: Our technicians kick off the process with a detailed inspection, identifying any underlying issues. With precision and expertise, we address each concern methodically, utilizing high-quality spare parts and cutting-edge tools for lasting results.
+            - heading "Details matter" [level=3] [ref=e1507]
+            - paragraph [ref=e1510]: At Urban Company, we understand the importance of thoroughness. That's why our repair service encompasses pre and post-service checks, ensuring that every aspect of your AC is functioning flawlessly. Bid farewell to worries as we provide a 30-day warranty, offering peace of mind long after the service is completed.
+          - generic [ref=e1520]:
+            - img:
+              - 'img "Urban Company: Best ac repair company in Bangalore, India" [ref=e1522]'
+        - generic [ref=e1536]:
+          - heading "Discover top-notch AC repair services in Bangalore, India" [level=2] [ref=e1537]
+          - paragraph [ref=e1540]: When it comes to AC repair, trust only the best. Urban Company's dedicated professionals are trained to deliver excellence, backed by years of expertise and a commitment to customer satisfaction. With us, your comfort is our priority, and we go above and beyond to ensure a hassle-free experience.
+          - paragraph [ref=e1543]: In conclusion, AC repair doesn't have to be daunting. With Urban Company's meticulous service, you can be rest assured that your cooling companion is in capable hands.
+        - generic [ref=e1558]:
+          - heading "Need AC gas refill? Look no further!" [level=2] [ref=e1559]
+          - paragraph [ref=e1562]: If you are looking for " AC gas refill near me", you've come to the right place! At Urban Company, we understand the importance of a well-functioning air conditioning system, especially in the sweltering heat in Bangalore, India. Our AC gas refill service is designed to ensure that your AC unit is running smoothly and efficiently, providing you with cool and comfortable air all year round.
+        - generic [ref=e1567]:
+          - generic [ref=e1576]:
+            - img:
+              - 'img "Urban Company: Best ac gas filling company in Bangalore, India" [ref=e1578]'
+          - generic [ref=e1592]:
+            - heading "What to expect with our AC gas refill service:" [level=2] [ref=e1593]
+            - heading "Thorough pre-service checks" [level=3] [ref=e1595]
+            - paragraph [ref=e1598]: Before starting the refill process, our expert technicians conduct a detailed inspection of your AC unit, including checking the gas levels to identify any repairs that may be needed.
+            - heading "Leak identification and fixing" [level=3] [ref=e1600]
+            - paragraph [ref=e1603]: Safety is our top priority. That's why we use advanced techniques such as leak testing with nitrogen, compressed air, and soap solution to identify and fix any leaks in your AC system. Our technicians are skilled in brazing and rechecking to ensure that your AC is leak-free.
+            - heading "Gas refill" [level=3] [ref=e1605]
+            - paragraph [ref=e1608]: Once any leaks are fixed, we proceed with filling the gas by weight or back pressure, depending on the specific requirements of your AC unit. Our goal is to restore your AC's cooling efficiency and performance.
+            - heading "Post-service cleanup" [level=3] [ref=e1610]
+            - paragraph [ref=e1613]: After completing the gas refill, our technicians perform a thorough cleanup of your AC unit and the surrounding service area, leaving no mess behind.
+            - heading "Final checks" [level=3] [ref=e1615]
+            - paragraph [ref=e1618]: Before leaving, our technicians conduct final checks to ensure that your AC is functioning optimally. This includes checking AMP, pressure, air flow, temperature, and noise levels to guarantee your satisfaction.
+        - generic [ref=e1633]:
+          - heading "4 reasons why we provide the best AC gas refill near you" [level=2] [ref=e1634]
+          - paragraph [ref=e1637]: "1. Expert technicians: Our technicians are highly trained and experienced in handling all types of AC systems, ensuring a professional and reliable service every time."
+          - paragraph [ref=e1640]: "2. 30 days warranty: We stand behind the quality of our work. That's why we offer a 30-day warranty on our AC gas refill service, giving you peace of mind."
+          - paragraph [ref=e1643]: "3. Safety first: With Urban Company, you can trust that safety is our top priority. From background-verified technicians to following strict SOPs for safety and hygiene, we ensure a safe and secure service experience."
+          - paragraph [ref=e1646]: "4. Convenient booking: Booking our AC gas refill service is easy and convenient. Simply visit our app or website, choose your service and preferred time slot, and leave the rest to us."
+          - paragraph [ref=e1649]: When it comes to AC gas refill near you, Urban Company is your trusted partner. With our expert technicians, transparent pricing, and commitment to quality, you can be rest assured that your AC unit is in good hands. Book your AC gas refill with us today and enjoy the cool comfort of your home or office all year round!
+        - generic [ref=e1664]:
+          - heading "AC installation & uninstallation made easy" [level=2] [ref=e1665]
+          - paragraph [ref=e1668]: We are the go to company for AC installation and uninstallation services! Whether you're looking to beat the heat with a brand new AC installation or bidding farewell to your old unit with our seamless uninstallation service, we've got you covered. Let's dive into the details of how our services like ac installation and ac uninstallation near you can make your life easier.
+        - generic [ref=e1673]:
+          - generic [ref=e1685]:
+            - generic [ref=e1686]:
+              - img:
+                - 'img "Urban Company: Best AC uninstallation company in Bangalore, India" [ref=e1688]'
+            - generic [ref=e1691]:
+              - heading "AC uninstallation near you" [level=2] [ref=e1692]
+              - paragraph [ref=e1695]: "Saying goodbye to your old AC? Let us handle the uninstallation process for you. Our trained professionals will ensure a hassle-free experience, leaving your space clean and ready for your new AC. Here's what our AC uninstallation service includes:"
+              - heading "Safe removal" [level=3] [ref=e1697]
+              - paragraph [ref=e1700]: Our technicians will carefully uninstall both the indoor and outdoor units, ensuring no damage is caused to your property during the process.
+              - heading "Pipe fixes" [level=3] [ref=e1702]
+              - paragraph [ref=e1705]: Worried about leftover pipes? We've got you covered. Our team will take care of any necessary pipe fixes, leaving your space tidy and free of clutter.
+              - heading "Cleanup" [level=3] [ref=e1707]
+              - paragraph [ref=e1710]: Once the uninstallation is complete, we'll clean up the service area, leaving it spotless and ready for the next steps.
+          - generic [ref=e1723]:
+            - generic [ref=e1724]:
+              - img:
+                - 'img "Urban Company: Best AC installation company in Bangalore, India" [ref=e1726]'
+            - generic [ref=e1729]:
+              - heading "AC installation near you" [level=2] [ref=e1730]
+              - paragraph [ref=e1733]: "Installing a new air conditioner can be a daunting task, but not with Urban Company by your side. Our expert technicians ensure a smooth installation process from start to finish, leaving you with a perfectly functioning AC ready to keep you cool. Here's what you can expect from our AC installation service:"
+              - heading "Comprehensive installation" [level=3] [ref=e1735]
+              - paragraph [ref=e1738]: Whether it's a split AC installation or a window AC installation, our professionals are equipped to handle it all. From drilling and wiring connections to setting up the indoor and outdoor units, we take care of every aspect of the installation process.
+              - heading "Free gas check" [level=3] [ref=e1740]
+              - paragraph [ref=e1743]: Worried about gas leakages? Don't be. We include a thorough gas check as part of our installation service to ensure your AC operates efficiently without any leaks.
+              - heading "Standardized Equipment" [level=3] [ref=e1745]
+              - paragraph [ref=e1748]: We use advanced tools and high-quality materials for all our installations, guaranteeing efficient results and long-lasting performance.
+              - heading "Expert advice" [level=3] [ref=e1750]
+              - paragraph [ref=e1753]: Have questions about your new AC, how to book ac service online or looking for recommendations? Our professionals are here to help. Feel free to ask for expert advice on maintenance, usage, and more.
+        - generic [ref=e1768]:
+          - heading "Choose Urban Company for AC Installation & Uninstallation" [level=2] [ref=e1769]
+          - paragraph [ref=e1772]: At Urban Company, we understand the importance of a properly installed AC for your comfort and convenience. With our AC installation and uninstallation services, you can rest assured knowing that your cooling needs are in good hands. Book your service today and experience the difference for yourself!
+        - generic [ref=e1787]:
+          - 'heading "How to book #1 AC service & repair in Bangalore, India?" [level=2] [ref=e1788]'
+          - paragraph [ref=e1791]: Here are the steps to book the perfect ac service, ac repair, gas filling, ac installation and ac uninstallation in Bangalore, India
+        - generic [ref=e1796]:
+          - generic [ref=e1803]:
+            - generic [ref=e1810]:
+              - 'heading "Step 1: Visit Urban Company''s app or website" [level=3] [ref=e1811]'
+              - paragraph [ref=e1814]: To book ac service, simply open the Urban Company app or visit our website.
+              - paragraph [ref=e1817]: Choose the ' AC Service & Repair' section to explore a range of services tailored just for you.
+            - generic [ref=e1825]:
+              - 'heading "Step 2: Select your desired service and time slot" [level=3] [ref=e1826]'
+              - paragraph [ref=e1829]: Search for your required service, eg. " AC service near me", etc.
+              - paragraph [ref=e1832]: Browse through our extensive list of services, including foam jet ac service, power jet ac service, split ac repairs, window ac repairs, ac pcb repair, ac filter cleaning, ac installation & ac uninstallation
+              - paragraph [ref=e1835]: Pick the service that suits your needs and select a convenient time slot.
+            - generic [ref=e1843]:
+              - 'heading "Step 3: Secure online payment & flexible options" [level=3] [ref=e1844]'
+              - paragraph [ref=e1847]: Once you've finalized your booking, make a hassle-free and secure online payment through our app or website. You can conveniently reschedule or cancel the booking as per your needs.
+              - paragraph [ref=e1850]: Enjoy peace of mind with our secure transaction process.
+            - generic [ref=e1858]:
+              - 'heading "Step 4: Automatic professional assignment" [level=3] [ref=e1859]'
+              - paragraph [ref=e1862]: Our advanced algorithms ensure that you get the best-suited professional for your chosen service based on availability, experience, and ratings.
+          - generic [ref=e1876]:
+            - img:
+              - img "Urban company offers wide range of AC Service & AC Repair services at home which you can book for any time that suits you the best." [ref=e1878]
+        - generic [ref=e1891]:
+          - heading "Post-service options" [level=3] [ref=e1892]
+          - paragraph [ref=e1895]: Love the service and want to rebook the same professional? It's just a click away for our repeat customers.
+          - paragraph [ref=e1898]: In case you have any questions or concerns after the service, our "Help Center" is ready to assist you.
+          - paragraph [ref=e1901]: After your professional is assigned, you can communicate with them through the Urban Company app. Have specific requests or questions? Feel free to chat!
+          - paragraph [ref=e1904]: Now that you know the ins and outs of booking Urban Company's AC repair and AC service, get ready to experience the expertise and covenience that we offer.
+        - generic [ref=e1914]:
+          - heading "Most Frequently Rebooked" [level=2] [ref=e1918]
+          - generic [ref=e1920]:
+            - generic [ref=e1922]:
+              - generic [ref=e1926] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "painting_lhp_polish"
+                - paragraph [ref=e1932]: painting_lhp_polish
+              - generic [ref=e1938] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "RO video consulation"
+                - paragraph [ref=e1944]: RO video consulation
+              - generic [ref=e1950] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "Insta Help"
+                - paragraph [ref=e1956]: Insta Help
+              - generic [ref=e1962] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "zepto_b2b"
+                - paragraph [ref=e1968]: zepto_b2b
+              - generic [ref=e1974] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "Home makeover visit"
+                - paragraph [ref=e1980]: Home makeover visit
+              - generic [ref=e1986] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "Online Yoga Training"
+                - paragraph [ref=e1992]: Online Yoga Training
+              - generic [ref=e1998] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "Weekly Bathroom Cleaning in Bangalore, India"
+                - link "Weekly Bathroom Cleaning in Bangalore, India" [ref=e2004]:
+                  - /url: https://www.urbancompany.com/bangalore-bathroom-subscription-service
+              - generic [ref=e2010] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "Wall Panels, Textures And Moulding in Bangalore, India"
+                - link "Wall Panels, Textures And Moulding in Bangalore, India" [ref=e2016]:
+                  - /url: https://www.urbancompany.com/bangalore-painting-rentals
+              - generic [ref=e2022] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "Video Consultation Washing Machine"
+                - paragraph [ref=e2028]: Video Consultation Washing Machine
+              - generic [ref=e2034] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img "Tile Grouting"
+                - paragraph [ref=e2040]: Tile Grouting
+            - button "Button Double Tap to perform action" [ref=e2043] [cursor=pointer]
+        - 'heading "Why Urban Company is the #1 AC repair and AC service provider in Bangalore, India" [level=2] [ref=e2061]'
+        - generic [ref=e2066]:
+          - generic [ref=e2078]:
+            - generic [ref=e2080]:
+              - heading "Reliable support, round the clock" [level=3] [ref=e2081]
+              - paragraph [ref=e2084]: Got questions or concerns? Our dedicated support team is just a click away. With our "Help Center," you can get assistance within minutes, ensuring a smooth and stress-free experience.
+            - generic [ref=e2087]:
+              - heading "Customer-centric approach" [level=3] [ref=e2088]
+              - paragraph [ref=e2091]: We value your convenience and flexibility. Whether you need to reschedule, cancel, or add on to your booking, our user-friendly platform allows you to do so hassle-free.
+          - generic [ref=e2104]:
+            - generic [ref=e2106]:
+              - heading "Comprehensive AC solutions" [level=3] [ref=e2107]
+              - paragraph [ref=e2110]: From foam & power jet AC service to gas leak fix & refill, we offer a comprehensive range of services tailored to meet your AC needs. Our professionals conduct detailed pre and post-service checks to ensure your AC runs smoothly for days to come.
+            - generic [ref=e2113]:
+              - heading "Safety first, always" [level=3] [ref=e2114]
+              - paragraph [ref=e2117]: Your safety is our priority. That's why all our professionals adhere strictly to safety protocols, including background verification, following COVID guidelines, and carrying out services with utmost care and hygiene.
+            - generic [ref=e2120]:
+              - heading "Competitive edge over others" [level=3] [ref=e2121]
+              - paragraph [ref=e2124]: Unlike our competitors, we prioritize not just fixing issues but providing an unparalleled experience. While others may focus on one aspect, Urban Company is your holistic partner in ensuring your AC runs smoothly and efficiently.
+        - heading "AC service charges - Transparent rates for AC installation charges, AC repair, and more" [level=2] [ref=e2140]
+        - generic [ref=e2145]:
+          - generic [ref=e2152]:
+            - generic [ref=e2159]:
+              - heading "Other Parts" [level=3] [ref=e2160]
+              - generic [ref=e2162]:
+                - paragraph [ref=e2163]: Drain pipe adjust
+                - paragraph [ref=e2164]: ₹100
+              - generic [ref=e2166]:
+                - paragraph [ref=e2167]: Insulation refix
+                - paragraph [ref=e2168]: ₹100
+              - generic [ref=e2170]:
+                - paragraph [ref=e2171]: Noise issue repair
+                - paragraph [ref=e2172]: ₹499
+              - generic [ref=e2174]:
+                - paragraph [ref=e2175]: Swing blade replaced
+                - paragraph [ref=e2176]: ₹749
+              - generic [ref=e2178]:
+                - paragraph [ref=e2179]: Grill Cover
+                - paragraph [ref=e2180]: ₹1849
+              - generic [ref=e2182]:
+                - paragraph [ref=e2183]: Compressor grommets set
+                - paragraph [ref=e2184]: ₹299
+              - generic [ref=e2186]:
+                - paragraph [ref=e2187]: Universal remote
+                - paragraph [ref=e2188]: ₹800
+              - generic [ref=e2190]:
+                - paragraph [ref=e2191]: Water tray
+                - paragraph [ref=e2192]: ₹700
+              - generic [ref=e2194]:
+                - paragraph [ref=e2195]: Stabilizer connection
+                - paragraph [ref=e2196]: ₹399
+              - generic [ref=e2198]:
+                - paragraph [ref=e2199]: Rubber washer (1 pc)
+                - paragraph [ref=e2200]: ₹50
+              - generic [ref=e2202]:
+                - paragraph [ref=e2203]: Stabilizer repair
+                - paragraph [ref=e2204]: ₹1500
+              - generic [ref=e2206]:
+                - paragraph [ref=e2207]: AC fan blade
+                - paragraph [ref=e2208]: ₹1199
+              - generic [ref=e2210]:
+                - paragraph [ref=e2211]: Sleeves (per piece)
+                - paragraph [ref=e2212]: ₹50
+            - generic [ref=e2220]:
+              - heading "Minor Repairs" [level=3] [ref=e2221]
+              - generic [ref=e2223]:
+                - paragraph [ref=e2224]: Water Leakage Repaired- Split AC
+                - paragraph [ref=e2225]: ₹649
+              - generic [ref=e2227]:
+                - paragraph [ref=e2228]: Drain pipe adjust
+                - paragraph [ref=e2229]: ₹399
+              - generic [ref=e2231]:
+                - paragraph [ref=e2232]: Noise adjustment in blower
+                - paragraph [ref=e2233]: ₹399
+              - generic [ref=e2235]:
+                - paragraph [ref=e2236]: Water Leakage Repaired- Window AC
+                - paragraph [ref=e2237]: ₹449
+              - generic [ref=e2239]:
+                - paragraph [ref=e2240]: Tighten/ Replace Thimble
+                - paragraph [ref=e2241]: ₹399
+              - generic [ref=e2243]:
+                - paragraph [ref=e2244]: Adjust pipe and tight compressor screw
+                - paragraph [ref=e2245]: ₹349
+              - generic [ref=e2247]:
+                - paragraph [ref=e2248]: External Dust/stick removal
+                - paragraph [ref=e2249]: ₹399
+              - generic [ref=e2251]:
+                - paragraph [ref=e2252]: Noise adjustment in swing flap
+                - paragraph [ref=e2253]: ₹399
+              - generic [ref=e2255]:
+                - paragraph [ref=e2256]: Insulation refix
+                - paragraph [ref=e2257]: ₹399
+              - generic [ref=e2259]:
+                - paragraph [ref=e2260]: Adjust Grill Locks
+                - paragraph [ref=e2261]: ₹349
+              - generic [ref=e2263]:
+                - paragraph [ref=e2264]: Connector wires replaced (1m)
+                - paragraph [ref=e2265]: ₹449
+              - generic [ref=e2267]:
+                - paragraph [ref=e2268]: Noise adjustment in motor
+                - paragraph [ref=e2269]: ₹399
+              - generic [ref=e2271]:
+                - paragraph [ref=e2272]: Noise adjustment in cabinet
+                - paragraph [ref=e2273]: ₹399
+            - generic [ref=e2281]:
+              - heading "AC service charges & AC installation charges" [level=3] [ref=e2282]
+              - generic [ref=e2284]:
+                - paragraph [ref=e2285]: Universal back plate
+                - paragraph [ref=e2286]: ₹300
+              - generic [ref=e2288]:
+                - paragraph [ref=e2289]: Power Jet AC Service (Split)
+                - paragraph [ref=e2290]: ₹549
+              - generic [ref=e2292]:
+                - paragraph [ref=e2293]: Uninstall
+                - paragraph [ref=e2294]: ₹1099
+              - generic [ref=e2296]:
+                - paragraph [ref=e2297]: Split AC Wall stand
+                - paragraph [ref=e2298]: ₹750
+              - generic [ref=e2300]:
+                - paragraph [ref=e2301]: Foam & Power Jet AC Service (Window)
+                - paragraph [ref=e2302]: ₹599
+              - generic [ref=e2304]:
+                - paragraph [ref=e2305]: Power Jet AC Service (Window)
+                - paragraph [ref=e2306]: ₹449
+              - generic [ref=e2308]:
+                - paragraph [ref=e2309]: Fastner complete set
+                - paragraph [ref=e2310]: ₹200
+              - generic [ref=e2312]:
+                - paragraph [ref=e2313]: Foam & Power Jet AC Service (Split)
+                - paragraph [ref=e2314]: ₹649
+              - generic [ref=e2316]:
+                - paragraph [ref=e2317]: Anti-rust deep clean AC service
+                - paragraph [ref=e2318]: ₹999
+              - generic [ref=e2320]:
+                - paragraph [ref=e2321]: Floor stand
+                - paragraph [ref=e2322]: ₹550
+              - generic [ref=e2324]:
+                - paragraph [ref=e2325]: Indoor unit reinstalled
+                - paragraph [ref=e2326]: ₹699
+              - generic [ref=e2328]:
+                - paragraph [ref=e2329]: AC installation charges
+                - paragraph [ref=e2330]: ₹2099
+              - generic [ref=e2332]:
+                - paragraph [ref=e2333]: 1 m copper pipe set (insulation,wire & drainpipe)
+                - paragraph [ref=e2334]: ₹350
+              - generic [ref=e2336]:
+                - paragraph [ref=e2337]: Drain pipe (1m)
+                - paragraph [ref=e2338]: ₹100
+              - generic [ref=e2340]:
+                - paragraph [ref=e2341]: Service lite
+                - paragraph [ref=e2342]: ₹449
+              - generic [ref=e2344]:
+                - paragraph [ref=e2345]: Outdoor unit reinstalled
+                - paragraph [ref=e2346]: ₹799
+          - generic [ref=e2354]:
+            - generic [ref=e2361]:
+              - heading "Electrical Parts" [level=3] [ref=e2362]
+              - generic [ref=e2364]:
+                - paragraph [ref=e2365]: Capacitor 35-50 mfd
+                - paragraph [ref=e2366]: ₹749
+              - generic [ref=e2368]:
+                - paragraph [ref=e2369]: Inverter PCB repaired
+                - paragraph [ref=e2370]: ₹4500
+              - generic [ref=e2372]:
+                - paragraph [ref=e2373]: Convert PCB with remote
+                - paragraph [ref=e2374]: ₹1500
+              - generic [ref=e2376]:
+                - paragraph [ref=e2377]: Non-Inverter PCB repaired
+                - paragraph [ref=e2378]: ₹1500
+              - generic [ref=e2380]:
+                - paragraph [ref=e2381]: Capacitor 2-5 mfd
+                - paragraph [ref=e2382]: ₹599
+              - generic [ref=e2384]:
+                - paragraph [ref=e2385]: Replace LVT
+                - paragraph [ref=e2386]: ₹1249
+              - generic [ref=e2388]:
+                - paragraph [ref=e2389]: Contactor replaced
+                - paragraph [ref=e2390]: ₹999
+              - generic [ref=e2392]:
+                - paragraph [ref=e2393]: Replace sensor
+                - paragraph [ref=e2394]: ₹849
+              - generic [ref=e2396]:
+                - paragraph [ref=e2397]: Contactor Daikin/ O-General
+                - paragraph [ref=e2398]: ₹1949
+              - generic [ref=e2400]:
+                - paragraph [ref=e2401]: Capacitor 50-60 mfd
+                - paragraph [ref=e2402]: ₹749
+              - generic [ref=e2404]:
+                - paragraph [ref=e2405]: Capacitor 10-25 mfd
+                - paragraph [ref=e2406]: ₹749
+            - generic [ref=e2414]:
+              - heading "Fan Motors" [level=3] [ref=e2415]
+              - generic [ref=e2417]:
+                - paragraph [ref=e2418]: Noise issue repair
+                - paragraph [ref=e2419]: ₹499
+              - generic [ref=e2421]:
+                - paragraph [ref=e2422]: Motor Bearing Change
+                - paragraph [ref=e2423]: ₹1000
+              - generic [ref=e2425]:
+                - paragraph [ref=e2426]: Fan motor - Split AC
+                - paragraph [ref=e2427]: ₹2299
+              - generic [ref=e2429]:
+                - paragraph [ref=e2430]: Blower motor - Split AC
+                - paragraph [ref=e2431]: ₹2699
+              - generic [ref=e2433]:
+                - paragraph [ref=e2434]: Replace Flap/Swing Motor
+                - paragraph [ref=e2435]: ₹899
+              - generic [ref=e2437]:
+                - paragraph [ref=e2438]: Blower replaced
+                - paragraph [ref=e2439]: ₹1599
+              - generic [ref=e2441]:
+                - paragraph [ref=e2442]: Fan motor - Window AC
+                - paragraph [ref=e2443]: ₹3099
+            - generic [ref=e2451]:
+              - heading "Gas Charging" [level=3] [ref=e2452]
+              - generic [ref=e2454]:
+                - paragraph [ref=e2455]: Gas Charging
+                - paragraph [ref=e2456]: ₹2800
+              - generic [ref=e2458]:
+                - paragraph [ref=e2459]: Replacement Compressor (1 Ton)
+                - paragraph [ref=e2460]: ₹4000
+              - generic [ref=e2462]:
+                - paragraph [ref=e2463]: Electronic Expansion valve (inverter AC)
+                - paragraph [ref=e2464]: ₹1200
+              - generic [ref=e2466]:
+                - paragraph [ref=e2467]: Replacement Compressor (2 Ton)
+                - paragraph [ref=e2468]: ₹5000
+              - generic [ref=e2470]:
+                - paragraph [ref=e2471]: Dead nut (1 pc)
+                - paragraph [ref=e2472]: ₹50
+              - generic [ref=e2474]:
+                - paragraph [ref=e2475]: Copper Cooling Coil (Split AC)
+                - paragraph [ref=e2476]: ₹6500
+              - generic [ref=e2478]:
+                - paragraph [ref=e2479]: Cooling Coil / Condenser Coil repair
+                - paragraph [ref=e2480]: ₹899
+              - generic [ref=e2482]:
+                - paragraph [ref=e2483]: Copper Coil Condensor 1 ton Split
+                - paragraph [ref=e2484]: ₹4000
+              - generic [ref=e2486]:
+                - paragraph [ref=e2487]: Replacement Compressor (1.5 Ton)
+                - paragraph [ref=e2488]: ₹4500
+              - generic [ref=e2490]:
+                - paragraph [ref=e2491]: Flair nut replaced
+                - paragraph [ref=e2492]: ₹150
+              - generic [ref=e2494]:
+                - paragraph [ref=e2495]: Compressor 1.5 ton
+                - paragraph [ref=e2496]: ₹8500
+              - generic [ref=e2498]:
+                - paragraph [ref=e2499]: Copper Coil Condensor 2 ton Split
+                - paragraph [ref=e2500]: ₹5300
+              - generic [ref=e2502]:
+                - paragraph [ref=e2503]: Compressor 2 ton
+                - paragraph [ref=e2504]: ₹10000
+              - generic [ref=e2506]:
+                - paragraph [ref=e2507]: U Band replaced (1 pc)
+                - paragraph [ref=e2508]: ₹50
+              - generic [ref=e2510]:
+                - paragraph [ref=e2511]: Service valve replaced (1 Pc)
+                - paragraph [ref=e2512]: ₹400
+              - generic [ref=e2514]:
+                - paragraph [ref=e2515]: Capillary and filter replaced
+                - paragraph [ref=e2516]: ₹350
+              - generic [ref=e2518]:
+                - paragraph [ref=e2519]: Pin Valve for window AC
+                - paragraph [ref=e2520]: ₹50
+              - generic [ref=e2522]:
+                - paragraph [ref=e2523]: Copper Cooling Coil/Condensor Coil (Window AC)
+                - paragraph [ref=e2524]: ₹5000
+              - generic [ref=e2526]:
+                - paragraph [ref=e2527]: Copper Coil Condensor 1.5 ton Split
+                - paragraph [ref=e2528]: ₹4800
+              - generic [ref=e2530]:
+                - paragraph [ref=e2531]: Compressor 0.8-1 ton
+                - paragraph [ref=e2532]: ₹6500
+        - heading "Know more in depth about AC services and repairs in Bangalore, India" [level=2] [ref=e2548]
+        - generic [ref=e2553]:
+          - generic [ref=e2560]:
+            - generic [ref=e2567]:
+              - heading "Foam & power jet AC service (Split AC)" [level=3] [ref=e2568]
+              - paragraph [ref=e2571]: Looking for reliable AC service near me? Urban Company's foam + power jet technology offers an unparalleled experience, providing 2X deeper dust removal. We guarantee an intense cleaning of both indoor and outdoor units, going beyond the surface to give your AC the treatment it deserves.
+              - generic [ref=e2573]:
+                - paragraph [ref=e2575]: "1."
+                - paragraph [ref=e2577]: "Pre-service checks: A detailed inspection, including gas checks, to identify repairs."
+              - generic [ref=e2578]:
+                - paragraph [ref=e2580]: "2."
+                - paragraph [ref=e2582]: "Outdoor unit cleaning: Thorough cleaning with a power jet, ensuring a mess-free experience."
+              - generic [ref=e2583]:
+                - paragraph [ref=e2585]: "3."
+                - paragraph [ref=e2587]: "Indoor unit cleaning: Deep cleaning of filters, coil, fins, and drain trays with foam and power jet."
+              - generic [ref=e2588]:
+                - paragraph [ref=e2590]: "4."
+                - paragraph [ref=e2592]: "Mess-free experience: AC jacket for spill prevention during service and post-service cleanup."
+              - generic [ref=e2593]:
+                - paragraph [ref=e2595]: "5."
+                - paragraph [ref=e2597]: "Final checks: Our technician ensures proper functions by checking pipe blockage & drain tray leakage at the end of the service."
+            - generic [ref=e2605]:
+              - heading "Anti-rust deep clean AC service" [level=3] [ref=e2606]
+              - paragraph [ref=e2609]: Prevent frequent gas leakages with our unique anti-rust formula, applicable to both split and window ACs. Enjoy a 30 days warranty for reliable AC repair near me with Urban Company.
+            - generic [ref=e2617]:
+              - heading "Same day AC repair (Split/Window)" [level=3] [ref=e2618]
+              - paragraph [ref=e2621]: For a detailed issue diagnosis and same-day resolution, Urban Company's AC repair services near me have you covered. Whether it's less/no cooling, power on issues, unwanted noise/smell, or water leakage, we provide a 30 days warranty for all repairs.
+              - paragraph [ref=e2624]: What all problems are covered in AC repair service?
+              - generic [ref=e2626]:
+                - paragraph [ref=e2628]: "1."
+                - paragraph [ref=e2630]: Power on issue
+              - generic [ref=e2631]:
+                - paragraph [ref=e2633]: "2."
+                - paragraph [ref=e2635]: Unwanted noise/smell
+              - generic [ref=e2636]:
+                - paragraph [ref=e2638]: "3."
+                - paragraph [ref=e2640]: Water leakage
+              - generic [ref=e2641]:
+                - paragraph [ref=e2643]: "4."
+                - paragraph [ref=e2645]: Less/No cooling
+              - paragraph [ref=e2648]: What makes our AC repair better than others?
+              - generic [ref=e2650]:
+                - paragraph [ref=e2652]: "1."
+                - paragraph [ref=e2654]: Adjustment of inspection fee in the invoice if Urban Company repair service is availed.
+              - generic [ref=e2655]:
+                - paragraph [ref=e2657]: "2."
+                - paragraph [ref=e2659]: Accurate inspection followed by a repair quotation.
+              - generic [ref=e2660]:
+                - paragraph [ref=e2662]: "3."
+                - paragraph [ref=e2664]: Enjoy a 30 days warranty.
+              - generic [ref=e2665]:
+                - paragraph [ref=e2667]: "4."
+                - paragraph [ref=e2669]: Final checks & cleanup.
+              - generic [ref=e2670]:
+                - paragraph [ref=e2672]: "5."
+                - paragraph [ref=e2674]: AC repair using high-quality spare parts & tools.
+          - generic [ref=e2682]:
+            - generic [ref=e2689]:
+              - heading "Power jet AC service (Window)" [level=3] [ref=e2690]
+              - paragraph [ref=e2693]: Experience the intensity of our power jet AC service for window ACs.
+              - generic [ref=e2695]:
+                - paragraph [ref=e2697]: "1."
+                - paragraph [ref=e2699]: "Final checks: Technician ensures proper functions by checking pipe blockage & drain tray leakage at the end of the service."
+              - generic [ref=e2700]:
+                - paragraph [ref=e2702]: "2."
+                - paragraph [ref=e2704]: "Pre-service checks: Detailed inspection, including gas checks, to identify repairs."
+            - generic [ref=e2712]:
+              - heading "Foam & power jet window AC service" [level=3] [ref=e2713]
+              - paragraph [ref=e2716]: Experience 2X deeper dust removal with our foam + power jet technology for your window AC.
+              - generic [ref=e2718]:
+                - paragraph [ref=e2720]: "1."
+                - paragraph [ref=e2722]: "Pre-service checks: Detailed inspection, including gas checks, to identify repairs."
+              - generic [ref=e2723]:
+                - paragraph [ref=e2725]: "2."
+                - paragraph [ref=e2727]: "AC cleaning: Deep cleaning of filters, coil, fins, and drain trays with foam and power jet."
+              - generic [ref=e2728]:
+                - paragraph [ref=e2730]: "3."
+                - paragraph [ref=e2732]: "Final checks: The technician ensures proper functions by checking pipe blockage & drain tray leakage at the end of the service."
+            - generic [ref=e2740]:
+              - heading "Power jet split AC service" [level=3] [ref=e2741]
+              - paragraph [ref=e2744]: Seeking an enhanced cooling performance for your AC? Urban Company's power jet servicing is your answer. We offer an intense cleaning of the indoor unit and basic cleaning of the outdoor unit, ensuring your AC operates at its best.
+              - generic [ref=e2746]:
+                - paragraph [ref=e2748]: "1."
+                - paragraph [ref=e2750]: "Final checks: The technician ensures proper functions by checking pipe blockage & drain tray leakage at the end of the service."
+              - generic [ref=e2751]:
+                - paragraph [ref=e2753]: "2."
+                - paragraph [ref=e2755]: "AC cleaning: Deep cleaning of filters, coil, fins, and drain trays with the power jet."
+              - generic [ref=e2756]:
+                - paragraph [ref=e2758]: "3."
+                - paragraph [ref=e2760]: "Pre-service checks: Detailed inspection, including gas checks, to identify repairs."
+            - generic [ref=e2768]:
+              - heading "Gas leak fix & refill" [level=3] [ref=e2769]
+              - generic [ref=e2771]:
+                - paragraph [ref=e2773]: "1."
+                - paragraph [ref=e2775]: "Final checks: Technician checks AMP, pressure, air flow, temp, noise level at the end to ensure quality."
+              - generic [ref=e2776]:
+                - paragraph [ref=e2778]: "2."
+                - paragraph [ref=e2780]: "Leak identification & fixing: Leak testing with nitrogen, compressed air & soap solution. Fixing the leaks by brazing & rechecking."
+              - generic [ref=e2781]:
+                - paragraph [ref=e2783]: "3."
+                - paragraph [ref=e2785]: "Post-service cleanup: Cleanup of the AC & service area."
+              - generic [ref=e2786]:
+                - paragraph [ref=e2788]: "4."
+                - paragraph [ref=e2790]: "Gas refill: Filling of the gas by weight/ back pressure."
+              - generic [ref=e2791]:
+                - paragraph [ref=e2793]: "5."
+                - paragraph [ref=e2795]: "Pre-service checks: Voltage, ampere, pressure, and other safety checks."
+        - generic [ref=e2810]:
+          - heading "Service comparison from other competitors" [level=2] [ref=e2811]
+          - generic [ref=e2813]:
+            - paragraph [ref=e2815]: "1."
+            - paragraph [ref=e2817]: "Expected life: Urban Company: 2-3 years, Others: 1-3 months."
+          - generic [ref=e2818]:
+            - paragraph [ref=e2820]: "2."
+            - paragraph [ref=e2822]: "Warranty: Enjoy a 30-day warranty with Urban Company, a benefit others may not provide."
+          - generic [ref=e2823]:
+            - paragraph [ref=e2825]: "3."
+            - paragraph [ref=e2827]: "Impact on cooling coil: Urban Company ensures no impact on the cooling coil, unlike others who use brush cleaning, increasing the chances of coil bending."
+          - generic [ref=e2828]:
+            - paragraph [ref=e2830]: "4."
+            - paragraph [ref=e2832]: "Internal Parts Cleaning: Urban Company ensures the cleaning of all internal parts, a feature uncertain in others' services."
+          - generic [ref=e2833]:
+            - paragraph [ref=e2835]: "5."
+            - paragraph [ref=e2837]: "Cleaning tools: We utilize foam cleaning & power jet technology, setting us apart from manual cleaning with brush & water."
+          - generic [ref=e2838]:
+            - paragraph [ref=e2840]: "6."
+            - paragraph [ref=e2842]: "AC power consumption: Low after Urban Company service, high after others' services."
+          - generic [ref=e2843]:
+            - paragraph [ref=e2845]: "7."
+            - paragraph [ref=e2847]: "Gas leak identification & leak fixing: Urban Company provides this service while others don't."
+        - heading "Looking for a specific brand?" [level=2] [ref=e2863]
+        - heading "What are people in Bangalore, India looking for?" [level=2] [ref=e2879]
+        - generic [ref=e2884]:
+          - generic [ref=e2896]:
+            - generic [ref=e2903] [cursor=pointer]:
+              - heading "Plumbers Hyperlocal" [level=4] [ref=e2905]
+              - link "Top Plumber services in Bangalore, India at your home" [ref=e2908]:
+                - /url: https://www.urbancompany.com/bangalore-plumbers-density
+              - link "Top-class reliable Plumber services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e2911]:
+                - /url: https://www.urbancompany.com/bangalore-plumbers-density
+            - generic [ref=e2921] [cursor=pointer]:
+              - heading "Hair Studio for Women" [level=4] [ref=e2923]
+              - link "Top Hair Studio For Women services in Bangalore, India at your home" [ref=e2926]:
+                - /url: https://www.urbancompany.com/bangalore-women-hair-services
+              - link "Top-class reliable Hair Studio For Women services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e2929]:
+                - /url: https://www.urbancompany.com/bangalore-women-hair-services
+            - generic [ref=e2939] [cursor=pointer]:
+              - heading "Carpenters Hyperlocal" [level=4] [ref=e2941]
+              - link "Top Carpenter services in Bangalore, India at your home" [ref=e2944]:
+                - /url: https://www.urbancompany.com/bangalore-carpenters-density
+              - link "Top-class reliable Carpenter services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e2947]:
+                - /url: https://www.urbancompany.com/bangalore-carpenters-density
+            - generic [ref=e2957] [cursor=pointer]:
+              - heading "Spa for Women" [level=4] [ref=e2959]
+              - link "Top Prime Spa For Women services in Bangalore, India at your home" [ref=e2962]:
+                - /url: https://www.urbancompany.com/bangalore-spa-at-home
+              - link "Top-class reliable Prime Spa For Women services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e2965]:
+                - /url: https://www.urbancompany.com/bangalore-spa-at-home
+          - generic [ref=e2980]:
+            - generic [ref=e2987] [cursor=pointer]:
+              - heading "Washing Machine Repair" [level=4] [ref=e2989]
+              - link "Top Washing Machine Repair services in Bangalore, India at your home" [ref=e2992]:
+                - /url: https://www.urbancompany.com/bangalore-washing-machine-repair
+              - link "Top-class reliable Washing Machine Repair services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e2995]:
+                - /url: https://www.urbancompany.com/bangalore-washing-machine-repair
+            - generic [ref=e3005] [cursor=pointer]:
+              - heading "Electrician Hyperlocal" [level=4] [ref=e3007]
+              - link "Top Electrician services in Bangalore, India at your home" [ref=e3010]:
+                - /url: https://www.urbancompany.com/bangalore-electrician-density
+              - link "Top-class reliable Electrician services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e3013]:
+                - /url: https://www.urbancompany.com/bangalore-electrician-density
+            - generic [ref=e3023] [cursor=pointer]:
+              - heading "Salon for Men" [level=4] [ref=e3025]
+              - link "Top Salon Prime For Men services in Bangalore, India at your home" [ref=e3028]:
+                - /url: https://www.urbancompany.com/bangalore-mens-grooming
+              - link "Top-class reliable Salon Prime For Men services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e3031]:
+                - /url: https://www.urbancompany.com/bangalore-mens-grooming
+            - generic [ref=e3041] [cursor=pointer]:
+              - heading "Salon" [level=4] [ref=e3043]
+              - link "Top Salon Prime For Women services in Bangalore, India at your home" [ref=e3046]:
+                - /url: https://www.urbancompany.com/bangalore-salon-at-home
+              - link "Top-class reliable Salon Prime For Women services at your convenience in Bangalore, India. * Trained professionals * Best prices" [ref=e3049]:
+                - /url: https://www.urbancompany.com/bangalore-salon-at-home
+      - generic [ref=e3068]:
+        - heading "About Ac" [level=2] [ref=e3073]
+        - generic [ref=e3076]:
+          - heading "Services offered in AC Service and Repair" [level=2] [ref=e3077]
+          - generic [ref=e3079]:
+            - paragraph [ref=e3081]: "1."
+            - paragraph [ref=e3083]: "Repairs: Choose this option for diagnosis and repair of your AC. The professional will check the AC upon visitation and provide with quotation depending on the condition of the appliance."
+          - generic [ref=e3084]:
+            - paragraph [ref=e3086]: "2."
+            - paragraph [ref=e3088]: "Uninstalling an existing AC: Select this option when you need professionals to dismount your AC. The appliance will be checked before the AC uninstallation."
+          - generic [ref=e3089]:
+            - paragraph [ref=e3091]: "3."
+            - paragraph [ref=e3093]: "Installing an AC: Choose this service for AC installation at your place. The professional will ensure that the AC is running properly as gas pressure and performance of the appliance will be checked post AC installation."
+          - generic [ref=e3094]:
+            - paragraph [ref=e3096]: "4."
+            - paragraph [ref=e3098]: "Wet services: This service includes an end to end cleaning of your AC. Cooling coils, condenser coils, outer panel, drain and filet pipes will be extensively cleaned and washed. Choose this service when you want your AC to be properly cleaned."
+          - paragraph [ref=e3101]: Like any other machinery, an appliance such as AC needs to be maintained and looked after for its healthy functioning. Hence, the appliance should receive a proper service before the start of summer season. After all, nothing can be worse than a broken or faulty AC. Hunting a service personnel for AC repair in the sultry weather can be a hassle. You can now book a professional either for service and repair within minutes from your home. You don’t even need to clear your schedule as you can choose your desirable time slot. Urban Company’s AC repair service has proven to be a blessing for our customers as we continue to receive happy testimonials and ratings from our customers.
+      - generic [ref=e3121]:
+        - heading "Quick Links" [level=3] [ref=e3126]
+        - generic [ref=e3127]:
+          - generic [ref=e3130]:
+            - heading "Other services we provide" [level=4] [ref=e3134] [cursor=pointer]
+            - generic [ref=e3139]:
+              - link "Trusted AC gas refill services in Chennai, India" [ref=e3140] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3141]: •
+              - link "AC Cleaner in Sharjah" [ref=e3142] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-cleaner
+              - paragraph [ref=e3143]: •
+              - link "AC Cleaner in Abu Dhabi" [ref=e3144] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-cleaner
+              - paragraph [ref=e3145]: •
+              - 'link "Get #1 split/window AC installation services near you in Kolkata, India" [ref=e3146] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3147]: •
+              - link "AC Cleaning Dubai" [ref=e3148] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-cleaning-dubai
+              - paragraph [ref=e3149]: •
+              - link "Trusted AC gas refill services in Bangalore, India" [ref=e3150] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3151]: •
+              - link "window AC Service near you in Chennai, India" [ref=e3152] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/chennai-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3153]: •
+              - link "Window AC Service near you in Hyderabad, India" [ref=e3154] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3155]: •
+              - 'link "Get #1 split AC Service near you in Bangalore, India" [ref=e3156] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3157]: •
+              - link "Window AC Service near you in Kolkata, India" [ref=e3158] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kolkata-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3159]: •
+              - link "AC Service near you in Sharjah" [ref=e3160] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-service-near-me
+              - paragraph [ref=e3161]: •
+              - link "Deep Clean Ac Service in Mumbai, India" [ref=e3162] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/mumbai-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3163]: •
+              - link "AC Duct Cleaning Dubai" [ref=e3164] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-duct-cleaning-dubai
+              - paragraph [ref=e3165]: •
+              - link "Trusted AC gas refill services in Kolkata, India" [ref=e3166] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3167]: •
+              - link "Window AC Service near you in Mumbai, India" [ref=e3168] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/mumbai-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3169]: •
+              - 'link "Get #1 split/window AC installation services near you in Chennai, India" [ref=e3170] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3171]: •
+              - 'link "Get #1 split/window AC installation services near you in Ahmedabad, India" [ref=e3172] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3173]: •
+              - 'link "Get #1 split/window AC installation services near you in Delhi NCR, India" [ref=e3174] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3175]: •
+              - link "Trusted AC gas refill services in Delhi NCR, India" [ref=e3176] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3177]: •
+              - link "AC Service near you in Dubai" [ref=e3178] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-service-near-me
+              - paragraph [ref=e3179]: •
+              - 'link "Get #1 AC repair services near you in Chennai, India" [ref=e3180] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3181]: •
+              - 'link "Get #1 AC repair services near you in Hyderabad, India" [ref=e3182] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3183]: •
+              - link "Trusted AC gas refill services in Hyderabad, India" [ref=e3184] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3185]: •
+              - link "Window AC Service near you in Ahmedabad, India" [ref=e3186] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3187]: •
+              - 'link "Get #1 AC uninstallation services near you in Chennai, India" [ref=e3188] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3189]: •
+              - 'link "Get #1 AC uninstallation services near you in Kolkata, India" [ref=e3190] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3191]: •
+              - 'link "Get #1 split AC Service near you in Ahmedabad, India" [ref=e3192] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3193]: •
+              - link "Window AC Service near you in Bangalore, India" [ref=e3194] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3195]: •
+              - link "AC Service near you in Abu Dhabi" [ref=e3196] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-service-near-me
+              - paragraph [ref=e3197]: •
+              - link "AC Duct Cleaning Sharjah" [ref=e3198] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-duct-cleaning-sharjah
+              - paragraph [ref=e3199]: •
+              - 'link "Get #1 AC uninstallation services near you in Mumbai, India" [ref=e3200] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3201]: •
+              - 'link "Get #1 split/window AC installation services near you in Hyderabad, India" [ref=e3202] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3203]: •
+              - 'link "Get #1 AC repair services near you in Ahmedabad, India" [ref=e3204] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3205]: •
+              - link "AC Duct Cleaning Abu Dhabi" [ref=e3206] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-duct-cleaning-abudhabi
+              - paragraph [ref=e3207]: •
+              - 'link "Get #1 split AC Service near you in Kolkata, India" [ref=e3208] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/kolkata-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3209]: •
+              - link "AC Repair Services in Dubai" [ref=e3210] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-repair-services
+              - paragraph [ref=e3211]: •
+              - 'link "Get #1 split AC Service near you in Chennai, India" [ref=e3212] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/chennai-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3213]: •
+              - 'link "Get #1 AC uninstallation services near you in Delhi NCR, India" [ref=e3214] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3215]: •
+              - link "AC Repair Sharjah" [ref=e3216] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-repair-sharjah
+              - paragraph [ref=e3217]: •
+              - 'link "Get #1 split/window AC installation services near you in Mumbai, India" [ref=e3218] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3219]: •
+              - 'link "Get #1 AC uninstallation services near you in Hyderabad, India" [ref=e3220] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3221]: •
+              - 'link "Get #1 AC repair services near you in Delhi NCR, India" [ref=e3222] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3223]: •
+              - link "AC Repair Services in Abu Dhabi" [ref=e3224] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-repair-services
+              - paragraph [ref=e3225]: •
+              - link "Trusted AC gas refill services in Ahmedabad, India" [ref=e3226] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3227]: •
+              - 'link "Get #1 AC repair services near you in Kolkata, India" [ref=e3228] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3229]: •
+              - link "Window AC Service near you in Delhi NCR, India" [ref=e3230] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3231]: •
+              - 'link "Get #1 AC repair services near you in Mumbai, India" [ref=e3232] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3233]: •
+              - 'link "Get #1 split AC Service near you in Delhi NCR, India" [ref=e3234] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3235]: •
+              - 'link "Get #1 split AC Service near you in Hyderabad, India" [ref=e3236] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3237]: •
+              - 'link "Get #1 AC uninstallation services near you in Bangalore, India" [ref=e3238] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3239]: •
+              - 'link "Get #1 AC repair services near you in Bangalore, India" [ref=e3240] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3241]: •
+              - 'link "Get #1 split/window AC installation services near you in Bangalore, India" [ref=e3242] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3243]: •
+              - link "Trusted AC gas refill services in Mumbai, India" [ref=e3244] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3245]: •
+              - 'link "Get #1 AC uninstallation services near you in Ahmedabad, India" [ref=e3246] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3247]
+          - generic [ref=e3251]:
+            - heading "Popular similar services we provide" [level=4] [ref=e3255] [cursor=pointer]
+            - generic [ref=e3260]:
+              - 'link "Get #1 split AC Service near you in Bangalore, India" [ref=e3261] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/split-ac-service-near-me
+              - paragraph [ref=e3262]: •
+              - 'link "Get #1 AC repair services near you in Bangalore, India" [ref=e3263] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-repair-near-me
+              - paragraph [ref=e3264]: •
+              - link "Window AC Service near you in Bangalore, India" [ref=e3265] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/window-ac-service-near-me
+              - paragraph [ref=e3266]: •
+              - 'link "Get #1 split/window AC installation services near you in Bangalore, India" [ref=e3267] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-installation-near-me
+              - paragraph [ref=e3268]: •
+              - link "Trusted AC gas refill services in Bangalore, India" [ref=e3269] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-gas-refill-near-me
+              - paragraph [ref=e3270]: •
+              - 'link "Get #1 AC uninstallation services near you in Bangalore, India" [ref=e3271] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-uninstallation-near-me
+              - paragraph [ref=e3272]
+          - generic [ref=e3276]:
+            - heading "Check our prices" [level=4] [ref=e3280] [cursor=pointer]
+            - generic [ref=e3285]:
+              - link "AC service charges - Transparent Rates for AC installation charges, AC repair, and more" [ref=e3286] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/charges/ac-service-charges-and-ac-installation-charges
+              - paragraph [ref=e3287]
+          - generic [ref=e3291]:
+            - heading "Engage with our community in the forum" [level=4] [ref=e3295] [cursor=pointer]
+            - generic [ref=e3300]:
+              - link "What is self clean in AC?" [ref=e3301] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/what-is-self-clean-in-ac
+              - paragraph [ref=e3302]: •
+              - link "What is cooling capacity in AC?" [ref=e3303] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/what-is-cooling-capacity-in-ac
+              - paragraph [ref=e3304]: •
+              - link "How much gas in 1.5 ton AC?" [ref=e3305] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/how-much-gas-in-1.5-ton-ac
+              - paragraph [ref=e3306]: •
+              - link "Which gas is used in AC?" [ref=e3307] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/which-gas-is-used-in-ac
+              - paragraph [ref=e3308]: •
+              - link "How to set AC remote for cooling?" [ref=e3309] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/how-to-set-ac-remote-for-cooling
+              - paragraph [ref=e3310]: •
+              - link "How much time AC takes for self cleaning?" [ref=e3311] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/how-much-time-ac-takes-for-self-cleaning
+              - paragraph [ref=e3312]: •
+              - link "How to use dew clean in daikin AC?" [ref=e3313] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/how-to-use-dew-clean-in-daikin-ac
+              - paragraph [ref=e3314]: •
+              - link "How long does AC gas last?" [ref=e3315] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/forum/how-long-does-ac-gas-last
+              - paragraph [ref=e3316]
+          - generic [ref=e3320]:
+            - heading "Also available in" [level=4] [ref=e3324] [cursor=pointer]
+            - generic [ref=e3329]:
+              - 'link "Get #1 AC service & AC repair experts in Vidya Nagar, Peenya, Bangalore, India" [ref=e3330] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-vidya-nagar-peenya
+              - paragraph [ref=e3331]: •
+              - 'link "Get #1 AC service & AC repair experts in Phase 1, Yeshwanthpur, Bangalore, India" [ref=e3332] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-phase-1-yeshwanthpur
+              - paragraph [ref=e3333]: •
+              - 'link "Get #1 AC service & AC repair experts in BHEL Layout, RR Nagar, Bangalore, India" [ref=e3334] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-bhel-layout-rr-nagar
+              - paragraph [ref=e3335]: •
+              - 'link "Get #1 AC service & AC repair experts in Ashwath Nagar, Devasandra Layout, Bangalore, India" [ref=e3336] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-ashwath-nagar-devasandra-layout
+              - paragraph [ref=e3337]: •
+              - 'link "Get #1 AC service & AC repair experts in Gandhi Nagar, Yelahanka, Bangalore, India" [ref=e3338] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-gandhi-nagar-yelahanka
+              - paragraph [ref=e3339]: •
+              - 'link "Get #1 AC service & AC repair experts in Kodandarampura, Malleshwaram, Bangalore, India" [ref=e3340] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-kodandarampura-malleshwaram
+              - paragraph [ref=e3341]: •
+              - 'link "Get #1 AC service & AC repair experts in Cambridge Layout, Ulsoor, Bangalore, India" [ref=e3342] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-cambridge-layout-ulsoor
+              - paragraph [ref=e3343]: •
+              - 'link "Get #1 AC service & AC repair experts in Balaji Layout, Cooke Town, Bangalore, India" [ref=e3344] [cursor=pointer]':
+                - /url: https://www.urbancompany.com/bangalore-ac-service-repair-balaji-layout-cooke-town
+              - paragraph [ref=e3345]: •
+              - link "See more" [ref=e3346] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/quick-links/bangalore-ac-service-repair
+              - paragraph [ref=e3347]
+          - generic [ref=e3351]:
+            - heading "Categories" [level=4] [ref=e3355] [cursor=pointer]
+            - generic [ref=e3360]:
+              - link "Laser Doctor Consultation in Bangalore, India" [ref=e3361] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-free-dc
+              - paragraph [ref=e3362]: •
+              - link "Carpenter in Bangalore, India" [ref=e3363] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-carpenters
+              - paragraph [ref=e3364]: •
+              - link "Native - Home Demo in Bangalore, India" [ref=e3365] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-smart-lock-electrician
+              - paragraph [ref=e3366]: •
+              - link "Rooms/ Walls Painting in Bangalore, India" [ref=e3367] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-painting-shp-fulfilment
+              - paragraph [ref=e3368]: •
+              - link "Festival Lights Installation in Bangalore, India" [ref=e3369] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-diwali-lights-decoration
+              - paragraph [ref=e3370]: •
+              - link "Disinfection Services in Bangalore, India" [ref=e3371] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore-home-disinfection
+              - paragraph [ref=e3372]: •
+              - link "See more" [ref=e3373] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/quick-links/bangalore-ac-service-repair
+              - paragraph [ref=e3374]
+          - generic [ref=e3378]:
+            - heading "Serving in" [level=4] [ref=e3382] [cursor=pointer]
+            - generic [ref=e3387]:
+              - link "West Tripura" [ref=e3388] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/West Tripura
+              - paragraph [ref=e3389]: •
+              - link "Jabalpur, India" [ref=e3390] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jabalpur
+              - paragraph [ref=e3391]: •
+              - link "Naini Tal, India" [ref=e3392] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/naini Tal
+              - paragraph [ref=e3393]: •
+              - link "Nagercoil, India" [ref=e3394] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Nagercoil
+              - paragraph [ref=e3395]: •
+              - link "Peddapalli, India" [ref=e3396] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Peddapalli
+              - paragraph [ref=e3397]: •
+              - link "Sonipat, India" [ref=e3398] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sonipat
+              - paragraph [ref=e3399]: •
+              - link "Mirzapur, India" [ref=e3400] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Mirzapur
+              - paragraph [ref=e3401]: •
+              - link "Shimoga, India" [ref=e3402] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/shimoga
+              - paragraph [ref=e3403]: •
+              - link "Chhindwara, India" [ref=e3404] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Chhindwara
+              - paragraph [ref=e3405]: •
+              - link "Khammam, India" [ref=e3406] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/khammam
+              - paragraph [ref=e3407]: •
+              - link "Hassan, India" [ref=e3408] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/hassan
+              - paragraph [ref=e3409]: •
+              - link "Sambalpur, India" [ref=e3410] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sambalpur
+              - paragraph [ref=e3411]: •
+              - link "Aligarh, India" [ref=e3412] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/aligarh
+              - paragraph [ref=e3413]: •
+              - link "Mahbubnagar, India" [ref=e3414] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/mahbubnagar
+              - paragraph [ref=e3415]: •
+              - link "Bulandshahr, India" [ref=e3416] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Bulandshahr
+              - paragraph [ref=e3417]: •
+              - link "Jodhpur, India" [ref=e3418] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jodhpur
+              - paragraph [ref=e3419]: •
+              - link "Dindigul, India" [ref=e3420] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/dindigul
+              - paragraph [ref=e3421]: •
+              - link "Chandrapur, India" [ref=e3422] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/chandrapur
+              - paragraph [ref=e3423]: •
+              - link "Surat, India" [ref=e3424] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/surat
+              - paragraph [ref=e3425]: •
+              - link "Ranchi, India" [ref=e3426] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ranchi
+              - paragraph [ref=e3427]: •
+              - link "Aurangabad, India" [ref=e3428] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/aurangabad
+              - paragraph [ref=e3429]: •
+              - link "Cuttack, India" [ref=e3430] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/cuttack
+              - paragraph [ref=e3431]: •
+              - link "Vijayapura, India" [ref=e3432] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Vijayapura
+              - paragraph [ref=e3433]: •
+              - link "Cachar, India" [ref=e3434] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Cachar
+              - paragraph [ref=e3435]: •
+              - link "Bharuch, India" [ref=e3436] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bharuch
+              - paragraph [ref=e3437]: •
+              - link "Beed, India" [ref=e3438] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/beed
+              - paragraph [ref=e3439]: •
+              - link "hunsur, India" [ref=e3440] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/hunsur
+              - paragraph [ref=e3441]: •
+              - link "Tirupati, India" [ref=e3442] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/tirupati
+              - paragraph [ref=e3443]: •
+              - link "Jhansi, India" [ref=e3444] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jhansi
+              - paragraph [ref=e3445]: •
+              - link "Krishnagiri, India" [ref=e3446] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/krishnagiri
+              - paragraph [ref=e3447]: •
+              - link "Raipur, India" [ref=e3448] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/raipur
+              - paragraph [ref=e3449]: •
+              - link "Darjeeling, India" [ref=e3450] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/darjeeling
+              - paragraph [ref=e3451]: •
+              - link "PURBI CHAMPARAN" [ref=e3452] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/purbi champaran
+              - paragraph [ref=e3453]: •
+              - link "Jaipur, India" [ref=e3454] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jaipur
+              - paragraph [ref=e3455]: •
+              - link "Karnal, India" [ref=e3456] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/karnal
+              - paragraph [ref=e3457]: •
+              - link "Srikakulam, India" [ref=e3458] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/srikakulam
+              - paragraph [ref=e3459]: •
+              - link "Jamshedpur, India" [ref=e3460] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jamshedpur
+              - paragraph [ref=e3461]: •
+              - link "Varanasi, India" [ref=e3462] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/varanasi
+              - paragraph [ref=e3463]: •
+              - link "Chitradurga, India" [ref=e3464] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/chitradurga
+              - paragraph [ref=e3465]: •
+              - link "Surianwan, India" [ref=e3466] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Surianwan
+              - paragraph [ref=e3467]: •
+              - link "Salem, India" [ref=e3468] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/salem
+              - paragraph [ref=e3469]: •
+              - link "Burhanpur, India" [ref=e3470] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Burhanpur
+              - paragraph [ref=e3471]: •
+              - link "North Goa, India" [ref=e3472] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/north goa
+              - paragraph [ref=e3473]: •
+              - link "Bilaspur, India" [ref=e3474] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bilaspur
+              - paragraph [ref=e3475]: •
+              - link "Visakhapatnam, India" [ref=e3476] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/visakhapatnam
+              - paragraph [ref=e3477]: •
+              - link "Petlad, India" [ref=e3478] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Petlad
+              - paragraph [ref=e3479]: •
+              - link "Palakkad district" [ref=e3480] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/palakkad district
+              - paragraph [ref=e3481]: •
+              - link "Karur, India" [ref=e3482] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/karur
+              - paragraph [ref=e3483]: •
+              - link "Ludhiana, India" [ref=e3484] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ludhiana
+              - paragraph [ref=e3485]: •
+              - link "Jaunpur, India" [ref=e3486] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jaunpur
+              - paragraph [ref=e3487]: •
+              - link "Chennai, India" [ref=e3488] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/chennai
+              - paragraph [ref=e3489]: •
+              - link "Ratnagiri" [ref=e3490] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ratnagiri
+              - paragraph [ref=e3491]: •
+              - link "Valsad, India" [ref=e3492] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/valsad
+              - paragraph [ref=e3493]: •
+              - link "Davanagere, India" [ref=e3494] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/davanagere
+              - paragraph [ref=e3495]: •
+              - link "Kolkata, India" [ref=e3496] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kolkata
+              - paragraph [ref=e3497]: •
+              - link "Bhojpur, India" [ref=e3498] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bhojpur
+              - paragraph [ref=e3499]: •
+              - link "Khandwa, India" [ref=e3500] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Khandwa
+              - paragraph [ref=e3501]: •
+              - link "Ratlam, India" [ref=e3502] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ratlam
+              - paragraph [ref=e3503]: •
+              - link "Kota, India" [ref=e3504] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kota
+              - paragraph [ref=e3505]: •
+              - link "Maldah, India" [ref=e3506] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Maldah
+              - paragraph [ref=e3507]: •
+              - link "Hapur, India" [ref=e3508] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/hapur
+              - paragraph [ref=e3509]: •
+              - link "Bharatpur, India" [ref=e3510] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Bharatpur
+              - paragraph [ref=e3511]: •
+              - link "Garhwa, India" [ref=e3512] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Garhwa
+              - paragraph [ref=e3513]: •
+              - link "Anantapur, India" [ref=e3514] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/anantapur
+              - paragraph [ref=e3515]: •
+              - link "Kheri, India" [ref=e3516] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Kheri
+              - paragraph [ref=e3517]: •
+              - link "Erode, India" [ref=e3518] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/erode
+              - paragraph [ref=e3519]: •
+              - link "Thiruvananthapuram, India" [ref=e3520] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/thiruvananthapuram
+              - paragraph [ref=e3521]: •
+              - link "Satna, India" [ref=e3522] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Satna
+              - paragraph [ref=e3523]: •
+              - link "Nizamabad, India" [ref=e3524] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/nizamabad
+              - paragraph [ref=e3525]: •
+              - link "Thoothukudi, India" [ref=e3526] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Thoothukudi
+              - paragraph [ref=e3527]: •
+              - link "Vadodara, India" [ref=e3528] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/vadodara
+              - paragraph [ref=e3529]: •
+              - link "Puducherry, India" [ref=e3530] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/puducherry
+              - paragraph [ref=e3531]: •
+              - link "Akola, India" [ref=e3532] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/akola
+              - paragraph [ref=e3533]: •
+              - link "Wardha, India" [ref=e3534] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/wardha
+              - paragraph [ref=e3535]: •
+              - link "Udupi, India" [ref=e3536] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/udupi
+              - paragraph [ref=e3537]: •
+              - link "Saran, India" [ref=e3538] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/saran
+              - paragraph [ref=e3539]: •
+              - link "Chikkaballapur, India" [ref=e3540] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/chikkaballapur
+              - paragraph [ref=e3541]: •
+              - link "Lucknow, India" [ref=e3542] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/lucknow
+              - paragraph [ref=e3543]: •
+              - link "Etah, India" [ref=e3544] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Etah
+              - paragraph [ref=e3545]: •
+              - link "Banas Kantha" [ref=e3546] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/banas Kantha
+              - paragraph [ref=e3547]: •
+              - link "Tiruppur, India" [ref=e3548] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/tiruppur
+              - paragraph [ref=e3549]: •
+              - link "PURBA BARDHAMAN, India" [ref=e3550] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/purba bardhaman
+              - paragraph [ref=e3551]: •
+              - link "Guna, India" [ref=e3552] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Guna
+              - paragraph [ref=e3553]: •
+              - link "Gondia, India" [ref=e3554] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/gondia
+              - paragraph [ref=e3555]: •
+              - link "Jalgaon, India" [ref=e3556] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jalgaon
+              - paragraph [ref=e3557]: •
+              - link "Solan, India" [ref=e3558] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Solan
+              - paragraph [ref=e3559]: •
+              - link "Y.S.R, India" [ref=e3560] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ysr
+              - paragraph [ref=e3561]: •
+              - link "Moradabad, India" [ref=e3562] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/moradabad
+              - paragraph [ref=e3563]: •
+              - link "Gurdaspur, India" [ref=e3564] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Gurdaspur
+              - paragraph [ref=e3565]: •
+              - link "Ujjain, India" [ref=e3566] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ujjain
+              - paragraph [ref=e3567]: •
+              - link "Mumbai, India" [ref=e3568] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/mumbai
+              - paragraph [ref=e3569]: •
+              - link "Ganjam, India" [ref=e3570] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ganjam
+              - paragraph [ref=e3571]: •
+              - link "Patiala, India" [ref=e3572] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/patiala
+              - paragraph [ref=e3573]: •
+              - link "Buldhana, India" [ref=e3574] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/buldhana
+              - paragraph [ref=e3575]: •
+              - link "Karnataka_Central, India" [ref=e3576] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Karnataka_Central
+              - paragraph [ref=e3577]: •
+              - link "Bhagalpur, India" [ref=e3578] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bhagalpur
+              - paragraph [ref=e3579]: •
+              - link "Hisar, India" [ref=e3580] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/hisar
+              - paragraph [ref=e3581]: •
+              - link "Chandigarh Tricity, India" [ref=e3582] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/chandigarh
+              - paragraph [ref=e3583]: •
+              - link "Kalaburgi, India" [ref=e3584] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kalaburgi
+              - paragraph [ref=e3585]: •
+              - link "Yavatmal, India" [ref=e3586] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Yavatmal
+              - paragraph [ref=e3587]: •
+              - link "Rajahmundry, India" [ref=e3588] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/rajahmundry
+              - paragraph [ref=e3589]: •
+              - link "Etawah, India" [ref=e3590] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/etawah
+              - paragraph [ref=e3591]: •
+              - link "Kolar, India" [ref=e3592] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Kolar
+              - paragraph [ref=e3593]: •
+              - link "Mysore, India" [ref=e3594] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/mysore
+              - paragraph [ref=e3595]: •
+              - link "Jalna, India" [ref=e3596] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jalna
+              - paragraph [ref=e3597]: •
+              - link "Indore, India" [ref=e3598] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/indore
+              - paragraph [ref=e3599]: •
+              - link "Kolhapur, India" [ref=e3600] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kolhapur
+              - paragraph [ref=e3601]: •
+              - link "Thrissur, India" [ref=e3602] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Thrissur
+              - paragraph [ref=e3603]: •
+              - link "Pune, India" [ref=e3604] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/pune
+              - paragraph [ref=e3605]: •
+              - link "Hazaribagh, India" [ref=e3606] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Hazaribagh
+              - paragraph [ref=e3607]: •
+              - link "Jhajjar, India" [ref=e3608] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Jhajjar
+              - paragraph [ref=e3609]: •
+              - link "Guwahati, India" [ref=e3610] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/guwahati
+              - paragraph [ref=e3611]: •
+              - link "Bareilly, India" [ref=e3612] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bareilly
+              - paragraph [ref=e3613]: •
+              - link "Amravati, India" [ref=e3614] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/amravati
+              - paragraph [ref=e3615]: •
+              - link "raigad, India" [ref=e3616] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/raigad
+              - paragraph [ref=e3617]: •
+              - link "Gorakhpur, India" [ref=e3618] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/gorakhpur
+              - paragraph [ref=e3619]: •
+              - link "Agra, India" [ref=e3620] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/agra
+              - paragraph [ref=e3621]: •
+              - link "Firozabad, India" [ref=e3622] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/firozabad
+              - paragraph [ref=e3623]: •
+              - link "Dakshina Kannada, India" [ref=e3624] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Dakshina Kannada
+              - paragraph [ref=e3625]: •
+              - link "Kurnool, India" [ref=e3626] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kurnool
+              - paragraph [ref=e3627]: •
+              - link "Coimbatore, India" [ref=e3628] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/coimbatore
+              - paragraph [ref=e3629]: •
+              - link "Alwar+rewari, India" [ref=e3630] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/alwar
+              - paragraph [ref=e3631]: •
+              - link "Nalanda, India" [ref=e3632] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/nalanda
+              - paragraph [ref=e3633]: •
+              - link "Bhopal, India" [ref=e3634] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bhopal
+              - paragraph [ref=e3635]: •
+              - link "Shahjhanpur, India" [ref=e3636] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Shahjhanpur
+              - paragraph [ref=e3637]: •
+              - link "Udaipur, India" [ref=e3638] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/udaipur
+              - paragraph [ref=e3639]: •
+              - link "Satara, India" [ref=e3640] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/satara
+              - paragraph [ref=e3641]: •
+              - link "Delhi NCR, India" [ref=e3642] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/delhi-ncr
+              - paragraph [ref=e3643]: •
+              - link "Pratapgarh, India" [ref=e3644] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Pratapgarh
+              - paragraph [ref=e3645]: •
+              - link "Siwan, India" [ref=e3646] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Siwan
+              - paragraph [ref=e3647]: •
+              - link "Nandurbar, India" [ref=e3648] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Nandurbar
+              - paragraph [ref=e3649]: •
+              - link "Patna, India" [ref=e3650] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/patna
+              - paragraph [ref=e3651]: •
+              - link "Latur, India" [ref=e3652] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Latur
+              - paragraph [ref=e3653]: •
+              - link "Jorhat, India" [ref=e3654] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Jorhat
+              - paragraph [ref=e3655]: •
+              - link "Meerut, India" [ref=e3656] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/meerut
+              - paragraph [ref=e3657]: •
+              - link "Imphal, India" [ref=e3658] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Imphal
+              - paragraph [ref=e3659]: •
+              - link "Warangal, India" [ref=e3660] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/warangal
+              - paragraph [ref=e3661]: •
+              - link "Begusarai, India" [ref=e3662] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/begusarai
+              - paragraph [ref=e3663]: •
+              - link "Sikar, India" [ref=e3664] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sikar
+              - paragraph [ref=e3665]: •
+              - link "Ambala, India" [ref=e3666] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ambala
+              - paragraph [ref=e3667]: •
+              - link "Gwalior, India" [ref=e3668] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/gwalior
+              - paragraph [ref=e3669]: •
+              - link "Prayagraj, India" [ref=e3670] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/prayagraj
+              - paragraph [ref=e3671]: •
+              - link "Jalandhar, India" [ref=e3672] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jalandhar
+              - paragraph [ref=e3673]: •
+              - link "Ballia, India" [ref=e3674] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ballia
+              - paragraph [ref=e3675]: •
+              - link "Mancherial, India" [ref=e3676] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Mancherial
+              - paragraph [ref=e3677]: •
+              - link "Chandauli, India" [ref=e3678] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Chandauli
+              - paragraph [ref=e3679]: •
+              - link "Tiruchirappalli, India" [ref=e3680] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/tiruchirappalli
+              - paragraph [ref=e3681]: •
+              - link "Ratnagiri" [ref=e3682] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ratnagiri
+              - paragraph [ref=e3683]: •
+              - link "Jammu, India" [ref=e3684] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/jammu
+              - paragraph [ref=e3685]: •
+              - link "Ghazipur, India" [ref=e3686] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Ghazipur
+              - paragraph [ref=e3687]: •
+              - link "Nellore, India" [ref=e3688] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/nellore
+              - paragraph [ref=e3689]: •
+              - link "Prakasam, India" [ref=e3690] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/prakasam
+              - paragraph [ref=e3691]: •
+              - link "Malerkotla, India" [ref=e3692] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Malerkotla
+              - paragraph [ref=e3693]: •
+              - link "Ramanagara, India" [ref=e3694] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ramanagara
+              - paragraph [ref=e3695]: •
+              - link "Kochi, India" [ref=e3696] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kochi
+              - paragraph [ref=e3697]: •
+              - link "Bhilwara, India" [ref=e3698] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Bhilwara
+              - paragraph [ref=e3699]: •
+              - link "Suryapet, India" [ref=e3700] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/suryapet
+              - paragraph [ref=e3701]: •
+              - link "Thiruvallur, India" [ref=e3702] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/thiruvallur
+              - paragraph [ref=e3703]: •
+              - link "Ajmer, India" [ref=e3704] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ajmer
+              - paragraph [ref=e3705]: •
+              - link "Nashik, India" [ref=e3706] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/nashik
+              - paragraph [ref=e3707]: •
+              - link "Madurai, India" [ref=e3708] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/madurai
+              - paragraph [ref=e3709]: •
+              - link "Guntur Rural, India" [ref=e3710] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Guntur Rural
+              - paragraph [ref=e3711]: •
+              - link "Tumakuru, India" [ref=e3712] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/tumakuru
+              - paragraph [ref=e3713]: •
+              - link "Bhandara, India" [ref=e3714] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bhandara
+              - paragraph [ref=e3715]: •
+              - link "Ahmedabad, India" [ref=e3716] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/ahmedabad
+              - paragraph [ref=e3717]: •
+              - link "Baleshwar, India" [ref=e3718] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/baleshwar
+              - paragraph [ref=e3719]: •
+              - link "Nanded, India" [ref=e3720] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/nanded
+              - paragraph [ref=e3721]: •
+              - link "Bangalore, India" [ref=e3722] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bangalore
+              - paragraph [ref=e3723]: •
+              - link "Nagpur, India" [ref=e3724] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/nagpur
+              - paragraph [ref=e3725]: •
+              - link "Muzaffarpur, India" [ref=e3726] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/muzaffarpur
+              - paragraph [ref=e3727]: •
+              - link "Dehradun, India" [ref=e3728] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/dehradun
+              - paragraph [ref=e3729]: •
+              - link "Kanpur, India" [ref=e3730] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/kanpur
+              - paragraph [ref=e3731]: •
+              - link "Amritsar, India" [ref=e3732] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/amritsar
+              - paragraph [ref=e3733]: •
+              - link "Bathinda, India" [ref=e3734] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Bathinda
+              - paragraph [ref=e3735]: •
+              - link "Saharsa, India" [ref=e3736] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/saharsa
+              - paragraph [ref=e3737]: •
+              - link "Guntur, India" [ref=e3738] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/guntur
+              - paragraph [ref=e3739]: •
+              - link "Hyderabad, India" [ref=e3740] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/hyderabad
+              - paragraph [ref=e3741]: •
+              - link "Sultanpur, India" [ref=e3742] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Sultanpur
+              - paragraph [ref=e3743]: •
+              - link "Banda, India" [ref=e3744] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Banda
+              - paragraph [ref=e3745]: •
+              - link "Siddipet, India" [ref=e3746] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Siddipet
+              - paragraph [ref=e3747]: •
+              - link "Mahesana, India" [ref=e3748] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Mahesana
+              - paragraph [ref=e3749]: •
+              - link "Solapur, India" [ref=e3750] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/solapur
+              - paragraph [ref=e3751]: •
+              - link "Palghar, India" [ref=e3752] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Palghar
+              - paragraph [ref=e3753]: •
+              - link "Gaya, India" [ref=e3754] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/gaya
+              - paragraph [ref=e3755]: •
+              - link "Kancheepuram, India" [ref=e3756] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Kancheepuram
+              - paragraph [ref=e3757]: •
+              - link "Samastipur, India" [ref=e3758] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/samastipur
+              - paragraph [ref=e3759]: •
+              - link "sagar, India" [ref=e3760] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Sagar
+              - paragraph [ref=e3761]: •
+              - link "Mau, India" [ref=e3762] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/Mau
+              - paragraph [ref=e3763]: •
+              - link "Vijayawada, India" [ref=e3764] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/vijayawada
+              - paragraph [ref=e3765]: •
+              - link "Bhubaneswar, India" [ref=e3766] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/bhubaneswar
+              - paragraph [ref=e3767]: •
+              - link "Murud (Raigad)" [ref=e3768] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/murud (Raigad)
+              - paragraph [ref=e3769]: •
+              - link "Sangli, India" [ref=e3770] [cursor=pointer]:
+                - /url: https://www.urbancompany.com/sangli
+              - paragraph [ref=e3771]
+      - generic [ref=e3797]:
+        - img:
+          - img "Urban Company logo" [ref=e3799]
+      - generic [ref=e3805]:
+        - generic [ref=e3817]:
+          - paragraph [ref=e3820]: Company
+          - generic [ref=e3823]:
+            - generic [ref=e3824]:
+              - link "About us" [ref=e3825] [cursor=pointer]:
+                - /url: /about
+              - paragraph [ref=e3826]
+            - generic [ref=e3828]:
+              - link "Investor Relations" [ref=e3829] [cursor=pointer]:
+                - /url: https://investorrelations.urbancompany.com/
+              - paragraph [ref=e3830]
+            - generic [ref=e3832]:
+              - link "Terms & conditions" [ref=e3833] [cursor=pointer]:
+                - /url: /terms
+              - paragraph [ref=e3834]
+            - generic [ref=e3836]:
+              - link "Privacy policy" [ref=e3837] [cursor=pointer]:
+                - /url: /privacy-policy
+              - paragraph [ref=e3838]
+            - generic [ref=e3840]:
+              - link "Anti-discrimination policy" [ref=e3841] [cursor=pointer]:
+                - /url: /anti-discrimination-policy
+              - paragraph [ref=e3842]
+            - generic [ref=e3844]:
+              - link "Careers" [ref=e3845] [cursor=pointer]:
+                - /url: https://careers.urbancompany.com/
+              - paragraph [ref=e3846]
+        - generic [ref=e3859]:
+          - paragraph [ref=e3862]: For customers
+          - generic [ref=e3865]:
+            - generic [ref=e3866]:
+              - link "UC reviews" [ref=e3867] [cursor=pointer]:
+                - /url: /reviews
+              - paragraph [ref=e3868]
+            - generic [ref=e3870]:
+              - link "Categories near you" [ref=e3871] [cursor=pointer]:
+                - /url: /near-me
+              - paragraph [ref=e3872]
+            - generic [ref=e3874]:
+              - link "Contact us" [ref=e3875] [cursor=pointer]:
+                - /url: /contact-us
+              - paragraph [ref=e3876]
+        - generic [ref=e3889]:
+          - paragraph [ref=e3892]: For professionals
+          - generic [ref=e3896]:
+            - link "Register as a professional" [ref=e3897] [cursor=pointer]:
+              - /url: https://partner.urbancompany.com
+            - paragraph [ref=e3898]
+        - generic [ref=e3911]:
+          - paragraph [ref=e3914]: Social links
+          - generic [ref=e3917]:
+            - button "Button Double Tap to perform action" [ref=e3920] [cursor=pointer]
+            - button "Button Double Tap to perform action" [ref=e3926] [cursor=pointer]
+            - button "Button Double Tap to perform action" [ref=e3932] [cursor=pointer]
+            - button "Button Double Tap to perform action" [ref=e3938] [cursor=pointer]
+          - img [ref=e3948] [cursor=pointer]:
+            - img "Apple App Store" [ref=e3950]
+          - img [ref=e3956] [cursor=pointer]:
+            - img "Google Play Store" [ref=e3958]
+      - generic [ref=e3978]:
+        - paragraph [ref=e3980]: "* As on December 31, 2024"
+        - paragraph [ref=e3983]: "© Copyright 2026 Urban Company Limited (formerly known as UrbanClap Technologies India Limited and UrbanClap Technologies India India Limited) All rights reserved. | CIN: L74140DL2014PLC274413"

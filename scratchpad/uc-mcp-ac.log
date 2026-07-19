@@ -1,0 +1,74 @@
+▸ session: Suhotra Dey  [c9cc1b29-cb20-4ed8-b5be-3f5fbed96c51]  saved 2026-07-10T20:39:05.332Z
+▸ target : https://www.urbancompany.com/bangalore-ac-service-repair
+▸ package: Foam-jet AC cleaning service for 2 ACs
+
+✓ logged in — handing the browser to the agent via Playwright-MCP
+
+▸ Playwright-MCP tools: browser_browser_close, browser_browser_resize, browser_browser_console_messages, browser_browser_handle_dialog, browser_browser_evaluate, browser_browser_file_upload, browser_browser_drop, browser_browser_find, browser_browser_fill_form, browser_browser_press_key, browser_browser_type, browser_browser_navigate, browser_browser_navigate_back, browser_browser_network_requests, browser_browser_network_request, browser_browser_run_code_unsafe, browser_browser_take_screenshot, browser_browser_snapshot, browser_browser_click, browser_browser_drag, browser_browser_hover, browser_browser_select_option, browser_browser_tabs, browser_browser_wait_for
+
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Insufficient credits. Add more using https://openrouter.ai/settings/credits
+      at <anonymous> (/Users/biley/work/setup-pnpm/node_modules/.bin/store/v11/links/@openrouter/ai-sdk-provider/1.5.4/ec9e9906f36b1928ab00f2afea9fedc5f8ebcb0b954fa9ba8c7d2c631be83082/node_modules/@openrouter/ai-sdk-provider/node_modules/.pnpm/@ai-sdk+provider-utils@3.0.1_zod@3.25.76/node_modules/@ai-sdk/provider-utils/src/response-handler.ts:56:16)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async postToApi (/Users/biley/work/setup-pnpm/node_modules/.bin/store/v11/links/@openrouter/ai-sdk-provider/1.5.4/ec9e9906f36b1928ab00f2afea9fedc5f8ebcb0b954fa9ba8c7d2c631be83082/node_modules/@openrouter/ai-sdk-provider/node_modules/.pnpm/@ai-sdk+provider-utils@3.0.1_zod@3.25.76/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:112:28)
+      at async OpenRouterChatLanguageModel.doGenerate (/Users/biley/work/setup-pnpm/node_modules/.bin/store/v11/links/@openrouter/ai-sdk-provider/1.5.4/ec9e9906f36b1928ab00f2afea9fedc5f8ebcb0b954fa9ba8c7d2c631be83082/node_modules/@openrouter/ai-sdk-provider/src/chat/index.ts:227:55)
+      at async AISDKV5LanguageModel.doGenerate (/Users/biley/work/projects/faff_take_home/node_modules/@mastra/core/src/llm/model/aisdk/v5/model.ts:100:20)
+      at async pRetry.default.retries (/Users/biley/work/projects/faff_take_home/node_modules/@mastra/core/dist/chunk-CJAAPSS7.cjs:25756:34)
+      at async Module.pRetry (file:///Users/biley/work/projects/faff_take_home/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/biley/work/projects/faff_take_home/node_modules/@mastra/core/dist/chunk-CJAAPSS7.cjs:25753:16)
+      at async Object.start (/Users/biley/work/projects/faff_take_home/node_modules/@mastra/core/src/stream/base/input.ts:67:26) {
+    cause: undefined,
+    url: 'https://openrouter.ai/api/v1/chat/completions',
+    requestBodyValues: {
+      model: 'anthropic/claude-sonnet-4.5',
+      models: undefined,
+      logit_bias: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      user: undefined,
+      parallel_tool_calls: undefined,
+      max_tokens: undefined,
+      temperature: undefined,
+      top_p: undefined,
+      frequency_penalty: undefined,
+      presence_penalty: undefined,
+      seed: undefined,
+      stop: undefined,
+      response_format: undefined,
+      top_k: undefined,
+      messages: [Array],
+      include_reasoning: undefined,
+      reasoning: undefined,
+      usage: undefined,
+      plugins: undefined,
+      web_search_options: undefined,
+      provider: undefined,
+      debug: undefined,
+      tools: [Array],
+      tool_choice: 'auto'
+    },
+    statusCode: 402,
+    responseHeaders: {
+      'access-control-allow-origin': '*',
+      'access-control-expose-headers': 'X-Generation-Id,cf-ray',
+      'cf-ray': 'a19563f9a8884702-BOM',
+      'content-type': 'application/json',
+      date: 'Sat, 11 Jul 2026 05:25:57 GMT',
+      'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")',
+      'referrer-policy': 'no-referrer, strict-origin-when-cross-origin',
+      server: 'cloudflare',
+      'x-content-type-options': 'nosniff'
+    },
+    responseBody: '{"error":{"message":"Insufficient credits. Add more using https://openrouter.ai/settings/credits","code":402}}',
+    isRetryable: false,
+    data: { error: [Object] },
+    Symbol(vercel.ai.error): true,
+    Symbol(vercel.ai.error.AI_APICallError): true
+  },
+  runId: '46933ec4-eb5a-4c25-9482-55f7d1cdd899',
+  provider: 'openrouter',
+  modelId: 'anthropic/claude-sonnet-4.5'
+}
+
+✗ POC failed: Insufficient credits. Add more using https://openrouter.ai/settings/credits
+SYNCHRONOUS TERMINATION NOTICE: When explicitly exiting the process via process.exit or via a parent process, asynchronous tasks in your exitHooks will not run. Either remove these tasks, use gracefulExit() instead of process.exit(), or ensure your parent process sends a SIGINT to the process running this code.

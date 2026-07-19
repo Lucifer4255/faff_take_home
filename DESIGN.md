@@ -1,8 +1,8 @@
 # faff Engineering Work Trial — Design Doc
 
 **Author:** Biley
-**Date:** 8 July 2026
-**Status:** Design (pre-implementation) — **stack revised to Next.js + Mastra** (see §6, §11)
+**Date:** 8 July 2026 (§§1–11) · updated through 13 July 2026
+**Status:** Built. Harness on Next.js + Mastra (§6, §11); all three adapters implemented and verified live — Blinkit (§12–13), Home Services / Urban Company (§14), Delivery / Uber (§15). Sections 1–11 are the original design and are left as written, with the two places reality overruled them marked in place (§7 target pick, §10 open items).
 
 ---
 
@@ -138,7 +138,7 @@ Implemented as a **Mastra workflow suspend/resume**: the confirm step declares a
 
 **Home Services (P2) — hybrid, lean browser.** Availability is tightly coupled to the app flow, so drive it with Playwright to reach a real booking-ready slot, while sniffing the availability endpoint in parallel — promote to a direct API call if it's clean. Slot/availability is the payload extracted.
 
-**Delivery (P1) — API capture with browser-assisted auth.** Needs a real authenticated session: use a browser to clear login/OTP once, capture the session, then hit booking + trip-status endpoints directly for the live "ride updates" loop. **Rapido or Porter over Uber** (Uber has the most aggressive anti-automation). Reach quote → confirm; dispatching the ride is the deliberate money-risk line.
+**Delivery (P1) — API capture with browser-assisted auth.** Needs a real authenticated session: use a browser to clear login/OTP once, capture the session, then hit booking + trip-status endpoints directly for the live "ride updates" loop. Reach quote → confirm; dispatching the ride is the deliberate money-risk line. *(The original bet here was **Rapido or Porter over Uber**, on the theory that Uber's anti-automation was the most aggressive. Capture reversed it: Porter is app-only, Rapido would need a mobile-capture rig, and Uber's **web** rider app turned out to be a clean same-origin JSON/GraphQL SPA that the browser-as-TLS-vehicle pattern walks straight through. Uber is the built target — see §15.)*
 
 ---
 
@@ -167,9 +167,9 @@ If the day runs out: Blinkit fully done, Home Services to booking-ready, Deliver
 ## 10. Open items to resolve during implementation
 
 - Exact Blinkit internal endpoints + any dynamic token / signing scheme (discover via capture).
-- Delivery target final pick (Rapido vs Porter) based on which auth + tracking is most tractable.
-- Geocoding provider for P1 (managed API vs the target's own place-autocomplete endpoint).
-- Whether Home Services availability endpoint is clean enough to promote from browser to API.
+- ~~Delivery target final pick (Rapido vs Porter)~~ — **resolved: Uber web** (§15.1); Porter is app-only and Rapido needs a mobile-capture rig, while Uber's web app is same-origin JSON.
+- ~~Geocoding provider for P1~~ — **resolved: the target's own place-autocomplete** (`pudoLocationSearch` + `getPlaceDetails`, Google-Places-backed). Uber's own place ids are what the booking call wants, so a third-party geocoder would have to be re-matched anyway (§15.2).
+- ~~Whether Home Services availability endpoint is clean enough to promote from browser to API~~ — **resolved: yes** (§14.6).
 - Exact shape of the custom stream data parts that carry `question` / `awaiting_confirmation` / `state_update` over Mastra's stream to the clients.
 
 ---
@@ -288,7 +288,7 @@ Snabbit is app-only (no web surface to reverse-engineer), so the target is **Urb
 - Blinkit's core = **checkout-ready cart** (Resolve = text→SKU).
 - UC's core = **booking-ready slot** (Resolve = need→service **+ a concrete available time slot + address**), stopped one call short of payment. This is exactly the §8 fallback line ("Home Services to booking-ready"), and it makes `select_slot` — the tool Blinkit never used — the centerpiece.
 
-**Scope decision (locked):** the deliverable is **booking-ready-slot with no spend**. A real paid booking (H4) is *out of scope* as a live run — most UC services (deep cleaning ~₹1,500+) exceed the ₹1,000 cap, and a booking dispatches a real professional to a real home at a real time (higher real-world consequence than a grocery order). If H4 is ever wired, it stops at the pre-payment step behind the gate, with the cancel path captured and tested first — never an actual dispatch. Items marked ⟨capture⟩ are to be confirmed from live traffic, not assumed.
+**Scope decision (locked):** the deliverable is **booking-ready-slot with no spend**. A real paid booking (H4) is *out of scope* as a live run — most UC services (deep cleaning ~₹1,500+) exceed the ₹1,000 cap, and a booking dispatches a real professional to a real home at a real time (higher real-world consequence than a grocery order). If H4 is ever wired, it stops at the pre-payment step behind the gate, with the cancel path captured and tested first — never an actual dispatch. Items marked ⟨capture⟩ are to be confirmed from live traffic, not assumed. (**Updated in §14.7:** the *form* of "no spend" evolved from a no-login deep-link handoff to a single **authenticated drive-to-pay** across any category — still stopping one call short of payment, never crossing the lock.)
 
 ### 14.1 The flow to reverse-engineer (H1)
 
@@ -349,3 +349,98 @@ Capture answered every open question above; the adapter (`src/adapters/homeservi
 - **The abstraction held on a different shape:** `select_slot` (unused by Blinkit) is the centerpiece — the agent searches, picks a service, and `select_slot` resolves it to a real earliest slot ("Fri, 8:00 AM"); `get_state`/`confirm` produce a booking-ready handoff (service + price + earliest slot + a resumable **deep link** `urbancompany.com/bangalore-<categoryKey>`).
 - **The money/booking boundary — a hard wall, honestly documented:** UC login is gated by a **Cloudflare Turnstile CAPTCHA** that rejects automation-controlled browsers (verified failing on both bundled Chromium *and* real Google Chrome via CDP). Bypassing bot-detection is off-limits, and there is **no UC public API, MCP, or agentic-commerce pilot** (web-researched — BigBasket, not UC, is the Razorpay/NPCI/OpenAI first merchant). So a *real programmatic booking* isn't achievable for anyone without a human clearing the CAPTCHA. `confirm` therefore finalizes the **booking-ready** state and hands the deep link to the human, who clears the CAPTCHA + login + exact slot + payment in-app. This mirrors Blinkit's guest-core / login-gated-final split; recognizing and respecting the wall (not escalating an anti-automation arms race) is the judgment the brief grades.
 - **Multi-city:** `discoverySearch` is scoped by a required `cityKey` (`city_<slug>_v2`); ten metros are verified live (Bangalore, Mumbai, Delhi NCR, Pune, Hyderabad, Chennai, Kolkata, Ahmedabad, Jaipur, Chandigarh). A client location resolves to the nearest metro (haversine) and search runs on that hub's centre coords — UC returns specific bookable `service_package`s at the hub centre vs. generic `category` results at edge coords, and home services are city-level. (An earlier Bangalore-only hardcode broke for non-Bangalore clients — coords desynced from the fixed cityKey → 0 results; the resolver fixes it.)
+- **Superseded by §14.7 (11 Jul):** the guest deep-link handoff and the hand-coded home-cleaning drive are retired in favour of a single **authenticated, category-agnostic browser-agent drive**. The endpoint map, multi-city resolver, and CAPTCHA-walled human login above all carry forward unchanged.
+
+### 14.7 Generalizing the drive — a category-agnostic browser agent (built & verified 11 Jul)
+
+§14.6 shipped a guest deep-link handoff plus a hand-coded home-cleaning drive. That driver was **category-locked**: each category's "Select requirements" modal is a different shape (grouped mandatory steps for cleaning, a duration picker for spa, no modal for AC — ⟨verified⟩ the cleaning selectors failed on AC/spa). §14.7 retires it for a **generic LLM browser agent** (`agentDrive.ts`) that reads the live accessibility snapshot and fills whatever modal it finds, so **any** category books. It also collapses the two tiers into **one authenticated flow** — the guest/no-login path is removed.
+
+- **Mechanism.** A REAL Chrome as a plain OS process (`--remote-debugging-port`, no Playwright `.launch()` — same legit posture as §14.6/auth.ts), the **per-user** captured session injected as cookies over CDP (`connectOverCDP` → `addCookies` on `.urbancompany.com` + `.urbanclap.com`), then **Playwright-MCP merely *connected* over CDP** (`@playwright/mcp --cdp-endpoint <ws>`, exposed to a Mastra `Agent` via `MCPClient.listTools()`). The agent drives package → mandatory-requirements (cheapest, no upsells) → View Cart → saved address → earliest slot → parks at an **enabled** "Proceed to pay". HARD stop-before-pay (reaching = success, clicking = failure) — extends the L291 no-spend lock, never crosses it. One continuous session, so cart/address/slot persist and the open window *is* the handoff.
+- **Structured verification.** The drive returns `{reachedPay, slotSelected, payEnabled, slotLabel?, amountToPay?, serviceableAtAddress, noSlots, note}`; success = `reachedPay && slotSelected && payEnabled`. The agent fills this via a final `report_result` tool call, so the multi-step browser loop and the structured summary coexist (avoids "agent said done but the pay button was disabled").
+- **Model default + escalation.** `openrouter/google/gemini-2.5-flash` (env `UC_DRIVER_MODEL`); on failed verification, one auto-retry on `openrouter/anthropic/claude-haiku-4.5` (`UC_DRIVER_MODEL_FALLBACK`) reusing the same open session. ⟨verified⟩ reached "Proceed to pay" on home-cleaning, AC, and spa (the cheapest tier, e.g. deepseek-flash, thrashed on the SPA and is deliberately not the default).
+- **Three-tier availability funnel.** (1) **city in range** — `setCoords`/`nearestMetroFor`, ≤150 km; (2) **service offered in city** — `search_catalog` distinguishes "no match, rephrase" from "0 bookable → UC may not offer X here" via the `bookable` discriminator now carried through `parse.ts` (`searchResultType === 'service_package'`); (3) **address/slot serviceability** — surfaced by the drive as `serviceableAtAddress`/`noSlots`. UC's own per-city catalog *is* the availability oracle — no availability DB needed.
+- **Graceful degradation (single flow, no link).** Any Tier-2/3 miss (unserviceable address, no slots, geocode fail, drive error) reports plainly with `status:'unavailable'` and **no deep link** — never a wrong booking, nothing charged. There is no guest fallback.
+- **Per-user auth (mandatory).** The drive consumes `authFor(ctx.userId)` only. The existing login capture (`needsLogin`/`sendLoginCode`/`verifyLoginCode`, auth.ts, keyed by userId; each human clears their own Turnstile + OTP in a plain Chrome) is enforced by the session gate (`session.ts` runs `needsLogin` after gate-approval, before `confirm`) and now applies to **all** categories, not just cleaning — never a global/most-recent session.
+
+---
+
+## 15. Delivery implementation (P1, Uber) — the third shape, and the only real money spent
+
+The third target is a **point-to-point ride**: not a cart (Blinkit), not a slot (UC). It is the hardest and riskiest of the three, so per §8 it went last — and it is the one place a genuinely irreversible, real-money action was crossed: **a real Uber was dispatched to a real driver, then cancelled.** Capture notes: `scratchpad/uber-capture.md`. Code: `src/adapters/delivery/{client,parse,index}.ts`.
+
+### 15.1 Target pick — the §7 bet was wrong, and capture said so
+
+§7 planned "Rapido or Porter over Uber," assuming Uber's anti-automation made it the worst target. Recon inverted that on all three counts:
+
+- **Porter** — app-only for the flows we need; no web surface to reverse-engineer.
+- **Rapido** — the useful surface is mobile-only, so it needs a mobile-capture rig (proxy + cert pinning fights) before any adapter work starts.
+- **Uber** — the **web rider app** (`www.uber.com` + `m.uber.com/go`) is a same-origin JSON SPA. Cloudflare guards the edge (`__cf_bm`), but a `fetch` issued from inside a real page sails through — exactly the **browser-as-TLS-vehicle** pattern already proven on Blinkit and UC. Replaying against it was un-blocked in the very first probe.
+
+So Uber won on the same criterion the other two targets were picked on: *the cleanest reverse-engineerable surface*, not the friendliest brand. The "aggressive anti-automation" concern turned out to be about the **native app**, not the web SPA.
+
+### 15.2 The two surfaces, captured live (H/T Claude-in-Chrome)
+
+**Tier A — guest, no login.** `POST www.uber.com/api/<handler>`, plain JSON RPC, static same-origin `x-csrf-token: x`.
+
+| Call | Purpose |
+|---|---|
+| `pudoLocationSearch` | free text → candidate places (Google-Places ids, **no coordinates**) |
+| `getPlaceDetails` | place id → coordinates + the full address node |
+| *(constructed)* | `m.uber.com/go/product-selection?pickup=…&drop[0]=…[&vehicle=…]` — the **booking-ready deep link** |
+
+This makes Uber's own autocomplete the geocoder (§10) — a third-party geocoder's coordinates would still have to be re-matched to Uber place ids, so using theirs removes a whole failure class. The deep link is Tier A's deliverable: opens Uber pre-filled with pickup + drop (+ ride choice), analogous to Blinkit's shared-cart link and UC's handoff.
+
+**Tier B — logged in.** One GraphQL endpoint, `POST m.uber.com/go/graphql`, keyed by `operationName`:
+
+| Op | Maps to | Notes |
+|---|---|---|
+| `Products` | `request_quote` | ride tiers + live fares (`fareAmountE5` = fare × 1e5) + `vehicleViewId`; each fare carries an opaque `meta` **fare token** |
+| `TripRequest` | `confirm` | **the money line** — dispatches a real driver |
+| `GetStatus` | `observe` | polled ~4s; `clientStatus`, driver, vehicle, ETA, live driver coords, PIN |
+| *(cancel op)* | `cancel` | the kill path (§15.5) |
+
+**How `TripRequest` was captured without sending one:** monkey-patch `fetch` + `XHR` in the page to record the body and **block** every `/go/graphql` call, verify the block with a throwaway request, *then* click Request. The mutation is captured, never sent. Nothing dispatched, nothing charged.
+
+### 15.3 Transport — ride the app's own calls, don't forge them
+
+Blinkit's adapter *replays* captured requests. Uber's deliberately does **not**, and that's the interesting call. `Products`/`TripRequest` are persisted queries whose variables include an opaque fare token and a payment-profile id that only Uber's own client can assemble correctly — forging them is brittle and, on the booking mutation, dangerous (a malformed dispatch is still a dispatch).
+
+So `client.ts` uses the browser as the client and **listens** instead:
+
+- One **persistent Chromium context per `userId`** (`launchPersistentContext(.data/uber-profiles/<user>)`, gitignored). That profile **is** the linked account — the same per-user model as Blinkit B4 and UC Tier B; `UBER_USER` is a single-tenant override for testing.
+- Tier A calls go through `page.evaluate(fetch(...))` — same-origin, real TLS, Cloudflare cookie present.
+- Tier B: navigate the logged-in page to the deep link and attach a **response listener** filtered by `operationName`, so we read `Products` / `GetStatus` bodies as the app fires them.
+- `book()` clicks **Uber's own "Request" button** — Uber's client builds the exact `TripRequest` (fare token, payment profile, attribution) and we capture the response for the trip id. A single deterministic click; no LLM in the loop, no DOM interpretation (contrast UC §14.7, where the modal shapes genuinely needed an agent).
+- Calls are **serialized per user** (a promise tail) — one page, never hammered.
+
+**Login is a human step, always.** `startLogin` opens the user's own profile headful on Uber's sign-in page and stops. We never type a number, password, or OTP. Edge case found the hard way: **"Continue with Google" is blocked by Google inside an automation-controlled browser** — a wall we don't bypass, so the adapter tells the user to sign in with **phone + OTP** even on a Google-linked account.
+
+### 15.4 Adapter wiring — the abstraction's third shape
+
+The same `AdapterTools` surface, no new tool invented:
+
+- `resolve_location` → `pudoLocationSearch` + `getPlaceDetails`. Returns `null` rather than a guess — **a wrong pickup sends a real driver to the wrong door.**
+- `request_quote(pickup, drop)` → resolves both ends, builds the deep link, and (if signed in) pulls live fares.
+- `select_slot(slotId)` → **reused verbatim to pick a ride option** (by `vehicleViewId` or name). The tool UC introduced for time-windows turned out to fit "choose one of N offered options" generally — a real, unplanned confirmation that the abstraction generalizes.
+- `get_state()` → pickup/drop/options/selection + **always** a booking link, so there is a working handoff even signed-out.
+- `confirm()` → behind the EXECUTE gate. Signed in **and** a ride selected → real dispatch. Otherwise → the deep-link handoff, one step short of dispatch (the Blinkit/UC split again: guest core, login-gated final step).
+- `observe()` → polls `GetStatus`, streams a live `state_update` card (status, driver, ★rating, vehicle, plate, ETA, driver coords, distance-to-pickup, PIN) and emits one chat bubble when a driver is assigned. Exits when the trip leaves the active set.
+
+### 15.5 The live run — what actually happened (and the two edge cases it cost)
+
+Route **Park Street → Quest Mall, Kolkata**, the cheapest option (**Bike Saver, ₹32.50**), done once, last, on a short route — exactly the §5 spend sequencing.
+
+**Edge case 1 — the payment wall.** The first dispatch attempts failed *at the mutation*: the account's default payment profile was **Amazon Pay**, and `TripRequest` came back `INSUFFICIENT_BALANCE`. The fix isn't a retry, it's payment selection: the "Pay with" sheet is inside an **iframe** (`Uber - Payment Selection`), so the adapter drives it via `frameLocator` → pick `UPI Scan and Pay` (env `UBER_PAYMENT`) → Save. Plus a **guard**: if the button's payment token is *still* `amazon_pay` after the switch, **refuse to click Request** and tell the user to change their default — better a clean no-dispatch than a dispatch that dies at checkout. With UPI selected, `TripRequest` returned a trip UUID and `clientStatus` went **`Dispatching`** — a real ride, really requested.
+
+**Edge case 2 — the kill path lied.** This is the one worth grading. The first cancel implementation clicked a generic `/^Cancel/i` button, timed out (no such control on the live-trip view), and — worse, in one run — **reported `cancelled: true` when nothing had been cancelled**, because it trusted the click instead of the state. A human backstop-cancelled in the app. A false-negative here is an annoyance; a **false-positive on a kill path is the worst possible bug in this whole project** — it tells the user nothing is charged while a driver is en route.
+
+So the kill path was rebuilt from a live capture (`diagnoseActiveTrip`, run once against an active trip with a human ready to cancel in-app): the real chain is **"Cancel ride" → "Cancel trip?" dialog → "YES, CANCEL"**. `cancel()` now clicks that exact chain **and then verifies via `GetStatus`** that `clientStatus` has actually left the active set (`Dispatching`/`Matched`/`EnRoute`/`OnTrip`/…), polling up to ~20s. It only returns `cancelled: true` on observed state. If it can't confirm, it says so and tells the user to cancel in the app — it never claims success it hasn't seen. Verified: cancelled while `Dispatching`, before a driver was matched (free on Uber — which is *why* the dispatch was done on a short route with this path proven first).
+
+**Net spend: ₹0** — the ride was cancelled pre-match. The gate, the dispatch, the live tracking, and the cancel were all exercised for real.
+
+### 15.6 Teardown notes — what P1 taught the harness
+
+- **The reverse-engineering bet should follow the surface, not the brand's reputation** (§15.1).
+- **Replay isn't always the right vehicle.** Where the payload contains opaque, server-minted tokens (fare token, payment profile), *riding the app's own call* beats forging one — and on an irreversible mutation it's also the safer engineering choice. Blinkit replays; Uber listens; UC drives an agent. Three different transports behind **one unchanged adapter interface** — which is the actual thesis of the whole build (§2).
+- **A kill path must verify, not assume.** §5 said "the cancel flow is wired and tested *before* any `confirm` is ever sent" — the live run proved that a cancel path can be *wired* and still be *wrong*, and that only observed state (`GetStatus`) settles it.
+- **The money boundary held on all three targets**, by three different mechanisms: Blinkit (login-gated checkout, COD path researched not run), UC (a CAPTCHA wall we chose to respect, human finishes in-app), Uber (gate crossed, real dispatch, verified cancel).

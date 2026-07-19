@@ -8,6 +8,9 @@ export interface ToolCtx {
   /** Stable per-user id (from the client) — keys the user's account/login so
    * many users share the app without cart/account collisions. */
   userId: string
+  /** A custom delivery address the user set (UI bar / session), if any — used to
+   * disambiguate which saved address to book to (e.g. two "Home" addresses). */
+  deliveryAddress?: string
 }
 
 type Impl<I> = (input: I, ctx: ToolCtx) => Promise<unknown>
@@ -44,6 +47,9 @@ export interface Adapter {
   /** Observe: poll/stream state back after confirm (ride tracking, booking
    * status, order state). Optional until the target reaches that stage. */
   observe?(intent: Intent, ctx: ToolCtx): AsyncIterable<AgentEvent>
+  /** Cancel an active post-confirm operation (a dispatched ride) — the KILL PATH
+   * for after the money line is crossed. Optional; only delivery implements it. */
+  cancel?(ctx: ToolCtx): Promise<{ cancelled: boolean; finalStatus?: string; note: string }>
   /** Pin a real-world location (lat/lon) captured by the client (web-UI browser
    * geolocation, CLI flag) before the run drives the target. Location-first
    * targets (quick-commerce dark stores, delivery pickup) use it; others ignore.
@@ -63,6 +69,6 @@ export interface Adapter {
   /** `instructions`, if present, is shown to the user before the harness asks
    * its follow-up question — e.g. a command to run in their own terminal, for
    * adapters where login can't be driven by us at all (see homeservices/auth.ts). */
-  sendLoginCode?(phone: string): Promise<{ ok: boolean; error?: string; instructions?: string }>
+  sendLoginCode?(phone: string, userId?: string): Promise<{ ok: boolean; error?: string; instructions?: string }>
   verifyLoginCode?(userId: string, phone: string, code: string): Promise<{ ok: boolean; error?: string }>
 }

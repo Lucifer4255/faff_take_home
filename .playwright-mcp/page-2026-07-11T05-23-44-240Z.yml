@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e2724]:
+      - generic [ref=e2728]:
+        - generic [ref=e2740]:
+          - img:
+            - img "Urban Company logo" [ref=e2742]
+        - heading "Checkout" [level=4] [ref=e2753]
+      - generic [ref=e2758]:
+        - generic [ref=e2769]:
+          - generic [ref=e2773]:
+            - generic [ref=e2781]:
+              - paragraph [ref=e2783]: Send booking details to
+              - paragraph [ref=e2786]: +91 7439245158
+            - generic [ref=e2791]:
+              - generic:
+                - generic [ref=e2796]:
+                  - paragraph [ref=e2798]: Address
+                  - generic [ref=e3331]:
+                    - paragraph [ref=e3332]: Home
+                    - paragraph [ref=e3333]: "- 1, Bengaluru"
+                - button "Edit" [disabled] [ref=e3336] [cursor=pointer]:
+                  - paragraph [ref=e3338]: Edit
+            - generic [ref=e2810]:
+              - generic:
+                - generic [ref=e2815]:
+                  - paragraph [ref=e2817]: Slot
+                  - paragraph [ref=e3524]: Sat, Jul 11 - 06:00 PM
+                - button "Edit" [disabled] [ref=e3527] [cursor=pointer]:
+                  - paragraph [ref=e3529]: Edit
+            - generic [ref=e2821]:
+              - paragraph [ref=e2829]: Payment Method
+              - button "Proceed to pay" [ref=e3534] [cursor=pointer]:
+                - paragraph [ref=e3536]: Proceed to pay
+            - generic [ref=e3538]:
+              - paragraph [ref=e3539]: By proceeding, you agree to our
+              - paragraph [ref=e3540] [cursor=pointer]: T&C
+              - paragraph [ref=e3541]: ","
+              - paragraph [ref=e3542] [cursor=pointer]: Privacy
+              - paragraph [ref=e3543]: and
+              - paragraph [ref=e3544] [cursor=pointer]: Cancellation Policy
+              - paragraph [ref=e3545]: .
+          - generic [ref=e2838]:
+            - heading "Cancellation policy" [level=4] [ref=e2839]
+            - paragraph [ref=e2842]: Free cancellations if done more than 48 hrs before the service. A fee will be charged otherwise.
+            - button "Read full policy" [disabled] [ref=e2848] [cursor=pointer]:
+              - paragraph [ref=e2850]: Read full policy
+        - generic [ref=e2853]:
+          - generic [ref=e2863]:
+            - heading "Full Home/ By Room Cleaning" [level=4] [ref=e2869]
+            - generic [ref=e2872]:
+              - generic "Furnished apartment - Home deep cleaning":
+                - generic "Furnished apartment - Home deep cleaning" [ref=e2873]:
+                  - paragraph [ref=e2875]: Furnished apartment - Home deep cleaning
+                - generic [ref=e2878]:
+                  - generic [ref=e2880]:
+                    - button "Add" [disabled] [ref=e2881] [cursor=pointer]:
+                      - paragraph [ref=e2882]: Add
+                    - generic [ref=e2883]:
+                      - button "Furnished apartment - Home deep cleaning Total item count will become0" [disabled] [ref=e2884] [cursor=pointer]
+                      - generic [ref=e2885]:
+                        - paragraph [ref=e2887]: "1"
+                        - generic "Furnished apartment - Home deep cleaning with a price of ₹3,499 , Total number of items present in your cart is 1" [ref=e2888]:
+                          - paragraph [ref=e2889]: "1"
+                        - paragraph [ref=e2891]: "0"
+                      - button "Furnished apartment - Home deep cleaning Total item count will become2" [disabled] [ref=e2892] [cursor=pointer]
+                  - paragraph [ref=e2895]: ₹3,499
+              - generic "Sku description for the package, double tap to edit your package or view details" [ref=e2898]:
+                - generic [ref=e2899]:
+                  - generic "1BHK- Furnished home cleaning, Cabinet exterior & stove, Sofa & mattress dry vacuuming," [ref=e2900]:
+                    - paragraph [ref=e2905]: 1BHK- Furnished home cleaning x1
+                    - paragraph [ref=e2909]: Cabinet exterior & stove x1
+                    - paragraph [ref=e2913]: Sofa & mattress dry vacuuming x1
+                  - button "Edit package" [ref=e2915] [cursor=pointer]:
+                    - paragraph [ref=e2917]: Edit package
+            - generic [ref=e2923] [cursor=pointer]:
+              - checkbox "checkBox" [ref=e2925]
+              - paragraph [ref=e2931]: Avoid calling before reaching the location
+          - generic [ref=e2944] [cursor=pointer]:
+            - paragraph [ref=e2952]: Coupons and offers
+            - button "9 offers" [ref=e2957]:
+              - paragraph [ref=e2959]: 9 offers
+          - generic [ref=e2973]:
+            - generic [ref=e3553] [cursor=pointer]:
+              - generic [ref=e3554]:
+                - paragraph [ref=e3555]: Total bill
+                - heading [level=4] [ref=e3556]
+                - paragraph [ref=e3557]: ₹3,807
+                - heading [level=4] [ref=e3558]
+                - paragraph [ref=e3559]: ₹731
+              - paragraph [ref=e3562]: Incl. govt. taxes & charges
+              - paragraph [ref=e3565]: You saved ₹150
+            - generic [ref=e3579]:
+              - generic [ref=e3580]:
+                - paragraph [ref=e3581]: Advance payment
+                - paragraph [ref=e3582]: ₹731
+              - paragraph [ref=e3585]: ₹2926 payable after service
+            - generic [ref=e3025]:
+              - paragraph [ref=e3030]: Add a tip to thank the Professional
+              - generic [ref=e3034]:
+                - generic [ref=e3035] [cursor=pointer]:
+                  - paragraph [ref=e3036]: ₹
+                  - paragraph [ref=e3037]: "50"
+                - generic [ref=e3038] [cursor=pointer]:
+                  - paragraph [ref=e3039]: ₹
+                  - paragraph [ref=e3040]: "75"
+                  - paragraph [ref=e3042]: Popular
+                - generic [ref=e3043] [cursor=pointer]:
+                  - paragraph [ref=e3044]: ₹
+                  - paragraph [ref=e3045]: "100"
+                - paragraph [ref=e3047] [cursor=pointer]: Custom
+              - paragraph [ref=e3051]: 100% of the tip goes to the professional.
+          - generic [ref=e3063]:
+            - generic [ref=e3066]:
+              - paragraph [ref=e3067]: Amount to pay
+              - heading "₹731" [level=4] [ref=e3586]
+            - paragraph [ref=e3073] [cursor=pointer]: View breakup

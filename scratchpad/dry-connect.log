@@ -1,0 +1,9 @@
+[dry] already logged in as "default".
+[dry] pickup: NRS MEDICAL COLLEGE AND HOSPITAL @ 22.563736499999997 88.3703067
+[dry] drop:   Shree Krishna Bhawan @ 22.6684335 88.4316396
+[dry] courier options=1: Parcel Bike ₹130.18 vvid=20027271
+[dry] connect deep link: https://m.uber.com/go/connect/product-selection?pickup=%7B%22addressLine1%22%3A%22NRS%20MEDICAL%…
+[dry] running bookCourier UBER_INSPECT=1 — fills sender+recipient, dumps the review page, NO Confirm click…
+[dry] RESULT: {"dispatched":false,"note":"couldn't reach the parcel review page (product-confirmation) — nothing charged"}
+[dry] screenshots → .data/uber-connect-review.png (review page) | .data/uber-connect-selection.png (only if it stalled at product-selection)
+[dry] done — nothing dispatched, nothing charged.

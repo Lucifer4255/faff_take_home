@@ -10,6 +10,7 @@ export async function POST(req: Request): Promise<Response> {
   const body = (await req.json().catch(() => ({}))) as {
     text?: string
     address?: string
+    deliveryAddress?: string
     location?: { lat?: number; lon?: number }
     userId?: string
   }
@@ -19,10 +20,11 @@ export async function POST(req: Request): Promise<Response> {
   const loc = body.location
   const location =
     typeof loc?.lat === 'number' && typeof loc?.lon === 'number' ? { lat: loc.lat, lon: loc.lon } : undefined
+  const deliveryAddress = typeof body.deliveryAddress === 'string' && body.deliveryAddress.trim() ? body.deliveryAddress.trim() : undefined
   const userId = typeof body.userId === 'string' && body.userId ? body.userId : undefined
   const session = new Session()
   sessions.set(session.id, session)
   // Kick off the run; the client watches progress over the SSE stream.
-  void session.run({ text: body.text, address: body.address, location, userId })
+  void session.run({ text: body.text, address: body.address, deliveryAddress, location, userId })
   return Response.json({ sessionId: session.id })
 }

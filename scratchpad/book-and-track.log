@@ -1,0 +1,28 @@
+ROUTE Park Street -> Quest Mall
+BOOKING: Bike Saver ₹32.50 (vvid 20065235)  — dispatching a REAL driver now
+BOOK result: {
+  dispatched: false,
+  tripId: undefined,
+  note: 'request did not confirm'
+}
+--- tracking (20s) ---
+  [1:34:44 pm] status=? driver=- eta=?m loc=22.5486941,88.3585077
+  [1:34:48 pm] status=? driver=- eta=?m loc=22.5486941,88.3585077
+  [1:34:53 pm] status=? driver=- eta=?m loc=22.5486941,88.3585077
+  [1:34:56 pm] status=? driver=- eta=?m loc=22.5486941,88.3585077
+  [1:35:02 pm] status=? driver=- eta=?m loc=22.5486941,88.3585077
+captured 5 status snapshots
+first GetStatus rawSlice: {"data":{"status":{"city":{"countryIso2":"IN","currencyCode":"INR","id":476,"name":"kolkata","timezone":"Asia/Kolkata","__typename":"RVWebCommonCity"},"clientStatus":"Looking","coordinate":{"latitude":22.5486941,"longitude":88.3585077,"__typename":"RVWebCommonCoordinate"},"lastRequest":null,"nearbyVehicles":[{"bearing":122,"coordinate":{"latitude":22.54996,"longitude":88.35533,"__typename":"RVWebC
+--- CANCELLING ---
+CANCEL result: {
+  cancelled: false,
+  note: "couldn't cancel automatically (locator.click: Timeout 8000ms exceeded.\n" +
+    'Call log:\n' +
+    "\x1B[2m  - waiting for getByRole('button', { name: /cancel/i }).first()\x1B[22m\n" +
+    ')'
+}
+--- confirming cancellation (8s) ---
+  post-cancel status=?
+  post-cancel status=?
+post-cancel snapshots: 2
+DONE

@@ -1,0 +1,1602 @@
+- generic [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e9]:
+        - generic [ref=e13]:
+          - img [ref=e23] [cursor=pointer]:
+            - img "Urban Company logo" [ref=e25]
+          - paragraph [ref=e48] [cursor=pointer]: 3, Norris Rd, Richmond Town, Bengaluru, Karnataka 560025, India
+          - textbox "Search in Prime Spa for Women" [ref=e74]
+        - generic [ref=e87]:
+          - generic [ref=e89]:
+            - generic [ref=e97] [cursor=pointer]:
+              - generic [ref=e98]:
+                - heading "Prime Spa for Women" [level=2] [ref=e99]
+                - paragraph [ref=e105]: 4.82 (3.7 M bookings)
+              - generic [ref=e108]:
+                - paragraph [ref=e113]: Instant
+                - paragraph [ref=e115]: In 54 mins
+            - generic [ref=e128]:
+              - paragraph [ref=e131]: Select a service
+              - generic [ref=e136]:
+                - generic [ref=e138]:
+                  - generic "Stress relief" [ref=e140] [cursor=pointer]:
+                    - img:
+                      - img "Stress relief" [ref=e142]
+                    - paragraph [ref=e144]: Stress relief
+                  - generic "Pain relief" [ref=e146] [cursor=pointer]:
+                    - img:
+                      - img "Pain relief" [ref=e148]
+                    - paragraph [ref=e150]: Pain relief
+                  - generic "Skin care scrubs" [ref=e152] [cursor=pointer]:
+                    - img:
+                      - img "Skin care scrubs" [ref=e154]
+                    - paragraph [ref=e156]: Skin care scrubs
+                - generic [ref=e158]:
+                  - generic "Post natal" [ref=e160] [cursor=pointer]:
+                    - img:
+                      - img "Post natal" [ref=e162]
+                    - paragraph [ref=e164]: Post natal
+                  - generic "Elderly care" [ref=e166] [cursor=pointer]:
+                    - img:
+                      - img "Elderly care" [ref=e168]
+                    - paragraph [ref=e170]: Elderly care
+                  - generic "Add-ons" [ref=e172] [cursor=pointer]:
+                    - img:
+                      - img "Add-ons" [ref=e174]
+                    - paragraph [ref=e176]: Add-ons
+          - generic [ref=e208]:
+            - generic [ref=e215]:
+              - heading "Stress relief" [level=2] [ref=e227]
+              - generic [ref=e232] [cursor=pointer]:
+                - generic [ref=e233]:
+                  - generic "Stress relief Swedish massage, Your service will take around 60 mins! with a price of Starts at ₹1,319 !" [ref=e234]:
+                    - paragraph [ref=e239]: BESTSELLER
+                    - paragraph [ref=e241]: Stress relief Swedish massage
+                    - paragraph [ref=e244]: 4.81 (291K reviews)
+                    - generic [ref=e246]:
+                      - paragraph [ref=e247]: Starts at ₹1,319
+                      - paragraph [ref=e249]: 60 mins
+                  - generic [ref=e253]:
+                    - button "Add" [active] [ref=e254]:
+                      - paragraph [ref=e255]: Add
+                    - generic [ref=e256]:
+                      - button "Stress relief Swedish massage Total item count will become-1" [ref=e257]
+                      - button "Stress relief Swedish massage Total item count will become1" [ref=e258]
+                - 'generic "A soothing full-body experience for total relaxation, Save more: Add a pack to unlock extra savings," [ref=e259]':
+                  - paragraph [ref=e265]: A soothing full-body experience for total relaxation
+                  - paragraph [ref=e269]: "Save more: Add a pack to unlock extra savings"
+                - button "View details" [ref=e272]:
+                  - paragraph [ref=e274]: View details
+              - generic [ref=e279]:
+                - img "Stress relief - Quick comfort therapy" [ref=e282] [cursor=pointer]
+                - generic [ref=e284] [cursor=pointer]:
+                  - generic [ref=e285]:
+                    - generic "Quick comfort therapy, Your service will take around 45 mins! with a price of ₹999 !" [ref=e286]:
+                      - paragraph [ref=e288]: Quick comfort therapy
+                      - paragraph [ref=e291]: 4.80 (15K reviews)
+                      - generic [ref=e293]:
+                        - paragraph [ref=e294]: ₹999
+                        - paragraph [ref=e296]: ₹1,199
+                        - paragraph [ref=e298]: 45 mins
+                    - generic [ref=e302]:
+                      - button "Add" [ref=e303]:
+                        - paragraph [ref=e304]: Add
+                      - generic [ref=e305]:
+                        - button "Quick comfort therapy Total item count will become-1" [ref=e306]
+                        - button "Quick comfort therapy Total item count will become1" [ref=e307]
+                  - generic "Revitalising oil massage focused on key stress areas, Eases tension & restores energy for a relaxed, refreshed feel," [ref=e308]:
+                    - paragraph [ref=e314]: Revitalising oil massage focused on key stress areas
+                    - paragraph [ref=e318]: Eases tension & restores energy for a relaxed, refreshed feel
+                  - button "View Details" [ref=e321]:
+                    - paragraph [ref=e323]: View details
+              - generic [ref=e330] [cursor=pointer]:
+                - generic "Swedish with foot massage, Your service will take around 1 hr 20 mins! with a price of ₹1,769 !" [ref=e331]:
+                  - paragraph [ref=e333]: VALUE-SAVER
+                  - paragraph [ref=e335]: Swedish with foot massage
+                  - paragraph [ref=e338]: 4.82 (12K reviews)
+                  - generic [ref=e340]:
+                    - paragraph [ref=e341]: ₹1,769
+                    - paragraph [ref=e343]: ₹1,869
+                    - paragraph [ref=e345]: 1 hr 20 mins
+                  - generic [ref=e346]:
+                    - 'generic "60 mins Swedish massage & 20 mins foot massage, Save more: Add a pack to unlock extra savings," [ref=e347]':
+                      - paragraph [ref=e353]: 60 mins Swedish massage & 20 mins foot massage
+                      - paragraph [ref=e357]: "Save more: Add a pack to unlock extra savings"
+                    - button "View Details" [ref=e359]:
+                      - paragraph [ref=e361]: View details
+                - generic [ref=e363]:
+                  - img "Stress relief - Swedish with foot massage" [ref=e367]
+                  - generic [ref=e370]:
+                    - button "Add" [ref=e371]:
+                      - paragraph [ref=e372]: Add
+                    - generic [ref=e373]:
+                      - button "Swedish with foot massage Total item count will become-1" [ref=e374]
+                      - button "Swedish with foot massage Total item count will become1" [ref=e375]
+              - generic [ref=e382] [cursor=pointer]:
+                - generic "Swedish with head & shoulder massage, Your service will take around 1 hr 20 mins! with a price of ₹1,769 !" [ref=e383]:
+                  - paragraph [ref=e385]: Swedish with head & shoulder massage
+                  - paragraph [ref=e388]: 4.82 (17K reviews)
+                  - generic [ref=e390]:
+                    - paragraph [ref=e391]: ₹1,769
+                    - paragraph [ref=e393]: 1 hr 20 mins
+                  - generic [ref=e394]:
+                    - generic "60 mins Swedish massage, 20 mins head & shoulder massage," [ref=e395]:
+                      - paragraph [ref=e401]: 60 mins Swedish massage
+                      - paragraph [ref=e405]: 20 mins head & shoulder massage
+                    - button "View Details" [ref=e407]:
+                      - paragraph [ref=e409]: View details
+                - generic [ref=e411]:
+                  - img "Stress relief - Swedish with head & shoulder massage" [ref=e415]
+                  - generic [ref=e418]:
+                    - button "Add" [ref=e419]:
+                      - paragraph [ref=e420]: Add
+                    - generic [ref=e421]:
+                      - button "Swedish with head & shoulder massage Total item count will become-1" [ref=e422]
+                      - button "Swedish with head & shoulder massage Total item count will become1" [ref=e423]
+              - generic [ref=e428]:
+                - img "Stress relief - Top-to-toe stress relief massage" [ref=e431] [cursor=pointer]
+                - generic [ref=e433] [cursor=pointer]:
+                  - generic [ref=e434]:
+                    - generic "Top-to-toe stress relief massage, Your service will take around 1 hr 40 mins! with a price of ₹1,929 !" [ref=e435]:
+                      - paragraph [ref=e437]: Top-to-toe stress relief massage
+                      - paragraph [ref=e440]: 4.82 (59K reviews)
+                      - generic [ref=e442]:
+                        - paragraph [ref=e443]: ₹1,929
+                        - paragraph [ref=e445]: 1 hr 40 mins
+                    - generic [ref=e449]:
+                      - button "Add" [ref=e450]:
+                        - paragraph [ref=e451]: Add
+                      - generic [ref=e452]:
+                        - button "Top-to-toe stress relief massage Total item count will become-1" [ref=e453]
+                        - button "Top-to-toe stress relief massage Total item count will become1" [ref=e454]
+                  - generic "Customisable pressure massage with scalp care & foot reflexology," [ref=e455]:
+                    - paragraph [ref=e461]: Customisable pressure massage with scalp care & foot reflexology
+                  - button "View Details" [ref=e464]:
+                    - paragraph [ref=e466]: View details
+              - heading "Pain relief" [level=2] [ref=e483]
+              - generic [ref=e486]:
+                - generic:
+                  - generic:
+                    - img "Pain relief - Deep tissue massage"
+                - generic [ref=e488] [cursor=pointer]:
+                  - generic [ref=e489]:
+                    - generic "Deep tissue massage, Your service will take around 60 mins! with a price of Starts at ₹1,469 !" [ref=e490]:
+                      - paragraph [ref=e495]: BESTSELLER
+                      - paragraph [ref=e497]: Deep tissue massage
+                      - paragraph [ref=e500]: 4.81 (214K reviews)
+                      - generic [ref=e502]:
+                        - paragraph [ref=e503]: Starts at ₹1,469
+                        - paragraph [ref=e505]: 60 mins
+                    - generic [ref=e509]:
+                      - button "Add" [ref=e510]:
+                        - paragraph [ref=e511]: Add
+                      - generic [ref=e512]:
+                        - button "Deep tissue massage Total item count will become-1" [ref=e513]
+                        - button "Deep tissue massage Total item count will become1" [ref=e514]
+                  - 'generic "Supports post-workout relaxation, Save more: Add a pack to unlock extra savings on each visit," [ref=e515]':
+                    - paragraph [ref=e521]: Supports post-workout relaxation
+                    - paragraph [ref=e525]: "Save more: Add a pack to unlock extra savings on each visit"
+                  - button "View details" [ref=e528]:
+                    - paragraph [ref=e530]: View details
+              - generic [ref=e537] [cursor=pointer]:
+                - generic "Deep tissue with foot massage, Your service will take around 1 hr 20 mins! with a price of ₹1,898 !" [ref=e538]:
+                  - paragraph [ref=e540]: Deep tissue with foot massage
+                  - paragraph [ref=e543]: 4.81 (10K reviews)
+                  - generic [ref=e545]:
+                    - paragraph [ref=e546]: ₹1,898
+                    - paragraph [ref=e548]: ₹1,998
+                    - paragraph [ref=e550]: 1 hr 20 mins
+                  - generic [ref=e551]:
+                    - 'generic "60 mins deep tissue massage & 20 mins foot massage, Save more: Add a pack to unlock extra savings on each visit," [ref=e552]':
+                      - paragraph [ref=e558]: 60 mins deep tissue massage & 20 mins foot massage
+                      - paragraph [ref=e562]: "Save more: Add a pack to unlock extra savings on each visit"
+                    - button "View Details" [ref=e564]:
+                      - paragraph [ref=e566]: View details
+                - generic [ref=e568]:
+                  - img "Pain relief - Deep tissue with foot massage" [ref=e572]
+                  - generic [ref=e575]:
+                    - button "Add" [ref=e576]:
+                      - paragraph [ref=e577]: Add
+                    - generic [ref=e578]:
+                      - button "Deep tissue with foot massage Total item count will become-1" [ref=e579]
+                      - button "Deep tissue with foot massage Total item count will become1" [ref=e580]
+              - generic [ref=e587] [cursor=pointer]:
+                - generic "Back relief massage, Your service will take around 40 mins! with a price of ₹929 !" [ref=e588]:
+                  - paragraph [ref=e590]: Back relief massage
+                  - paragraph [ref=e593]: 4.84 (10K reviews)
+                  - generic [ref=e595]:
+                    - paragraph [ref=e596]: ₹929
+                    - paragraph [ref=e598]: 40 mins
+                  - generic [ref=e599]:
+                    - generic "Focuses on lower back, spine & shoulder blades to ease tension, Eliminates stiffness & inflammation in the affected areas," [ref=e600]:
+                      - paragraph [ref=e606]: Focuses on lower back, spine & shoulder blades to ease tension
+                      - paragraph [ref=e610]: Eliminates stiffness & inflammation in the affected areas
+                    - button "View Details" [ref=e612]:
+                      - paragraph [ref=e614]: View details
+                - generic [ref=e616]:
+                  - img "Pain relief - Back relief massage" [ref=e620]
+                  - generic [ref=e623]:
+                    - button "Add" [ref=e624]:
+                      - paragraph [ref=e625]: Add
+                    - generic [ref=e626]:
+                      - button "Back relief massage Total item count will become-1" [ref=e627]
+                      - button "Back relief massage Total item count will become1" [ref=e628]
+              - generic [ref=e635] [cursor=pointer]:
+                - generic "Leg relief massage, Your service will take around 40 mins! with a price of ₹929 !" [ref=e636]:
+                  - paragraph [ref=e638]: Leg relief massage
+                  - paragraph [ref=e641]: 4.83 (16K reviews)
+                  - generic [ref=e643]:
+                    - paragraph [ref=e644]: ₹929
+                    - paragraph [ref=e646]: 40 mins
+                  - generic [ref=e647]:
+                    - generic "Focuses on thighs, calves, feets to alleviate soreness, Targets stiffness & discomfort in the affected areas," [ref=e648]:
+                      - paragraph [ref=e654]: Focuses on thighs, calves, feets to alleviate soreness
+                      - paragraph [ref=e658]: Targets stiffness & discomfort in the affected areas
+                    - button "View Details" [ref=e660]:
+                      - paragraph [ref=e662]: View details
+                - generic [ref=e664]:
+                  - img "Pain relief - Leg relief massage" [ref=e668]
+                  - generic [ref=e671]:
+                    - button "Add" [ref=e672]:
+                      - paragraph [ref=e673]: Add
+                    - generic [ref=e674]:
+                      - button "Leg relief massage Total item count will become-1" [ref=e675]
+                      - button "Leg relief massage Total item count will become1" [ref=e676]
+              - heading "Skin care scrubs" [level=2] [ref=e693]
+              - generic [ref=e696]:
+                - img "Skin care scrubs - Full body massage & scrub" [ref=e699] [cursor=pointer]
+                - generic [ref=e701] [cursor=pointer]:
+                  - generic [ref=e702]:
+                    - generic "Full body massage & scrub, Your service will take around 1 hr 30 mins! with a price of ₹1,699 !" [ref=e703]:
+                      - paragraph [ref=e705]: Full body massage & scrub
+                      - paragraph [ref=e708]: 4.82 (54K reviews)
+                      - generic [ref=e710]:
+                        - paragraph [ref=e711]: ₹1,699
+                        - paragraph [ref=e713]: 1 hr 30 mins
+                    - generic [ref=e717]:
+                      - button "Add" [ref=e718]:
+                        - paragraph [ref=e719]: Add
+                      - generic [ref=e720]:
+                        - button "Full body massage & scrub Total item count will become-1" [ref=e721]
+                        - button "Full body massage & scrub Total item count will become1" [ref=e722]
+                  - 'generic "Removes dead skin & leaves skin soft, smooth & hydrated, Save more: Add a pack to unlock extra savings on each visit," [ref=e723]':
+                    - paragraph [ref=e729]: Removes dead skin & leaves skin soft, smooth & hydrated
+                    - paragraph [ref=e733]: "Save more: Add a pack to unlock extra savings on each visit"
+                  - button "View Details" [ref=e736]:
+                    - paragraph [ref=e738]: View details
+              - heading "Post natal" [level=2] [ref=e755]
+              - generic [ref=e760] [cursor=pointer]:
+                - generic "Post natal massage, Your service will take around 60 mins! with a price of Starts at ₹1,369 !" [ref=e761]:
+                  - paragraph [ref=e763]: Post natal massage
+                  - paragraph [ref=e766]: 4.83 (4K reviews)
+                  - generic [ref=e768]:
+                    - paragraph [ref=e769]: Starts at ₹1,369
+                    - paragraph [ref=e771]: 60 mins
+                  - generic [ref=e772]:
+                    - 'generic "Reduces water retention & eases muscle tension, Save more: Add a pack to unlock extra savings on each visit," [ref=e773]':
+                      - paragraph [ref=e779]: Reduces water retention & eases muscle tension
+                      - paragraph [ref=e783]: "Save more: Add a pack to unlock extra savings on each visit"
+                    - button "View details" [ref=e785]:
+                      - paragraph [ref=e787]: View details
+                - generic [ref=e789]:
+                  - generic [ref=e790]:
+                    - generic:
+                      - generic:
+                        - img "Post natal - Post natal massage"
+                  - generic [ref=e793]:
+                    - button "Add" [ref=e794]:
+                      - paragraph [ref=e795]: Add
+                    - generic [ref=e796]:
+                      - button "Post natal massage Total item count will become-1" [ref=e797]
+                      - button "Post natal massage Total item count will become1" [ref=e798]
+              - heading "Elderly care" [level=2] [ref=e815]
+              - generic [ref=e818]:
+                - generic:
+                  - generic:
+                    - img "Elderly care - Elderly care massage"
+                - generic [ref=e820] [cursor=pointer]:
+                  - generic [ref=e821]:
+                    - generic "Elderly care massage, Your service will take around 60 mins! with a price of Starts at ₹1,399 !" [ref=e822]:
+                      - paragraph [ref=e827]: NEWLY LAUNCHED
+                      - paragraph [ref=e829]: Elderly care massage
+                      - paragraph [ref=e832]: 4.86 (2K reviews)
+                      - generic [ref=e834]:
+                        - paragraph [ref=e835]: Starts at ₹1,399
+                        - paragraph [ref=e837]: 60 mins
+                    - generic [ref=e841]:
+                      - button "Add" [ref=e842]:
+                        - paragraph [ref=e843]: Add
+                      - generic [ref=e844]:
+                        - button "Elderly care massage Total item count will become-1" [ref=e845]
+                        - button "Elderly care massage Total item count will become1" [ref=e846]
+                  - generic "Light-pressure full-body massage easing senior aches, promoting restful unwind, Eases muscle stress & helps you unwind for better days," [ref=e847]:
+                    - paragraph [ref=e853]: Light-pressure full-body massage easing senior aches, promoting restful unwind
+                    - paragraph [ref=e857]: Eases muscle stress & helps you unwind for better days
+                  - button "View details" [ref=e860]:
+                    - paragraph [ref=e862]: View details
+              - heading "Add-ons" [level=2] [ref=e879]
+              - generic [ref=e884] [cursor=pointer]:
+                - generic "Foot massage, Your service will take around 20 mins! with a price of ₹549 !" [ref=e885]:
+                  - paragraph [ref=e887]: Foot massage
+                  - paragraph [ref=e890]: 4.80 (57K reviews)
+                  - generic [ref=e892]:
+                    - paragraph [ref=e893]: ₹549
+                    - paragraph [ref=e895]: 20 mins
+                  - generic [ref=e896]:
+                    - generic "Foot massage using micro-movements to target every pressure point, Targets stiffness & discomfort in your feet," [ref=e897]:
+                      - paragraph [ref=e903]: Foot massage using micro-movements to target every pressure point
+                      - paragraph [ref=e907]: Targets stiffness & discomfort in your feet
+                    - button "View Details" [ref=e909]:
+                      - paragraph [ref=e911]: View details
+                - generic [ref=e913]:
+                  - img "Add-ons - Foot massage" [ref=e917]
+                  - generic [ref=e920]:
+                    - button "Add" [ref=e921]:
+                      - paragraph [ref=e922]: Add
+                    - generic [ref=e923]:
+                      - button "Foot massage Total item count will become-1" [ref=e924]
+                      - button "Foot massage Total item count will become1" [ref=e925]
+              - generic [ref=e932] [cursor=pointer]:
+                - generic "Face massage, Your service will take around 20 mins! with a price of ₹349 !" [ref=e933]:
+                  - paragraph [ref=e935]: Face massage
+                  - paragraph [ref=e938]: 4.80 (37K reviews)
+                  - generic [ref=e940]:
+                    - paragraph [ref=e941]: ₹349
+                    - paragraph [ref=e943]: 20 mins
+                  - generic [ref=e944]:
+                    - generic "Gentle massage with upward & outward circular motions, Reduces fine lines & puffiness for a refreshed look," [ref=e945]:
+                      - paragraph [ref=e951]: Gentle massage with upward & outward circular motions
+                      - paragraph [ref=e955]: Reduces fine lines & puffiness for a refreshed look
+                    - button "View Details" [ref=e957]:
+                      - paragraph [ref=e959]: View details
+                - generic [ref=e961]:
+                  - img "Add-ons - Face massage" [ref=e965]
+                  - generic [ref=e968]:
+                    - button "Add" [ref=e969]:
+                      - paragraph [ref=e970]: Add
+                    - generic [ref=e971]:
+                      - button "Face massage Total item count will become-1" [ref=e972]
+                      - button "Face massage Total item count will become1" [ref=e973]
+              - generic [ref=e980] [cursor=pointer]:
+                - generic "Head & shoulder massage, Your service will take around 20 mins! with a price of ₹459 !" [ref=e981]:
+                  - paragraph [ref=e983]: Head & shoulder massage
+                  - paragraph [ref=e986]: 4.80 (46K reviews)
+                  - generic [ref=e988]:
+                    - paragraph [ref=e989]: ₹459
+                    - paragraph [ref=e991]: 20 mins
+                  - generic [ref=e992]:
+                    - generic "Focused medium-pressure relief for head, neck & shoulders, Releases muscle tension & nourishes scalp," [ref=e993]:
+                      - paragraph [ref=e999]: Focused medium-pressure relief for head, neck & shoulders
+                      - paragraph [ref=e1003]: Releases muscle tension & nourishes scalp
+                    - button "View Details" [ref=e1005]:
+                      - paragraph [ref=e1007]: View details
+                - generic [ref=e1009]:
+                  - img "Add-ons - Head & shoulder massage" [ref=e1013]
+                  - generic [ref=e1016]:
+                    - button "Add" [ref=e1017]:
+                      - paragraph [ref=e1018]: Add
+                    - generic [ref=e1019]:
+                      - button "Head & shoulder massage Total item count will become-1" [ref=e1020]
+                      - button "Head & shoulder massage Total item count will become1" [ref=e1021]
+              - generic [ref=e1028] [cursor=pointer]:
+                - generic "Head massage, Your service will take around 20 mins! with a price of ₹349 !" [ref=e1029]:
+                  - paragraph [ref=e1031]: Head massage
+                  - paragraph [ref=e1034]: 4.83 (37K reviews)
+                  - generic [ref=e1036]:
+                    - paragraph [ref=e1037]: ₹349
+                    - paragraph [ref=e1039]: 20 mins
+                  - generic [ref=e1040]:
+                    - generic "Calming massage to soothe mind & promote hair health," [ref=e1041]:
+                      - paragraph [ref=e1047]: Calming massage to soothe mind & promote hair health
+                    - button "View Details" [ref=e1049]:
+                      - paragraph [ref=e1051]: View details
+                - generic [ref=e1053]:
+                  - img "Add-ons - Head massage" [ref=e1057]
+                  - generic [ref=e1060]:
+                    - button "Add" [ref=e1061]:
+                      - paragraph [ref=e1062]: Add
+                    - generic [ref=e1063]:
+                      - button "Head massage Total item count will become-1" [ref=e1064]
+                      - button "Head massage Total item count will become1" [ref=e1065]
+              - generic [ref=e1072] [cursor=pointer]:
+                - generic "Scrub, Your service will take around 20 mins! with a price of Starts at ₹499 !" [ref=e1073]:
+                  - paragraph [ref=e1075]: Scrub
+                  - paragraph [ref=e1078]: 4.62 (37 reviews)
+                  - paragraph [ref=e1081]: Starts at ₹499
+                  - generic [ref=e1083]:
+                    - generic "Targeted scrub to cleanse, smoothen & refresh your skin," [ref=e1084]:
+                      - paragraph [ref=e1090]: Targeted scrub to cleanse, smoothen & refresh your skin
+                    - button "View Details" [ref=e1092]:
+                      - paragraph [ref=e1094]: View details
+                - generic [ref=e1095]:
+                  - generic [ref=e1096]:
+                    - img "Add-ons - Scrub" [ref=e1100]
+                    - generic [ref=e1103]:
+                      - button "Add" [ref=e1104]:
+                        - paragraph [ref=e1105]: Add
+                      - generic [ref=e1106]:
+                        - button "Scrub Total item count will become-1" [ref=e1107]
+                        - button "Scrub Total item count will become1" [ref=e1108]
+                  - paragraph [ref=e1110]: 3 options
+              - generic [ref=e1117] [cursor=pointer]:
+                - generic "Stretch therapy , Your service will take around 15 mins! with a price of ₹349 !" [ref=e1118]:
+                  - paragraph [ref=e1120]: Stretch therapy
+                  - paragraph [ref=e1123]: 4.88 (13K reviews)
+                  - generic [ref=e1125]:
+                    - paragraph [ref=e1126]: ₹349
+                    - paragraph [ref=e1128]: 15 mins
+                  - generic [ref=e1129]:
+                    - generic "Full-body low-pressure stretch that eases tension & boosts mobility," [ref=e1130]:
+                      - paragraph [ref=e1136]: Full-body low-pressure stretch that eases tension & boosts mobility
+                    - button "View Details" [ref=e1138]:
+                      - paragraph [ref=e1140]: View details
+                - generic [ref=e1142]:
+                  - img "Add-ons - Stretch therapy" [ref=e1146]
+                  - generic [ref=e1149]:
+                    - button "Add" [ref=e1150]:
+                      - paragraph [ref=e1151]: Add
+                    - generic [ref=e1152]:
+                      - button "Stretch therapy Total item count will become-1" [ref=e1153]
+                      - button "Stretch therapy Total item count will become1" [ref=e1154]
+              - generic [ref=e1161] [cursor=pointer]:
+                - generic "Massage top-up (15 mins), Your service will take around 15 mins! with a price of ₹199 !" [ref=e1162]:
+                  - paragraph [ref=e1164]: Massage top-up (15 mins)
+                  - paragraph [ref=e1167]: 4.79 (18K reviews)
+                  - generic [ref=e1169]:
+                    - paragraph [ref=e1170]: ₹199
+                    - paragraph [ref=e1172]: 15 mins
+                  - generic [ref=e1173]:
+                    - generic "Extend your relaxation with 15 extra minutes of massage therapy," [ref=e1174]:
+                      - paragraph [ref=e1180]: Extend your relaxation with 15 extra minutes of massage therapy
+                    - button "View Details" [ref=e1182]:
+                      - paragraph [ref=e1184]: View details
+                - generic [ref=e1186]:
+                  - img "Add-ons - Massage top-up (15 mins)" [ref=e1190]
+                  - generic [ref=e1193]:
+                    - button "Add" [ref=e1194]:
+                      - paragraph [ref=e1195]: Add
+                    - generic [ref=e1196]:
+                      - button "Massage top-up (15 mins) Total item count will become-1" [ref=e1197]
+                      - button "Massage top-up (15 mins) Total item count will become1" [ref=e1198]
+              - generic [ref=e1205] [cursor=pointer]:
+                - generic "Hot bed with a price of ₹49 !" [ref=e1206]:
+                  - paragraph [ref=e1208]: Hot bed
+                  - paragraph [ref=e1211]: 4.80 (17K reviews)
+                  - paragraph [ref=e1214]: ₹49
+                  - generic [ref=e1216]:
+                    - generic "Advanced technology for ambient massage temperature, Enhances relaxation & removes stiffness," [ref=e1217]:
+                      - paragraph [ref=e1223]: Advanced technology for ambient massage temperature
+                      - paragraph [ref=e1227]: Enhances relaxation & removes stiffness
+                    - button "View Details" [ref=e1229]:
+                      - paragraph [ref=e1231]: View details
+                - generic [ref=e1233]:
+                  - img "Add-ons - Hot bed" [ref=e1237]
+                  - generic [ref=e1240]:
+                    - button "Add" [ref=e1241]:
+                      - paragraph [ref=e1242]: Add
+                    - generic [ref=e1243]:
+                      - button "Hot bed Total item count will become-1" [ref=e1244]
+                      - button "Hot bed Total item count will become1" [ref=e1245]
+            - generic [ref=e1254]:
+              - paragraph [ref=e1284]: No items in your cart
+              - generic [ref=e1292]:
+                - generic [ref=e1294]:
+                  - heading "UC Promise" [level=4] [ref=e1295]
+                  - paragraph [ref=e1302]: 4.5+ Rated Therapists
+                  - paragraph [ref=e1308]: Relaxation Assured
+                  - paragraph [ref=e1314]: Specialized Premium Oils
+                - img:
+                  - img "Urban Company Trust Marker" [ref=e1317]
+        - generic [ref=e1326]:
+          - generic [ref=e1338]:
+            - heading "Frequently asked questions" [level=2] [ref=e1343]
+            - generic [ref=e1344]:
+              - generic [ref=e1347]:
+                - paragraph [ref=e1351] [cursor=pointer]: What should I do before a spa treatment?
+                - paragraph [ref=e1356]: "A spa treatment is designed to relax you. Here are some things you can do that can help you get the maximum out of a treatment at home: Go low on caffeine Try not to have a heavy meal before a spa treatment Stretch a bit and get comfortable Communicate with your therapist and let them know if the pressure is right"
+              - generic [ref=e1360]:
+                - paragraph [ref=e1364] [cursor=pointer]: Will the therapist clean my house after a spa at home treatment?
+                - paragraph [ref=e1369]: You can sit back and relax, for the therapist will clean up after every spa appointment and leave your home exactly the way it was.
+              - generic [ref=e1373]:
+                - paragraph [ref=e1377] [cursor=pointer]: Can I gift a spa to a friend?
+                - paragraph [ref=e1382]: With Urban Company’s “Gift a Spa” service, you can book a spa for a friend or a loved one and gift them a day of pampering. Just log on to the app to find the service.
+              - generic [ref=e1386]:
+                - paragraph [ref=e1390] [cursor=pointer]: How does a spa for women at home help me?
+                - paragraph [ref=e1395]: "Apart from being an excellent stress reliever, a spa can do wonders for your health. A spa at home just makes it easier for you to go through the waiting time and going all the way to a location to get one done. Here are some benefits you can reap: Improves cardiovascular health It can help you get sound sleep Alleviates pain It can help lower blood pressure It may also help in weight loss It helps relieve anxiety"
+              - generic [ref=e1399]:
+                - paragraph [ref=e1403] [cursor=pointer]: What should I wear for the spa for women?
+                - paragraph [ref=e1408]: You do not have to worry about what to wear during a session. Our experts get every possible equipment needed for a relaxing spa, including what you can wear. The wearable gown is exclusively made available for clients and is not reused.
+              - generic [ref=e1412]:
+                - paragraph [ref=e1416] [cursor=pointer]: How regularly should I get a spa for women treatment done?
+                - paragraph [ref=e1421]: The regularity of your spa treatments depends on many factors such as physical, emotional stress along with your budget. You will feel the benefits after getting the treatment regularly. A spa once in a year or once in a while doesn’t really help. Get a monthly massage to stay stress free and reap the many benefits that a spa offers. With the Urban Company wellness membership, you can get attractive discounts on your spa treatments!
+              - generic [ref=e1425]:
+                - paragraph [ref=e1429] [cursor=pointer]: Can I use my cell phone during a spa at home treatment?
+                - paragraph [ref=e1434]: You certainly can, but we advise you do not. Getting a spa is to relax your senses and a cellphone will always keep you preoccupied. It is good to keep it aside while you are getting a therapeutic session done.
+              - generic [ref=e1438]:
+                - paragraph [ref=e1442] [cursor=pointer]: What are the add ons I can opt for if I book a spa for women at home?
+                - paragraph [ref=e1447]: "Apart from the spa treatments, Urban Company offers you a host of add ons that you can book. Whether it is a part of a package you choose (and save money) or alacarte: Face massage- A 20 minute face massage with low to medium intensity will leave your face glowing with improved blood circulation Head & shoulder massage- A 20 minute massage with medium intensity will relieve you of headaches and any upper body tension Foot reflexology- A 20 minute massage with low intensity relieves stress and treats imbalances of organs connected to the feet Hand reflexology- A 20 minute massage with high intensity relieves stress and treats imbalances of organs connected to the hands"
+              - generic [ref=e1451]:
+                - paragraph [ref=e1455] [cursor=pointer]: Should I avoid spa for women at home if I am pregnant?
+                - paragraph [ref=e1460]: If you are in your first trimester, it is advisable to not get a spa. Towards the later part of your pregnancy a spa can actually help. We advise consulting the therapist on what treatment would best work for you.
+              - generic [ref=e1464]:
+                - paragraph [ref=e1468] [cursor=pointer]: Will there be a female or a male therapist?
+                - paragraph [ref=e1473]: We only have trained and experienced female therapists. Also as of now, we only offer spa treatments for women.
+              - generic [ref=e1477]:
+                - paragraph [ref=e1481] [cursor=pointer]: What are the different spa treatments for women you have?
+                - paragraph [ref=e1486]: "Urban Company offers a lot of options that specifically cater to your needs. Here are some spa treatments that we offer: Aromatherapy Massage- The pressure intensity is low and it specifically helps in relaxing the body and calming the mind Swedish Massage- The pressure intensity is medium and it helps in muscle relaxation and stress relaxation Thai Massage- - The pressure intensity is high and it helps boosting your energy, improves flexibility and relaxation of muscles Deep Tissue Massage- The pressure intensity is high. It is great of pain relieving and easing chronic muscle tensions Body Scrub Massage- The pressure intensity is low and it helps in getting a youthful, vibrant and hydrated skin."
+              - generic [ref=e1490]:
+                - paragraph [ref=e1494] [cursor=pointer]: I just got waxing done. Can I book a spa at home the same day?
+                - paragraph [ref=e1499]: Your hair follicles open up after you get waxing done. It is best to avoid contact with excess moisture right after getting waxing done. Also if you have a sensitive skin, it may cause redness (and swelling) post waxing. Wait at east 24 hours to get a massage done.
+              - generic [ref=e1503]:
+                - paragraph [ref=e1507] [cursor=pointer]: What is the minimum amount I can book for a spa for women at home service?
+                - paragraph [ref=e1512]: The minimum booking amount for a spa at home service is Rs.999.
+              - generic [ref=e1516]:
+                - paragraph [ref=e1520] [cursor=pointer]: Should I tell anyone about the allergies or medical conditions I have?
+                - paragraph [ref=e1525]: Yes. If you communicate with a therapist, the expert will be able to advice you better on the treatment and the pressure you should pick for the spa treatment.
+              - generic [ref=e1529]:
+                - paragraph [ref=e1533] [cursor=pointer]: Do I need to take a bath after the spa at home treatment?
+                - paragraph [ref=e1538]: Getting a nice warm (not hot) bath after a massage will always accentuate the benefits of a spa and relax your body completely. We advise you take one just so you destress completely.
+          - generic [ref=e1550]:
+            - generic [ref=e1555]:
+              - heading "Prime Spa For Women in Bangalore, India" [level=2] [ref=e1560]
+              - paragraph [ref=e1565]: Rejuvenate yourself with body massage by senior female therapists at the comfort of your home. We offer services like foot reflexology, swedish massage, deep tissue massage for women by 4.5 rated female spa therapists with 5 years + experience near you in Bangalore, India. We provide trained & experienced female therapists who are hygiene friendly. They will recreate spa experience at home and it includes massage bed,oils, etc. To de-stress yourself book full body massage at home now at Urban Company!
+            - generic [ref=e1573]:
+              - heading "You are here" [level=2] [ref=e1574]
+              - generic [ref=e1578]:
+                - link "Home" [ref=e1579] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/
+                - paragraph [ref=e1580]: /
+                - link "Bangalore" [ref=e1581] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore
+                - paragraph [ref=e1582]: /
+                - link "Prime Spa For Women in Bangalore" [ref=e1583] [cursor=pointer]:
+                  - /url: https://www.urbanclap.com/bangalore-spa-at-home
+                - paragraph [ref=e1584]
+        - generic [ref=e1601]:
+          - generic [ref=e1603]:
+            - paragraph [ref=e1605]: Customer reviews
+            - generic [ref=e1608]:
+              - paragraph [ref=e1611]: "4.82"
+              - paragraph [ref=e1612]: 297K reviews
+            - generic [ref=e1613]:
+              - paragraph [ref=e1615]: ★ 5
+              - paragraph [ref=e1619]: 275K
+            - generic [ref=e1620]:
+              - paragraph [ref=e1622]: ★ 4
+              - paragraph [ref=e1626]: 11K
+            - generic [ref=e1627]:
+              - paragraph [ref=e1629]: ★ 3
+              - paragraph [ref=e1633]: 5K
+            - generic [ref=e1634]:
+              - paragraph [ref=e1636]: ★ 2
+              - paragraph [ref=e1640]: 3K
+            - generic [ref=e1641]:
+              - paragraph [ref=e1643]: ★ 1
+              - paragraph [ref=e1647]: 4K
+          - generic [ref=e1648]:
+            - generic [ref=e1651]:
+              - generic [ref=e1652]:
+                - img:
+                  - img "Yogita" [ref=e1654]
+                - generic [ref=e1657]:
+                  - paragraph [ref=e1658]: Yogita
+                  - paragraph [ref=e1661]: July 2026 • opposite Primo Apartment, Rachenahalli, Thanisandra, Bengaluru, Mesthri Palya, Karnataka, India
+                - paragraph [ref=e1667]: "5"
+              - paragraph [ref=e1669]: It's was super relaxing
+            - generic [ref=e1674]:
+              - generic [ref=e1675]:
+                - img:
+                  - img "Divya" [ref=e1677]
+                - generic [ref=e1680]:
+                  - paragraph [ref=e1681]: Divya
+                  - paragraph [ref=e1684]: July 2026 • Karnataka 560035, India
+                - paragraph [ref=e1690]: "5"
+              - paragraph [ref=e1692]: She is really good and know the exact spot where to give pressure
+            - generic [ref=e1697]:
+              - generic [ref=e1698]:
+                - img:
+                  - img "D" [ref=e1700]
+                - generic [ref=e1703]:
+                  - paragraph [ref=e1704]: D
+                  - paragraph [ref=e1707]: July 2026 •
+                - paragraph [ref=e1713]: "5"
+              - paragraph [ref=e1715]: Really good pressur point Understood the focus areas And did a really job
+            - generic [ref=e1720]:
+              - generic [ref=e1721]:
+                - img:
+                  - img "Oshin" [ref=e1723]
+                - generic [ref=e1726]:
+                  - paragraph [ref=e1727]: Oshin
+                  - paragraph [ref=e1730]: July 2026 • Bengaluru, Karnataka 560035, India
+                - paragraph [ref=e1736]: "5"
+              - paragraph [ref=e1738]: Amazing experience, extremely professional. Has deep and good knowledge
+            - generic [ref=e1743]:
+              - generic [ref=e1744]:
+                - img:
+                  - img "Sanjukta" [ref=e1746]
+                - generic [ref=e1749]:
+                  - paragraph [ref=e1750]: Sanjukta
+                  - paragraph [ref=e1753]: July 2026 • Bengaluru, Karnataka 560025, India
+                - paragraph [ref=e1759]: "5"
+              - paragraph [ref=e1761]: She was very calm and quite and did her work very well . I would definitely recommend her . The pressure point was very perfectly catered to .
+          - generic [ref=e1764]:
+            - generic [ref=e1767]:
+              - generic [ref=e1768]:
+                - img:
+                  - img "Juanita" [ref=e1770]
+                - generic [ref=e1773]:
+                  - paragraph [ref=e1774]: Juanita
+                  - paragraph [ref=e1777]: July 2026 • Horamavu Banaswadi, Horamavu, Bengaluru, Karnataka 560113, India
+                - paragraph [ref=e1783]: "5"
+              - paragraph [ref=e1785]: Navya was amazing. Very professional and does the job very well. Thank you so much, Navya.
+            - generic [ref=e1790]:
+              - generic [ref=e1791]:
+                - img:
+                  - img "Wynad" [ref=e1793]
+                - generic [ref=e1796]:
+                  - paragraph [ref=e1797]: Wynad
+                  - paragraph [ref=e1800]: July 2026 • Amarjyothi Layout, Raj Mahal Vilas 2nd Stage, R.M.V. 2nd Stage, Bengaluru, Karnataka 560094, India
+                - paragraph [ref=e1806]: "1"
+              - paragraph [ref=e1808]: The professional is giving clients used disposables ....very scary...how can urban clap send such professionals...had to go to visit a doctor to avoid UTI...just keeping my fingers crossed
+            - generic [ref=e1813]:
+              - generic [ref=e1814]:
+                - img:
+                  - img "Shreya" [ref=e1816]
+                - generic [ref=e1819]:
+                  - paragraph [ref=e1820]: Shreya
+                  - paragraph [ref=e1823]: July 2026 • Bengaluru, Karnataka 560114, India
+                - paragraph [ref=e1829]: "5"
+              - paragraph [ref=e1831]: Ms.Pushma an excellent expert takes an extra care and gives perfect massage very humble will continue her service.
+            - generic [ref=e1836]:
+              - generic [ref=e1837]:
+                - img:
+                  - img "Ashrita" [ref=e1839]
+                - generic [ref=e1842]:
+                  - paragraph [ref=e1843]: Ashrita
+                  - paragraph [ref=e1846]: July 2026 • Manayata Tech Park, Nagavara, Bengaluru, Bangalore Urban, Karnataka, India
+                - paragraph [ref=e1852]: "5"
+              - paragraph [ref=e1854]: Really great
+        - generic [ref=e1871]:
+          - heading "About Prime Spa For Women" [level=2] [ref=e1876]
+          - generic [ref=e1879]:
+            - paragraph [ref=e1881]: Life in today’s day and age can be hectic and stressful. There is so much to do and so many people to deal with that going through each day can take a toll on your mind and body. Though the body can rejuvenate on its own but ever so often, you need some time to relax and rewind so that you are ready to go back and face the world with a stronger mind and healthier body. Eating healthy food and getting your forty winks do help in keeping your body in its best condition but, you need to do something extra to deal with the mental stress as well. Body massage for women in Bangalore, India help you relax and forget about your worries. You can calm down and let the spa therapist offering spa for women in Bangalore, India melt your stress away with a good body massage at home in Bangalore, India. You can also pamper yourself with facial treatments, foot massage, manicure and pedicure treatments as well. Massage for women in Bangalore, India is available easily both at salons and also at homes.
+            - heading "Why Women Should Get a Monthly Spa at Home Therapy" [level=2] [ref=e1883]
+            - paragraph [ref=e1886]: "A monthly spa or therapeutic massage has many benefits for women:"
+            - paragraph [ref=e1889]: A a spa massage is the best painkiller for all kinds of body aches. A medium-pressure Thai massage to deep-pressure Deep Tissue massage help relieve pain.
+            - paragraph [ref=e1892]: Regular spa massages help boost immunity. A 45 minute Swedish massage improves the protein levels in blood, that help fight tumours and disease causing pathogens.
+            - paragraph [ref=e1895]: Spa massages make the body flexible. This increased flexibility makes regular exercise easier, and even more impactful.
+            - paragraph [ref=e1898]: A good massage improves your sleep pattern. Even a light-pressure aromatherapy massage will give you a good night's sleep the very same day!
+            - paragraph [ref=e1901]: If you work out regularly, a massage reduces the strain, soreness, and tension in the muscles. The list goes on, but most importantly we feel women could use some me-time and there's no better way to boost the mood than a 60 minute indulgent massage that helps relax, de-stress and unwind!
+            - heading "What is an Urban Company Spa at Home Therapy?" [level=2] [ref=e1903]
+            - paragraph [ref=e1906]: Ask any woman what her idea of relaxation was. The answer will be unanimous - a day at the spa! But getting to the spa is cumbersome and the relaxation is short lived as soon as you leave to return home. That got us thinking - if we could successfully bring high quality salon services to the living room, why not the luxuries of a spa? And with that thought we crafted our 'Spa at Home' service, exclusively for women. Urban Company's Spa at Home offers women a slice of luxury in the convenience and comfort of their homes, by providing extremely well-trained female therapists who arrive on time, are well-equipped, use high quality products, are mindful of hygiene and clean up after the service, all for an affordable price!
+            - heading "How Spa at Home works" [level=2] [ref=e1908]
+            - paragraph [ref=e1911]: Once you've booked the service on the app, our spa professional arrives at your home at the appointed time. She carries with her a complete spa kit including a full size, portable spa bed for the massage therapy. However you can opt to take the massage on your own bed since our therapist carries disposable sheets and towels as well. You can than pick an oil for your massage from a range of healing natural oils. Our therapist can advice you on the same. Once the massage is done, our therapist will cleanup and tidy the place, before leaving your house.
+            - heading "What Are the Different Spa Massage Therapies Urban Company Offers" [level=2] [ref=e1913]
+            - paragraph [ref=e1916]: "Swedish Massage: The Swedish/Classic is a light massage therapy recommended to first-timers. A therapist uses simple techniques or movements like sliding, kneading, rhythmic tapping, friction and shaking. Swedish massage is beneficial to people seeking pain relief. Thai Massage: In a Thai massage, a therapist ‘assists’ your body into yoga postures. So if you’re not too comfortable with a stranger standing over you, contorting your body into shapes, we recommend choosing another therapy. However, if you are not comfortable with nudity, this is the therapy for you. Thai massage is not a dry massage with no oil used, so you won't need to shed your clothing. This is a medium pressure massage. Aromatherapy Massage: When you are not in the mood for something strenuous but wish to simply relax a tired body and stressed mind, try an aromatherapy massage. Although the light-pressure massage might seem like the most attractive part of the therapy the real magic takes place when one inhales the aromas. Some commonly used essential oils are chamomile, lavender, geranium for calming; ylang-ylang, clary sage, rose, neroli for uplifting and rosemary for energizing. Deep Tissue Massage: More intense than its Swedish counterpart, A deep tissue massage focuses on relieving chronic muscle tension or pain. To reach the deepest layers of muscle tissues, tendons and fascia, the therapist uses a lot more pressure than in any other massage therapy. Sign up for this message only if you’re comfortable with intense physical touch. A deep tissue massage is often recommended by medical experts to those suffering from chronic pain as an alternative to medicines. The stimulated blood flow helps reduce inflammation causing the pain. It also dissipates scar tissues, post-injury scarring at the muscular level which causes difficulty in movement. It is also recommended to people suffering from blood pressure. Oh, and it certainly beats the stress out of the system! Reflexology: It’s easy to take feet for granted. Which is why it deserves the most amount of care. Although Reflexology area of focus covers the limbs, it’s most common application is the feet. Reflexology makes use of pressure application to specific areas of the feet, sometimes with the aid of rubber balls, rubber bands and wooden sticks. Therapists use a foot chart to guide them around key pressure points. The science is that pressure applied to these points affects the organs in a beneficial way. Whether for pain relief or relaxation, who can resist a good foot massage!"
+            - heading "Difference Between Spa at a Salon and Spa at Home in Bangalore, India" [level=2] [ref=e1918]
+            - paragraph [ref=e1921]: "A body massage for women at home in Bangalore, India can help you relax and take a break from your hectic schedule. It helps you take some time out for yourself and feel pampered. You can either go to a salon providing massage for women in Bangalore, India to avail these services or hire a spa therapist for spa at home for women in Bangalore, India. Save on time and effort by getting a service at home: Going to a salon or a spa is a triesome process. You have to rush to the salon to make it in time for your appointment, take the service, and then make your way back home. The state of relaxation induced by the massage is soon over! On the other hand, with Urban Company you can get a spa massage in the convenience of your home. Many of our customers have spoken about a the deep, refreshing sleep they had immediately after Urban Company's Spa at Home service! Get a relaxed service at home: Salons and spas have to serve many clients in a single day. The therapists may be busy with other clients or may be in a rush to finish the treatments to cater to other clients. However, our spa therapists take on only a limited number of bookings in a day and are in no hurry. They are able to give you an indulgent, paced-out massage. Due to these reasons, spa at home for women in Bangalore, India is a better alternative than actually going to a salon or spa for massage."
+            - heading "Why Choose Urban Company's Spa at Home Service?" [level=2] [ref=e1923]
+            - paragraph [ref=e1926]: "There are plenty of options to book personal and professional massage for women in Bangalore, India. However, hiring a spa professional who provides full body massage for women in Bangalore, India from Urban Company has its own merits, such as:"
+            - heading "Trusted Service Providers" [level=2] [ref=e1928]
+            - paragraph [ref=e1931]: Urban Company has stringent criteria that include vetting and training that all professionals need to meet to be registered with us as service providers for full body massage for women in Bangalore, India. As such, you can trust the spa professional you hire from Urban Company. Your safety is not compromised and you can relax while availing the spa for home services for Thai Massage or any other massage. Even therapists for foot reflexology are trusted and verified.
+            - heading "Well-Trained and Experienced Massage Therapists" [level=2] [ref=e1933]
+            - paragraph [ref=e1936]: Any kind of massage requires the right technique to provide the stated benefits of the massage. The spa therapists who provide massage for women in Bangalore, India are registered with Urban Company are trained in giving Swedish massage and other massages and have 4+ years of experience.
+            - heading "Female Therapists for women customers" [level=2] [ref=e1938]
+            - paragraph [ref=e1941]: Your comfort and well-being is of chief importance to us. We only send female massage therapists for women.
+            - heading "High Quality Products and Portable Spa Bed:" [level=2] [ref=e1943]
+            - paragraph [ref=e1946]: We bring the complete spa experience at home. Our therapists carry a full-size spa bed bring candles, aromatherapy oils and play soothing music to create a spa-like ambience.
+            - heading "Hygiene and post-service cleanup" [level=2] [ref=e1948]
+            - paragraph [ref=e1951]: We pay utmost attention to hygiene and cleanliness. The sheets and towels provided are disposable and for single-use only. Our therapists also clean up after the service is done.
+            - heading "How to book spa at home for women in Bangalore, India from Urban Company" [level=2] [ref=e1953]
+            - paragraph [ref=e1956]: "There is nothing better than the opportunity of relaxing at home and having a massage therapist give you a rejuvenating massage. It is far more relaxing than struggling with learning about how to do body spa at home and then buying products to give yourself a body massage. Since you are going to invite a therapist for spa at home in Bangalore, India, who is essentially a stranger to you, it is important that you hire them through a reputed company such as Urban Company. Here is the process of booking a spa at home in Bangalore, India from Urban Company:"
+            - paragraph [ref=e1959]: 1. Go to the Urban Company website or open our mobile app on your phone.
+            - paragraph [ref=e1962]: 2. Select your city from the dropdown and enter “Spa” in the Search box. Alternatively, you can go to the “Beauty” menu and choose “Spa at Home” service. You will also find massage service at home in Bangalore, India listed under the Recommended Services section.
+            - paragraph [ref=e1965]: 3. A pop-up screen will list the advantages of hiring a spa therapist from Urban Company. Click on the “Next” button at the bottom right corner to continue.
+            - paragraph [ref=e1968]: 4. On this screen, you will see the list of services provided by spa therapists associated with Urban Company. You can then choose a Swedish massage or any other service which you require.
+            - paragraph [ref=e1971]: "5. Check the range of service provided and select the services you want to avail. The details of the service such as type of massage: low, medium or high pressure, duration of massage as well as the price are listed. You can choose one or more options available on Urban Company for spa treatments at home. The price would depend on the massage selected. For instance, Swedish full body massage might be pricier than other massages."
+            - paragraph [ref=e1974]: 6. Use the “Add” button next to the service name to select it. The minimum checkout amount for spa services is Rs. 999. Until you cross this limit, you will not be able to proceed to the next screen.
+            - paragraph [ref=e1977]: 7. Once you have added the services and crossed the minimum checkout amount, the button at the bottom will get activated and turn blue. Click on it to go to the next screen.
+            - paragraph [ref=e1980]: 8. You will be able to see the spa services you have added on the “Items in your Cart” screen. You can modify the order by adding more services. If you are happy with the services you have selected, click on the Continue button.
+            - paragraph [ref=e1983]: 9. Now, you need to enter your address details to let the spa therapists know where you require the services of spa at home in Bangalore, India. Click on Next.
+            - paragraph [ref=e1986]: 10. Then, select the date of service and the time of service based on your preference.
+            - paragraph [ref=e1989]: 11. Now, enter your phone number to get an OTP or use your Google/Facebook credentials to sign in.
+            - paragraph [ref=e1992]: 12. Based on the services you have selected and the spa therapists, registered with Urban Company, in your city will contact you. Discuss your needs with them and book the appointment with spa at home in Bangalore, India of your choice. You can hire them for a simple body massage at home in Bangalore, India or a full body spa at home experience.
+            - heading "Other Beauty Services" [level=2] [ref=e1994]
+            - paragraph [ref=e1997]: "When you avail spa services at home, you will begin to realise how relaxing it can be to stay at home and get span and salon services. You can invite your friends and family and have a great home spa massage day with them. In addition to the spa at home in Bangalore, India, you can also hire professional for the services mentioned here: Salon at Home: Getting a facial at home post a relaxing deep tissue massage can help you feel rejuvenated and fresh. You can also go for grooming services such as threading, waxing or manicure. The best part is that you can invite a friend and share a great pamper session with them at your home. It is the best option for you to avail a beauty treatment at home. Makeup Artist: If you have to go to a party or function, you can get ready at home by hiring a makeup artist from Urban Company. You do not have to rush to go to the salon, get your makeup done and then run back home to get ready. The professional will come to your home with the makeup kit and help you look your best for the special occasion. Bridal Mehendi Artist: Getting the mehendi done for the bride and the guests is now a breeze with bridal mehendi artists from Urban Company. The professionals you get to hire from us are some of the best in the market. If you are going for spa at home services to treat the bride or guests to a relaxing massage, then you can also opt for our mehendi artists."
+        - generic [ref=e2017]:
+          - heading "Quick Links" [level=3] [ref=e2022]
+          - generic [ref=e2023]:
+            - generic [ref=e2026]:
+              - heading "Engage with our community in the forum" [level=4] [ref=e2030] [cursor=pointer]
+              - generic [ref=e2035]:
+                - link "How much time AC takes for self cleaning?" [ref=e2036] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/how-much-time-ac-takes-for-self-cleaning
+                - paragraph [ref=e2037]: •
+                - link "How to set AC remote for cooling?" [ref=e2038] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/how-to-set-ac-remote-for-cooling
+                - paragraph [ref=e2039]: •
+                - link "What is self clean in AC?" [ref=e2040] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/what-is-self-clean-in-ac
+                - paragraph [ref=e2041]: •
+                - link "Which gas is used in AC?" [ref=e2042] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/which-gas-is-used-in-ac
+                - paragraph [ref=e2043]: •
+                - link "What is cooling capacity in AC?" [ref=e2044] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/what-is-cooling-capacity-in-ac
+                - paragraph [ref=e2045]: •
+                - link "How much gas in 1.5 ton AC?" [ref=e2046] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/how-much-gas-in-1.5-ton-ac
+                - paragraph [ref=e2047]: •
+                - link "How to use dew clean in daikin AC?" [ref=e2048] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/how-to-use-dew-clean-in-daikin-ac
+                - paragraph [ref=e2049]: •
+                - link "How long does AC gas last?" [ref=e2050] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/forum/how-long-does-ac-gas-last
+                - paragraph [ref=e2051]
+            - generic [ref=e2055]:
+              - heading "Other services we provide" [level=4] [ref=e2059] [cursor=pointer]
+              - generic [ref=e2064]:
+                - link "AC Repair Sharjah" [ref=e2065] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-repair-sharjah
+                - paragraph [ref=e2066]: •
+                - link "AC Service near you in Sharjah" [ref=e2067] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-service-near-me
+                - paragraph [ref=e2068]: •
+                - 'link "Get #1 AC uninstallation services near you in Chennai, India" [ref=e2069] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-uninstallation-near-me
+                - paragraph [ref=e2070]: •
+                - 'link "Get #1 split AC Service near you in Hyderabad, India" [ref=e2071] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/split-ac-service-near-me
+                - paragraph [ref=e2072]: •
+                - link "Trusted AC gas refill services in Hyderabad, India" [ref=e2073] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-gas-refill-near-me
+                - paragraph [ref=e2074]: •
+                - link "Window AC Service near you in Bangalore, India" [ref=e2075] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-ac-service-repair/window-ac-service-near-me
+                - paragraph [ref=e2076]: •
+                - link "Trusted AC gas refill services in Kolkata, India" [ref=e2077] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-gas-refill-near-me
+                - paragraph [ref=e2078]: •
+                - link "Window AC Service near you in Ahmedabad, India" [ref=e2079] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/window-ac-service-near-me
+                - paragraph [ref=e2080]: •
+                - 'link "Get #1 split/window AC installation services near you in Kolkata, India" [ref=e2081] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-installation-near-me
+                - paragraph [ref=e2082]: •
+                - 'link "Get #1 split/window AC installation services near you in Ahmedabad, India" [ref=e2083] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-installation-near-me
+                - paragraph [ref=e2084]: •
+                - link "Trusted AC gas refill services in Bangalore, India" [ref=e2085] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-gas-refill-near-me
+                - paragraph [ref=e2086]: •
+                - 'link "Get #1 split AC Service near you in Kolkata, India" [ref=e2087] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/kolkata-ac-service-repair/split-ac-service-near-me
+                - paragraph [ref=e2088]: •
+                - 'link "Get #1 AC repair services near you in Ahmedabad, India" [ref=e2089] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-repair-near-me
+                - paragraph [ref=e2090]: •
+                - 'link "Get #1 AC uninstallation services near you in Bangalore, India" [ref=e2091] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-uninstallation-near-me
+                - paragraph [ref=e2092]: •
+                - 'link "Get #1 AC uninstallation services near you in Ahmedabad, India" [ref=e2093] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-uninstallation-near-me
+                - paragraph [ref=e2094]: •
+                - 'link "Get #1 split AC Service near you in Delhi NCR, India" [ref=e2095] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/split-ac-service-near-me
+                - paragraph [ref=e2096]: •
+                - 'link "Get #1 split/window AC installation services near you in Delhi NCR, India" [ref=e2097] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-installation-near-me
+                - paragraph [ref=e2098]: •
+                - link "window AC Service near you in Chennai, India" [ref=e2099] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/chennai-ac-service-repair/window-ac-service-near-me
+                - paragraph [ref=e2100]: •
+                - 'link "Get #1 AC uninstallation services near you in Delhi NCR, India" [ref=e2101] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-uninstallation-near-me
+                - paragraph [ref=e2102]: •
+                - 'link "Get #1 split AC Service near you in Ahmedabad, India" [ref=e2103] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/split-ac-service-near-me
+                - paragraph [ref=e2104]: •
+                - link "Window AC Service near you in Mumbai, India" [ref=e2105] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/mumbai-ac-service-repair/window-ac-service-near-me
+                - paragraph [ref=e2106]: •
+                - link "AC Repair Services in Dubai" [ref=e2107] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-repair-services
+                - paragraph [ref=e2108]: •
+                - link "AC Service near you in Dubai" [ref=e2109] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-service-near-me
+                - paragraph [ref=e2110]: •
+                - link "Deep Clean Ac Service in Mumbai, India" [ref=e2111] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/mumbai-ac-service-repair/split-ac-service-near-me
+                - paragraph [ref=e2112]: •
+                - link "Window AC Service near you in Hyderabad, India" [ref=e2113] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/window-ac-service-near-me
+                - paragraph [ref=e2114]: •
+                - link "Trusted AC gas refill services in Mumbai, India" [ref=e2115] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-gas-refill-near-me
+                - paragraph [ref=e2116]: •
+                - link "AC Duct Cleaning Sharjah" [ref=e2117] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-duct-cleaning-sharjah
+                - paragraph [ref=e2118]: •
+                - 'link "Get #1 AC uninstallation services near you in Kolkata, India" [ref=e2119] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-uninstallation-near-me
+                - paragraph [ref=e2120]: •
+                - 'link "Get #1 AC repair services near you in Delhi NCR, India" [ref=e2121] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-repair-near-me
+                - paragraph [ref=e2122]: •
+                - link "Trusted AC gas refill services in Delhi NCR, India" [ref=e2123] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/ac-gas-refill-near-me
+                - paragraph [ref=e2124]: •
+                - link "Trusted AC gas refill services in Ahmedabad, India" [ref=e2125] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ahmedabad-ac-service-repair/ac-gas-refill-near-me
+                - paragraph [ref=e2126]: •
+                - link "Window AC Service near you in Kolkata, India" [ref=e2127] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kolkata-ac-service-repair/window-ac-service-near-me
+                - paragraph [ref=e2128]: •
+                - 'link "Get #1 split/window AC installation services near you in Hyderabad, India" [ref=e2129] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-installation-near-me
+                - paragraph [ref=e2130]: •
+                - 'link "Get #1 AC uninstallation services near you in Mumbai, India" [ref=e2131] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-uninstallation-near-me
+                - paragraph [ref=e2132]: •
+                - link "AC Repair Services in Abu Dhabi" [ref=e2133] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-repair-services
+                - paragraph [ref=e2134]: •
+                - 'link "Get #1 AC repair services near you in Hyderabad, India" [ref=e2135] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-repair-near-me
+                - paragraph [ref=e2136]: •
+                - 'link "Get #1 split/window AC installation services near you in Chennai, India" [ref=e2137] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-installation-near-me
+                - paragraph [ref=e2138]: •
+                - link "AC Cleaner in Sharjah" [ref=e2139] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sharjah-ac-service-repair/ac-cleaner
+                - paragraph [ref=e2140]: •
+                - link "AC Service near you in Abu Dhabi" [ref=e2141] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-service-near-me
+                - paragraph [ref=e2142]: •
+                - link "Window AC Service near you in Delhi NCR, India" [ref=e2143] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair/window-ac-service-near-me
+                - paragraph [ref=e2144]: •
+                - link "AC Duct Cleaning Abu Dhabi" [ref=e2145] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-duct-cleaning-abudhabi
+                - paragraph [ref=e2146]: •
+                - 'link "Get #1 split AC Service near you in Bangalore, India" [ref=e2147] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/bangalore-ac-service-repair/split-ac-service-near-me
+                - paragraph [ref=e2148]: •
+                - 'link "Get #1 split AC Service near you in Chennai, India" [ref=e2149] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/chennai-ac-service-repair/split-ac-service-near-me
+                - paragraph [ref=e2150]: •
+                - 'link "Get #1 AC repair services near you in Kolkata, India" [ref=e2151] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/kolkata-ac-service-repair/ac-repair-near-me
+                - paragraph [ref=e2152]: •
+                - link "AC Cleaning Dubai" [ref=e2153] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-cleaning-dubai
+                - paragraph [ref=e2154]: •
+                - 'link "Get #1 AC uninstallation services near you in Hyderabad, India" [ref=e2155] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/hyderabad-ac-service-repair/ac-uninstallation-near-me
+                - paragraph [ref=e2156]: •
+                - 'link "Get #1 split/window AC installation services near you in Mumbai, India" [ref=e2157] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-installation-near-me
+                - paragraph [ref=e2158]: •
+                - 'link "Get #1 AC repair services near you in Mumbai, India" [ref=e2159] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/mumbai-ac-service-repair/ac-repair-near-me
+                - paragraph [ref=e2160]: •
+                - link "Trusted AC gas refill services in Chennai, India" [ref=e2161] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-gas-refill-near-me
+                - paragraph [ref=e2162]: •
+                - 'link "Get #1 AC repair services near you in Bangalore, India" [ref=e2163] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-repair-near-me
+                - paragraph [ref=e2164]: •
+                - link "AC Cleaner in Abu Dhabi" [ref=e2165] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/abudhabi-ac-service-repair/ac-cleaner
+                - paragraph [ref=e2166]: •
+                - link "AC Duct Cleaning Dubai" [ref=e2167] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/dubai-ac-service-repair/ac-duct-cleaning-dubai
+                - paragraph [ref=e2168]: •
+                - 'link "Get #1 AC repair services near you in Chennai, India" [ref=e2169] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/chennai-ac-service-repair/ac-repair-near-me
+                - paragraph [ref=e2170]: •
+                - 'link "Get #1 split/window AC installation services near you in Bangalore, India" [ref=e2171] [cursor=pointer]':
+                  - /url: https://www.urbancompany.com/bangalore-ac-service-repair/ac-installation-near-me
+                - paragraph [ref=e2172]
+            - generic [ref=e2176]:
+              - heading "Serving in" [level=4] [ref=e2180] [cursor=pointer]
+              - generic [ref=e2185]:
+                - link "Anantapur, India" [ref=e2186] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/anantapur
+                - paragraph [ref=e2187]: •
+                - link "Khammam, India" [ref=e2188] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/khammam
+                - paragraph [ref=e2189]: •
+                - link "Jaunpur, India" [ref=e2190] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jaunpur
+                - paragraph [ref=e2191]: •
+                - link "Madurai, India" [ref=e2192] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/madurai
+                - paragraph [ref=e2193]: •
+                - link "Kolar, India" [ref=e2194] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Kolar
+                - paragraph [ref=e2195]: •
+                - link "Bulandshahr, India" [ref=e2196] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Bulandshahr
+                - paragraph [ref=e2197]: •
+                - link "Maldah, India" [ref=e2198] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Maldah
+                - paragraph [ref=e2199]: •
+                - link "Ballia, India" [ref=e2200] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ballia
+                - paragraph [ref=e2201]: •
+                - link "Visakhapatnam, India" [ref=e2202] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/visakhapatnam
+                - paragraph [ref=e2203]: •
+                - link "Petlad, India" [ref=e2204] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Petlad
+                - paragraph [ref=e2205]: •
+                - link "Bhopal, India" [ref=e2206] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bhopal
+                - paragraph [ref=e2207]: •
+                - link "Bhandara, India" [ref=e2208] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bhandara
+                - paragraph [ref=e2209]: •
+                - link "Aurangabad, India" [ref=e2210] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/aurangabad
+                - paragraph [ref=e2211]: •
+                - link "Bangalore, India" [ref=e2212] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore
+                - paragraph [ref=e2213]: •
+                - link "Ratlam, India" [ref=e2214] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ratlam
+                - paragraph [ref=e2215]: •
+                - link "Thiruvananthapuram, India" [ref=e2216] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/thiruvananthapuram
+                - paragraph [ref=e2217]: •
+                - link "Ludhiana, India" [ref=e2218] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ludhiana
+                - paragraph [ref=e2219]: •
+                - link "Kurnool, India" [ref=e2220] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kurnool
+                - paragraph [ref=e2221]: •
+                - link "Jodhpur, India" [ref=e2222] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jodhpur
+                - paragraph [ref=e2223]: •
+                - link "hunsur, India" [ref=e2224] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/hunsur
+                - paragraph [ref=e2225]: •
+                - link "Samastipur, India" [ref=e2226] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/samastipur
+                - paragraph [ref=e2227]: •
+                - link "Amritsar, India" [ref=e2228] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/amritsar
+                - paragraph [ref=e2229]: •
+                - link "Beed, India" [ref=e2230] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/beed
+                - paragraph [ref=e2231]: •
+                - link "Thoothukudi, India" [ref=e2232] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Thoothukudi
+                - paragraph [ref=e2233]: •
+                - link "Ujjain, India" [ref=e2234] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ujjain
+                - paragraph [ref=e2235]: •
+                - link "Jalandhar, India" [ref=e2236] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jalandhar
+                - paragraph [ref=e2237]: •
+                - link "Davanagere, India" [ref=e2238] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/davanagere
+                - paragraph [ref=e2239]: •
+                - link "Pratapgarh, India" [ref=e2240] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Pratapgarh
+                - paragraph [ref=e2241]: •
+                - link "Chandigarh Tricity, India" [ref=e2242] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/chandigarh
+                - paragraph [ref=e2243]: •
+                - link "Cachar, India" [ref=e2244] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Cachar
+                - paragraph [ref=e2245]: •
+                - link "Chennai, India" [ref=e2246] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/chennai
+                - paragraph [ref=e2247]: •
+                - link "Pune, India" [ref=e2248] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/pune
+                - paragraph [ref=e2249]: •
+                - link "Sikar, India" [ref=e2250] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sikar
+                - paragraph [ref=e2251]: •
+                - link "Nanded, India" [ref=e2252] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/nanded
+                - paragraph [ref=e2253]: •
+                - link "Nandurbar, India" [ref=e2254] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Nandurbar
+                - paragraph [ref=e2255]: •
+                - link "Jalgaon, India" [ref=e2256] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jalgaon
+                - paragraph [ref=e2257]: •
+                - link "Mau, India" [ref=e2258] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Mau
+                - paragraph [ref=e2259]: •
+                - link "Guwahati, India" [ref=e2260] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/guwahati
+                - paragraph [ref=e2261]: •
+                - link "Hassan, India" [ref=e2262] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/hassan
+                - paragraph [ref=e2263]: •
+                - link "Puducherry, India" [ref=e2264] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/puducherry
+                - paragraph [ref=e2265]: •
+                - link "Kheri, India" [ref=e2266] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Kheri
+                - paragraph [ref=e2267]: •
+                - link "Indore, India" [ref=e2268] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/indore
+                - paragraph [ref=e2269]: •
+                - link "Guntur Rural, India" [ref=e2270] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Guntur Rural
+                - paragraph [ref=e2271]: •
+                - link "Jhajjar, India" [ref=e2272] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Jhajjar
+                - paragraph [ref=e2273]: •
+                - link "Khandwa, India" [ref=e2274] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Khandwa
+                - paragraph [ref=e2275]: •
+                - link "Patiala, India" [ref=e2276] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/patiala
+                - paragraph [ref=e2277]: •
+                - link "Guntur, India" [ref=e2278] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/guntur
+                - paragraph [ref=e2279]: •
+                - link "Udaipur, India" [ref=e2280] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/udaipur
+                - paragraph [ref=e2281]: •
+                - link "Mumbai, India" [ref=e2282] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/mumbai
+                - paragraph [ref=e2283]: •
+                - link "PURBI CHAMPARAN" [ref=e2284] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/purbi champaran
+                - paragraph [ref=e2285]: •
+                - link "Ranchi, India" [ref=e2286] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ranchi
+                - paragraph [ref=e2287]: •
+                - link "Moradabad, India" [ref=e2288] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/moradabad
+                - paragraph [ref=e2289]: •
+                - link "Satara, India" [ref=e2290] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/satara
+                - paragraph [ref=e2291]: •
+                - link "Malerkotla, India" [ref=e2292] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Malerkotla
+                - paragraph [ref=e2293]: •
+                - link "Kanpur, India" [ref=e2294] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kanpur
+                - paragraph [ref=e2295]: •
+                - link "Delhi NCR, India" [ref=e2296] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/delhi-ncr
+                - paragraph [ref=e2297]: •
+                - link "Bathinda, India" [ref=e2298] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Bathinda
+                - paragraph [ref=e2299]: •
+                - link "Ratnagiri" [ref=e2300] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Ratnagiri
+                - paragraph [ref=e2301]: •
+                - link "Akola, India" [ref=e2302] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/akola
+                - paragraph [ref=e2303]: •
+                - link "Gondia, India" [ref=e2304] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/gondia
+                - paragraph [ref=e2305]: •
+                - link "Nagercoil, India" [ref=e2306] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Nagercoil
+                - paragraph [ref=e2307]: •
+                - link "Kolkata, India" [ref=e2308] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kolkata
+                - paragraph [ref=e2309]: •
+                - link "Nizamabad, India" [ref=e2310] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/nizamabad
+                - paragraph [ref=e2311]: •
+                - link "Surianwan, India" [ref=e2312] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Surianwan
+                - paragraph [ref=e2313]: •
+                - link "Hyderabad, India" [ref=e2314] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/hyderabad
+                - paragraph [ref=e2315]: •
+                - link "Shahjhanpur, India" [ref=e2316] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Shahjhanpur
+                - paragraph [ref=e2317]: •
+                - link "Tiruppur, India" [ref=e2318] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/tiruppur
+                - paragraph [ref=e2319]: •
+                - link "Begusarai, India" [ref=e2320] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/begusarai
+                - paragraph [ref=e2321]: •
+                - link "Aligarh, India" [ref=e2322] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/aligarh
+                - paragraph [ref=e2323]: •
+                - link "West Tripura" [ref=e2324] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/West Tripura
+                - paragraph [ref=e2325]: •
+                - link "Bhojpur, India" [ref=e2326] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bhojpur
+                - paragraph [ref=e2327]: •
+                - link "Alwar+rewari, India" [ref=e2328] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/alwar
+                - paragraph [ref=e2329]: •
+                - link "Prakasam, India" [ref=e2330] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/prakasam
+                - paragraph [ref=e2331]: •
+                - link "Srikakulam, India" [ref=e2332] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/srikakulam
+                - paragraph [ref=e2333]: •
+                - link "Mahbubnagar, India" [ref=e2334] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/mahbubnagar
+                - paragraph [ref=e2335]: •
+                - link "Guna, India" [ref=e2336] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Guna
+                - paragraph [ref=e2337]: •
+                - link "Vijayapura, India" [ref=e2338] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Vijayapura
+                - paragraph [ref=e2339]: •
+                - link "Surat, India" [ref=e2340] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/surat
+                - paragraph [ref=e2341]: •
+                - link "Gaya, India" [ref=e2342] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/gaya
+                - paragraph [ref=e2343]: •
+                - link "Saharsa, India" [ref=e2344] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/saharsa
+                - paragraph [ref=e2345]: •
+                - link "Y.S.R, India" [ref=e2346] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ysr
+                - paragraph [ref=e2347]: •
+                - link "Warangal, India" [ref=e2348] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/warangal
+                - paragraph [ref=e2349]: •
+                - link "Nagpur, India" [ref=e2350] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/nagpur
+                - paragraph [ref=e2351]: •
+                - link "Mahesana, India" [ref=e2352] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Mahesana
+                - paragraph [ref=e2353]: •
+                - link "Ajmer, India" [ref=e2354] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ajmer
+                - paragraph [ref=e2355]: •
+                - link "Thiruvallur, India" [ref=e2356] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/thiruvallur
+                - paragraph [ref=e2357]: •
+                - link "Kota, India" [ref=e2358] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kota
+                - paragraph [ref=e2359]: •
+                - link "Latur, India" [ref=e2360] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Latur
+                - paragraph [ref=e2361]: •
+                - link "sagar, India" [ref=e2362] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Sagar
+                - paragraph [ref=e2363]: •
+                - link "Sangli, India" [ref=e2364] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sangli
+                - paragraph [ref=e2365]: •
+                - link "Wardha, India" [ref=e2366] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/wardha
+                - paragraph [ref=e2367]: •
+                - link "Ramanagara, India" [ref=e2368] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ramanagara
+                - paragraph [ref=e2369]: •
+                - link "Mirzapur, India" [ref=e2370] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Mirzapur
+                - paragraph [ref=e2371]: •
+                - link "Kancheepuram, India" [ref=e2372] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Kancheepuram
+                - paragraph [ref=e2373]: •
+                - link "Meerut, India" [ref=e2374] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/meerut
+                - paragraph [ref=e2375]: •
+                - link "Muzaffarpur, India" [ref=e2376] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/muzaffarpur
+                - paragraph [ref=e2377]: •
+                - link "Karnal, India" [ref=e2378] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/karnal
+                - paragraph [ref=e2379]: •
+                - link "Nashik, India" [ref=e2380] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/nashik
+                - paragraph [ref=e2381]: •
+                - link "Bareilly, India" [ref=e2382] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bareilly
+                - paragraph [ref=e2383]: •
+                - link "Karnataka_Central, India" [ref=e2384] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Karnataka_Central
+                - paragraph [ref=e2385]: •
+                - link "Krishnagiri, India" [ref=e2386] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/krishnagiri
+                - paragraph [ref=e2387]: •
+                - link "Kochi, India" [ref=e2388] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kochi
+                - paragraph [ref=e2389]: •
+                - link "Chandauli, India" [ref=e2390] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Chandauli
+                - paragraph [ref=e2391]: •
+                - link "Bhubaneswar, India" [ref=e2392] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bhubaneswar
+                - paragraph [ref=e2393]: •
+                - link "Ahmedabad, India" [ref=e2394] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ahmedabad
+                - paragraph [ref=e2395]: •
+                - link "Udupi, India" [ref=e2396] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/udupi
+                - paragraph [ref=e2397]: •
+                - link "Murud (Raigad)" [ref=e2398] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/murud (Raigad)
+                - paragraph [ref=e2399]: •
+                - link "Amravati, India" [ref=e2400] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/amravati
+                - paragraph [ref=e2401]: •
+                - link "Tirupati, India" [ref=e2402] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/tirupati
+                - paragraph [ref=e2403]: •
+                - link "Gwalior, India" [ref=e2404] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/gwalior
+                - paragraph [ref=e2405]: •
+                - link "Dindigul, India" [ref=e2406] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/dindigul
+                - paragraph [ref=e2407]: •
+                - link "raigad, India" [ref=e2408] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/raigad
+                - paragraph [ref=e2409]: •
+                - link "Mysore, India" [ref=e2410] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/mysore
+                - paragraph [ref=e2411]: •
+                - link "Cuttack, India" [ref=e2412] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/cuttack
+                - paragraph [ref=e2413]: •
+                - link "Lucknow, India" [ref=e2414] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/lucknow
+                - paragraph [ref=e2415]: •
+                - link "Dakshina Kannada, India" [ref=e2416] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Dakshina Kannada
+                - paragraph [ref=e2417]: •
+                - link "Salem, India" [ref=e2418] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/salem
+                - paragraph [ref=e2419]: •
+                - link "Tumakuru, India" [ref=e2420] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/tumakuru
+                - paragraph [ref=e2421]: •
+                - link "Jamshedpur, India" [ref=e2422] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jamshedpur
+                - paragraph [ref=e2423]: •
+                - link "Bharatpur, India" [ref=e2424] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Bharatpur
+                - paragraph [ref=e2425]: •
+                - link "Peddapalli, India" [ref=e2426] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Peddapalli
+                - paragraph [ref=e2427]: •
+                - link "Shimoga, India" [ref=e2428] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/shimoga
+                - paragraph [ref=e2429]: •
+                - link "Banda, India" [ref=e2430] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Banda
+                - paragraph [ref=e2431]: •
+                - link "Solapur, India" [ref=e2432] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/solapur
+                - paragraph [ref=e2433]: •
+                - link "Imphal, India" [ref=e2434] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Imphal
+                - paragraph [ref=e2435]: •
+                - link "Bharuch, India" [ref=e2436] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bharuch
+                - paragraph [ref=e2437]: •
+                - link "Nalanda, India" [ref=e2438] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/nalanda
+                - paragraph [ref=e2439]: •
+                - link "Thrissur, India" [ref=e2440] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Thrissur
+                - paragraph [ref=e2441]: •
+                - link "Etawah, India" [ref=e2442] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/etawah
+                - paragraph [ref=e2443]: •
+                - link "North Goa, India" [ref=e2444] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/north goa
+                - paragraph [ref=e2445]: •
+                - link "Tiruchirappalli, India" [ref=e2446] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/tiruchirappalli
+                - paragraph [ref=e2447]: •
+                - link "Erode, India" [ref=e2448] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/erode
+                - paragraph [ref=e2449]: •
+                - link "Darjeeling, India" [ref=e2450] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/darjeeling
+                - paragraph [ref=e2451]: •
+                - link "Satna, India" [ref=e2452] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Satna
+                - paragraph [ref=e2453]: •
+                - link "Coimbatore, India" [ref=e2454] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/coimbatore
+                - paragraph [ref=e2455]: •
+                - link "Burhanpur, India" [ref=e2456] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Burhanpur
+                - paragraph [ref=e2457]: •
+                - link "Baleshwar, India" [ref=e2458] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/baleshwar
+                - paragraph [ref=e2459]: •
+                - link "Nellore, India" [ref=e2460] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/nellore
+                - paragraph [ref=e2461]: •
+                - link "Chikkaballapur, India" [ref=e2462] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/chikkaballapur
+                - paragraph [ref=e2463]: •
+                - link "Jhansi, India" [ref=e2464] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jhansi
+                - paragraph [ref=e2465]: •
+                - link "Banas Kantha" [ref=e2466] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/banas Kantha
+                - paragraph [ref=e2467]: •
+                - link "Palakkad district" [ref=e2468] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/palakkad district
+                - paragraph [ref=e2469]: •
+                - link "Siddipet, India" [ref=e2470] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Siddipet
+                - paragraph [ref=e2471]: •
+                - link "Ghazipur, India" [ref=e2472] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Ghazipur
+                - paragraph [ref=e2473]: •
+                - link "Firozabad, India" [ref=e2474] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/firozabad
+                - paragraph [ref=e2475]: •
+                - link "Jabalpur, India" [ref=e2476] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jabalpur
+                - paragraph [ref=e2477]: •
+                - link "Kalaburgi, India" [ref=e2478] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kalaburgi
+                - paragraph [ref=e2479]: •
+                - link "Varanasi, India" [ref=e2480] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/varanasi
+                - paragraph [ref=e2481]: •
+                - link "Patna, India" [ref=e2482] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/patna
+                - paragraph [ref=e2483]: •
+                - link "Sonipat, India" [ref=e2484] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sonipat
+                - paragraph [ref=e2485]: •
+                - link "Mancherial, India" [ref=e2486] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Mancherial
+                - paragraph [ref=e2487]: •
+                - link "Raipur, India" [ref=e2488] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/raipur
+                - paragraph [ref=e2489]: •
+                - link "Etah, India" [ref=e2490] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Etah
+                - paragraph [ref=e2491]: •
+                - link "Prayagraj, India" [ref=e2492] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/prayagraj
+                - paragraph [ref=e2493]: •
+                - link "Rajahmundry, India" [ref=e2494] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/rajahmundry
+                - paragraph [ref=e2495]: •
+                - link "Sambalpur, India" [ref=e2496] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/sambalpur
+                - paragraph [ref=e2497]: •
+                - link "Hazaribagh, India" [ref=e2498] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Hazaribagh
+                - paragraph [ref=e2499]: •
+                - link "Garhwa, India" [ref=e2500] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Garhwa
+                - paragraph [ref=e2501]: •
+                - link "Yavatmal, India" [ref=e2502] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Yavatmal
+                - paragraph [ref=e2503]: •
+                - link "Hapur, India" [ref=e2504] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/hapur
+                - paragraph [ref=e2505]: •
+                - link "Ambala, India" [ref=e2506] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ambala
+                - paragraph [ref=e2507]: •
+                - link "Ganjam, India" [ref=e2508] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/ganjam
+                - paragraph [ref=e2509]: •
+                - link "Dehradun, India" [ref=e2510] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/dehradun
+                - paragraph [ref=e2511]: •
+                - link "Naini Tal, India" [ref=e2512] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/naini Tal
+                - paragraph [ref=e2513]: •
+                - link "Bhagalpur, India" [ref=e2514] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bhagalpur
+                - paragraph [ref=e2515]: •
+                - link "Buldhana, India" [ref=e2516] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/buldhana
+                - paragraph [ref=e2517]: •
+                - link "Gurdaspur, India" [ref=e2518] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Gurdaspur
+                - paragraph [ref=e2519]: •
+                - link "Palghar, India" [ref=e2520] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Palghar
+                - paragraph [ref=e2521]: •
+                - link "Solan, India" [ref=e2522] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Solan
+                - paragraph [ref=e2523]: •
+                - link "Vijayawada, India" [ref=e2524] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/vijayawada
+                - paragraph [ref=e2525]: •
+                - link "Chhindwara, India" [ref=e2526] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Chhindwara
+                - paragraph [ref=e2527]: •
+                - link "Kolhapur, India" [ref=e2528] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/kolhapur
+                - paragraph [ref=e2529]: •
+                - link "Sultanpur, India" [ref=e2530] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Sultanpur
+                - paragraph [ref=e2531]: •
+                - link "Karur, India" [ref=e2532] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/karur
+                - paragraph [ref=e2533]: •
+                - link "Agra, India" [ref=e2534] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/agra
+                - paragraph [ref=e2535]: •
+                - link "Ratnagiri" [ref=e2536] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Ratnagiri
+                - paragraph [ref=e2537]: •
+                - link "Saran, India" [ref=e2538] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/saran
+                - paragraph [ref=e2539]: •
+                - link "Chitradurga, India" [ref=e2540] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/chitradurga
+                - paragraph [ref=e2541]: •
+                - link "Jammu, India" [ref=e2542] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jammu
+                - paragraph [ref=e2543]: •
+                - link "Bilaspur, India" [ref=e2544] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bilaspur
+                - paragraph [ref=e2545]: •
+                - link "Jaipur, India" [ref=e2546] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jaipur
+                - paragraph [ref=e2547]: •
+                - link "Siwan, India" [ref=e2548] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Siwan
+                - paragraph [ref=e2549]: •
+                - link "Bhilwara, India" [ref=e2550] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Bhilwara
+                - paragraph [ref=e2551]: •
+                - link "Jalna, India" [ref=e2552] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/jalna
+                - paragraph [ref=e2553]: •
+                - link "Valsad, India" [ref=e2554] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/valsad
+                - paragraph [ref=e2555]: •
+                - link "Chandrapur, India" [ref=e2556] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/chandrapur
+                - paragraph [ref=e2557]: •
+                - link "Vadodara, India" [ref=e2558] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/vadodara
+                - paragraph [ref=e2559]: •
+                - link "PURBA BARDHAMAN, India" [ref=e2560] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/purba bardhaman
+                - paragraph [ref=e2561]: •
+                - link "Suryapet, India" [ref=e2562] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/suryapet
+                - paragraph [ref=e2563]: •
+                - link "Hisar, India" [ref=e2564] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/hisar
+                - paragraph [ref=e2565]: •
+                - link "Gorakhpur, India" [ref=e2566] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/gorakhpur
+                - paragraph [ref=e2567]: •
+                - link "Jorhat, India" [ref=e2568] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/Jorhat
+                - paragraph [ref=e2569]
+            - generic [ref=e2573]:
+              - heading "Categories" [level=4] [ref=e2577] [cursor=pointer]
+              - generic [ref=e2582]:
+                - link "Native - Home Demo in Bangalore, India" [ref=e2583] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-smart-lock-electrician
+                - paragraph [ref=e2584]: •
+                - link "Laser Doctor Consultation in Bangalore, India" [ref=e2585] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-free-dc
+                - paragraph [ref=e2586]: •
+                - link "Carpenter in Bangalore, India" [ref=e2587] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-carpenters
+                - paragraph [ref=e2588]: •
+                - link "Festival Lights Installation in Bangalore, India" [ref=e2589] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-diwali-lights-decoration
+                - paragraph [ref=e2590]: •
+                - link "Rooms/ Walls Painting in Bangalore, India" [ref=e2591] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-painting-shp-fulfilment
+                - paragraph [ref=e2592]: •
+                - link "Disinfection Services in Bangalore, India" [ref=e2593] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-home-disinfection
+                - paragraph [ref=e2594]: •
+                - link "See more" [ref=e2595] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/quick-links/bangalore-spa-at-home
+                - paragraph [ref=e2596]
+            - generic [ref=e2600]:
+              - heading "Also available in" [level=4] [ref=e2604] [cursor=pointer]
+              - generic [ref=e2609]:
+                - link "Prime Spa For Women in Nagavara, Bangalore, India" [ref=e2610] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-nagavara
+                - paragraph [ref=e2611]: •
+                - link "Prime Spa For Women in C V Raman Nagar, Bangalore, India" [ref=e2612] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-c-v-raman-nagar
+                - paragraph [ref=e2613]: •
+                - link "Prime Spa For Women in RT Nagar, Bangalore, India" [ref=e2614] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-rt-nagar
+                - paragraph [ref=e2615]: •
+                - link "Prime Spa For Women in Krishnarajapuram, Bangalore, India" [ref=e2616] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-krishnarajapuram
+                - paragraph [ref=e2617]: •
+                - link "Prime Spa For Women in NRI Layout, Bangalore, India" [ref=e2618] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-nri-layout
+                - paragraph [ref=e2619]: •
+                - link "Prime Spa For Women in Bennigana Halli, Bangalore, India" [ref=e2620] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-bennigana-halli
+                - paragraph [ref=e2621]: •
+                - link "Prime Spa For Women in Kalyan Nagar, Bangalore, India" [ref=e2622] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-kalyan-nagar
+                - paragraph [ref=e2623]: •
+                - link "Prime Spa For Women in Sampangi Rama Nagar, Bangalore, India" [ref=e2624] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/bangalore-spa-at-home-sampangi-rama-nagar
+                - paragraph [ref=e2625]: •
+                - link "See more" [ref=e2626] [cursor=pointer]:
+                  - /url: https://www.urbancompany.com/quick-links/bangalore-spa-at-home
+                - paragraph [ref=e2627]
+        - generic [ref=e2653]:
+          - img:
+            - img "Urban Company logo" [ref=e2655]
+        - generic [ref=e2661]:
+          - generic [ref=e2673]:
+            - paragraph [ref=e2676]: Company
+            - generic [ref=e2679]:
+              - generic [ref=e2680]:
+                - link "About us" [ref=e2681] [cursor=pointer]:
+                  - /url: /about
+                - paragraph [ref=e2682]
+              - generic [ref=e2684]:
+                - link "Investor Relations" [ref=e2685] [cursor=pointer]:
+                  - /url: https://investorrelations.urbancompany.com/
+                - paragraph [ref=e2686]
+              - generic [ref=e2688]:
+                - link "Terms & conditions" [ref=e2689] [cursor=pointer]:
+                  - /url: /terms
+                - paragraph [ref=e2690]
+              - generic [ref=e2692]:
+                - link "Privacy policy" [ref=e2693] [cursor=pointer]:
+                  - /url: /privacy-policy
+                - paragraph [ref=e2694]
+              - generic [ref=e2696]:
+                - link "Anti-discrimination policy" [ref=e2697] [cursor=pointer]:
+                  - /url: /anti-discrimination-policy
+                - paragraph [ref=e2698]
+              - generic [ref=e2700]:
+                - link "Careers" [ref=e2701] [cursor=pointer]:
+                  - /url: https://careers.urbancompany.com/
+                - paragraph [ref=e2702]
+          - generic [ref=e2715]:
+            - paragraph [ref=e2718]: For customers
+            - generic [ref=e2721]:
+              - generic [ref=e2722]:
+                - link "UC reviews" [ref=e2723] [cursor=pointer]:
+                  - /url: /reviews
+                - paragraph [ref=e2724]
+              - generic [ref=e2726]:
+                - link "Categories near you" [ref=e2727] [cursor=pointer]:
+                  - /url: /near-me
+                - paragraph [ref=e2728]
+              - generic [ref=e2730]:
+                - link "Contact us" [ref=e2731] [cursor=pointer]:
+                  - /url: /contact-us
+                - paragraph [ref=e2732]
+          - generic [ref=e2745]:
+            - paragraph [ref=e2748]: For professionals
+            - generic [ref=e2752]:
+              - link "Register as a professional" [ref=e2753] [cursor=pointer]:
+                - /url: https://partner.urbancompany.com
+              - paragraph [ref=e2754]
+          - generic [ref=e2767]:
+            - paragraph [ref=e2770]: Social links
+            - generic [ref=e2773]:
+              - button "Button Double Tap to perform action" [ref=e2776] [cursor=pointer]
+              - button "Button Double Tap to perform action" [ref=e2782] [cursor=pointer]
+              - button "Button Double Tap to perform action" [ref=e2788] [cursor=pointer]
+              - button "Button Double Tap to perform action" [ref=e2794] [cursor=pointer]
+            - img [ref=e2804] [cursor=pointer]:
+              - img "Apple App Store" [ref=e2806]
+            - img [ref=e2812] [cursor=pointer]:
+              - img "Google Play Store" [ref=e2814]
+        - generic [ref=e2834]:
+          - paragraph [ref=e2836]: "* As on December 31, 2024"
+          - paragraph [ref=e2839]: "© Copyright 2026 Urban Company Limited (formerly known as UrbanClap Technologies India Limited and UrbanClap Technologies India India Limited) All rights reserved. | CIN: L74140DL2014PLC274413"
+      - generic "Close Button" [ref=e2848] [cursor=pointer]

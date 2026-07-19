@@ -1,0 +1,156 @@
+- generic [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e3995]:
+      - generic [ref=e4018]:
+        - generic [ref=e4022]:
+          - generic [ref=e4034]:
+            - img:
+              - img "Urban Company logo" [ref=e4036]
+          - heading "Checkout" [level=4] [ref=e4047]
+        - generic [ref=e4052]:
+          - generic [ref=e4063]:
+            - generic [ref=e4067]:
+              - generic [ref=e4075]:
+                - paragraph [ref=e4077]: Send booking details to
+                - paragraph [ref=e4080]: +91 7439245158
+              - generic [ref=e4084]:
+                - paragraph [ref=e4092]: Address
+                - button "Select address" [ref=e4097] [cursor=pointer]:
+                  - paragraph [ref=e4099]: Select address
+                  - button "animation" [ref=e4351]
+              - paragraph [ref=e4111]: Slot
+              - paragraph [ref=e4123]: Payment Method
+            - generic [ref=e4132]:
+              - heading "Cancellation policy" [level=4] [ref=e4133]
+              - paragraph [ref=e4136]: Free cancellations if done more than 12 hrs before the service. A fee will be charged otherwise.
+              - button "Read full policy" [disabled] [ref=e4142] [cursor=pointer]:
+                - paragraph [ref=e4144]: Read full policy
+          - generic [ref=e4147]:
+            - generic [ref=e4157]:
+              - heading "Prime Spa for Women" [level=4] [ref=e4163]
+              - generic [ref=e4166]:
+                - generic "Stress relief Swedish massage":
+                  - generic "Stress relief Swedish massage" [ref=e4167]:
+                    - paragraph [ref=e4169]: Stress relief Swedish massage
+                  - generic [ref=e4172]:
+                    - generic [ref=e4174]:
+                      - button "Add" [disabled] [ref=e4175] [cursor=pointer]:
+                        - paragraph [ref=e4176]: Add
+                      - generic [ref=e4177]:
+                        - button "Stress relief Swedish massage Total item count will become0" [disabled] [ref=e4178] [cursor=pointer]
+                        - generic [ref=e4179]:
+                          - paragraph [ref=e4181]: "2"
+                          - generic "Stress relief Swedish massage with a price of ₹1,319 , Total number of items present in your cart is 1" [ref=e4182]:
+                            - paragraph [ref=e4183]: "1"
+                          - paragraph [ref=e4185]: "0"
+                        - button "Stress relief Swedish massage Total item count will become2" [disabled] [ref=e4186] [cursor=pointer]
+                    - paragraph [ref=e4189]: ₹1,319
+                - generic "Sku description for the package, double tap to edit your package or view details" [ref=e4192]:
+                  - generic [ref=e4193]:
+                    - generic "60 mins massage," [ref=e4194]:
+                      - paragraph [ref=e4199]: 60 mins massage x1
+                    - button "Edit package" [ref=e4201] [cursor=pointer]:
+                      - paragraph [ref=e4203]: Edit package
+              - generic [ref=e4209] [cursor=pointer]:
+                - checkbox "checkBox" [ref=e4211]
+                - paragraph [ref=e4217]: Avoid calling before reaching the location
+            - generic [ref=e4230] [cursor=pointer]:
+              - paragraph [ref=e4238]: Coupons and offers
+              - button "9 offers" [ref=e4243]:
+                - paragraph [ref=e4245]: 9 offers
+            - generic [ref=e4259]:
+              - generic [ref=e4267] [cursor=pointer]:
+                - generic [ref=e4268]:
+                  - paragraph [ref=e4269]: Total bill
+                  - heading [level=4] [ref=e4270]
+                  - paragraph [ref=e4271]: ₹1,428
+                - paragraph [ref=e4274]: Incl. govt. taxes & charges
+              - generic [ref=e4293]:
+                - paragraph [ref=e4298]: Add a tip to thank the Professional
+                - generic [ref=e4302]:
+                  - generic [ref=e4303] [cursor=pointer]:
+                    - paragraph [ref=e4304]: ₹
+                    - paragraph [ref=e4305]: "50"
+                  - generic [ref=e4306] [cursor=pointer]:
+                    - paragraph [ref=e4307]: ₹
+                    - paragraph [ref=e4308]: "75"
+                    - paragraph [ref=e4310]: Popular
+                  - generic [ref=e4311] [cursor=pointer]:
+                    - paragraph [ref=e4312]: ₹
+                    - paragraph [ref=e4313]: "100"
+                  - paragraph [ref=e4315] [cursor=pointer]: Custom
+                - paragraph [ref=e4319]: 100% of the tip goes to the professional.
+            - generic [ref=e4331]:
+              - generic [ref=e4334]:
+                - paragraph [ref=e4335]: Amount to pay
+                - heading "₹1,428" [level=4] [ref=e4336]
+              - paragraph [ref=e4341] [cursor=pointer]: View breakup
+      - generic [ref=e4369]:
+        - generic "Close Button" [ref=e4371] [cursor=pointer]
+        - generic [ref=e4396]:
+          - generic [ref=e4402]:
+            - heading "Saved addresses" [level=4] [ref=e4408] [cursor=pointer]
+            - paragraph [ref=e4418] [cursor=pointer]: Add another address
+            - generic [ref=e4425] [cursor=pointer]:
+              - generic [ref=e4426]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4428]:
+                - paragraph [ref=e4429]: Home
+                - paragraph [ref=e4432]: 1, Bengaluru
+            - generic [ref=e4443] [cursor=pointer]:
+              - generic [ref=e4444]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4446]:
+                - paragraph [ref=e4447]: Home
+                - paragraph [ref=e4450]: 1, Bengaluru
+            - generic [ref=e4461] [cursor=pointer]:
+              - generic [ref=e4462]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4464]:
+                - paragraph [ref=e4465]: Home
+                - paragraph [ref=e4468]: 1, Bengaluru
+            - generic [ref=e4479] [cursor=pointer]:
+              - generic [ref=e4480]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4482]:
+                - paragraph [ref=e4483]: Home
+                - paragraph [ref=e4486]: 1, Bengaluru
+            - generic [ref=e4497] [cursor=pointer]:
+              - generic [ref=e4498]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4500]:
+                - paragraph [ref=e4501]: Home
+                - paragraph [ref=e4504]: 1, Bengaluru
+            - generic [ref=e4515] [cursor=pointer]:
+              - generic [ref=e4516]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4518]:
+                - paragraph [ref=e4519]: Home
+                - paragraph [ref=e4522]: 1, Bengaluru
+            - generic [ref=e4533] [cursor=pointer]:
+              - generic [ref=e4534]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4536]:
+                - paragraph [ref=e4537]: Home
+                - paragraph [ref=e4540]: 1, Kolkata
+            - generic [ref=e4551] [cursor=pointer]:
+              - generic [ref=e4552]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4554]:
+                - paragraph [ref=e4555]: Home
+                - paragraph [ref=e4558]: 1, Kolkata
+            - generic [ref=e4569] [cursor=pointer]:
+              - generic [ref=e4570]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4572]:
+                - paragraph [ref=e4573]: Home
+                - paragraph [ref=e4576]: 25, Bansdroni Post Office Road, Naktala, Bansdroni, Kolkata, West Bengal 700070, India
+            - generic [ref=e4587] [cursor=pointer]:
+              - generic [ref=e4588]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e4590]:
+                - paragraph [ref=e4591]: Home
+                - paragraph [ref=e4594]: 225 , Provash Pally, Ichapur Bidhanpally, Ichhapur Defence Estate, North Barrackpur, West Bengal 743144, India
+          - button "Proceed" [active] [ref=e4612] [cursor=pointer]:
+            - paragraph [ref=e4614]: Proceed

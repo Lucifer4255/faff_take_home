@@ -22,6 +22,10 @@ export interface UCService {
   ratingCount?: string
   /** deeplink sectionId, if present. */
   sectionId?: string
+  /** true when this row is a directly bookable `service_package`; false for a
+   * coarse `category` tile (a navigation into a category, not a specific service).
+   * Used by the availability funnel to tell "not offered here" from "rephrase". */
+  bookable: boolean
 }
 
 // biome-ignore lint/suspicious/noExplicitAny: server-driven-UI tree, typed loosely
@@ -108,6 +112,7 @@ export function extractServices(searchJson: unknown, limit = 20): UCService[] {
       rating: c.rating,
       ratingCount: c.ratingCount,
       sectionId: tap.data?.initiateJourney?.params?.deeplinkParams?.sectionId,
+      bookable: rtype === 'service_package',
     })
     if (out.length >= limit) break
   }
