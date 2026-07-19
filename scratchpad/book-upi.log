@@ -1,0 +1,58 @@
+ROUTE Park Street -> Quest Mall
+BOOKING: Bike Saver ₹32.50 (vvid 20065235)  — dispatching a REAL driver now
+ERR locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /^(Request|Confirm|Choose)\b/i }).first()[22m
+[2m    - locator resolved to <button class="css-cByeRv" data-baseweb="button" aria-label="Request Bike Saver" data-testid="request_trip_button" data-tracking-name="request_pickup_button" data-tracking-payload="{"checkoutType":"modular checkout","paymentProfileType":"","paymentToken":"amazon_pay","useUberCredit":"true"}">Request Bike Saver</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <iframe title="Uber - Payment Selection" allow="clipboard-write; web-share" name="payments_hub_3f7abd81-2a46-40d6-9960-a841314cb856"></iframe> from <div class="css-PKJb">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <iframe title="Uber - Payment Selection" allow="clipboard-write; web-share" name="payments_hub_3f7abd81-2a46-40d6-9960-a841314cb856"></iframe> from <div class="css-PKJb">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <iframe title="Uber - Payment Selection" allow="clipboard-write; web-share" name="payments_hub_3f7abd81-2a46-40d6-9960-a841314cb856"></iframe> from <div class="css-PKJb">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+    at <anonymous> (/Users/biley/work/projects/faff_take_home/src/adapters/delivery/client.ts:286:17) {
+  log: [
+    "  - waiting for getByRole('button', { name: /^(Request|Confirm|Choose)\\b/i }).first()",
+    '    - locator resolved to <button class="css-cByeRv" data-baseweb="button" aria-label="Request Bike Saver" data-testid="request_trip_button" data-tracking-name="request_pickup_button" data-tracking-payload="{"checkoutType":"modular checkout","paymentProfileType":"","paymentToken":"amazon_pay","useUberCredit":"true"}">Request Bike Saver</button>',
+    '  - attempting click action',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is visible, enabled and stable',
+    '      - scrolling into view if needed',
+    '      - done scrolling',
+    '      - <iframe title="Uber - Payment Selection" allow="clipboard-write; web-share" name="payments_hub_3f7abd81-2a46-40d6-9960-a841314cb856"></iframe> from <div class="css-PKJb">…</div> subtree intercepts pointer events',
+    '    - retrying click action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is visible, enabled and stable',
+    '      - scrolling into view if needed',
+    '      - done scrolling',
+    '      - <iframe title="Uber - Payment Selection" allow="clipboard-write; web-share" name="payments_hub_3f7abd81-2a46-40d6-9960-a841314cb856"></iframe> from <div class="css-PKJb">…</div> subtree intercepts pointer events',
+    '    - retrying click action',
+    '      - waiting 100ms',
+    '    58 × waiting for element to be visible, enabled and stable',
+    '       - element is visible, enabled and stable',
+    '       - scrolling into view if needed',
+    '       - done scrolling',
+    '       - <iframe title="Uber - Payment Selection" allow="clipboard-write; web-share" name="payments_hub_3f7abd81-2a46-40d6-9960-a841314cb856"></iframe> from <div class="css-PKJb">…</div> subtree intercepts pointer events',
+    '     - retrying click action',
+    '       - waiting 500ms'
+  ],
+  name: 'TimeoutError'
+}

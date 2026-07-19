@@ -1,0 +1,169 @@
+- generic [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e2904]:
+      - generic [ref=e2927]:
+        - generic [ref=e2931]:
+          - generic [ref=e2943]:
+            - img:
+              - img "Urban Company logo" [ref=e2945]
+          - heading "Checkout" [level=4] [ref=e2956]
+        - generic [ref=e2961]:
+          - generic [ref=e2966]:
+            - paragraph [ref=e2984]: Saving ₹100 on this order
+            - generic [ref=e2993]:
+              - generic [ref=e2997]:
+                - generic [ref=e3005]:
+                  - paragraph [ref=e3007]: Send booking details to
+                  - paragraph [ref=e3010]: +91 7439245158
+                - generic [ref=e3014]:
+                  - paragraph [ref=e3022]: Address
+                  - button "Select address" [ref=e3027] [cursor=pointer]:
+                    - paragraph [ref=e3029]: Select address
+                    - button "animation" [ref=e3294]
+                - paragraph [ref=e3041]: Slot
+                - paragraph [ref=e3053]: Payment Method
+              - generic [ref=e3062]:
+                - heading "Cancellation policy" [level=4] [ref=e3063]
+                - paragraph [ref=e3066]: Free cancellations if done more than 12 hrs before the service. A fee will be charged otherwise.
+                - button "Read full policy" [disabled] [ref=e3072] [cursor=pointer]:
+                  - paragraph [ref=e3074]: Read full policy
+          - generic [ref=e3077]:
+            - generic [ref=e3087]:
+              - heading "AC" [level=4] [ref=e3093]
+              - generic [ref=e3094]:
+                - generic "Foam-jet service (2 ACs)":
+                  - paragraph [ref=e3098]: Foam-jet service (2 ACs)
+                  - generic [ref=e3101]:
+                    - generic [ref=e3103]:
+                      - button "Add" [disabled] [ref=e3104] [cursor=pointer]:
+                        - paragraph [ref=e3105]: Add
+                      - generic [ref=e3106]:
+                        - button "Foam-jet service (2 ACs) Total item count will become0" [disabled] [ref=e3107] [cursor=pointer]
+                        - generic [ref=e3108]:
+                          - paragraph [ref=e3110]: "1"
+                          - generic "Foam-jet service (2 ACs) with a price of ₹1,098 , Total number of items present in your cart is 1" [ref=e3111]:
+                            - paragraph [ref=e3112]: "1"
+                          - paragraph [ref=e3114]: "0"
+                        - button "Foam-jet service (2 ACs) Total item count will become2" [disabled] [ref=e3115] [cursor=pointer]
+                    - generic [ref=e3117]:
+                      - paragraph [ref=e3118]: ₹1,098
+                      - paragraph [ref=e3119]: ₹1,198
+              - generic [ref=e3125] [cursor=pointer]:
+                - checkbox "checkBox" [ref=e3127]
+                - paragraph [ref=e3133]: Avoid calling before reaching the location
+            - generic [ref=e3146] [cursor=pointer]:
+              - paragraph [ref=e3154]: Coupons and offers
+              - button "9 offers" [ref=e3159]:
+                - paragraph [ref=e3161]: 9 offers
+            - generic [ref=e3175]:
+              - heading "Payment summary" [level=4] [ref=e3180]
+              - generic [ref=e3186]:
+                - paragraph [ref=e3187]: Item total
+                - generic [ref=e3188]:
+                  - paragraph [ref=e3189]: ₹1,198
+                  - paragraph [ref=e3190]
+                  - paragraph [ref=e3191]: ₹1,098
+              - generic [ref=e3195]:
+                - paragraph [ref=e3197] [cursor=pointer]: Taxes and Fee
+                - paragraph [ref=e3200]: ₹99
+              - generic [ref=e3207]:
+                - paragraph [ref=e3208]: Total amount
+                - paragraph [ref=e3209]: ₹1,197
+              - generic [ref=e3216]:
+                - paragraph [ref=e3217]: Amount to pay
+                - paragraph [ref=e3218]: ₹1,197
+              - generic [ref=e3236]:
+                - paragraph [ref=e3241]: Add a tip to thank the Professional
+                - generic [ref=e3245]:
+                  - generic [ref=e3246] [cursor=pointer]:
+                    - paragraph [ref=e3247]: ₹
+                    - paragraph [ref=e3248]: "50"
+                  - generic [ref=e3249] [cursor=pointer]:
+                    - paragraph [ref=e3250]: ₹
+                    - paragraph [ref=e3251]: "75"
+                    - paragraph [ref=e3253]: Popular
+                  - generic [ref=e3254] [cursor=pointer]:
+                    - paragraph [ref=e3255]: ₹
+                    - paragraph [ref=e3256]: "100"
+                  - paragraph [ref=e3258] [cursor=pointer]: Custom
+                - paragraph [ref=e3262]: 100% of the tip goes to the professional.
+            - generic [ref=e3274]:
+              - generic [ref=e3277]:
+                - paragraph [ref=e3278]: Amount to pay
+                - heading "₹1,197" [level=4] [ref=e3279]
+              - paragraph [ref=e3284] [cursor=pointer]: View breakup
+      - generic [ref=e3312]:
+        - generic "Close Button" [ref=e3314] [cursor=pointer]
+        - generic [ref=e3339]:
+          - generic [ref=e3345]:
+            - heading "Saved addresses" [level=4] [ref=e3351] [cursor=pointer]
+            - paragraph [ref=e3361] [cursor=pointer]: Add another address
+            - generic [ref=e3368] [cursor=pointer]:
+              - generic [ref=e3369]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3371]:
+                - paragraph [ref=e3372]: Home
+                - paragraph [ref=e3375]: 1, Kolkata
+            - generic [ref=e3386] [cursor=pointer]:
+              - generic [ref=e3387]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3389]:
+                - paragraph [ref=e3390]: Home
+                - paragraph [ref=e3393]: 1, Kolkata
+            - generic [ref=e3404] [cursor=pointer]:
+              - generic [ref=e3405]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3407]:
+                - paragraph [ref=e3408]: Home
+                - paragraph [ref=e3411]: 25, Bansdroni Post Office Road, Naktala, Bansdroni, Kolkata, West Bengal 700070, India
+            - generic [ref=e3422] [cursor=pointer]:
+              - generic [ref=e3423]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3425]:
+                - paragraph [ref=e3426]: Home
+                - paragraph [ref=e3429]: 225 , Provash Pally, Ichapur Bidhanpally, Ichhapur Defence Estate, North Barrackpur, West Bengal 743144, India
+            - generic [ref=e3440] [cursor=pointer]:
+              - generic [ref=e3441]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3443]:
+                - paragraph [ref=e3444]: Home
+                - paragraph [ref=e3447]: 123, Block H, Saket, New Delhi, Delhi, India
+            - generic [ref=e3458] [cursor=pointer]:
+              - generic [ref=e3459]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3461]:
+                - paragraph [ref=e3462]: Home
+                - paragraph [ref=e3465]: 1, Bengaluru
+            - generic [ref=e3476] [cursor=pointer]:
+              - generic [ref=e3477]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3479]:
+                - paragraph [ref=e3480]: Home
+                - paragraph [ref=e3483]: 1, Bengaluru
+            - generic [ref=e3494] [cursor=pointer]:
+              - generic [ref=e3495]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3497]:
+                - paragraph [ref=e3498]: Home
+                - paragraph [ref=e3501]: 1, Bengaluru
+            - generic [ref=e3512] [cursor=pointer]:
+              - generic [ref=e3513]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3515]:
+                - paragraph [ref=e3516]: Home
+                - paragraph [ref=e3519]: 1, Bengaluru
+            - generic [ref=e3530] [cursor=pointer]:
+              - generic [ref=e3531]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3533]:
+                - paragraph [ref=e3534]: Home
+                - paragraph [ref=e3537]: 1, Bengaluru
+            - generic [ref=e3548] [cursor=pointer]:
+              - generic [ref=e3549]:
+                - radio "radioButton" [disabled]
+              - generic [ref=e3551]:
+                - paragraph [ref=e3552]: Home
+                - paragraph [ref=e3555]: 1, Bengaluru
+          - button "Proceed" [active] [ref=e3573] [cursor=pointer]:
+            - paragraph [ref=e3575]: Proceed

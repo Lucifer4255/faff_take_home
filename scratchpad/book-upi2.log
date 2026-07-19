@@ -1,0 +1,28 @@
+ROUTE Park Street -> Quest Mall
+BOOKING: Bike Saver ₹32.50 (vvid 20065235)  — dispatching a REAL driver now
+BOOK result: {
+  dispatched: true,
+  tripId: '763249d9-0a8b-4892-976f-759e2e10aeb1',
+  reqError: undefined,
+  note: 'trip requested',
+  tripReq: {
+    status: 200,
+    bodySlice: '{"data":{"tripRequest":{"errorCode":null,"errorKey":null,"plusOne":null,"riderHasCompletedTrips":true,"uuid":"763249d9-0a8b-4892-976f-759e2e10aeb1","checkoutActionParameters":null,"__typename":"RVWebCommonTripRequest"}}}\n'
+  }
+}
+--- tracking (20s) ---
+  [1:52:19 pm] status=Dispatching driver=- eta=?m loc=?,?
+  [1:52:23 pm] status=Dispatching driver=- eta=?m loc=?,?
+  [1:52:27 pm] status=Dispatching driver=- eta=?m loc=?,?
+  [1:52:31 pm] status=Dispatching driver=- eta=?m loc=?,?
+  [1:52:35 pm] status=Dispatching driver=- eta=?m loc=?,?
+  [1:52:39 pm] status=Dispatching driver=- eta=?m loc=?,?
+captured 6 status snapshots
+first GetStatus rawSlice: {"data":{"status":{"city":{"countryIso2":"IN","currencyCode":"INR","id":476,"name":"kolkata","timezone":"Asia/Kolkata","__typename":"RVWebCommonCity"},"clientStatus":"Dispatching","coordinate":{"latitude":22.5486941,"longitude":88.3585077,"__typename":"RVWebCommonCoordinate"},"lastRequest":null,"nearbyVehicles":[],"pollingIntervalMs":4000,"productsUnavailableMessage":"Unfortunately, Uber is curren
+--- CANCELLING ---
+CANCEL result: { cancelled: true, note: 'cancel requested' }
+--- confirming cancellation (8s) ---
+  post-cancel status=Dispatching
+  post-cancel status=Dispatching
+post-cancel snapshots: 2
+DONE

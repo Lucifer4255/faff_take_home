@@ -1,0 +1,177 @@
+- generic [ref=f2e1]:
+  - generic: UC
+  - main [ref=f2e2]:
+    - generic [ref=f2e5249]:
+      - generic [ref=f2e5272]:
+        - generic [ref=f2e5276]:
+          - generic [ref=f2e5288]:
+            - img:
+              - img "Urban Company logo" [ref=f2e5290]
+          - heading "Checkout" [level=4] [ref=f2e5301]
+        - generic [ref=f2e5306]:
+          - generic [ref=f2e5317]:
+            - generic [ref=f2e5321]:
+              - generic [ref=f2e5329]:
+                - paragraph [ref=f2e5331]: Send booking details to
+                - paragraph [ref=f2e5334]: +91 7439245158
+              - generic [ref=f2e5338]:
+                - paragraph [ref=f2e5346]: Address
+                - button "Select address" [ref=f2e5351] [cursor=pointer]:
+                  - paragraph [ref=f2e5353]: Select address
+                  - button "animation" [ref=f2e5623]
+              - paragraph [ref=f2e5365]: Slot
+              - paragraph [ref=f2e5377]: Payment Method
+            - generic [ref=f2e5386]:
+              - heading "Cancellation policy" [level=4] [ref=f2e5387]
+              - paragraph [ref=f2e5390]: Free cancellations if done more than 48 hrs before the service. A fee will be charged otherwise.
+              - button "Read full policy" [disabled] [ref=f2e5396] [cursor=pointer]:
+                - paragraph [ref=f2e5398]: Read full policy
+          - generic [ref=f2e5401]:
+            - generic [ref=f2e5411]:
+              - heading "Full Home/ By Room Cleaning" [level=4] [ref=f2e5417]
+              - generic [ref=f2e5420]:
+                - generic "Unfurnished apartment - Home deep cleaning":
+                  - generic "Unfurnished apartment - Home deep cleaning" [ref=f2e5421]:
+                    - paragraph [ref=f2e5423]: Unfurnished apartment - Home deep cleaning
+                  - generic [ref=f2e5426]:
+                    - generic [ref=f2e5428]:
+                      - button "Add" [disabled] [ref=f2e5429] [cursor=pointer]:
+                        - paragraph [ref=f2e5430]: Add
+                      - generic [ref=f2e5431]:
+                        - button "Unfurnished apartment - Home deep cleaning Total item count will become0" [disabled] [ref=f2e5432] [cursor=pointer]
+                        - generic [ref=f2e5433]:
+                          - paragraph [ref=f2e5435]: "2"
+                          - generic "Unfurnished apartment - Home deep cleaning with a price of ₹3,999 , Total number of items present in your cart is 1" [ref=f2e5436]:
+                            - paragraph [ref=f2e5437]: "1"
+                          - paragraph [ref=f2e5439]: "0"
+                        - button "Unfurnished apartment - Home deep cleaning Total item count will become2" [disabled] [ref=f2e5440] [cursor=pointer]
+                    - paragraph [ref=f2e5443]: ₹3,999
+                - generic "Sku description for the package, double tap to edit your package or view details" [ref=f2e5446]:
+                  - generic [ref=f2e5447]:
+                    - generic "1 BHK home cleaning (Complete kitchen & Only cupboard exterior)," [ref=f2e5448]:
+                      - paragraph [ref=f2e5453]: 1 BHK home cleaning (Complete kitchen & Only cupboard exterior) x1
+                    - button "Edit package" [ref=f2e5455] [cursor=pointer]:
+                      - paragraph [ref=f2e5457]: Edit package
+              - generic [ref=f2e5463] [cursor=pointer]:
+                - checkbox "checkBox" [ref=f2e5465]
+                - paragraph [ref=f2e5471]: Avoid calling before reaching the location
+            - generic [ref=f2e5484] [cursor=pointer]:
+              - paragraph [ref=f2e5492]: Coupons and offers
+              - button "9 offers" [ref=f2e5497]:
+                - paragraph [ref=f2e5499]: 9 offers
+            - generic [ref=f2e5513]:
+              - generic [ref=f2e5521] [cursor=pointer]:
+                - generic [ref=f2e5522]:
+                  - paragraph [ref=f2e5523]: Total bill
+                  - heading [level=4] [ref=f2e5524]
+                  - paragraph [ref=f2e5525]: ₹4,351
+                  - heading [level=4] [ref=f2e5526]
+                  - paragraph [ref=f2e5527]: ₹870
+                - paragraph [ref=f2e5530]: Incl. govt. taxes & charges
+              - generic [ref=f2e5544]:
+                - generic [ref=f2e5545]:
+                  - paragraph [ref=f2e5546]: Advance payment
+                  - paragraph [ref=f2e5547]: ₹870
+                - paragraph [ref=f2e5550]: ₹3481 payable after service
+              - generic [ref=f2e5565]:
+                - paragraph [ref=f2e5570]: Add a tip to thank the Professional
+                - generic [ref=f2e5574]:
+                  - generic [ref=f2e5575] [cursor=pointer]:
+                    - paragraph [ref=f2e5576]: ₹
+                    - paragraph [ref=f2e5577]: "50"
+                  - generic [ref=f2e5578] [cursor=pointer]:
+                    - paragraph [ref=f2e5579]: ₹
+                    - paragraph [ref=f2e5580]: "75"
+                    - paragraph [ref=f2e5582]: Popular
+                  - generic [ref=f2e5583] [cursor=pointer]:
+                    - paragraph [ref=f2e5584]: ₹
+                    - paragraph [ref=f2e5585]: "100"
+                  - paragraph [ref=f2e5587] [cursor=pointer]: Custom
+                - paragraph [ref=f2e5591]: 100% of the tip goes to the professional.
+            - generic [ref=f2e5603]:
+              - generic [ref=f2e5606]:
+                - paragraph [ref=f2e5607]: Amount to pay
+                - heading "₹870" [level=4] [ref=f2e5608]
+              - paragraph [ref=f2e5613] [cursor=pointer]: View breakup
+      - generic [ref=f2e5641]:
+        - generic "Close Button" [ref=f2e5643] [cursor=pointer]
+        - generic [ref=f2e5648]:
+          - generic [ref=f2e5650]:
+            - generic [ref=f2e5656]:
+              - heading "Saved addresses" [level=4] [ref=f2e5662] [cursor=pointer]
+              - paragraph [ref=f2e5672] [cursor=pointer]: Add another address
+              - generic [ref=f2e5679] [cursor=pointer]:
+                - generic [ref=f2e5680]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5682]:
+                  - paragraph [ref=f2e5683]: Home
+                  - paragraph [ref=f2e5686]: 1, Kolkata
+              - generic [ref=f2e5697] [cursor=pointer]:
+                - generic [ref=f2e5698]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5700]:
+                  - paragraph [ref=f2e5701]: Home
+                  - paragraph [ref=f2e5704]: 1, Bengaluru
+              - generic [ref=f2e5715] [cursor=pointer]:
+                - generic [ref=f2e5716]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5718]:
+                  - paragraph [ref=f2e5719]: Home
+                  - paragraph [ref=f2e5722]: 1, Kolkata
+              - generic [ref=f2e5733] [cursor=pointer]:
+                - generic [ref=f2e5734]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5736]:
+                  - paragraph [ref=f2e5737]: Home
+                  - paragraph [ref=f2e5740]: 1, Bengaluru
+              - generic [ref=f2e5751] [cursor=pointer]:
+                - generic [ref=f2e5752]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5754]:
+                  - paragraph [ref=f2e5755]: Home
+                  - paragraph [ref=f2e5758]: 1, Bengaluru
+              - generic [ref=f2e5769] [cursor=pointer]:
+                - generic [ref=f2e5770]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5772]:
+                  - paragraph [ref=f2e5773]: Home
+                  - paragraph [ref=f2e5776]: 1, Bengaluru
+              - generic [ref=f2e5787] [cursor=pointer]:
+                - generic [ref=f2e5788]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5790]:
+                  - paragraph [ref=f2e5791]: Home
+                  - paragraph [ref=f2e5794]: 1, Bengaluru
+              - generic [ref=f2e5805] [cursor=pointer]:
+                - generic [ref=f2e5806]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5808]:
+                  - paragraph [ref=f2e5809]: Home
+                  - paragraph [ref=f2e5812]: 1, Bengaluru
+              - generic [ref=f2e5823] [cursor=pointer]:
+                - generic [ref=f2e5824]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5826]:
+                  - paragraph [ref=f2e5827]: Home
+                  - paragraph [ref=f2e5830]: 25, Bansdroni Post Office Road, Naktala, Bansdroni, Kolkata, West Bengal 700070, India
+              - generic [ref=f2e5841] [cursor=pointer]:
+                - generic [ref=f2e5842]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f2e5844]:
+                  - paragraph [ref=f2e5845]: Home
+                  - paragraph [ref=f2e5848]: 225 , Provash Pally, Ichapur Bidhanpally, Ichhapur Defence Estate, North Barrackpur, West Bengal 743144, India
+            - generic [ref=f2e5865]:
+              - button "Proceed" [disabled]:
+                - generic:
+                  - paragraph: Proceed
+          - generic [ref=f2e5874]:
+            - generic "Close Button" [ref=f2e5876] [cursor=pointer]
+            - generic [ref=f2e5883]:
+              - generic [ref=f2e5893]:
+                - heading "Do you want to update your location to Kolkata?" [level=3] [ref=f2e5894]
+                - paragraph [ref=f2e5897]: Items in your cart will be removed, and you'll need to rebuild your cart
+              - generic [ref=f2e5905]:
+                - button "No, Go back" [active] [ref=f2e5907] [cursor=pointer]:
+                  - paragraph [ref=f2e5909]: Cancel
+                - button "Yes, Update" [ref=f2e5911] [cursor=pointer]:
+                  - paragraph [ref=f2e5913]: Yes, update

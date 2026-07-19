@@ -1,0 +1,151 @@
+- generic [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e2701]:
+      - generic [ref=e2724]:
+        - generic [ref=e2728]:
+          - generic [ref=e2740]:
+            - img:
+              - img "Urban Company logo" [ref=e2742]
+          - heading "Checkout" [level=4] [ref=e2753]
+        - generic [ref=e2758]:
+          - generic [ref=e2769]:
+            - generic [ref=e2773]:
+              - generic [ref=e2781]:
+                - paragraph [ref=e2783]: Send booking details to
+                - paragraph [ref=e2786]: +91 7439245158
+              - generic [ref=e2791]:
+                - generic:
+                  - generic [ref=e2796]:
+                    - paragraph [ref=e2798]: Address
+                    - generic [ref=e3331]:
+                      - paragraph [ref=e3332]: Home
+                      - paragraph [ref=e3333]: "- 1, Bengaluru"
+                  - button "Edit" [disabled] [ref=e3336] [cursor=pointer]:
+                    - paragraph [ref=e3338]: Edit
+              - generic [ref=e2809]:
+                - paragraph [ref=e2817]: Slot
+                - button "Select time & date" [ref=e3343] [cursor=pointer]:
+                  - paragraph [ref=e3345]: Select time & date
+              - paragraph [ref=e2829]: Payment Method
+            - generic [ref=e2838]:
+              - heading "Cancellation policy" [level=4] [ref=e2839]
+              - paragraph [ref=e2842]: Free cancellations if done more than 48 hrs before the service. A fee will be charged otherwise.
+              - button "Read full policy" [disabled] [ref=e2848] [cursor=pointer]:
+                - paragraph [ref=e2850]: Read full policy
+          - generic [ref=e2853]:
+            - generic [ref=e2863]:
+              - heading "Full Home/ By Room Cleaning" [level=4] [ref=e2869]
+              - generic [ref=e2872]:
+                - generic "Furnished apartment - Home deep cleaning":
+                  - generic "Furnished apartment - Home deep cleaning" [ref=e2873]:
+                    - paragraph [ref=e2875]: Furnished apartment - Home deep cleaning
+                  - generic [ref=e2878]:
+                    - generic [ref=e2880]:
+                      - button "Add" [disabled] [ref=e2881] [cursor=pointer]:
+                        - paragraph [ref=e2882]: Add
+                      - generic [ref=e2883]:
+                        - button "Furnished apartment - Home deep cleaning Total item count will become0" [disabled] [ref=e2884] [cursor=pointer]
+                        - generic [ref=e2885]:
+                          - paragraph [ref=e2887]: "1"
+                          - generic "Furnished apartment - Home deep cleaning with a price of ₹3,499 , Total number of items present in your cart is 1" [ref=e2888]:
+                            - paragraph [ref=e2889]: "1"
+                          - paragraph [ref=e2891]: "0"
+                        - button "Furnished apartment - Home deep cleaning Total item count will become2" [disabled] [ref=e2892] [cursor=pointer]
+                    - paragraph [ref=e2895]: ₹3,499
+                - generic "Sku description for the package, double tap to edit your package or view details" [ref=e2898]:
+                  - generic [ref=e2899]:
+                    - generic "1BHK- Furnished home cleaning, Cabinet exterior & stove, Sofa & mattress dry vacuuming," [ref=e2900]:
+                      - paragraph [ref=e2905]: 1BHK- Furnished home cleaning x1
+                      - paragraph [ref=e2909]: Cabinet exterior & stove x1
+                      - paragraph [ref=e2913]: Sofa & mattress dry vacuuming x1
+                    - button "Edit package" [ref=e2915] [cursor=pointer]:
+                      - paragraph [ref=e2917]: Edit package
+              - generic [ref=e2923] [cursor=pointer]:
+                - checkbox "checkBox" [ref=e2925]
+                - paragraph [ref=e2931]: Avoid calling before reaching the location
+            - generic [ref=e2944] [cursor=pointer]:
+              - paragraph [ref=e2952]: Coupons and offers
+              - button "9 offers" [ref=e2957]:
+                - paragraph [ref=e2959]: 9 offers
+            - generic [ref=e2973]:
+              - generic [ref=e3353] [cursor=pointer]:
+                - generic [ref=e3354]:
+                  - paragraph [ref=e3355]: Total bill
+                  - heading [level=4] [ref=e3356]
+                  - paragraph [ref=e3357]: ₹3,807
+                  - heading [level=4] [ref=e3358]
+                  - paragraph [ref=e3359]: ₹761
+                - paragraph [ref=e3362]: Incl. govt. taxes & charges
+              - generic [ref=e3376]:
+                - generic [ref=e3377]:
+                  - paragraph [ref=e3378]: Advance payment
+                  - paragraph [ref=e3379]: ₹761
+                - paragraph [ref=e3382]: ₹3046 payable after service
+              - generic [ref=e3025]:
+                - paragraph [ref=e3030]: Add a tip to thank the Professional
+                - generic [ref=e3034]:
+                  - generic [ref=e3035] [cursor=pointer]:
+                    - paragraph [ref=e3036]: ₹
+                    - paragraph [ref=e3037]: "50"
+                  - generic [ref=e3038] [cursor=pointer]:
+                    - paragraph [ref=e3039]: ₹
+                    - paragraph [ref=e3040]: "75"
+                    - paragraph [ref=e3042]: Popular
+                  - generic [ref=e3043] [cursor=pointer]:
+                    - paragraph [ref=e3044]: ₹
+                    - paragraph [ref=e3045]: "100"
+                  - paragraph [ref=e3047] [cursor=pointer]: Custom
+                - paragraph [ref=e3051]: 100% of the tip goes to the professional.
+            - generic [ref=e3063]:
+              - generic [ref=e3066]:
+                - paragraph [ref=e3067]: Amount to pay
+                - heading "₹761" [level=4] [ref=e3068]
+              - paragraph [ref=e3073] [cursor=pointer]: View breakup
+      - generic [ref=e3384]:
+        - generic "Close Button" [ref=e3386] [cursor=pointer]
+        - generic [ref=e3393]:
+          - generic [ref=e3398]:
+            - generic "When should the professional arrive? , Service will take approx. 3 hrs & 45 mins" [ref=e3404]:
+              - heading "When should the professional arrive?" [level=4] [ref=e3405]
+              - paragraph [ref=e3408]: Service will take approx. 3 hrs & 45 mins
+            - generic "Select date" [ref=e3410]:
+              - generic [ref=e3413]:
+                - generic "Saturday 11 July button" [active] [ref=e3419] [cursor=pointer]:
+                  - generic [ref=e3420]:
+                    - paragraph [ref=e3421]: Sat
+                    - paragraph [ref=e3423]: "11"
+                - generic "Sunday 12 July button" [ref=e3430] [cursor=pointer]:
+                  - generic [ref=e3431]:
+                    - paragraph [ref=e3432]: Sun
+                    - paragraph [ref=e3434]: "12"
+                - generic "Monday 13 July button" [ref=e3441] [cursor=pointer]:
+                  - generic [ref=e3442]:
+                    - paragraph [ref=e3443]: Mon
+                    - paragraph [ref=e3445]: "13"
+                - generic "Tuesday 14 July button" [ref=e3449] [cursor=pointer]:
+                  - generic [ref=e3450]:
+                    - paragraph [ref=e3451]: Tue
+                    - paragraph [ref=e3453]: "14"
+                - generic "Wednesday 15 July button" [ref=e3457] [cursor=pointer]:
+                  - generic [ref=e3458]:
+                    - paragraph [ref=e3459]: Wed
+                    - paragraph [ref=e3461]: "15"
+              - generic [ref=e3469]:
+                - paragraph [ref=e3471]: Pay ₹727.6 (refundable)
+                - paragraph [ref=e3474]: Balance to be paid - ₹2910.4
+              - generic "Select start time of service" [ref=e3479]:
+                - heading "Select start time of service" [level=4] [ref=e3480]
+              - generic [ref=e3486]:
+                - generic [ref=e3489]:
+                  - generic "06:00 PM button" [ref=e3490] [cursor=pointer]:
+                    - paragraph [ref=e3491]: 06:00 PM
+                  - paragraph [ref=e3493]: "- ₹150"
+                - generic [ref=e3496]:
+                  - generic "06:30 PM button" [ref=e3497] [cursor=pointer]:
+                    - paragraph [ref=e3498]: 06:30 PM
+                  - paragraph [ref=e3500]: "- ₹150"
+          - generic [ref=e3511]:
+            - button "Proceed to checkout" [disabled]:
+              - generic:
+                - paragraph: Proceed to checkout

@@ -1,0 +1,978 @@
+- generic [active] [ref=f2e1]:
+  - generic: UC
+  - main [ref=f2e2]:
+    - generic [ref=f2e9]:
+      - generic [ref=f2e13]:
+        - img [ref=f2e23] [cursor=pointer]:
+          - img "Urban Company logo" [ref=f2e25]
+        - generic [ref=f2e36]:
+          - paragraph [ref=f2e40] [cursor=pointer]: Wall Panels
+          - paragraph [ref=f2e44] [cursor=pointer]: Native
+          - paragraph [ref=f2e48] [cursor=pointer]: Beauty
+        - paragraph [ref=f2e71] [cursor=pointer]: H37, Block H- Saket- New Delhi- Delhi 110017- India
+        - generic [ref=f2e111]:
+          - button "Button Double Tap to perform action" [ref=f2e114] [cursor=pointer]
+          - button [ref=f2e120] [cursor=pointer]:
+            - generic [ref=f2e121]:
+              - generic "Button Double Tap to perform action"
+      - generic [ref=f2e128]:
+        - generic [ref=f2e130]:
+          - generic [ref=f2e139]:
+            - heading "Home services at your doorstep" [level=1] [ref=f2e144]
+            - generic [ref=f2e151]:
+              - generic [ref=f2e155]:
+                - generic [ref=f2e156]:
+                  - generic "InstaHelp button" [ref=f2e157] [cursor=pointer]:
+                    - generic [ref=f2e158]:
+                      - paragraph [ref=f2e162]: 14 mins
+                      - img:
+                        - img "InstaHelp" [ref=f2e164]
+                    - paragraph [ref=f2e169]: InstaHelp
+                  - generic "Women's Salon & Spa button" [ref=f2e170] [cursor=pointer]:
+                    - generic [ref=f2e171]:
+                      - paragraph [ref=f2e175]: 48 mins
+                      - img:
+                        - img "Women's Salon & Spa" [ref=f2e177]
+                    - paragraph [ref=f2e182]: Women's Salon & Spa
+                  - generic "Men's Salon & Massage button" [ref=f2e183] [cursor=pointer]:
+                    - generic [ref=f2e184]:
+                      - paragraph [ref=f2e188]: 48 mins
+                      - img:
+                        - img "Men's Salon & Massage" [ref=f2e190]
+                    - paragraph [ref=f2e195]: Men's Salon & Massage
+                  - generic "Cleaning & Pest Control button" [ref=f2e196] [cursor=pointer]:
+                    - generic [ref=f2e197]:
+                      - img:
+                        - img "Cleaning & Pest Control" [ref=f2e199]
+                    - paragraph [ref=f2e204]: Cleaning & Pest Control
+                - generic [ref=f2e206]:
+                  - generic "Wall Panels by Revamp button" [ref=f2e207] [cursor=pointer]:
+                    - paragraph [ref=f2e215]: Wall Panels by Revamp
+                  - generic "Painting & Water - proofing button" [ref=f2e216] [cursor=pointer]:
+                    - generic [ref=f2e217]:
+                      - img:
+                        - img "Painting & Water - proofing" [ref=f2e219]
+                    - paragraph [ref=f2e224]: Painting & Water - proofing
+                  - generic "AC & Appliance Repair button" [ref=f2e225] [cursor=pointer]:
+                    - generic [ref=f2e226]:
+                      - paragraph [ref=f2e230]: 29 mins
+                      - img:
+                        - img "AC & Appliance Repair" [ref=f2e232]
+                    - paragraph [ref=f2e237]: AC & Appliance Repair
+                  - generic "Electrician, Plumber & Carpenter button" [ref=f2e238] [cursor=pointer]:
+                    - generic [ref=f2e239]:
+                      - paragraph [ref=f2e243]: 19 mins
+                      - img:
+                        - img "Electrician, Plumber & Carpenter" [ref=f2e245]
+                    - paragraph [ref=f2e250]: Electrician, Plumber & Carpenter
+              - paragraph [ref=f2e256]: Native Smart Products
+              - generic [ref=f2e262]:
+                - generic "Native Water Purifier button" [ref=f2e263] [cursor=pointer]:
+                  - generic [ref=f2e264]:
+                    - img:
+                      - img "Native Water Purifier" [ref=f2e266]
+                  - link "Native Water Purifier" [ref=f2e271]:
+                    - /url: https://www.urbancompany.com/delhi-ncr-ro-purchase
+                - generic "Native Smart Locks button" [ref=f2e272] [cursor=pointer]:
+                  - generic [ref=f2e273]:
+                    - img:
+                      - img "Native Smart Locks" [ref=f2e275]
+                  - link "Native Smart Locks" [ref=f2e280]:
+                    - /url: https://www.urbancompany.com/delhi-ncr-epc-stores-smarthome
+          - generic [ref=f2e287]:
+            - generic [ref=f2e296]:
+              - generic:
+                - generic [ref=f2e297]:
+                  - img:
+                    - img "4.8 Service Rating*" [ref=f2e299]
+                - generic [ref=f2e301]:
+                  - paragraph [ref=f2e302]: "4.8"
+                  - paragraph [ref=f2e305]: Service Rating*
+            - generic [ref=f2e314]:
+              - generic:
+                - generic [ref=f2e315]:
+                  - img:
+                    - img "12M+ Customers Globally*" [ref=f2e317]
+                - generic [ref=f2e319]:
+                  - paragraph [ref=f2e320]: 12M+
+                  - paragraph [ref=f2e323]: Customers Globally*
+        - generic [ref=f2e335]:
+          - img:
+            - img "Home services at your doorstep" [ref=f2e337]
+      - generic [ref=f2e345]:
+        - heading "In the spotlight" [level=2] [ref=f2e349]
+        - generic [ref=f2e351]:
+          - generic [ref=f2e353]:
+            - img "Urban Company Banner 0" [ref=f2e356] [cursor=pointer]
+            - link [ref=f2e359] [cursor=pointer]:
+              - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+              - img "AC Service & Repair" [ref=f2e361]
+            - link [ref=f2e364] [cursor=pointer]:
+              - /url: https://www.urbancompany.com/delhi-ncr-professional-bathroom-cleaning
+              - img "Bathroom Cleaning" [ref=f2e366]
+            - img "Urban Company Banner 4" [ref=f2e371] [cursor=pointer]
+            - link [ref=f2e374] [cursor=pointer]:
+              - /url: https://www.urbancompany.com/delhi-ncr-pest-control
+              - img "Cockroach Control" [ref=f2e376]
+            - img "Urban Company Banner 6" [ref=f2e381] [cursor=pointer]
+            - img "Urban Company Banner 8" [ref=f2e391] [cursor=pointer]
+          - button "Button Double Tap to perform action" [ref=f2e394] [cursor=pointer]
+      - generic [ref=f2e406]:
+        - heading "New and noteworthy" [level=2] [ref=f2e410]
+        - generic [ref=f2e412]:
+          - generic [ref=f2e414]:
+            - generic [ref=f2e418] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Wall Panels by Revamp"
+              - paragraph [ref=f2e424]: Wall Panels by Revamp
+            - generic [ref=f2e430] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Native Water Purifier"
+              - link "Native Water Purifier" [ref=f2e436]:
+                - /url: https://www.urbancompany.com/delhi-ncr-ro-purchase
+            - generic [ref=f2e442] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Native Smart Locks"
+              - link "Native Smart Locks" [ref=f2e448]:
+                - /url: https://www.urbancompany.com/delhi-ncr-epc-stores-smarthome
+            - generic [ref=f2e454] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Kitchen Cleaning"
+              - link "Kitchen Cleaning" [ref=f2e460]:
+                - /url: https://www.urbancompany.com/delhi-ncr-professional-kitchen-cleaning
+            - generic [ref=f2e466] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Stove Service & Repair"
+              - link "Stove Service & Repair" [ref=f2e472]:
+                - /url: https://www.urbancompany.com/delhi-ncr-gas-stove-repair
+            - generic [ref=f2e478] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Laptop Repair"
+              - link "Laptop Repair" [ref=f2e484]:
+                - /url: https://www.urbancompany.com/new-delhi-laptop-repair
+            - generic [ref=f2e490] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Spa Ayurveda"
+              - link "Spa Ayurveda" [ref=f2e496]:
+                - /url: https://www.urbancompany.com/delhi-ncr-spa-ayurveda
+            - generic [ref=f2e502] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Hair Studio for Women"
+              - link "Hair Studio for Women" [ref=f2e508]:
+                - /url: https://www.urbancompany.com/delhi-ncr-women-hair-services
+            - generic [ref=f2e514] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "AC Service & Repair"
+              - generic [ref=f2e518]:
+                - link "AC Service & Repair" [ref=f2e520]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - paragraph [ref=f2e526]: In 48 mins
+          - button "Button Double Tap to perform action" [ref=f2e529] [cursor=pointer]
+      - generic [ref=f2e541]:
+        - generic [ref=f2e544]:
+          - heading "Thoughtful curations" [level=3] [ref=f2e545]
+          - paragraph [ref=f2e548]: of our finest experiences
+        - button "Button Double Tap to perform action" [ref=f2e665] [cursor=pointer]
+      - generic [ref=f2e677]:
+        - heading "Most booked services" [level=2] [ref=f2e681]
+        - generic [ref=f2e683]:
+          - generic [ref=f2e685]:
+            - generic [ref=f2e689] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "AC repair"
+              - generic [ref=f2e693]:
+                - link "AC repair" [ref=f2e695]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e697]:
+                  - generic [ref=f2e702]:
+                    - paragraph [ref=f2e703]: "4.73"
+                    - paragraph [ref=f2e704]
+                  - paragraph [ref=f2e712]: Instant
+                - generic [ref=f2e715]:
+                  - paragraph [ref=f2e716]: ₹299
+                  - paragraph [ref=f2e717]
+                  - paragraph
+            - generic [ref=f2e723] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Foam-jet AC service"
+              - generic [ref=f2e727]:
+                - link "Foam-jet AC service" [ref=f2e729]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e731]:
+                  - generic [ref=f2e736]:
+                    - paragraph [ref=f2e737]: "4.76"
+                    - paragraph [ref=f2e738]
+                  - paragraph [ref=f2e746]: Instant
+                - generic [ref=f2e749]:
+                  - paragraph [ref=f2e750]: ₹599
+                  - paragraph [ref=f2e751]
+                  - paragraph
+            - generic [ref=f2e757] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Intense cleaning (2 bathrooms)"
+              - generic [ref=f2e761]:
+                - link "Intense cleaning (2 bathrooms)" [ref=f2e763]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-professional-bathroom-cleaning
+                - generic [ref=f2e769]:
+                  - paragraph [ref=f2e770]: "4.80"
+                  - paragraph [ref=f2e771]
+                - generic [ref=f2e774]:
+                  - paragraph [ref=f2e775]: ₹1,018
+                  - paragraph [ref=f2e776]
+                  - paragraph [ref=f2e777]: ₹1,098
+            - generic [ref=f2e783] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Haircut for men"
+              - generic [ref=f2e787]:
+                - link "Haircut for men" [ref=f2e789]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-mens-grooming
+                - generic [ref=f2e791]:
+                  - generic [ref=f2e796]:
+                    - paragraph [ref=f2e797]: "4.86"
+                    - paragraph [ref=f2e798]
+                  - paragraph [ref=f2e806]: Instant
+                - generic [ref=f2e809]:
+                  - paragraph [ref=f2e810]: ₹259
+                  - paragraph [ref=f2e811]
+                  - paragraph
+            - generic [ref=f2e817] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Spatula waxing (Full arms, legs & underarms)"
+              - generic [ref=f2e821]:
+                - link "Spatula waxing (Full arms, legs & underarms)" [ref=f2e823]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-salon-at-home
+                - generic [ref=f2e825]:
+                  - generic [ref=f2e830]:
+                    - paragraph [ref=f2e831]: "4.85"
+                    - paragraph [ref=f2e832]
+                  - paragraph [ref=f2e840]: Instant
+                - generic [ref=f2e843]:
+                  - paragraph [ref=f2e844]: ₹649
+                  - paragraph [ref=f2e845]
+                  - paragraph
+            - generic [ref=f2e851] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Intense cleaning (3 bathrooms)"
+              - generic [ref=f2e855]:
+                - link "Intense cleaning (3 bathrooms)" [ref=f2e857]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-professional-bathroom-cleaning
+                - generic [ref=f2e863]:
+                  - paragraph [ref=f2e864]: "4.80"
+                  - paragraph [ref=f2e865]
+                - generic [ref=f2e868]:
+                  - paragraph [ref=f2e869]: ₹1,497
+                  - paragraph [ref=f2e870]
+                  - paragraph [ref=f2e871]: ₹1,647
+            - generic [ref=f2e877] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Roll-on waxing (Full arms, legs & underarms)"
+              - generic [ref=f2e881]:
+                - link "Roll-on waxing (Full arms, legs & underarms)" [ref=f2e883]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-salon-at-home
+                - generic [ref=f2e885]:
+                  - generic [ref=f2e890]:
+                    - paragraph [ref=f2e891]: "4.86"
+                    - paragraph [ref=f2e892]
+                  - paragraph [ref=f2e900]: Instant
+                - generic [ref=f2e903]:
+                  - paragraph [ref=f2e904]: ₹849
+                  - paragraph [ref=f2e905]
+                  - paragraph
+            - generic [ref=f2e911] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Book a carpenter"
+              - generic [ref=f2e915]:
+                - link "Book a carpenter" [ref=f2e917]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-carpenters-density
+                - generic [ref=f2e923]:
+                  - paragraph [ref=f2e924]: "4.66"
+                  - paragraph [ref=f2e925]
+                - generic [ref=f2e928]:
+                  - paragraph [ref=f2e929]: ₹99
+                  - paragraph [ref=f2e930]
+                  - paragraph
+            - generic [ref=f2e936] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Plumber consultation"
+              - generic [ref=f2e940]:
+                - link "Plumber consultation" [ref=f2e942]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-plumbers-density
+                - generic [ref=f2e944]:
+                  - generic [ref=f2e949]:
+                    - paragraph [ref=f2e950]: "4.73"
+                    - paragraph [ref=f2e951]
+                  - paragraph [ref=f2e959]: Instant
+                - generic [ref=f2e962]:
+                  - paragraph [ref=f2e963]: ₹49
+                  - paragraph [ref=f2e964]
+                  - paragraph
+            - generic [ref=f2e970] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Foam-jet service (2 ACs)"
+              - generic [ref=f2e974]:
+                - link "Foam-jet service (2 ACs)" [ref=f2e976]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e978]:
+                  - generic [ref=f2e983]:
+                    - paragraph [ref=f2e984]: "4.76"
+                    - paragraph [ref=f2e985]
+                  - paragraph [ref=f2e993]: Instant
+                - generic [ref=f2e996]:
+                  - paragraph [ref=f2e997]: ₹1,098
+                  - paragraph [ref=f2e998]
+                  - paragraph [ref=f2e999]: ₹1,198
+          - button "Button Double Tap to perform action" [ref=f2e1002] [cursor=pointer]
+      - img "Urban Company Spotlight" [ref=f2e1015] [cursor=pointer]
+      - img "Urban Company Spotlight" [ref=f2e1025] [cursor=pointer]
+      - generic [ref=f2e1034]:
+        - generic [ref=f2e1037] [cursor=pointer]:
+          - generic [ref=f2e1038]:
+            - heading "Cleaning essentials" [level=2] [ref=f2e1039]
+            - paragraph [ref=f2e1041]: Monthly cleaning essential services
+          - button "See all" [ref=f2e1045]:
+            - paragraph [ref=f2e1047]: See all
+        - generic [ref=f2e1049]:
+          - generic [ref=f2e1051]:
+            - generic [ref=f2e1055] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Intense cleaning (2 bathrooms)"
+              - generic [ref=f2e1059]:
+                - link "Intense cleaning (2 bathrooms)" [ref=f2e1061]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-professional-bathroom-cleaning
+                - generic [ref=f2e1067]:
+                  - paragraph [ref=f2e1068]: "4.80"
+                  - paragraph [ref=f2e1069]
+                - generic [ref=f2e1072]:
+                  - paragraph [ref=f2e1073]: ₹1,018
+                  - paragraph [ref=f2e1074]
+                  - paragraph [ref=f2e1075]: ₹1,098
+            - generic [ref=f2e1081] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Intense cleaning (3 bathrooms)"
+              - generic [ref=f2e1085]:
+                - link "Intense cleaning (3 bathrooms)" [ref=f2e1087]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-professional-bathroom-cleaning
+                - generic [ref=f2e1093]:
+                  - paragraph [ref=f2e1094]: "4.80"
+                  - paragraph [ref=f2e1095]
+                - generic [ref=f2e1098]:
+                  - paragraph [ref=f2e1099]: ₹1,497
+                  - paragraph [ref=f2e1100]
+                  - paragraph [ref=f2e1101]: ₹1,647
+            - generic [ref=f2e1107] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Chimney cleaning"
+              - generic [ref=f2e1111]:
+                - link "Chimney cleaning" [ref=f2e1113]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-professional-kitchen-cleaning
+                - generic [ref=f2e1119]:
+                  - paragraph [ref=f2e1120]: "4.84"
+                  - paragraph [ref=f2e1121]
+                - generic [ref=f2e1124]:
+                  - paragraph [ref=f2e1125]: ₹399
+                  - paragraph [ref=f2e1126]
+                  - paragraph
+            - generic [ref=f2e1132] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Fridge cleaning"
+              - generic [ref=f2e1136]:
+                - link "Fridge cleaning" [ref=f2e1138]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-professional-kitchen-cleaning
+                - generic [ref=f2e1144]:
+                  - paragraph [ref=f2e1145]: "4.83"
+                  - paragraph [ref=f2e1146]
+                - generic [ref=f2e1149]:
+                  - paragraph [ref=f2e1150]: ₹399
+                  - paragraph [ref=f2e1151]
+                  - paragraph
+            - generic [ref=f2e1157] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Chimney & stove cleaning"
+              - generic [ref=f2e1161]:
+                - link "Chimney & stove cleaning" [ref=f2e1163]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-professional-kitchen-cleaning
+                - generic [ref=f2e1169]:
+                  - paragraph [ref=f2e1170]: "4.79"
+                  - paragraph [ref=f2e1171]
+                - generic [ref=f2e1174]:
+                  - paragraph [ref=f2e1175]: ₹499
+                  - paragraph [ref=f2e1176]
+                  - paragraph
+            - generic [ref=f2e1182] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Dining table & chairs cleaning"
+              - generic [ref=f2e1186]:
+                - paragraph [ref=f2e1188]: Dining table & chairs cleaning
+                - generic [ref=f2e1194]:
+                  - paragraph [ref=f2e1195]: "4.84"
+                  - paragraph [ref=f2e1196]
+                - generic [ref=f2e1199]:
+                  - paragraph [ref=f2e1200]: ₹499
+                  - paragraph [ref=f2e1201]
+                  - paragraph
+          - button "Button Double Tap to perform action" [ref=f2e1204] [cursor=pointer]
+      - generic [ref=f2e1226]:
+        - generic [ref=f2e1229] [cursor=pointer]:
+          - heading "Appliance repair & service" [level=2] [ref=f2e1231]
+          - button "See all" [ref=f2e1235]:
+            - paragraph [ref=f2e1237]: See all
+        - generic [ref=f2e1239]:
+          - generic [ref=f2e1241]:
+            - generic [ref=f2e1245] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "AC repair"
+              - generic [ref=f2e1249]:
+                - link "AC repair" [ref=f2e1251]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e1253]:
+                  - generic [ref=f2e1258]:
+                    - paragraph [ref=f2e1259]: "4.73"
+                    - paragraph [ref=f2e1260]
+                  - paragraph [ref=f2e1268]: Instant
+                - generic [ref=f2e1271]:
+                  - paragraph [ref=f2e1272]: ₹299
+                  - paragraph [ref=f2e1273]
+                  - paragraph
+            - generic [ref=f2e1279] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Foam-jet AC service"
+              - generic [ref=f2e1283]:
+                - link "Foam-jet AC service" [ref=f2e1285]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e1287]:
+                  - generic [ref=f2e1292]:
+                    - paragraph [ref=f2e1293]: "4.76"
+                    - paragraph [ref=f2e1294]
+                  - paragraph [ref=f2e1302]: Instant
+                - generic [ref=f2e1305]:
+                  - paragraph [ref=f2e1306]: ₹599
+                  - paragraph [ref=f2e1307]
+                  - paragraph
+            - generic [ref=f2e1313] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Foam-jet service (2 ACs)"
+              - generic [ref=f2e1317]:
+                - link "Foam-jet service (2 ACs)" [ref=f2e1319]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e1321]:
+                  - generic [ref=f2e1326]:
+                    - paragraph [ref=f2e1327]: "4.76"
+                    - paragraph [ref=f2e1328]
+                  - paragraph [ref=f2e1336]: Instant
+                - generic [ref=f2e1339]:
+                  - paragraph [ref=f2e1340]: ₹1,098
+                  - paragraph [ref=f2e1341]
+                  - paragraph [ref=f2e1342]: ₹1,198
+            - generic [ref=f2e1348] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Gas refill & check-up"
+              - generic [ref=f2e1352]:
+                - link "Gas refill & check-up" [ref=f2e1354]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e1356]:
+                  - generic [ref=f2e1361]:
+                    - paragraph [ref=f2e1362]: "4.77"
+                    - paragraph [ref=f2e1363]
+                  - paragraph [ref=f2e1371]: Instant
+                - generic [ref=f2e1374]:
+                  - paragraph [ref=f2e1375]: ₹2,800
+                  - paragraph [ref=f2e1376]
+                  - paragraph
+            - generic [ref=f2e1382] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "TV check-up"
+              - generic [ref=f2e1386]:
+                - link "TV check-up" [ref=f2e1388]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-tv-repair
+                - generic [ref=f2e1390]:
+                  - generic [ref=f2e1395]:
+                    - paragraph [ref=f2e1396]: "4.77"
+                    - paragraph [ref=f2e1397]
+                  - paragraph [ref=f2e1405]: Instant
+                - generic [ref=f2e1408]:
+                  - paragraph [ref=f2e1409]: ₹249
+                  - paragraph [ref=f2e1410]
+                  - paragraph
+            - generic [ref=f2e1416] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Deep chimney service"
+              - generic [ref=f2e1420]:
+                - link "Deep chimney service" [ref=f2e1422]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-chimney-and-hob-repair
+                - generic [ref=f2e1428]:
+                  - paragraph [ref=f2e1429]: "4.79"
+                  - paragraph [ref=f2e1430]
+                - generic [ref=f2e1433]:
+                  - paragraph [ref=f2e1434]: ₹1,249
+                  - paragraph [ref=f2e1435]
+                  - paragraph
+            - generic [ref=f2e1441] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Water Purifier / RO Service & Repair"
+              - generic [ref=f2e1445]:
+                - link "Water Purifier / RO Service & Repair" [ref=f2e1447]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-kent-ro-repair
+                - generic [ref=f2e1453]:
+                  - paragraph [ref=f2e1454]: "4.80"
+                  - paragraph [ref=f2e1455]
+                - generic [ref=f2e1458]:
+                  - paragraph [ref=f2e1459]: ₹249
+                  - paragraph [ref=f2e1460]
+                  - paragraph
+            - generic [ref=f2e1466] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Microwave check-up"
+              - generic [ref=f2e1470]:
+                - link "Microwave check-up" [ref=f2e1472]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-microwave-repair
+                - generic [ref=f2e1478]:
+                  - paragraph [ref=f2e1479]: "4.82"
+                  - paragraph [ref=f2e1480]
+                - generic [ref=f2e1483]:
+                  - paragraph [ref=f2e1484]: ₹199
+                  - paragraph [ref=f2e1485]
+                  - paragraph
+            - generic [ref=f2e1491] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "AC installation"
+              - generic [ref=f2e1495]:
+                - link "AC installation" [ref=f2e1497]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-ac-service-repair
+                - generic [ref=f2e1499]:
+                  - generic [ref=f2e1504]:
+                    - paragraph [ref=f2e1505]: "4.69"
+                    - paragraph [ref=f2e1506]
+                  - paragraph [ref=f2e1514]: Instant
+                - generic [ref=f2e1517]:
+                  - paragraph [ref=f2e1518]: ₹1,099
+                  - paragraph [ref=f2e1519]
+                  - paragraph
+            - generic [ref=f2e1525] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Basic chimney service"
+              - generic [ref=f2e1529]:
+                - link "Basic chimney service" [ref=f2e1531]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-chimney-and-hob-repair
+                - generic [ref=f2e1537]:
+                  - paragraph [ref=f2e1538]: "4.79"
+                  - paragraph [ref=f2e1539]
+                - generic [ref=f2e1542]:
+                  - paragraph [ref=f2e1543]: ₹599
+                  - paragraph [ref=f2e1544]
+                  - paragraph
+          - button "Button Double Tap to perform action" [ref=f2e1547] [cursor=pointer]
+      - generic [ref=f2e1559]:
+        - generic [ref=f2e1562] [cursor=pointer]:
+          - heading "Home repair & installation" [level=2] [ref=f2e1564]
+          - button "See all" [ref=f2e1568]:
+            - paragraph [ref=f2e1570]: See all
+        - generic [ref=f2e1572]:
+          - generic [ref=f2e1574]:
+            - generic [ref=f2e1578] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Book a carpenter"
+              - generic [ref=f2e1582]:
+                - link "Book a carpenter" [ref=f2e1584]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-carpenters-density
+                - generic [ref=f2e1590]:
+                  - paragraph [ref=f2e1591]: "4.66"
+                  - paragraph [ref=f2e1592]
+                - generic [ref=f2e1595]:
+                  - paragraph [ref=f2e1596]: ₹99
+                  - paragraph [ref=f2e1597]
+                  - paragraph
+            - generic [ref=f2e1603] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Plumber consultation"
+              - generic [ref=f2e1607]:
+                - link "Plumber consultation" [ref=f2e1609]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-plumbers-density
+                - generic [ref=f2e1611]:
+                  - generic [ref=f2e1616]:
+                    - paragraph [ref=f2e1617]: "4.73"
+                    - paragraph [ref=f2e1618]
+                  - paragraph [ref=f2e1626]: Instant
+                - generic [ref=f2e1629]:
+                  - paragraph [ref=f2e1630]: ₹49
+                  - paragraph [ref=f2e1631]
+                  - paragraph
+            - generic [ref=f2e1637] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Electrician consultation"
+              - generic [ref=f2e1641]:
+                - link "Electrician consultation" [ref=f2e1643]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-electrician-density
+                - generic [ref=f2e1649]:
+                  - paragraph [ref=f2e1650]: "4.74"
+                  - paragraph [ref=f2e1651]
+                - generic [ref=f2e1654]:
+                  - paragraph [ref=f2e1655]: ₹49
+                  - paragraph [ref=f2e1656]
+                  - paragraph
+            - generic [ref=f2e1662] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Fan repair"
+              - generic [ref=f2e1666]:
+                - link "Fan repair" [ref=f2e1668]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-electrician-density
+                - generic [ref=f2e1674]:
+                  - paragraph [ref=f2e1675]: "4.80"
+                  - paragraph [ref=f2e1676]
+                - generic [ref=f2e1679]:
+                  - paragraph [ref=f2e1680]: ₹149
+                  - paragraph [ref=f2e1681]
+                  - paragraph
+            - generic [ref=f2e1687] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Switchboard repair & replacement"
+              - generic [ref=f2e1691]:
+                - link "Switchboard repair & replacement" [ref=f2e1693]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-electrician-density
+                - generic [ref=f2e1699]:
+                  - paragraph [ref=f2e1700]: "4.83"
+                  - paragraph [ref=f2e1701]
+                - generic [ref=f2e1704]:
+                  - paragraph [ref=f2e1705]: ₹99
+                  - paragraph [ref=f2e1706]
+                  - paragraph
+            - generic [ref=f2e1712] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Flush tank repair"
+              - generic [ref=f2e1716]:
+                - link "Flush tank repair" [ref=f2e1718]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-plumbers-density
+                - generic [ref=f2e1720]:
+                  - generic [ref=f2e1725]:
+                    - paragraph [ref=f2e1726]: "4.76"
+                    - paragraph [ref=f2e1727]
+                  - paragraph [ref=f2e1735]: Instant
+                - generic [ref=f2e1738]:
+                  - paragraph [ref=f2e1739]: ₹149
+                  - paragraph [ref=f2e1740]
+                  - paragraph
+            - generic [ref=f2e1746] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Door locks & latches repair"
+              - generic [ref=f2e1750]:
+                - link "Door locks & latches repair" [ref=f2e1752]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-carpenters-density
+                - generic [ref=f2e1758]:
+                  - paragraph [ref=f2e1759]: "4.79"
+                  - paragraph [ref=f2e1760]
+                - generic [ref=f2e1763]:
+                  - paragraph [ref=f2e1764]: ₹99
+                  - paragraph [ref=f2e1765]
+                  - paragraph
+            - generic [ref=f2e1771] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Tubelight repair & Installation"
+              - generic [ref=f2e1775]:
+                - link "Tubelight repair & Installation" [ref=f2e1777]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-electrician-density
+                - generic [ref=f2e1783]:
+                  - paragraph [ref=f2e1784]: "4.85"
+                  - paragraph [ref=f2e1785]
+                - generic [ref=f2e1788]:
+                  - paragraph [ref=f2e1789]: ₹99
+                  - paragraph [ref=f2e1790]
+                  - paragraph
+            - generic [ref=f2e1796] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Cupboard repair & installation"
+              - generic [ref=f2e1800]:
+                - link "Cupboard repair & installation" [ref=f2e1802]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-carpenters-density
+                - generic [ref=f2e1808]:
+                  - paragraph [ref=f2e1809]: "4.79"
+                  - paragraph [ref=f2e1810]
+                - generic [ref=f2e1813]:
+                  - paragraph [ref=f2e1814]: ₹89
+                  - paragraph [ref=f2e1815]
+                  - paragraph
+            - generic [ref=f2e1821] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img "Drain blockage removal"
+              - generic [ref=f2e1825]:
+                - link "Drain blockage removal" [ref=f2e1827]:
+                  - /url: https://www.urbancompany.com/delhi-ncr-plumbers-density
+                - generic [ref=f2e1829]:
+                  - generic [ref=f2e1834]:
+                    - paragraph [ref=f2e1835]: "4.77"
+                    - paragraph [ref=f2e1836]
+                  - paragraph [ref=f2e1844]: Instant
+                - generic [ref=f2e1847]:
+                  - paragraph [ref=f2e1848]: ₹199
+                  - paragraph [ref=f2e1849]
+                  - paragraph
+          - button "Button Double Tap to perform action" [ref=f2e1852] [cursor=pointer]
+      - generic [ref=f2e1864]:
+        - generic [ref=f2e1867] [cursor=pointer]:
+          - heading "Massage for Men" [level=2] [ref=f2e1869]
+          - button "See all" [ref=f2e1873]:
+            - paragraph [ref=f2e1875]: See all
+        - generic [ref=f2e1879]:
+          - generic [ref=f2e1883] [cursor=pointer]:
+            - paragraph [ref=f2e1887]: 17% off
+            - generic:
+              - generic:
+                - img "Quick comfort therapy"
+            - generic [ref=f2e1891]:
+              - link "Quick comfort therapy" [ref=f2e1893]:
+                - /url: https://www.urbancompany.com/delhi-ncr-foot-massage-for-men
+              - generic [ref=f2e1895]:
+                - generic [ref=f2e1900]:
+                  - paragraph [ref=f2e1901]: "4.81"
+                  - paragraph [ref=f2e1902]
+                - paragraph [ref=f2e1910]: Instant
+              - generic [ref=f2e1913]:
+                - paragraph [ref=f2e1914]: ₹999
+                - paragraph [ref=f2e1915]
+                - paragraph [ref=f2e1916]: ₹1,199
+          - generic [ref=f2e1922] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Foot massage"
+            - generic [ref=f2e1926]:
+              - link "Foot massage" [ref=f2e1928]:
+                - /url: https://www.urbancompany.com/delhi-ncr-foot-massage-for-men
+              - generic [ref=f2e1930]:
+                - generic [ref=f2e1935]:
+                  - paragraph [ref=f2e1936]: "4.86"
+                  - paragraph [ref=f2e1937]
+                - paragraph [ref=f2e1945]: Instant
+              - generic [ref=f2e1948]:
+                - paragraph [ref=f2e1949]: ₹569
+                - paragraph [ref=f2e1950]
+                - paragraph
+          - generic [ref=f2e1956] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Head, neck & shoulder massage"
+            - generic [ref=f2e1960]:
+              - link "Head, neck & shoulder massage" [ref=f2e1962]:
+                - /url: https://www.urbancompany.com/delhi-ncr-foot-massage-for-men
+              - generic [ref=f2e1964]:
+                - generic [ref=f2e1969]:
+                  - paragraph [ref=f2e1970]: "4.86"
+                  - paragraph [ref=f2e1971]
+                - paragraph [ref=f2e1979]: Instant
+              - generic [ref=f2e1982]:
+                - paragraph [ref=f2e1983]: ₹669
+                - paragraph [ref=f2e1984]
+                - paragraph
+          - generic [ref=f2e1990] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Leg relief massage"
+            - generic [ref=f2e1994]:
+              - link "Leg relief massage" [ref=f2e1996]:
+                - /url: https://www.urbancompany.com/delhi-ncr-foot-massage-for-men
+              - generic [ref=f2e1998]:
+                - generic [ref=f2e2003]:
+                  - paragraph [ref=f2e2004]: "4.85"
+                  - paragraph [ref=f2e2005]
+                - paragraph [ref=f2e2013]: Instant
+              - generic [ref=f2e2016]:
+                - paragraph [ref=f2e2017]: ₹919
+                - paragraph [ref=f2e2018]
+                - paragraph
+      - img "Urban Company Spotlight" [ref=f2e2028] [cursor=pointer]
+      - generic [ref=f2e2037]:
+        - generic [ref=f2e2040] [cursor=pointer]:
+          - generic [ref=f2e2041]:
+            - heading "Salon for men" [level=2] [ref=f2e2042]
+            - paragraph [ref=f2e2044]: Grooming essentials
+          - button "See all" [ref=f2e2048]:
+            - paragraph [ref=f2e2050]: See all
+        - generic [ref=f2e2054]:
+          - generic [ref=f2e2058] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Haircut for men"
+            - generic [ref=f2e2062]:
+              - link "Haircut for men" [ref=f2e2064]:
+                - /url: https://www.urbancompany.com/delhi-ncr-mens-grooming
+              - generic [ref=f2e2066]:
+                - generic [ref=f2e2071]:
+                  - paragraph [ref=f2e2072]: "4.86"
+                  - paragraph [ref=f2e2073]
+                - paragraph [ref=f2e2081]: Instant
+              - generic [ref=f2e2084]:
+                - paragraph [ref=f2e2085]: ₹259
+                - paragraph [ref=f2e2086]
+                - paragraph
+          - generic [ref=f2e2092] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Haircut for boys"
+            - generic [ref=f2e2096]:
+              - link "Haircut for boys" [ref=f2e2098]:
+                - /url: https://www.urbancompany.com/delhi-ncr-mens-grooming
+              - generic [ref=f2e2100]:
+                - generic [ref=f2e2105]:
+                  - paragraph [ref=f2e2106]: "4.84"
+                  - paragraph [ref=f2e2107]
+                - paragraph [ref=f2e2115]: Instant
+              - generic [ref=f2e2118]:
+                - paragraph [ref=f2e2119]: ₹259
+                - paragraph [ref=f2e2120]
+                - paragraph
+          - generic [ref=f2e2126] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Head, neck & shoulder massage"
+            - generic [ref=f2e2130]:
+              - link "Head, neck & shoulder massage" [ref=f2e2132]:
+                - /url: https://www.urbancompany.com/delhi-ncr-mens-grooming
+              - generic [ref=f2e2134]:
+                - generic [ref=f2e2139]:
+                  - paragraph [ref=f2e2140]: "4.81"
+                  - paragraph [ref=f2e2141]
+                - paragraph [ref=f2e2149]: Instant
+              - generic [ref=f2e2152]:
+                - paragraph [ref=f2e2153]: ₹299
+                - paragraph [ref=f2e2154]
+                - paragraph
+          - generic [ref=f2e2160] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Brightening lemon express pedicure"
+            - generic [ref=f2e2164]:
+              - link "Brightening lemon express pedicure" [ref=f2e2166]:
+                - /url: https://www.urbancompany.com/delhi-ncr-mens-grooming
+              - generic [ref=f2e2168]:
+                - generic [ref=f2e2173]:
+                  - paragraph [ref=f2e2174]: "4.77"
+                  - paragraph [ref=f2e2175]
+                - paragraph [ref=f2e2183]: Instant
+              - generic [ref=f2e2186]:
+                - paragraph [ref=f2e2187]: ₹549
+                - paragraph [ref=f2e2188]
+                - paragraph
+          - generic [ref=f2e2194] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "Brightening lemon deep cleanse pedicure"
+            - generic [ref=f2e2198]:
+              - link "Brightening lemon deep cleanse pedicure" [ref=f2e2200]:
+                - /url: https://www.urbancompany.com/delhi-ncr-mens-grooming
+              - generic [ref=f2e2202]:
+                - generic [ref=f2e2207]:
+                  - paragraph [ref=f2e2208]: "4.79"
+                  - paragraph [ref=f2e2209]
+                - paragraph [ref=f2e2217]: Instant
+              - generic [ref=f2e2220]:
+                - paragraph [ref=f2e2221]: ₹799
+                - paragraph [ref=f2e2222]
+                - paragraph
+      - generic [ref=f2e2246]:
+        - img:
+          - img "Urban Company logo" [ref=f2e2248]
+      - generic [ref=f2e2254]:
+        - generic [ref=f2e2266]:
+          - paragraph [ref=f2e2269]: Company
+          - generic [ref=f2e2272]:
+            - generic [ref=f2e2273]:
+              - link "About us" [ref=f2e2274] [cursor=pointer]:
+                - /url: /about
+              - paragraph [ref=f2e2275]
+            - generic [ref=f2e2277]:
+              - link "Investor Relations" [ref=f2e2278] [cursor=pointer]:
+                - /url: https://investorrelations.urbancompany.com/
+              - paragraph [ref=f2e2279]
+            - generic [ref=f2e2281]:
+              - link "Terms & conditions" [ref=f2e2282] [cursor=pointer]:
+                - /url: /terms
+              - paragraph [ref=f2e2283]
+            - generic [ref=f2e2285]:
+              - link "Privacy policy" [ref=f2e2286] [cursor=pointer]:
+                - /url: /privacy-policy
+              - paragraph [ref=f2e2287]
+            - generic [ref=f2e2289]:
+              - link "Anti-discrimination policy" [ref=f2e2290] [cursor=pointer]:
+                - /url: /anti-discrimination-policy
+              - paragraph [ref=f2e2291]
+            - generic [ref=f2e2293]:
+              - link "Careers" [ref=f2e2294] [cursor=pointer]:
+                - /url: https://careers.urbancompany.com/
+              - paragraph [ref=f2e2295]
+        - generic [ref=f2e2308]:
+          - paragraph [ref=f2e2311]: For customers
+          - generic [ref=f2e2314]:
+            - generic [ref=f2e2315]:
+              - link "UC reviews" [ref=f2e2316] [cursor=pointer]:
+                - /url: /reviews
+              - paragraph [ref=f2e2317]
+            - generic [ref=f2e2319]:
+              - link "Categories near you" [ref=f2e2320] [cursor=pointer]:
+                - /url: /near-me
+              - paragraph [ref=f2e2321]
+            - generic [ref=f2e2323]:
+              - link "Contact us" [ref=f2e2324] [cursor=pointer]:
+                - /url: /contact-us
+              - paragraph [ref=f2e2325]
+        - generic [ref=f2e2338]:
+          - paragraph [ref=f2e2341]: For professionals
+          - generic [ref=f2e2345]:
+            - link "Register as a professional" [ref=f2e2346] [cursor=pointer]:
+              - /url: https://partner.urbancompany.com
+            - paragraph [ref=f2e2347]
+        - generic [ref=f2e2360]:
+          - paragraph [ref=f2e2363]: Social links
+          - generic [ref=f2e2366]:
+            - button "Button Double Tap to perform action" [ref=f2e2369] [cursor=pointer]
+            - button "Button Double Tap to perform action" [ref=f2e2375] [cursor=pointer]
+            - button "Button Double Tap to perform action" [ref=f2e2381] [cursor=pointer]
+            - button "Button Double Tap to perform action" [ref=f2e2387] [cursor=pointer]
+          - img [ref=f2e2397] [cursor=pointer]:
+            - img "Apple App Store" [ref=f2e2399]
+          - img [ref=f2e2405] [cursor=pointer]:
+            - img "Google Play Store" [ref=f2e2407]
+      - generic [ref=f2e2427]:
+        - paragraph [ref=f2e2429]: "* As on December 31, 2024"
+        - paragraph [ref=f2e2432]: "© Copyright 2026 Urban Company Limited (formerly known as UrbanClap Technologies India Limited and UrbanClap Technologies India India Limited) All rights reserved. | CIN: L74140DL2014PLC274413"

@@ -1,0 +1,4 @@
+- generic [active] [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - button "animation" [ref=e4038]

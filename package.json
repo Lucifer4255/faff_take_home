@@ -4,9 +4,9 @@
   "private": true,
   "description": "One reusable agentic harness + thin adapters (Blinkit / home services / delivery) on Next.js + Mastra",
   "scripts": {
-    "dev": "next dev -p 3123",
-    "build": "next build",
-    "start": "next start -p 3123",
+    "dev": "node init && next dev -p 3123",
+    "build": "node init && next build",
+    "start": "node init && next start -p 3123",
     "cli": "tsx src/cli.ts",
     "studio": "mastra dev --env .env.studio",
     "typecheck": "tsc --noEmit"
@@ -15,8 +15,10 @@
     "@mastra/core": "^1.50.1",
     "@mastra/libsql": "^1.15.1",
     "@mastra/loggers": "^1.2.0",
+    "@mastra/mcp": "^1.13.1",
     "@mastra/memory": "^1.22.2",
     "@mastra/observability": "^1.16.0",
+    "@playwright/mcp": "^0.0.78",
     "next": "^15.5.20",
     "playwright": "^1.61.1",
     "react": "^19.2.0",

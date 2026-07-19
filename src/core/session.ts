@@ -3,6 +3,7 @@ import { RequestContext } from '@mastra/core/di'
 import { interpret } from '@/mastra/agents'
 import { adapterFor, controllerAgent } from '@/mastra/index'
 import type { AgentEvent } from './events'
+import { geocodeAddress } from './geocode'
 import type { Intent } from './intent'
 import { JsonStore } from './store'
 
@@ -40,10 +41,18 @@ export class Session {
   private service?: string
   private userId = 'anon'
   private runId?: string
-  private pending: 'approval' | 'location-area' | 'location-pick' | 'login-phone' | 'login-otp' | null = null
+  private pending: 'approval' | 'location-area' | 'location-pick' | 'login-phone' | 'login-otp' | 'tracking' | null = null
   private pendingIntent?: Intent
+  private lastIntent?: Intent
+  // A custom delivery address set this session (UI bar / request) — forwarded to
+  // tools via requestContext so confirm books the right saved address.
+  private deliveryAddressText?: string
   private locationCandidates: Array<{ ref: string; label: string; area?: string }> = []
   private loginPhone?: string
+  // Set when a confirm result reports a real dispatch, so pump() starts live
+  // tracking; `stopTracking` breaks the observe loop when the user cancels.
+  private dispatched = false
+  private stopTracking = false
   private loginPollActive = false
   private requestText = ''
   private textBuf = ''
@@ -104,12 +113,13 @@ export class Session {
   }
 
   /** Interpret the request, route to the service agent, and pump its stream. */
-  async run(input: { text: string; address?: string; location?: { lat: number; lon: number }; userId?: string }): Promise<void> {
+  async run(input: { text: string; address?: string; deliveryAddress?: string; location?: { lat: number; lon: number }; userId?: string }): Promise<void> {
     try {
       this.requestText = input.text
       if (input.userId) this.userId = input.userId
       this.emit({ type: 'action', label: 'Interpreting request' })
       const intent = await interpret(input.text, input.address)
+      this.lastIntent = intent
       this.emit({ type: 'state_update', state: { intent } })
       this.service = intent.service
       this.agent = controllerAgent(intent.service)
@@ -119,7 +129,12 @@ export class Session {
       // agent drives a location-first target. Adapters that don't need it ignore.
       const canLocate = Boolean(adapterFor(intent.service)?.configureLocation)
       let located = false
-      if (input.location) {
+      // A custom delivery address from the UI wins over GPS (the whole point —
+      // let the user order to somewhere other than where they're standing).
+      const deliveryAddr = input.deliveryAddress?.trim()
+      if (deliveryAddr && canLocate) {
+        located = await this.setDeliveryArea(deliveryAddr)
+      } else if (input.location) {
         const adapter = adapterFor(intent.service)
         if (adapter?.configureLocation) {
           this.emit({ type: 'action', label: 'Setting delivery location' })
@@ -144,7 +159,7 @@ export class Session {
       // suggestLocations (e.g. the mock) skip straight to the agent.
       const adapter = adapterFor(intent.service)
       const alreadyLocated = adapter?.hasLocation?.() ?? false
-      if (canLocate && !located && !alreadyLocated && adapter?.suggestLocations) {
+      if (canLocate && !located && !alreadyLocated && !deliveryAddr && adapter?.suggestLocations) {
         this.pendingIntent = intent
         const area = intent.service === 'quickcommerce' ? intent.address.trim() : ''
         if (area) await this.resolveArea(area)
@@ -179,12 +194,57 @@ export class Session {
         requestContext: new RequestContext([
           ['sessionId', this.id],
           ['userId', this.userId],
+          ['deliveryAddress', this.deliveryAddressText ?? ''],
         ]),
         maxSteps: 25,
       })
       await this.pump(stream)
     } catch (err) {
       this.emit({ type: 'error', message: err instanceof Error ? err.message : String(err) })
+    }
+  }
+
+  /** Set/override the delivery address from the UI — a CUSTOM address, not GPS.
+   * Blinkit resolves via its own place-search + pin; UC (and other
+   * configureLocation-only targets) geocode the free text (Nominatim) then pin the
+   * coords. Emits a confirmation + a `deliverTo` state_update (updates the bar).
+   * Returns whether the resolved place is serviceable. */
+  async setDeliveryArea(text: string): Promise<boolean> {
+    const adapter = adapterFor(this.service ?? '')
+    if (!adapter?.configureLocation && !adapter?.suggestLocations) {
+      this.emit({ type: 'agent_message', text: this.service ? 'This service uses a fixed location — no custom address needed.' : 'Tell me what to order first, then I can set a delivery address.' })
+      return false
+    }
+    this.emit({ type: 'action', label: `Setting delivery address: ${text}` })
+    // Remember it so tools (confirm) can pick the right saved address.
+    this.deliveryAddressText = text
+    try {
+      if (adapter.suggestLocations && adapter.pinLocation) {
+        const cands = await adapter.suggestLocations(text)
+        if (!cands.length) {
+          this.emit({ type: 'agent_message', text: `Couldn't find "${text}" — try a more specific address.` })
+          return false
+        }
+        const r = await adapter.pinLocation(cands[0].ref)
+        const label = r.label ?? cands[0].label
+        this.emit({ type: 'agent_message', text: `📍 Delivering to ${label}${r.serviceable === false ? ' (⚠ may not be serviceable here)' : ''}.` })
+        this.emit({ type: 'state_update', state: { deliverTo: { address: label } } })
+        return r.serviceable !== false
+      }
+      // configureLocation-only (e.g. UC): geocode the address → pin the coords.
+      const hit = await geocodeAddress(text)
+      if (!hit) {
+        this.emit({ type: 'agent_message', text: `Couldn't find "${text}" — try a more specific address.` })
+        return false
+      }
+      const r = await adapter.configureLocation!(hit.lat, hit.lon)
+      const label = r.label ?? hit.formattedAddress
+      this.emit({ type: 'agent_message', text: `📍 Delivering to ${label}${r.serviceable === false ? ' (⚠ not serviceable here)' : ''}.` })
+      this.emit({ type: 'state_update', state: { deliverTo: { address: label } } })
+      return r.serviceable !== false
+    } catch (e) {
+      this.emit({ type: 'agent_message', text: `Couldn't set that address (${e instanceof Error ? e.message : e}).` })
+      return false
     }
   }
 
@@ -228,6 +288,29 @@ export class Session {
 
   /** Approvals, location replies, and picks arrive here from POST /message. */
   async handleMessage(text: string): Promise<void> {
+    // Live-tracking a dispatched ride: "cancel" fires the post-money-line kill
+    // path; anything else just reminds how to stop it.
+    if (this.pending === 'tracking') {
+      if (!/^(cancel|stop|abort)\b/i.test(text.trim())) {
+        this.emit({ type: 'agent_message', text: 'Your ride is live — say "cancel" to call it off.' })
+        return
+      }
+      this.stopTracking = true
+      this.pending = null
+      const adapter = adapterFor(this.service ?? '')
+      this.emit({ type: 'action', label: 'Cancelling your ride…' })
+      try {
+        const r = await adapter?.cancel?.({ sessionId: this.id, userId: this.userId })
+        this.emit({
+          type: 'agent_message',
+          text: r?.cancelled ? `✓ Ride cancelled${r.finalStatus ? ` (${r.finalStatus})` : ''}.` : `Couldn't auto-cancel (${r?.note ?? 'no cancel path'}). Please cancel in the Uber app.`,
+        })
+      } catch (err) {
+        this.emit({ type: 'agent_message', text: `Cancel failed (${err instanceof Error ? err.message : err}) — cancel in the Uber app.` })
+      }
+      this.emit({ type: 'done', summary: 'cancelled' })
+      return
+    }
     // Establishing a delivery location (parked before the agent runs).
     if (this.pending === 'location-area') {
       this.pending = null
@@ -254,7 +337,7 @@ export class Session {
       this.pending = null
       const adapter = adapterFor(this.service ?? '')
       this.emit({ type: 'action', label: 'Preparing sign-in…' })
-      const res = (await adapter?.sendLoginCode?.(text.trim())) ?? { ok: false, error: 'login unavailable' }
+      const res = (await adapter?.sendLoginCode?.(text.trim(), this.userId)) ?? { ok: false, error: 'login unavailable' }
       if (!res.ok) {
         this.emit({ type: 'agent_message', text: res.error ?? "Couldn't start sign-in." })
         this.askForPhone()
@@ -278,7 +361,7 @@ export class Session {
       this.loginPollActive = false
       const adapter = adapterFor(this.service ?? '')
       if (/^resend$/i.test(text.trim())) {
-        const res = (await adapter?.sendLoginCode?.(this.loginPhone ?? '')) ?? { ok: false, error: 'login unavailable' }
+        const res = (await adapter?.sendLoginCode?.(this.loginPhone ?? '', this.userId)) ?? { ok: false, error: 'login unavailable' }
         if (res.instructions) this.emit({ type: 'agent_message', text: res.instructions })
         this.pending = 'login-otp'
         if (res.instructions) this.startLoginPoller()
@@ -395,7 +478,43 @@ export class Session {
         const label = this.service === 'homeservices' ? '🧹 Booking-ready — open to pick your slot, sign in & confirm' : '🛒 Checkout-ready cart'
         this.emit({ type: 'agent_message', text: `${label}: ${this.turnCheckoutUrl}` })
       }
+      // A real ride was just dispatched → stream live tracking instead of ending,
+      // and let the user say "cancel" (the post-money-line kill path).
+      const adapter = adapterFor(this.service ?? '')
+      if (this.dispatched && adapter?.observe) {
+        this.dispatched = false
+        void this.startTracking()
+        return
+      }
       this.emit({ type: 'done', summary: 'complete' })
+    }
+  }
+
+  /** Stream the adapter's live tracking (observe) to the UI until the ride ends
+   * or the user cancels. Runs in the background — the request that started it
+   * returns, and a concurrent "cancel" over POST /message flips `stopTracking`. */
+  private async startTracking(): Promise<void> {
+    const adapter = adapterFor(this.service ?? '')
+    if (!adapter?.observe || !this.lastIntent) {
+      this.emit({ type: 'done', summary: 'complete' })
+      return
+    }
+    this.pending = 'tracking'
+    this.stopTracking = false
+    this.emit({ type: 'agent_message', text: 'Tracking your ride live — say "cancel" to call it off.' })
+    const ctx = { sessionId: this.id, userId: this.userId }
+    try {
+      for await (const ev of adapter.observe(this.lastIntent, ctx)) {
+        if (this.stopTracking || this.finished) break
+        this.emit(ev)
+      }
+    } catch (err) {
+      this.emit({ type: 'agent_message', text: `Tracking stopped (${err instanceof Error ? err.message : err}).` })
+    }
+    // Ended naturally (ride complete) — not via a cancel, which handles its own done.
+    if (this.pending === 'tracking' && !this.stopTracking) {
+      this.pending = null
+      this.emit({ type: 'done', summary: 'ride complete' })
     }
   }
 
@@ -428,6 +547,9 @@ export class Session {
         const url = (result as { checkoutUrl?: string | null })?.checkoutUrl
         if (typeof url === 'string') this.turnCheckoutUrl = url
         else if (url === null) this.turnCheckoutUrl = undefined
+        // A real ride was dispatched (delivery confirm) → pump() will start live
+        // tracking once the stream settles, instead of ending the turn.
+        if ((result as { status?: string })?.status === 'dispatched') this.dispatched = true
         this.emit({ type: 'state_update', state: result })
         break
       }

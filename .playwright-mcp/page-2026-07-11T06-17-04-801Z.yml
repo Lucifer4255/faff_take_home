@@ -1,0 +1,507 @@
+- generic [active] [ref=f2e1]:
+  - generic: UC
+  - main [ref=f2e2]:
+    - generic [ref=f2e2913]:
+      - generic [ref=f2e3172]:
+        - generic [ref=f2e3176]:
+          - img [ref=f2e3186] [cursor=pointer]:
+            - img "Urban Company logo" [ref=f2e3188]
+          - paragraph [ref=f2e3211] [cursor=pointer]: H37, Block H- Saket- New Delhi- Delhi 110017- India
+          - textbox "Search in Full Home/ By Room Cleaning" [ref=f2e3237]
+        - generic [ref=f2e3250]:
+          - generic [ref=f2e3252]:
+            - generic [ref=f2e3260] [cursor=pointer]:
+              - generic [ref=f2e3261]:
+                - heading "Full Home/ By Room Cleaning" [level=2] [ref=f2e3262]
+                - paragraph [ref=f2e3268]: 4.82 (1.7 M bookings)
+              - generic [ref=f2e3271]:
+                - paragraph [ref=f2e3276]: Earliest
+                - paragraph [ref=f2e3278]: Sat, 2:00 PM
+            - generic [ref=f2e3291]:
+              - paragraph [ref=f2e3294]: Select a service
+              - generic [ref=f2e3301]:
+                - generic "Apartment" [ref=f2e3303] [cursor=pointer]:
+                  - img:
+                    - img "Apartment" [ref=f2e3305]
+                  - paragraph [ref=f2e3307]: Apartment
+                - generic "Bungalow/duplex" [ref=f2e3309] [cursor=pointer]:
+                  - img:
+                    - img "Bungalow/duplex" [ref=f2e3311]
+                  - paragraph [ref=f2e3313]: Bungalow/duplex
+                - generic "Partial home cleaning" [ref=f2e3315] [cursor=pointer]:
+                  - img:
+                    - img "Partial home cleaning" [ref=f2e3317]
+                  - paragraph [ref=f2e3319]: Partial home cleaning
+          - generic [ref=f2e3351]:
+            - generic [ref=f2e3358]:
+              - heading "Apartment" [level=2] [ref=f2e3370]
+              - generic [ref=f2e3373]:
+                - generic:
+                  - generic:
+                    - img "Apartment - Furnished apartment - Home deep cleaning"
+                - generic [ref=f2e3375] [cursor=pointer]:
+                  - generic [ref=f2e3376]:
+                    - generic "Furnished apartment - Home deep cleaning, Your service will take around 3 hrs 45 mins! with a price of Starts at ₹4,499 !" [ref=f2e3377]:
+                      - paragraph [ref=f2e3379]: Furnished apartment - Home deep cleaning
+                      - paragraph [ref=f2e3382]: 4.82 (1K reviews)
+                      - generic [ref=f2e3384]:
+                        - paragraph [ref=f2e3385]: Starts at ₹4,499
+                        - paragraph [ref=f2e3387]: 3 hrs 45 mins
+                    - generic [ref=f2e3391]:
+                      - button "Add" [ref=f2e3392]:
+                        - paragraph [ref=f2e3393]: Add
+                      - generic [ref=f2e3394]:
+                        - button "Furnished apartment - Home deep cleaning Total item count will become-1" [ref=f2e3395]
+                        - button "Furnished apartment - Home deep cleaning Total item count will become1" [ref=f2e3396]
+                  - generic "Ideal for furnished, occupied homes., Machine floor scrubbing & stain removal across rooms, kitchen, baths & balcony.," [ref=f2e3397]:
+                    - paragraph [ref=f2e3403]: Ideal for furnished, occupied homes.
+                    - paragraph [ref=f2e3407]: Machine floor scrubbing & stain removal across rooms, kitchen, baths & balcony.
+                  - button "View details" [ref=f2e3410]:
+                    - paragraph [ref=f2e3412]: View details
+              - generic [ref=f2e3419] [cursor=pointer]:
+                - generic "Unfurnished apartment - Home deep cleaning , Your service will take around 3 hrs 30 mins! with a price of Starts at ₹3,999 !" [ref=f2e3420]:
+                  - paragraph [ref=f2e3422]: Unfurnished apartment - Home deep cleaning
+                  - paragraph [ref=f2e3425]: 4.82 (2K reviews)
+                  - generic [ref=f2e3427]:
+                    - paragraph [ref=f2e3428]: Starts at ₹3,999
+                    - paragraph [ref=f2e3430]: 3 hrs 30 mins
+                  - generic [ref=f2e3431]:
+                    - generic "Cleaning & stain removal from rooms, kitchen, bathroom & balcony, Machine floor scrubbing & dusting of walls & ceilings," [ref=f2e3432]:
+                      - paragraph [ref=f2e3438]: Cleaning & stain removal from rooms, kitchen, bathroom & balcony
+                      - paragraph [ref=f2e3442]: Machine floor scrubbing & dusting of walls & ceilings
+                    - button "View details" [ref=f2e3444]:
+                      - paragraph [ref=f2e3446]: View details
+                - generic [ref=f2e3448]:
+                  - generic [ref=f2e3449]:
+                    - generic:
+                      - generic:
+                        - img "Apartment - Unfurnished apartment - Home deep cleaning"
+                  - generic [ref=f2e3452]:
+                    - button "Add" [ref=f2e3453]:
+                      - paragraph [ref=f2e3454]: Add
+                    - generic [ref=f2e3455]:
+                      - button "Unfurnished apartment - Home deep cleaning Total item count will become-1" [ref=f2e3456]
+                      - button "Unfurnished apartment - Home deep cleaning Total item count will become1" [ref=f2e3457]
+              - heading "Bungalow/duplex" [level=2] [ref=f2e3474]
+              - generic [ref=f2e3477]:
+                - generic:
+                  - generic:
+                    - img "Bungalow/duplex - Furnished bungalow - Home deep cleaning"
+                - generic [ref=f2e3479] [cursor=pointer]:
+                  - generic [ref=f2e3480]:
+                    - generic "Furnished bungalow - Home deep cleaning, Your service will take around 5 hrs 50 mins! with a price of Starts at ₹5,399 !" [ref=f2e3481]:
+                      - paragraph [ref=f2e3483]: Furnished bungalow - Home deep cleaning
+                      - paragraph [ref=f2e3486]: 4.80 (181K reviews)
+                      - generic [ref=f2e3488]:
+                        - paragraph [ref=f2e3489]: Starts at ₹5,399
+                        - paragraph [ref=f2e3491]: 5 hrs 50 mins
+                    - generic [ref=f2e3495]:
+                      - button "Add" [ref=f2e3496]:
+                        - paragraph [ref=f2e3497]: Add
+                      - generic [ref=f2e3498]:
+                        - button "Furnished bungalow - Home deep cleaning Total item count will become-1" [ref=f2e3499]
+                        - button "Furnished bungalow - Home deep cleaning Total item count will become1" [ref=f2e3500]
+                  - generic "Ideal for furnished, occupied homes., Machine floor scrubbing & stain removal across rooms, kitchen, baths & balcony.," [ref=f2e3501]:
+                    - paragraph [ref=f2e3507]: Ideal for furnished, occupied homes.
+                    - paragraph [ref=f2e3511]: Machine floor scrubbing & stain removal across rooms, kitchen, baths & balcony.
+                  - button "View details" [ref=f2e3514]:
+                    - paragraph [ref=f2e3516]: View details
+              - generic [ref=f2e3523] [cursor=pointer]:
+                - generic "Unfurnished bungalow - Home deep cleaning, Your service will take around 5 hrs! with a price of Starts at ₹4,999 !" [ref=f2e3524]:
+                  - paragraph [ref=f2e3526]: Unfurnished bungalow - Home deep cleaning
+                  - paragraph [ref=f2e3529]: 4.79 (7K reviews)
+                  - generic [ref=f2e3531]:
+                    - paragraph [ref=f2e3532]: Starts at ₹4,999
+                    - paragraph [ref=f2e3534]: 5 hrs
+                  - generic [ref=f2e3535]:
+                    - generic "Ideal for vacant, unoccupied homes., Machine floor scrubbing & stain removal across rooms, kitchen, baths & balcony.," [ref=f2e3536]:
+                      - paragraph [ref=f2e3542]: Ideal for vacant, unoccupied homes.
+                      - paragraph [ref=f2e3546]: Machine floor scrubbing & stain removal across rooms, kitchen, baths & balcony.
+                    - button "View details" [ref=f2e3548]:
+                      - paragraph [ref=f2e3550]: View details
+                - generic [ref=f2e3552]:
+                  - generic [ref=f2e3553]:
+                    - generic:
+                      - generic:
+                        - img "Bungalow/duplex - Unfurnished bungalow - Home deep cleaning"
+                  - generic [ref=f2e3556]:
+                    - button "Add" [ref=f2e3557]:
+                      - paragraph [ref=f2e3558]: Add
+                    - generic [ref=f2e3559]:
+                      - button "Unfurnished bungalow - Home deep cleaning Total item count will become-1" [ref=f2e3560]
+                      - button "Unfurnished bungalow - Home deep cleaning Total item count will become1" [ref=f2e3561]
+              - heading "Partial home cleaning" [level=2] [ref=f2e3578]
+              - generic [ref=f2e3583] [cursor=pointer]:
+                - generic "Partial home cleaning, Your service will take around 5 hrs! with a price of Starts at ₹3,236 !" [ref=f2e3584]:
+                  - paragraph [ref=f2e3589]: MAKE YOUR PACKAGE
+                  - paragraph [ref=f2e3591]: Partial home cleaning
+                  - paragraph [ref=f2e3594]: 4.82 (236K reviews)
+                  - generic [ref=f2e3596]:
+                    - paragraph [ref=f2e3597]: Starts at ₹3,236
+                    - paragraph [ref=f2e3599]: ₹3,596
+                  - paragraph [ref=f2e3602]: 5 hrs
+                  - generic [ref=f2e3603]:
+                    - generic "Choose from bathroom, bedroom, kitchen, living room & balcony, Pick from upholstery & sofa, appliance cleaning," [ref=f2e3604]:
+                      - paragraph [ref=f2e3610]: Choose from bathroom, bedroom, kitchen, living room & balcony
+                      - paragraph [ref=f2e3614]: Pick from upholstery & sofa, appliance cleaning
+                    - button "View details" [ref=f2e3616]:
+                      - paragraph [ref=f2e3618]: View details
+                - generic [ref=f2e3620]:
+                  - generic [ref=f2e3621]:
+                    - generic:
+                      - generic:
+                        - img "Partial home cleaning - Partial home cleaning"
+                  - generic [ref=f2e3624]:
+                    - button "Add" [ref=f2e3625]:
+                      - paragraph [ref=f2e3626]: Add
+                    - generic [ref=f2e3627]:
+                      - button "Partial home cleaning Total item count will become-1" [ref=f2e3628]
+                      - button "Partial home cleaning Total item count will become1" [ref=f2e3629]
+              - generic [ref=f2e3636] [cursor=pointer]:
+                - 'generic "Customise: living, bedroom, balcony cleaning combo, Your service will take around 2 hrs 15 mins! with a price of Starts at ₹2,799 !" [ref=f2e3637]':
+                  - paragraph [ref=f2e3639]: "Customise: living, bedroom, balcony cleaning combo"
+                  - paragraph [ref=f2e3642]: 4.81 (99K reviews)
+                  - generic [ref=f2e3644]:
+                    - paragraph [ref=f2e3645]: Starts at ₹2,799
+                    - paragraph [ref=f2e3647]: 2 hrs 15 mins
+                  - generic [ref=f2e3648]:
+                    - generic "Create a cleaning package tailored to your home’s needs., Suitable for both regular upkeep & deep cleaning.," [ref=f2e3649]:
+                      - paragraph [ref=f2e3655]: Create a cleaning package tailored to your home’s needs.
+                      - paragraph [ref=f2e3659]: Suitable for both regular upkeep & deep cleaning.
+                    - button "View details" [ref=f2e3661]:
+                      - paragraph [ref=f2e3663]: View details
+                - generic [ref=f2e3665]:
+                  - generic [ref=f2e3666]:
+                    - generic:
+                      - generic:
+                        - 'img "Partial home cleaning - Customise: living, bedroom, balcony cleaning combo"'
+                  - generic [ref=f2e3669]:
+                    - button "Add" [ref=f2e3670]:
+                      - paragraph [ref=f2e3671]: Add
+                    - generic [ref=f2e3672]:
+                      - 'button "Customise: living, bedroom, balcony cleaning combo Total item count will become-1" [ref=f2e3673]'
+                      - 'button "Customise: living, bedroom, balcony cleaning combo Total item count will become1" [ref=f2e3674]'
+            - generic [ref=f2e3683]:
+              - generic [ref=f2e3690]:
+                - generic [ref=f2e3692]:
+                  - heading "UC Promise" [level=4] [ref=f2e3693]
+                  - paragraph [ref=f2e3700]: Verified Professionals
+                  - paragraph [ref=f2e3706]: Safe Chemicals
+                  - paragraph [ref=f2e3712]: Superior Stain Removal
+                - img:
+                  - img "Urban Company Trust Marker" [ref=f2e3715]
+              - paragraph [ref=f2e3749]: No items in your cart
+        - generic [ref=f2e3768]:
+          - img:
+            - img "Urban Company logo" [ref=f2e3770]
+        - generic [ref=f2e3776]:
+          - generic [ref=f2e3788]:
+            - paragraph [ref=f2e3791]: Company
+            - generic [ref=f2e3794]:
+              - generic [ref=f2e3795]:
+                - link "About us" [ref=f2e3796] [cursor=pointer]:
+                  - /url: /about
+                - paragraph [ref=f2e3797]
+              - generic [ref=f2e3799]:
+                - link "Investor Relations" [ref=f2e3800] [cursor=pointer]:
+                  - /url: https://investorrelations.urbancompany.com/
+                - paragraph [ref=f2e3801]
+              - generic [ref=f2e3803]:
+                - link "Terms & conditions" [ref=f2e3804] [cursor=pointer]:
+                  - /url: /terms
+                - paragraph [ref=f2e3805]
+              - generic [ref=f2e3807]:
+                - link "Privacy policy" [ref=f2e3808] [cursor=pointer]:
+                  - /url: /privacy-policy
+                - paragraph [ref=f2e3809]
+              - generic [ref=f2e3811]:
+                - link "Anti-discrimination policy" [ref=f2e3812] [cursor=pointer]:
+                  - /url: /anti-discrimination-policy
+                - paragraph [ref=f2e3813]
+              - generic [ref=f2e3815]:
+                - link "Careers" [ref=f2e3816] [cursor=pointer]:
+                  - /url: https://careers.urbancompany.com/
+                - paragraph [ref=f2e3817]
+          - generic [ref=f2e3830]:
+            - paragraph [ref=f2e3833]: For customers
+            - generic [ref=f2e3836]:
+              - generic [ref=f2e3837]:
+                - link "UC reviews" [ref=f2e3838] [cursor=pointer]:
+                  - /url: /reviews
+                - paragraph [ref=f2e3839]
+              - generic [ref=f2e3841]:
+                - link "Categories near you" [ref=f2e3842] [cursor=pointer]:
+                  - /url: /near-me
+                - paragraph [ref=f2e3843]
+              - generic [ref=f2e3845]:
+                - link "Contact us" [ref=f2e3846] [cursor=pointer]:
+                  - /url: /contact-us
+                - paragraph [ref=f2e3847]
+          - generic [ref=f2e3860]:
+            - paragraph [ref=f2e3863]: For professionals
+            - generic [ref=f2e3867]:
+              - link "Register as a professional" [ref=f2e3868] [cursor=pointer]:
+                - /url: https://partner.urbancompany.com
+              - paragraph [ref=f2e3869]
+          - generic [ref=f2e3882]:
+            - paragraph [ref=f2e3885]: Social links
+            - generic [ref=f2e3888]:
+              - button "Button Double Tap to perform action" [ref=f2e3891] [cursor=pointer]
+              - button "Button Double Tap to perform action" [ref=f2e3897] [cursor=pointer]
+              - button "Button Double Tap to perform action" [ref=f2e3903] [cursor=pointer]
+              - button "Button Double Tap to perform action" [ref=f2e3909] [cursor=pointer]
+            - img [ref=f2e3919] [cursor=pointer]:
+              - img "Apple App Store" [ref=f2e3921]
+            - img [ref=f2e3927] [cursor=pointer]:
+              - img "Google Play Store" [ref=f2e3929]
+        - generic [ref=f2e3949]:
+          - paragraph [ref=f2e3951]: "* As on December 31, 2024"
+          - paragraph [ref=f2e3954]: "© Copyright 2026 Urban Company Limited (formerly known as UrbanClap Technologies India Limited and UrbanClap Technologies India India Limited) All rights reserved. | CIN: L74140DL2014PLC274413"
+      - generic [ref=f2e3961]:
+        - generic "Close Button" [ref=f2e3963] [cursor=pointer]
+        - generic [ref=f2e4080]:
+          - generic [ref=f2e4081]:
+            - generic "Sku description for the package, double tap to edit your package or view details" [ref=f2e4090]:
+              - heading "Unfurnished apartment - Home deep cleaning" [level=3] [ref=f2e4092]
+              - generic [ref=f2e4094]:
+                - paragraph [ref=f2e4095]: Starts at ₹3,999 •
+                - paragraph [ref=f2e4096]: 5 mins
+              - generic:
+                - generic "Bullet list defining packages"
+            - heading "Select requirements" [level=3] [ref=f2e4112]
+            - generic [ref=f2e4119] [cursor=pointer]:
+              - generic [ref=f2e4121]:
+                - paragraph [ref=f2e4122]: Size of home*
+                - paragraph [ref=f2e5002]: 1 BHK
+              - button "Button Double Tap to perform action" [ref=f2e4126]
+            - generic [ref=f2e4218]:
+              - generic [ref=f2e4221] [cursor=pointer]:
+                - paragraph [ref=f2e4224]: Living & bedroom cupboards*
+                - button "Button Double Tap to perform action" [ref=f2e4228]
+              - generic [ref=f2e5010]:
+                - generic [ref=f2e5013] [cursor=pointer]:
+                  - paragraph [ref=f2e5017]: Only exterior
+                  - paragraph [ref=f2e5022]: + ₹0
+                - generic [ref=f2e5027] [cursor=pointer]:
+                  - paragraph [ref=f2e5031]: Interior & exterior
+                  - paragraph [ref=f2e5036]: + ₹299
+            - generic [ref=f2e4244] [cursor=pointer]:
+              - paragraph [ref=f2e4247]: Select other add-ons
+              - button "Button Double Tap to perform action" [ref=f2e4251]
+            - generic [ref=f2e4258]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4263]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4268]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4273]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4278]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4283]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4288]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4293]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4298]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4303]:
+              - generic:
+                - generic:
+                  - img "Package Description"
+            - generic [ref=f2e4309]:
+              - generic [ref=f2e4312]:
+                - heading "4.82" [level=2] [ref=f2e4315]
+                - paragraph [ref=f2e4316]: 2K reviews
+              - generic [ref=f2e4317]:
+                - paragraph [ref=f2e4319]: ★ 5
+                - paragraph [ref=f2e4323]: 2K
+              - generic [ref=f2e4324]:
+                - paragraph [ref=f2e4326]: ★ 4
+                - paragraph [ref=f2e4330]: "81"
+              - generic [ref=f2e4331]:
+                - paragraph [ref=f2e4333]: ★ 3
+                - paragraph [ref=f2e4337]: "37"
+              - generic [ref=f2e4338]:
+                - paragraph [ref=f2e4340]: ★ 2
+                - paragraph [ref=f2e4344]: "19"
+              - generic [ref=f2e4345]:
+                - paragraph [ref=f2e4347]: ★ 1
+                - paragraph [ref=f2e4351]: "32"
+            - generic [ref=f2e4359]:
+              - generic [ref=f2e4361] [cursor=pointer]:
+                - heading "All reviews" [level=3] [ref=f2e4363]
+                - button "Filter" [ref=f2e4366]:
+                  - paragraph [ref=f2e4368]: Filter
+              - generic [ref=f2e4378]:
+                - paragraph [ref=f2e4380] [cursor=pointer]: Most detailed
+                - paragraph [ref=f2e4382] [cursor=pointer]: In my area
+                - paragraph [ref=f2e4384] [cursor=pointer]: Frequent users
+            - generic [ref=f2e4391]:
+              - generic:
+                - generic [ref=f2e4392]:
+                  - heading "Ashwini" [level=4] [ref=f2e4393]
+                  - paragraph [ref=f2e4396]: Mar 29, 2026 • For 2 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4403]: "5"
+            - paragraph [ref=f2e4411]: Very very happy with the service
+            - generic [ref=f2e4421]:
+              - generic:
+                - generic [ref=f2e4422]:
+                  - heading "Pranav" [level=4] [ref=f2e4423]
+                  - paragraph [ref=f2e4426]: Mar 29, 2026 • For 1 BHK home cleaning (Complete kitchen & Only cupboard exterior), Extra bathroom, Cabinets and Stove deep clean
+                - paragraph [ref=f2e4433]: "5"
+            - paragraph [ref=f2e4441]: Very good experience and cleaned everything properly
+            - generic [ref=f2e4451]:
+              - generic:
+                - generic [ref=f2e4452]:
+                  - heading "Ashwini S Gaikwad" [level=4] [ref=f2e4453]
+                  - paragraph [ref=f2e4456]: Mar 25, 2026 • For 2 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4463]: "5"
+            - paragraph [ref=f2e4471]: Good in work. Listen carefully what tell them to clean.
+            - generic [ref=f2e4481]:
+              - generic:
+                - generic [ref=f2e4482]:
+                  - heading "Purba Sarkar" [level=4] [ref=f2e4483]
+                  - paragraph [ref=f2e4486]: Mar 26, 2026 • For 3 BHK home cleaning (Complete kitchen & Only cupboard exterior), Extra bathroom, Store/Utility room, Cabinets and Stove deep clean
+                - paragraph [ref=f2e4493]: "5"
+            - paragraph [ref=f2e4501]: Vivek and team are hard working and cheerful. Did a good job.
+            - generic [ref=f2e4511]:
+              - generic:
+                - generic [ref=f2e4512]:
+                  - heading "Srikrishna" [level=4] [ref=f2e4513]
+                  - paragraph [ref=f2e4516]: Apr 23, 2026 • For 1 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4523]: "5"
+            - paragraph [ref=f2e4531]: Excellent service and very friendly people
+            - generic [ref=f2e4541]:
+              - generic:
+                - generic [ref=f2e4542]:
+                  - heading "Dilip Joshi" [level=4] [ref=f2e4543]
+                  - paragraph [ref=f2e4546]: Apr 23, 2026 • For 1 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4553]: "5"
+            - paragraph [ref=f2e4561]: Very Good service 👍
+            - generic [ref=f2e4571]:
+              - generic:
+                - generic [ref=f2e4572]:
+                  - heading "Sharankumar" [level=4] [ref=f2e4573]
+                  - paragraph [ref=f2e4576]: Apr 25, 2026 • For 1 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4583]: "5"
+            - paragraph [ref=f2e4591]: Service is very good
+            - generic [ref=f2e4601]:
+              - generic:
+                - generic [ref=f2e4602]:
+                  - heading "Vineeta" [level=4] [ref=f2e4603]
+                  - paragraph [ref=f2e4606]: Apr 25, 2026 • For 3 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4613]: "5"
+            - paragraph [ref=f2e4621]: Great work by Deep 💯
+            - generic [ref=f2e4631]:
+              - generic:
+                - generic [ref=f2e4632]:
+                  - heading "Shreya" [level=4] [ref=f2e4633]
+                  - paragraph [ref=f2e4636]: Apr 25, 2026 • For 1 BHK home cleaning (Complete kitchen & cupboard interior and Exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4643]: "5"
+            - paragraph [ref=f2e4651]: Shambu was very calm and careful! He cleaned each and every corner. He is very skill full!
+            - generic [ref=f2e4661]:
+              - generic:
+                - generic [ref=f2e4662]:
+                  - heading "RONNY ANCHAN" [level=4] [ref=f2e4663]
+                  - paragraph [ref=f2e4666]: Apr 25, 2026 • For 1 BHK home cleaning (Complete kitchen & cupboard interior and Exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4673]: "5"
+            - paragraph [ref=f2e4681]: Good and excellent work by the team .
+            - generic [ref=f2e4691]:
+              - generic:
+                - generic [ref=f2e4692]:
+                  - heading "Yash" [level=4] [ref=f2e4693]
+                  - paragraph [ref=f2e4696]: Apr 25, 2026 • For 2 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4703]: "5"
+            - paragraph [ref=f2e4711]: Overall good experience with urban company
+            - generic [ref=f2e4721]:
+              - generic:
+                - generic [ref=f2e4722]:
+                  - heading "Ganesh Pisal" [level=4] [ref=f2e4723]
+                  - paragraph [ref=f2e4726]: Apr 24, 2026 • For 2 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4733]: "5"
+            - paragraph [ref=f2e4741]: Bilal was very supportive and assisted in tasks.
+            - generic [ref=f2e4751]:
+              - generic:
+                - generic [ref=f2e4752]:
+                  - heading "Santhanalakshmi" [level=4] [ref=f2e4753]
+                  - paragraph [ref=f2e4756]: Apr 26, 2026 • For 1 BHK home cleaning (Complete kitchen & Only cupboard exterior), Bathroom cleaning, Cabinets and Stove deep clean
+                - paragraph [ref=f2e4763]: "5"
+            - paragraph [ref=f2e4771]: Great service. House was very clean and very professional!! Excellent work to Shahid Usilam
+            - generic [ref=f2e4781]:
+              - generic:
+                - generic [ref=f2e4782]:
+                  - heading "Satavi Mukherjee" [level=4] [ref=f2e4783]
+                  - paragraph [ref=f2e4786]: Apr 25, 2026 • For 3 BHK home cleaning (Complete kitchen & cupboard interior and Exterior), Store/Utility room, Cabinets and Stove deep clean
+                - paragraph [ref=f2e4793]: "5"
+            - paragraph [ref=f2e4801]: Overall satisfied.
+            - generic [ref=f2e4811]:
+              - generic:
+                - generic [ref=f2e4812]:
+                  - heading "Ramya" [level=4] [ref=f2e4813]
+                  - paragraph [ref=f2e4816]: Apr 27, 2026 • For 2 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4823]: "5"
+            - paragraph [ref=f2e4831]: Good service
+            - generic [ref=f2e4841]:
+              - generic:
+                - generic [ref=f2e4842]:
+                  - heading "Sandeep Hazare" [level=4] [ref=f2e4843]
+                  - paragraph [ref=f2e4846]: Apr 27, 2026 • For 2 BHK home cleaning (Complete kitchen & Only cupboard exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4853]: "5"
+            - paragraph [ref=f2e4861]: Very good work
+            - generic [ref=f2e4871]:
+              - generic:
+                - generic [ref=f2e4872]:
+                  - heading "Sanjeev Kapoor" [level=4] [ref=f2e4873]
+                  - paragraph [ref=f2e4876]: Apr 28, 2026 • For 3 BHK home cleaning (Complete kitchen & cupboard interior and Exterior), Cabinets and Stove deep clean, Chimney
+                - paragraph [ref=f2e4883]: "5"
+            - paragraph [ref=f2e4891]: Jaidul is very very and professional in his approach and commitment. Thank you Jaidul
+            - generic [ref=f2e4901]:
+              - generic:
+                - generic [ref=f2e4902]:
+                  - heading "Prasannakumar" [level=4] [ref=f2e4903]
+                  - paragraph [ref=f2e4906]: Apr 27, 2026 • For 2 BHK home cleaning (Complete kitchen & cupboard interior and Exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4913]: "5"
+            - paragraph [ref=f2e4921]: Excellent service, 3 service ppl came fully satisfied with the deep cleaning. No doubt worth every Penny.
+            - generic [ref=f2e4931]:
+              - generic:
+                - generic [ref=f2e4932]:
+                  - heading "Madhu Marivada" [level=4] [ref=f2e4933]
+                  - paragraph [ref=f2e4936]: Apr 28, 2026 • For 2 BHK home cleaning (Complete kitchen & Only cupboard exterior), Chimney
+                - paragraph [ref=f2e4943]: "1"
+            - paragraph [ref=f2e4951]: Unsatisfied hurried cleaning
+            - generic [ref=f2e4961]:
+              - generic:
+                - generic [ref=f2e4962]:
+                  - heading "Juui Advanni" [level=4] [ref=f2e4963]
+                  - paragraph [ref=f2e4966]: Apr 28, 2026 • For 2 BHK home cleaning (Complete kitchen & cupboard interior and Exterior), Cabinets and Stove deep clean
+                - paragraph [ref=f2e4973]: "5"
+            - paragraph [ref=f2e4981]: Thorough work… not a single nook or corner was missed. Will definitely recommend.
+            - button "Show more" [ref=f2e4994] [cursor=pointer]:
+              - paragraph [ref=f2e4996]: Show more
+          - generic [ref=f2e5041]:
+            - generic "Total price is ₹3999, proceed to checkout" [ref=f2e5042]:
+              - paragraph [ref=f2e5044]: ₹3,999
+            - generic [ref=f2e5046]:
+              - button "Add to Cart" [disabled]:
+                - generic:
+                  - paragraph: Done

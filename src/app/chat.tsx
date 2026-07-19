@@ -6,6 +6,9 @@ type Item =
   | { kind: 'bubble'; who: 'agent' | 'user'; text: string }
   | { kind: 'action'; label: string }
   | { kind: 'state'; state: unknown }
+  // The live-ride card: ONE card that updates in place as tracking polls arrive
+  // (not a new card per poll).
+  | { kind: 'tracking'; state: unknown }
   | { kind: 'question'; text: string; options?: string[]; answered?: boolean }
   | { kind: 'gate'; summary: string; amount?: number; currency?: string; done?: boolean }
   | { kind: 'status'; variant: 'done' | 'error'; text: string }
@@ -32,6 +35,9 @@ export default function Chat() {
   const [locStatus, setLocStatus] = useState<'idle' | 'locating' | 'set' | 'denied'>('idle')
   // The delivery address the backend actually resolved (store), shown in the bar.
   const [deliveryLabel, setDeliveryLabel] = useState<string | null>(null)
+  // A custom delivery address typed by the user — overrides GPS when set.
+  const [addrInput, setAddrInput] = useState('')
+  const [customAddr, setCustomAddr] = useState<string | null>(null)
   const sessionId = useRef<string | null>(null)
   const userId = useRef<string>('')
   const logRef = useRef<HTMLDivElement>(null)
@@ -89,6 +95,24 @@ export default function Chat() {
 
   const push = useCallback((item: Item) => setItems((prev) => [...prev, item]), [])
 
+  // Set a custom delivery address (overrides GPS). Mid-session it re-pins via the
+  // /location endpoint; before a session exists it's applied on the next request.
+  const applyAddress = useCallback(async (a: string) => {
+    const addr = a.trim()
+    if (!addr) return
+    setCustomAddr(addr)
+    setDeliveryLabel(addr)
+    setAddrInput('')
+    const id = sessionId.current
+    if (id) {
+      await fetch(`/api/sessions/${id}/location`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ address: addr }),
+      })
+    }
+  }, [])
+
   // biome-ignore lint/correctness/useExhaustiveDependencies: scroll on every item change
   useEffect(() => {
     logRef.current?.scrollTo({ top: logRef.current.scrollHeight })
@@ -120,9 +144,23 @@ export default function Chat() {
           push({ kind: 'action', label: String(ev.label) })
           break
         case 'state_update': {
-          const addr = (ev.state as { deliverTo?: { address?: string; city?: string } })?.deliverTo
+          const s = ev.state as { deliverTo?: { address?: string; city?: string }; tracking?: unknown }
+          const addr = s?.deliverTo
           if (addr?.address ?? addr?.city) setDeliveryLabel((addr.address ?? addr.city) ?? null)
-          push({ kind: 'state', state: ev.state })
+          if (s?.tracking) {
+            // Upsert the single live-ride card: replace it in place if present,
+            // else append once — so polling updates one card instead of piling up.
+            setItems((prev) => {
+              const item: Item = { kind: 'tracking', state: ev.state }
+              const idx = prev.findIndex((it) => it.kind === 'tracking')
+              if (idx < 0) return [...prev, item]
+              const next = [...prev]
+              next[idx] = item
+              return next
+            })
+          } else {
+            push({ kind: 'state', state: ev.state })
+          }
           break
         }
         case 'question':
@@ -160,7 +198,12 @@ export default function Chat() {
       const res = await fetch('/api/sessions', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ text, ...(location ? { location } : {}), ...(userId.current ? { userId: userId.current } : {}) }),
+        body: JSON.stringify({
+          text,
+          // A typed custom address wins over GPS.
+          ...(customAddr ? { deliveryAddress: customAddr } : location ? { location } : {}),
+          ...(userId.current ? { userId: userId.current } : {}),
+        }),
       })
       const { sessionId: id } = (await res.json()) as { sessionId: string }
       sessionId.current = id
@@ -178,7 +221,7 @@ export default function Chat() {
       }
       es.addEventListener('error', () => es.close())
     },
-    [handle, location],
+    [handle, location, customAddr],
   )
 
   const onSubmit = useCallback(
@@ -227,9 +270,35 @@ export default function Chat() {
               <button type="button" className="link" onClick={requestLocation}>
                 📍 Use my current location
               </button>
-              {locStatus === 'denied' ? ' — denied; just tell the agent your delivery area in chat' : ' (or tell the agent your delivery area)'}
+              {locStatus === 'denied' ? ' — denied; enter a delivery address below' : ' (or enter a delivery address below)'}
             </span>
           )}
+          {/* Custom delivery address — overrides GPS. Resolved by the target
+              adapter (Blinkit place-search / UC geocode). */}
+          <form
+            className="addrform"
+            onSubmit={(e) => {
+              e.preventDefault()
+              void applyAddress(addrInput)
+            }}
+          >
+            <input type="text" value={addrInput} onChange={(e) => setAddrInput(e.target.value)} placeholder="deliver to a different address…" autoComplete="off" aria-label="delivery address" />
+            <button type="submit" className="link">
+              Set address
+            </button>
+            {customAddr ? (
+              <button
+                type="button"
+                className="link"
+                onClick={() => {
+                  setCustomAddr(null)
+                  setDeliveryLabel(null)
+                }}
+              >
+                use GPS
+              </button>
+            ) : null}
+          </form>
         </div>
         <form onSubmit={onSubmit}>
           <input
@@ -270,6 +339,8 @@ function Row({ item, send }: { item: Item; send: (text: string) => void }) {
     case 'action':
       return <div className="action">… {item.label}</div>
     case 'state':
+      return <StateCard state={item.state} />
+    case 'tracking':
       return <StateCard state={item.state} />
     case 'question':
       return (
@@ -347,13 +418,28 @@ function StateCard({ state }: { state: unknown }) {
     packageBooked?: string
     selectedSlot?: string
     amountToPay?: string
+    selectedAddress?: string
+    note?: string
   }
   const isReadyToPay = c.status === 'ready-to-pay'
-  // Home-services booking-ready card (service + slot, not a cart of items).
-  if (c && c.service && (c.checkoutUrl || c.earliestSlot || isReadyToPay)) {
+  const isUnavailable = c.status === 'unavailable'
+  const isNeedsLogin = c.status === 'needs-login'
+  // Home-services card (service + slot, not a cart of items). No deep-link
+  // handoff anymore (§14.7) — the ready-to-pay window on this machine is the
+  // handoff; unavailable/needs-login render as a plain message.
+  if (c && c.service && (c.earliestSlot || isReadyToPay || isUnavailable || isNeedsLogin)) {
+    if (isUnavailable || isNeedsLogin) {
+      return (
+        <div className="card">
+          <h4>{isNeedsLogin ? 'Sign in to book' : 'Not available'}</h4>
+          <div className="deliverto">🧹 {c.packageBooked ?? c.service}</div>
+          {c.note ? <div>{c.note}</div> : null}
+        </div>
+      )
+    }
     return (
       <div className="card">
-        <h4>{isReadyToPay ? 'Booked — ready to pay' : 'Booking-ready'}</h4>
+        <h4>{isReadyToPay ? 'Booked — ready to pay' : 'Selected'}</h4>
         <div className="deliverto">🧹 {c.packageBooked ?? c.service}</div>
         {c.category ? <div>{c.category}</div> : null}
         {c.loggedInAs ? <div>Signed in as {c.loggedInAs}</div> : null}
@@ -376,6 +462,12 @@ function StateCard({ state }: { state: unknown }) {
                 <td>{c.earliestSlot}</td>
               </tr>
             ) : null}
+            {c.selectedAddress ? (
+              <tr>
+                <td>Address</td>
+                <td>{c.selectedAddress}</td>
+              </tr>
+            ) : null}
             {c.amountToPay ? (
               <tr className="total">
                 <td>Amount to pay</td>
@@ -392,11 +484,6 @@ function StateCard({ state }: { state: unknown }) {
         </table>
         {isReadyToPay ? (
           <div className="deliverto">A real, logged-in browser window is open on this machine — click "Proceed to pay" there.</div>
-        ) : null}
-        {c.checkoutUrl ? (
-          <a className="checkout" href={c.checkoutUrl} target="_blank" rel="noreferrer">
-            🧹 Open on Urban Company →
-          </a>
         ) : null}
       </div>
     )
@@ -432,10 +519,84 @@ function StateCard({ state }: { state: unknown }) {
       </div>
     )
   }
+  const tr = (state as { tracking?: TrackingState })?.tracking
+  if (tr) {
+    return (
+      <div className="card">
+        <h4>🚗 Live ride</h4>
+        <div className="deliverto">
+          {tr.status ?? 'Tracking'}
+          {tr.etaText ? ` · ${tr.etaText}` : ''}
+        </div>
+        <table>
+          <tbody>
+            {tr.driver ? (
+              <tr>
+                <td>Driver</td>
+                <td>
+                  {tr.driver}
+                  {tr.rating ? ` ★${tr.rating}` : ''}
+                </td>
+              </tr>
+            ) : null}
+            {tr.vehicle ? (
+              <tr>
+                <td>Vehicle</td>
+                <td>
+                  {tr.vehicle}
+                  {tr.plate ? ` · ${tr.plate}` : ''}
+                </td>
+              </tr>
+            ) : null}
+            {tr.driverLat != null && tr.driverLng != null ? (
+              <tr>
+                <td>Driver at</td>
+                <td>
+                  {tr.driverLat.toFixed(5)}, {tr.driverLng.toFixed(5)}
+                  {tr.distanceToPickupM != null ? ` · ~${tr.distanceToPickupM} m away` : ''}
+                </td>
+              </tr>
+            ) : null}
+            {tr.pin ? (
+              <tr>
+                <td>PIN</td>
+                <td>{tr.pin}</td>
+              </tr>
+            ) : null}
+            {tr.fare ? (
+              <tr>
+                <td>Fare</td>
+                <td>{tr.fare}</td>
+              </tr>
+            ) : null}
+          </tbody>
+        </table>
+        {tr.driverLat != null && tr.driverLng != null ? (
+          <a className="checkout" href={`https://www.google.com/maps?q=${tr.driverLat},${tr.driverLng}`} target="_blank" rel="noreferrer">
+            📍 Driver on map →
+          </a>
+        ) : null}
+      </div>
+    )
+  }
   return (
     <div className="card">
       <h4>State</h4>
       <pre>{JSON.stringify(state, null, 2)}</pre>
     </div>
   )
+}
+
+type TrackingState = {
+  status?: string
+  driver?: string
+  rating?: number
+  vehicle?: string
+  plate?: string
+  etaText?: string
+  driverLat?: number
+  driverLng?: number
+  distanceToPickupM?: number
+  pin?: string
+  fare?: string
 }

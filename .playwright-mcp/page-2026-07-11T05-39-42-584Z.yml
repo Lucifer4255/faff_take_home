@@ -1,0 +1,206 @@
+- generic [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e4090]:
+      - generic [ref=e4113]:
+        - generic [ref=e4117]:
+          - generic [ref=e4129]:
+            - img:
+              - img "Urban Company logo" [ref=e4131]
+          - heading "Checkout" [level=4] [ref=e4142]
+        - generic [ref=e4147]:
+          - generic [ref=e4152]:
+            - paragraph [ref=e4170]: Saving ₹100 on this order
+            - generic [ref=e4179]:
+              - generic [ref=e4183]:
+                - generic [ref=e4191]:
+                  - paragraph [ref=e4193]: Send booking details to
+                  - paragraph [ref=e4196]: +91 7439245158
+                - generic [ref=e4201]:
+                  - generic:
+                    - generic [ref=e4206]:
+                      - paragraph [ref=e4208]: Address
+                      - generic [ref=e4728]:
+                        - paragraph [ref=e4729]: Home
+                        - paragraph [ref=e4730]: "- 1, Bengaluru"
+                    - button "Edit" [disabled] [ref=e4733] [cursor=pointer]:
+                      - paragraph [ref=e4735]: Edit
+                - generic [ref=e4219]:
+                  - paragraph [ref=e4227]: Slot
+                  - button "Select time & date" [ref=e4740] [cursor=pointer]:
+                    - paragraph [ref=e4742]: Select time & date
+                - paragraph [ref=e4239]: Payment Method
+              - generic [ref=e4248]:
+                - heading "Cancellation policy" [level=4] [ref=e4249]
+                - paragraph [ref=e4252]: Free cancellations if done more than 12 hrs before the service. A fee will be charged otherwise.
+                - button "Read full policy" [disabled] [ref=e4258] [cursor=pointer]:
+                  - paragraph [ref=e4260]: Read full policy
+          - generic [ref=e4263]:
+            - generic [ref=e4273]:
+              - heading "AC" [level=4] [ref=e4279]
+              - generic [ref=e4280]:
+                - generic "Foam-jet service (2 ACs)":
+                  - paragraph [ref=e4284]: Foam-jet service (2 ACs)
+                  - generic [ref=e4287]:
+                    - generic [ref=e4289]:
+                      - button "Add" [disabled] [ref=e4290] [cursor=pointer]:
+                        - paragraph [ref=e4291]: Add
+                      - generic [ref=e4292]:
+                        - button "Foam-jet service (2 ACs) Total item count will become0" [disabled] [ref=e4293] [cursor=pointer]
+                        - generic [ref=e4294]:
+                          - paragraph [ref=e4296]: "1"
+                          - generic "Foam-jet service (2 ACs) with a price of ₹1,198 , Total number of items present in your cart is 1" [ref=e4297]:
+                            - paragraph [ref=e4298]: "1"
+                          - paragraph [ref=e4300]: "0"
+                        - button "Foam-jet service (2 ACs) Total item count will become2" [disabled] [ref=e4301] [cursor=pointer]
+                    - generic [ref=e4303]:
+                      - paragraph [ref=e4304]: ₹1,198
+                      - paragraph [ref=e4305]: ₹1,298
+              - generic [ref=e4311] [cursor=pointer]:
+                - checkbox "checkBox" [ref=e4313]
+                - paragraph [ref=e4319]: Avoid calling before reaching the location
+            - generic [ref=e4332] [cursor=pointer]:
+              - paragraph [ref=e4340]: Coupons and offers
+              - button "9 offers" [ref=e4345]:
+                - paragraph [ref=e4347]: 9 offers
+            - generic [ref=e4361]:
+              - heading "Payment summary" [level=4] [ref=e4366]
+              - generic [ref=e4372]:
+                - paragraph [ref=e4373]: Item total
+                - generic [ref=e4374]:
+                  - paragraph [ref=e4375]: ₹1,298
+                  - paragraph [ref=e4376]
+                  - paragraph [ref=e4377]: ₹1,198
+              - generic [ref=e4746]:
+                - paragraph [ref=e4748] [cursor=pointer]: Taxes and Fee
+                - paragraph [ref=e4751]: ₹99
+              - generic [ref=e4758]:
+                - paragraph [ref=e4759]: Total amount
+                - paragraph [ref=e4760]: ₹1,297
+              - generic [ref=e4767]:
+                - paragraph [ref=e4768]: Amount to pay
+                - paragraph [ref=e4769]: ₹1,297
+              - generic [ref=e4422]:
+                - paragraph [ref=e4427]: Add a tip to thank the Professional
+                - generic [ref=e4431]:
+                  - generic [ref=e4432] [cursor=pointer]:
+                    - paragraph [ref=e4433]: ₹
+                    - paragraph [ref=e4434]: "50"
+                  - generic [ref=e4435] [cursor=pointer]:
+                    - paragraph [ref=e4436]: ₹
+                    - paragraph [ref=e4437]: "75"
+                    - paragraph [ref=e4439]: Popular
+                  - generic [ref=e4440] [cursor=pointer]:
+                    - paragraph [ref=e4441]: ₹
+                    - paragraph [ref=e4442]: "100"
+                  - paragraph [ref=e4444] [cursor=pointer]: Custom
+                - paragraph [ref=e4448]: 100% of the tip goes to the professional.
+            - generic [ref=e4460]:
+              - generic [ref=e4463]:
+                - paragraph [ref=e4464]: Amount to pay
+                - heading "₹1,297" [level=4] [ref=e4465]
+              - paragraph [ref=e4470] [cursor=pointer]: View breakup
+      - generic [ref=e4774]:
+        - generic "Close Button" [ref=e4776] [cursor=pointer]
+        - generic [ref=e4783]:
+          - generic [ref=e4789]:
+            - generic "When should the professional arrive?" [ref=e4795]:
+              - heading "When should the professional arrive?" [level=4] [ref=e4796]
+            - generic [ref=e4803] [cursor=pointer]:
+              - generic [ref=e4804]:
+                - paragraph [ref=e4809]: Instant
+                - paragraph [ref=e4811]: In 50 mins
+              - generic [ref=e4813]:
+                - radio "radioButton" [disabled]
+            - generic "Select date" [ref=e4816]:
+              - generic [ref=e4818] [cursor=pointer]:
+                - generic [ref=e4819]:
+                  - paragraph [ref=e4820]: Schedule for later
+                  - paragraph [ref=e4822]: Select your preferred day & time
+                - generic [ref=e4824]:
+                  - radio "radioButton" [disabled]
+              - generic [ref=e4846]:
+                - generic "Saturday 11 July button" [ref=e4849] [cursor=pointer]:
+                  - generic [ref=e4850]:
+                    - paragraph [ref=e4851]: Sat
+                    - paragraph [ref=e4853]: "11"
+                - generic "Sunday 12 July button" [ref=e4857] [cursor=pointer]:
+                  - generic [ref=e4858]:
+                    - paragraph [ref=e4859]: Sun
+                    - paragraph [ref=e4861]: "12"
+                - generic "Monday 13 July button" [ref=e4865] [cursor=pointer]:
+                  - generic [ref=e4866]:
+                    - paragraph [ref=e4867]: Mon
+                    - paragraph [ref=e4869]: "13"
+              - generic "Select start time of service" [ref=e4877]:
+                - heading "Select start time of service" [level=4] [ref=e4878]
+              - generic [ref=e4884]:
+                - generic "12:00 PM button" [active] [ref=e4888] [cursor=pointer]:
+                  - paragraph [ref=e4889]: 12:00 PM
+                - generic "12:15 PM button" [ref=e4893] [cursor=pointer]:
+                  - paragraph [ref=e4894]: 12:15 PM
+                - generic "12:30 PM button" [ref=e4898] [cursor=pointer]:
+                  - paragraph [ref=e4899]: 12:30 PM
+              - generic [ref=e4902]:
+                - generic "12:45 PM button" [ref=e4906] [cursor=pointer]:
+                  - paragraph [ref=e4907]: 12:45 PM
+                - generic "01:00 PM button" [ref=e4911] [cursor=pointer]:
+                  - paragraph [ref=e4912]: 01:00 PM
+                - generic "01:15 PM button" [ref=e4916] [cursor=pointer]:
+                  - paragraph [ref=e4917]: 01:15 PM
+              - generic [ref=e4920]:
+                - generic "01:30 PM button" [ref=e4924] [cursor=pointer]:
+                  - paragraph [ref=e4925]: 01:30 PM
+                - generic "01:45 PM button" [ref=e4929] [cursor=pointer]:
+                  - paragraph [ref=e4930]: 01:45 PM
+                - generic "02:00 PM button" [ref=e4934] [cursor=pointer]:
+                  - paragraph [ref=e4935]: 02:00 PM
+              - generic [ref=e4938]:
+                - generic "02:15 PM button" [ref=e4942] [cursor=pointer]:
+                  - paragraph [ref=e4943]: 02:15 PM
+                - generic "02:30 PM button" [ref=e4947] [cursor=pointer]:
+                  - paragraph [ref=e4948]: 02:30 PM
+                - generic "02:45 PM button" [ref=e4952] [cursor=pointer]:
+                  - paragraph [ref=e4953]: 02:45 PM
+              - generic [ref=e4956]:
+                - generic "03:00 PM button" [ref=e4960] [cursor=pointer]:
+                  - paragraph [ref=e4961]: 03:00 PM
+                - generic "03:15 PM button" [ref=e4965] [cursor=pointer]:
+                  - paragraph [ref=e4966]: 03:15 PM
+                - generic "03:30 PM button" [ref=e4970] [cursor=pointer]:
+                  - paragraph [ref=e4971]: 03:30 PM
+              - generic [ref=e4974]:
+                - generic "03:45 PM button" [ref=e4978] [cursor=pointer]:
+                  - paragraph [ref=e4979]: 03:45 PM
+                - generic "04:00 PM button" [ref=e4983] [cursor=pointer]:
+                  - paragraph [ref=e4984]: 04:00 PM
+                - generic "04:15 PM button" [ref=e4988] [cursor=pointer]:
+                  - paragraph [ref=e4989]: 04:15 PM
+              - generic [ref=e4992]:
+                - generic "04:30 PM button" [ref=e4996] [cursor=pointer]:
+                  - paragraph [ref=e4997]: 04:30 PM
+                - generic "04:45 PM button" [ref=e5001] [cursor=pointer]:
+                  - paragraph [ref=e5002]: 04:45 PM
+                - generic "05:00 PM button" [ref=e5006] [cursor=pointer]:
+                  - paragraph [ref=e5007]: 05:00 PM
+              - generic [ref=e5010]:
+                - generic "05:15 PM button" [ref=e5014] [cursor=pointer]:
+                  - paragraph [ref=e5015]: 05:15 PM
+                - generic "05:30 PM button" [ref=e5019] [cursor=pointer]:
+                  - paragraph [ref=e5020]: 05:30 PM
+                - generic "05:45 PM button" [ref=e5024] [cursor=pointer]:
+                  - paragraph [ref=e5025]: 05:45 PM
+              - generic [ref=e5028]:
+                - generic "06:00 PM button" [ref=e5032] [cursor=pointer]:
+                  - paragraph [ref=e5033]: 06:00 PM
+                - generic "06:15 PM button" [ref=e5037] [cursor=pointer]:
+                  - paragraph [ref=e5038]: 06:15 PM
+                - generic "06:30 PM button" [ref=e5042] [cursor=pointer]:
+                  - paragraph [ref=e5043]: 06:30 PM
+              - generic [ref=e5046]:
+                - generic "06:45 PM button" [ref=e5050] [cursor=pointer]:
+                  - paragraph [ref=e5051]: 06:45 PM
+                - generic "07:00 PM button" [ref=e5055] [cursor=pointer]:
+                  - paragraph [ref=e5056]: 07:00 PM
+          - button "Proceed to checkout" [ref=e4837] [cursor=pointer]:
+            - paragraph [ref=e4839]: Proceed to checkout

@@ -2,30 +2,30 @@ import type { Adapter } from '@/core/adapter'
 import { geocodeAddress } from '@/core/geocode'
 import { JsonStore } from '@/core/store'
 import { authFor, isLoggedIn, sendLoginCode as authSendLoginCode, verifyLoginCode as authVerifyLoginCode } from './auth'
-import { driveToPay } from './browserDrive'
+import { driveToPay } from './agentDrive'
 import { closeClient, currentCity, currentCoords, deepLink, fetchCategory, hasLocation, nearestMetroFor, searchServices, setCoords } from './client'
 import { type UCService, extractEarliestSlot, extractServices } from './parse'
 
 /**
- * Home Services adapter (P2, Urban Company — DESIGN.md §7, §14).
+ * Home Services adapter (P2, Urban Company — DESIGN.md §7, §14, §14.7).
  *
  * Validates the harness abstraction on a *different-shaped* target than Blinkit:
  * slots/availability, not a cart. The load-bearing "cracked the API not the DOM"
  * part is `search_catalog` → UC's real `discoverySearch` endpoint (through the
  * Chromium TLS vehicle — see client.ts), parsed into services.
  *
- * Two tiers, chosen automatically per session:
- * - **Guest** (no login) — a **booking-ready handoff**: chosen service + price
- *   + earliest availability + a deep link; the human opens it and finishes
- *   (login + exact slot + pay) in-app. No spend, no login needed.
- * - **Authenticated** (`needsLogin`/`sendLoginCode`/`verifyLoginCode`, see
- *   auth.ts) — UC's Cloudflare Turnstile only rejects *scripted* Turnstile/OTP
- *   submission, not a real human clearing it in a real, visible browser window
- *   (verified live); once that human-cleared session is captured, `booking.ts`
- *   drives the real chain (package selection, a real geocoded address, the
- *   real slot grid — see @/core/geocode for a requested address that differs
- *   from the client's current location) headlessly AS that user, under their
- *   own account, still stopping one call short of payment.
+ * ONE authenticated flow for ANY category (§14.7): the harness forces a per-user
+ * login before `confirm` (session.ts gate → `needsLogin`; UC's Cloudflare
+ * Turnstile only rejects *scripted* OTP, so the human clears it once in their own
+ * Chrome and auth.ts captures the session under their `userId`), then `confirm`
+ * drives a REAL local Chrome — that user's session injected — through the actual
+ * booking UI to a parked "Proceed to pay" screen, stopping one call short of
+ * payment. The drive is category-agnostic: an LLM reads the live DOM via
+ * Playwright-MCP (agentDrive.ts) instead of hand-coded per-category selectors.
+ * There is no no-login/guest path; availability is a three-tier funnel (city in
+ * range → service offered in city via the `bookable` discriminator → address/slot
+ * serviceability surfaced by the drive), and every miss reports plainly with no
+ * link — never a wrong booking, nothing charged until the human clicks pay.
  */
 
 interface Booking {
@@ -68,11 +68,10 @@ function bookingState(sessionId: string) {
     currency: 'INR',
     earliestSlot: b.earliestSlot,
     city: loc.label,
-    // The booking handoff: the human opens this to pick the exact slot, log in
-    // (Cloudflare Turnstile — human-only) and pay. Nothing is charged by us.
-    // Named `checkoutUrl` so the harness surfaces it (web button, CLI, Session).
-    checkoutUrl: deepLink(b.categoryKey),
-    note: 'Booking-ready. Open the link to choose your exact time slot, sign in and confirm — nothing is charged until you do.',
+    // No deep-link handoff (§14.7 retired the guest path): booking happens by
+    // driving the user's own logged-in browser at `confirm`. Nothing is charged
+    // until the human clicks pay in that window.
+    note: 'Selected. Say "book" to place it under your account (you\'ll sign in once if needed) — nothing is charged until the final step.',
   }
 }
 
@@ -99,10 +98,17 @@ export const homeservices: Adapter = {
     search_catalog: async ({ query }, ctx) => {
       const services = extractServices(await searchServices(query))
       remember(ctx.sessionId, services)
+      // Tier-2 availability: distinguish "rephrase" (nothing matched) from "not
+      // offered in this city" (results came back, but only coarse category tiles,
+      // nothing directly bookable — see parse.ts `bookable`).
       if (services.length === 0) return { error: `No services matched "${query}" — try a broader term (e.g. "cleaning").` }
+      if (!services.some((s) => s.bookable)) {
+        return { error: `Urban Company may not offer "${query}" in ${currentCity().label} — only general category links came back, nothing directly bookable here.` }
+      }
       // Hand the agent what it needs to pick a service to book (pass its id to
-      // select_slot). Prices carry `startsAt` so it won't misreport a "from" floor.
-      return services.map(({ id, name, category, price, startsAt, rating }) => ({ id, name, category, price, startsAt, rating }))
+      // select_slot). Prices carry `startsAt` so it won't misreport a "from" floor;
+      // `bookable` lets it prefer a specific service over a category tile.
+      return services.map(({ id, name, category, price, startsAt, rating, bookable }) => ({ id, name, category, price, startsAt, rating, bookable }))
     },
 
     // Select the service to book (by id from search) and pull its earliest
@@ -133,21 +139,15 @@ export const homeservices: Adapter = {
 
     get_state: async (_input, ctx) => bookingState(ctx.sessionId),
 
-    // Crosses the EXECUTE gate (native tool approval). `needsLogin` above parks
-    // the run for phone+OTP first, so by the time this runs we're either guest
-    // (no session — booking-ready deep-link handoff, the original posture) or
-    // authenticated. Authenticated + home-cleaning drives a REAL local Chrome
-    // (browserDrive.ts) — injected with the captured session, on the user's own
-    // machine — through the actual booking UI to a parked "Proceed to pay"
-    // screen in one continuous session. This replaces an earlier headless-API +
-    // resume-link design: UC's checkout has no resume-by-URL (a cold reopen of
-    // journey/checkout?...&draftOrderId=... ignores the id and loads the stale
-    // persistent cart with address/slot reset — verified live), so a link can
-    // never hand off a finished draft. Driving the real, visible browser
-    // sidesteps that entirely — the window itself is the handoff, and state
-    // persists because the SPA is never left. SCOPE: home-cleaning only for
-    // now — other categories' Add-modal shape differs (verified against AC
-    // service) and needs its own pass; those fall back to the guest handoff.
+    // Crosses the EXECUTE gate (native tool approval). The harness forces a
+    // per-user login BEFORE this runs (session.ts gate → `needsLogin`), so `auth`
+    // is present for the acting user. We then drive a REAL local Chrome — that
+    // user's captured session injected — through the actual booking UI to a
+    // parked "Proceed to pay" screen (agentDrive.ts, category-agnostic: an LLM
+    // reads the live DOM rather than hand-coded selectors, so ANY category books).
+    // Single flow: no guest/deep-link handoff. Any availability miss (address not
+    // serviceable, no slots) or drive failure is reported plainly with NO link —
+    // never a wrong booking, nothing charged until the human clicks pay.
     confirm: async (_input, ctx) => {
       const b = bookings.get(ctx.sessionId)
       if (!b) return { status: 'empty', ...bookingState(ctx.sessionId), note: 'Nothing selected to book.' }
@@ -156,71 +156,87 @@ export const homeservices: Adapter = {
       searchCache.delete(ctx.sessionId)
 
       const auth = authFor(ctx.userId)
-      if (auth && b.categoryKey === 'professional_home_cleaning') {
-        try {
-          // Default to the client's current city; if the user asked for
-          // somewhere else, geocode THAT text instead (Nominatim — @/core/geocode)
-          // rather than silently booking at the wrong place. A failed geocode
-          // is a hard stop into the guest handoff, never a guess.
-          let citySlug: string
-          let cityKey: string
-          let addressHint: string | undefined
-          if (b.addressOverride) {
-            const hit = await geocodeAddress(b.addressOverride)
-            if (!hit) {
-              return {
-                status: 'booking-ready',
-                ...state,
-                note: `Couldn't find "${b.addressOverride}" — open the link, sign in, and enter that address there. Nothing charged.`,
-              }
-            }
-            const metro = nearestMetroFor(hit.lat, hit.lon)
-            if (!metro.serviceable) {
-              return {
-                status: 'booking-ready',
-                ...state,
-                note: `"${b.addressOverride}" resolved to ${hit.formattedAddress}, which is too far from any serviceable city — open the link to check availability there yourself. Nothing charged.`,
-              }
-            }
-            citySlug = metro.slug
-            cityKey = metro.cityKey
-            addressHint = b.addressOverride
-          } else {
-            ;({ slug: citySlug, cityKey } = currentCity())
+      // The login gate should have captured a per-user session already. If we're
+      // somehow here without one, ask them to sign in — never a no-login handoff.
+      if (!auth) {
+        return { status: 'needs-login', ...state, checkoutUrl: null, note: 'Sign in to Urban Company to book this — say "login" to start. Nothing is charged.' }
+      }
+
+      try {
+        // Default to the client's current city; if the user asked for somewhere
+        // else, geocode THAT text (Nominatim — @/core/geocode) rather than book at
+        // the wrong place. A failed/too-far geocode is a hard stop, reported plainly.
+        let citySlug: string
+        let cityKey: string
+        let addressHint: string | undefined
+        if (b.addressOverride) {
+          const hit = await geocodeAddress(b.addressOverride)
+          if (!hit) {
+            return { status: 'unavailable', ...state, checkoutUrl: null, note: `Couldn't find "${b.addressOverride}" — nothing booked, nothing charged.` }
           }
-          const result = await driveToPay({
-            citySlug,
-            cityKey,
-            categoryKey: b.categoryKey,
-            packageName: b.name,
-            addressHint,
-            auth: { token: auth.token, ucUserId: auth.ucUserId, name: auth.name },
-            screenshotDir: '.data/uc-drive-screenshots',
-          })
+          const metro = nearestMetroFor(hit.lat, hit.lon)
+          if (!metro.serviceable) {
+            return { status: 'unavailable', ...state, checkoutUrl: null, note: `"${b.addressOverride}" (${hit.formattedAddress}) is outside Urban Company's serviceable cities — nothing booked, nothing charged.` }
+          }
+          citySlug = metro.slug
+          cityKey = metro.cityKey
+          addressHint = b.addressOverride
+        } else {
+          ;({ slug: citySlug, cityKey } = currentCity())
+          // No city switch, but the user may have set a custom delivery address
+          // (UI bar / session) — pass it as the hint so the driver picks the RIGHT
+          // saved address when several exist (e.g. two "Home" addresses).
+          addressHint = ctx.deliveryAddress
+        }
+
+        const r = await driveToPay({
+          citySlug,
+          cityKey,
+          categoryKey: b.categoryKey,
+          packageName: b.name,
+          addressHint,
+          auth: { token: auth.token, ucUserId: auth.ucUserId, name: auth.name },
+          screenshotDir: '.data/uc-drive-screenshots',
+        })
+
+        // Tier-3 availability, surfaced by the drive itself.
+        if (!r.serviceableAtAddress || r.noSlots) {
           return {
-            status: result.ok ? 'ready-to-pay' : 'booking-ready',
+            status: 'unavailable',
             ...state,
-            checkoutUrl: null, // no shareable link — see the module doc; the driven window IS the handoff
+            checkoutUrl: null,
             loggedInAs: auth.name,
-            packageBooked: b.name,
-            selectedSlot: result.slotLabel,
-            amountToPay: result.amountToPay,
-            note: result.ok
-              ? `A real Chrome window just opened on this machine, signed in as ${auth.name ?? 'you'} — ${b.name}${result.slotLabel ? `, slot ${result.slotLabel}` : ''}${result.amountToPay ? `, ${result.amountToPay} to pay` : ''}. Just click "Proceed to pay" there. Nothing charged until you do.`
-              : `${result.note} Open the Urban Company app to finish manually. Nothing charged.`,
-          }
-        } catch (e) {
-          return {
-            status: 'booking-ready',
-            ...state,
-            note: `Couldn't complete the authenticated booking (${e instanceof Error ? e.message : e}) — open the link to finish manually. Nothing charged.`,
+            note: `${r.noSlots ? 'No open slots came up for that service at your address' : 'That address is outside the serviceable area'} — nothing booked, nothing charged.`,
           }
         }
-      }
-      return {
-        status: 'booking-ready',
-        ...state,
-        note: 'Open the link to pick your exact slot, sign in (Urban Company requires a human login) and confirm. Nothing is charged until you do.',
+        const ok = r.reachedPay && r.slotSelected && r.payEnabled
+        if (!ok) {
+          return {
+            status: 'unavailable',
+            ...state,
+            checkoutUrl: null,
+            loggedInAs: auth.name,
+            note: `Couldn't complete the booking automatically (${r.note}) — nothing charged.`,
+          }
+        }
+        return {
+          status: 'ready-to-pay',
+          ...state,
+          checkoutUrl: null, // the driven window IS the handoff — no shareable link
+          loggedInAs: auth.name,
+          packageBooked: b.name,
+          selectedSlot: r.slotLabel,
+          amountToPay: r.amountToPay,
+          selectedAddress: r.selectedAddress,
+          note: `A real Chrome window is open on this machine, signed in as ${auth.name ?? 'you'} — ${b.name}${r.slotLabel ? `, slot ${r.slotLabel}` : ''}${r.amountToPay ? `, ${r.amountToPay} to pay` : ''}${r.selectedAddress ? `, delivering to ${r.selectedAddress}` : ''}. ⚠️ Check the address is right, then click "Proceed to pay" there. Nothing charged until you do.`,
+        }
+      } catch (e) {
+        return {
+          status: 'unavailable',
+          ...state,
+          checkoutUrl: null,
+          note: `Couldn't complete the booking (${e instanceof Error ? e.message : e}) — nothing charged.`,
+        }
       }
     },
   },

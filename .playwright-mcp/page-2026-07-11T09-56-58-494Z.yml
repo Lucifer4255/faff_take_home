@@ -1,0 +1,123 @@
+- generic [ref=e1]:
+  - generic: UC
+  - main [ref=e2]:
+    - generic [ref=e2900]:
+      - generic [ref=e2911]:
+        - generic [ref=e2915]:
+          - generic [ref=e2927]:
+            - img:
+              - img "Urban Company logo" [ref=e2929]
+          - heading "Checkout" [level=4] [ref=e2940]
+        - generic [ref=e2945]:
+          - generic [ref=e2950]:
+            - paragraph [ref=e2968]: Saving ₹100 on this order
+            - generic [ref=e2977]:
+              - generic [ref=e2981]:
+                - generic [ref=e2989]:
+                  - paragraph [ref=e2991]: Send booking details to
+                  - paragraph [ref=e2994]: +91 7439245158
+                - generic [ref=e2999]:
+                  - generic:
+                    - generic [ref=e3004]:
+                      - paragraph [ref=e3006]: Address
+                      - generic [ref=e3544]:
+                        - paragraph [ref=e3545]: Home
+                        - paragraph [ref=e3546]: "- 25, Bansdroni Post Office Road, Nakt..."
+                    - button "Edit" [disabled] [ref=e3549] [cursor=pointer]:
+                      - paragraph [ref=e3551]: Edit
+                - generic [ref=e3017]:
+                  - paragraph [ref=e3025]: Slot
+                  - button "Select time & date" [ref=e3556] [cursor=pointer]:
+                    - paragraph [ref=e3558]: Select time & date
+                - paragraph [ref=e3037]: Payment Method
+              - generic [ref=e3046]:
+                - heading "Cancellation policy" [level=4] [ref=e3047]
+                - paragraph [ref=e3050]: Free cancellations if done more than 12 hrs before the service. A fee will be charged otherwise.
+                - button "Read full policy" [disabled] [ref=e3056] [cursor=pointer]:
+                  - paragraph [ref=e3058]: Read full policy
+          - generic [ref=e3061]:
+            - generic [ref=e3071]:
+              - heading "AC" [level=4] [ref=e3077]
+              - generic [ref=e3078]:
+                - generic "Foam-jet service (2 ACs)":
+                  - paragraph [ref=e3082]: Foam-jet service (2 ACs)
+                  - generic [ref=e3085]:
+                    - generic [ref=e3087]:
+                      - button "Add" [disabled] [ref=e3088] [cursor=pointer]:
+                        - paragraph [ref=e3089]: Add
+                      - generic [ref=e3090]:
+                        - button "Foam-jet service (2 ACs) Total item count will become0" [disabled] [ref=e3091] [cursor=pointer]
+                        - generic [ref=e3092]:
+                          - paragraph [ref=e3094]: "1"
+                          - generic "Foam-jet service (2 ACs) with a price of ₹1,098 , Total number of items present in your cart is 1" [ref=e3095]:
+                            - paragraph [ref=e3096]: "1"
+                          - paragraph [ref=e3098]: "0"
+                        - button "Foam-jet service (2 ACs) Total item count will become2" [disabled] [ref=e3099] [cursor=pointer]
+                    - generic [ref=e3101]:
+                      - paragraph [ref=e3102]: ₹1,098
+                      - paragraph [ref=e3103]: ₹1,198
+              - generic [ref=e3109] [cursor=pointer]:
+                - checkbox "checkBox" [ref=e3111]
+                - paragraph [ref=e3117]: Avoid calling before reaching the location
+            - generic [ref=e3130] [cursor=pointer]:
+              - paragraph [ref=e3138]: Coupons and offers
+              - button "9 offers" [ref=e3143]:
+                - paragraph [ref=e3145]: 9 offers
+            - generic [ref=e3159]:
+              - heading "Payment summary" [level=4] [ref=e3164]
+              - generic [ref=e3170]:
+                - paragraph [ref=e3171]: Item total
+                - generic [ref=e3172]:
+                  - paragraph [ref=e3173]: ₹1,198
+                  - paragraph [ref=e3174]
+                  - paragraph [ref=e3175]: ₹1,098
+              - generic [ref=e3562]:
+                - paragraph [ref=e3564] [cursor=pointer]: Taxes and Fee
+                - paragraph [ref=e3567]: ₹99
+              - generic [ref=e3574]:
+                - paragraph [ref=e3575]: Total amount
+                - paragraph [ref=e3576]: ₹1,197
+              - generic [ref=e3583]:
+                - paragraph [ref=e3584]: Amount to pay
+                - paragraph [ref=e3585]: ₹1,197
+              - generic [ref=e3220]:
+                - paragraph [ref=e3225]: Add a tip to thank the Professional
+                - generic [ref=e3229]:
+                  - generic [ref=e3230] [cursor=pointer]:
+                    - paragraph [ref=e3231]: ₹
+                    - paragraph [ref=e3232]: "50"
+                  - generic [ref=e3233] [cursor=pointer]:
+                    - paragraph [ref=e3234]: ₹
+                    - paragraph [ref=e3235]: "75"
+                    - paragraph [ref=e3237]: Popular
+                  - generic [ref=e3238] [cursor=pointer]:
+                    - paragraph [ref=e3239]: ₹
+                    - paragraph [ref=e3240]: "100"
+                  - paragraph [ref=e3242] [cursor=pointer]: Custom
+                - paragraph [ref=e3246]: 100% of the tip goes to the professional.
+            - generic [ref=e3258]:
+              - generic [ref=e3261]:
+                - paragraph [ref=e3262]: Amount to pay
+                - heading "₹1,197" [level=4] [ref=e3263]
+              - paragraph [ref=e3268] [cursor=pointer]: View breakup
+      - generic [ref=e3590]:
+        - generic "Close Button" [ref=e3592] [cursor=pointer]
+        - generic [ref=e3599]:
+          - generic [ref=e3605]:
+            - generic "When should the professional arrive?" [ref=e3611]:
+              - heading "When should the professional arrive?" [level=4] [ref=e3612]
+            - generic [active] [ref=e3619] [cursor=pointer]:
+              - generic [ref=e3620]:
+                - paragraph [ref=e3625]: Instant
+                - paragraph [ref=e3627]: In 50 mins
+              - generic [ref=e3629]:
+                - radio "radioButton" [disabled]
+            - generic "Select date" [ref=e3632]:
+              - generic [ref=e3634] [cursor=pointer]:
+                - generic [ref=e3635]:
+                  - paragraph [ref=e3636]: Schedule for later
+                  - paragraph [ref=e3638]: Select your preferred day & time
+                - generic [ref=e3640]:
+                  - radio "radioButton" [disabled]
+          - button "Proceed to checkout" [ref=e3653] [cursor=pointer]:
+            - paragraph [ref=e3655]: Proceed to checkout

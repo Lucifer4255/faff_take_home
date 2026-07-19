@@ -1,0 +1,183 @@
+- generic [active] [ref=f13e1]:
+  - generic: UC
+  - main [ref=f13e3]:
+    - generic [ref=f13e4049]:
+      - generic [ref=f13e4072]:
+        - generic [ref=f13e4076]:
+          - generic [ref=f13e4088]:
+            - img:
+              - img "Urban Company logo" [ref=f13e4090]
+          - heading "Checkout" [level=4] [ref=f13e4101]
+        - generic [ref=f13e4106]:
+          - generic [ref=f13e4111]:
+            - paragraph [ref=f13e4129]: Saving ₹100 on this order
+            - generic [ref=f13e4138]:
+              - generic [ref=f13e4142]:
+                - generic [ref=f13e4150]:
+                  - paragraph [ref=f13e4152]: Send booking details to
+                  - paragraph [ref=f13e4155]: +91 7439245158
+                - generic [ref=f13e4159]:
+                  - paragraph [ref=f13e4167]: Address
+                  - button "Select address" [ref=f13e4172] [cursor=pointer]:
+                    - paragraph [ref=f13e4174]: Select address
+                    - button "animation" [ref=f13e4439]
+                - paragraph [ref=f13e4186]: Slot
+                - paragraph [ref=f13e4198]: Payment Method
+              - generic [ref=f13e4207]:
+                - heading "Cancellation policy" [level=4] [ref=f13e4208]
+                - paragraph [ref=f13e4211]: Free cancellations if done more than 12 hrs before the service. A fee will be charged otherwise.
+                - button "Read full policy" [disabled] [ref=f13e4217] [cursor=pointer]:
+                  - paragraph [ref=f13e4219]: Read full policy
+          - generic [ref=f13e4222]:
+            - generic [ref=f13e4232]:
+              - heading "AC" [level=4] [ref=f13e4238]
+              - generic [ref=f13e4239]:
+                - generic "Foam-jet service (2 ACs)":
+                  - paragraph [ref=f13e4243]: Foam-jet service (2 ACs)
+                  - generic [ref=f13e4246]:
+                    - generic [ref=f13e4248]:
+                      - button "Add" [disabled] [ref=f13e4249] [cursor=pointer]:
+                        - paragraph [ref=f13e4250]: Add
+                      - generic [ref=f13e4251]:
+                        - button "Foam-jet service (2 ACs) Total item count will become0" [disabled] [ref=f13e4252] [cursor=pointer]
+                        - generic [ref=f13e4253]:
+                          - paragraph [ref=f13e4255]: "1"
+                          - generic "Foam-jet service (2 ACs) with a price of ₹1,198 , Total number of items present in your cart is 1" [ref=f13e4256]:
+                            - paragraph [ref=f13e4257]: "1"
+                          - paragraph [ref=f13e4259]: "0"
+                        - button "Foam-jet service (2 ACs) Total item count will become2" [disabled] [ref=f13e4260] [cursor=pointer]
+                    - generic [ref=f13e4262]:
+                      - paragraph [ref=f13e4263]: ₹1,198
+                      - paragraph [ref=f13e4264]: ₹1,298
+              - generic [ref=f13e4270] [cursor=pointer]:
+                - checkbox "checkBox" [ref=f13e4272]
+                - paragraph [ref=f13e4278]: Avoid calling before reaching the location
+            - generic [ref=f13e4291] [cursor=pointer]:
+              - paragraph [ref=f13e4299]: Coupons and offers
+              - button "9 offers" [ref=f13e4304]:
+                - paragraph [ref=f13e4306]: 9 offers
+            - generic [ref=f13e4320]:
+              - heading "Payment summary" [level=4] [ref=f13e4325]
+              - generic [ref=f13e4331]:
+                - paragraph [ref=f13e4332]: Item total
+                - generic [ref=f13e4333]:
+                  - paragraph [ref=f13e4334]: ₹1,298
+                  - paragraph [ref=f13e4335]
+                  - paragraph [ref=f13e4336]: ₹1,198
+              - generic [ref=f13e4340]:
+                - paragraph [ref=f13e4342] [cursor=pointer]: Taxes and Fee
+                - paragraph [ref=f13e4345]: ₹99
+              - generic [ref=f13e4352]:
+                - paragraph [ref=f13e4353]: Total amount
+                - paragraph [ref=f13e4354]: ₹1,297
+              - generic [ref=f13e4361]:
+                - paragraph [ref=f13e4362]: Amount to pay
+                - paragraph [ref=f13e4363]: ₹1,297
+              - generic [ref=f13e4381]:
+                - paragraph [ref=f13e4386]: Add a tip to thank the Professional
+                - generic [ref=f13e4390]:
+                  - generic [ref=f13e4391] [cursor=pointer]:
+                    - paragraph [ref=f13e4392]: ₹
+                    - paragraph [ref=f13e4393]: "50"
+                  - generic [ref=f13e4394] [cursor=pointer]:
+                    - paragraph [ref=f13e4395]: ₹
+                    - paragraph [ref=f13e4396]: "75"
+                    - paragraph [ref=f13e4398]: Popular
+                  - generic [ref=f13e4399] [cursor=pointer]:
+                    - paragraph [ref=f13e4400]: ₹
+                    - paragraph [ref=f13e4401]: "100"
+                  - paragraph [ref=f13e4403] [cursor=pointer]: Custom
+                - paragraph [ref=f13e4407]: 100% of the tip goes to the professional.
+            - generic [ref=f13e4419]:
+              - generic [ref=f13e4422]:
+                - paragraph [ref=f13e4423]: Amount to pay
+                - heading "₹1,297" [level=4] [ref=f13e4424]
+              - paragraph [ref=f13e4429] [cursor=pointer]: View breakup
+      - generic [ref=f13e4457]:
+        - generic "Close Button" [ref=f13e4459] [cursor=pointer]
+        - generic [ref=f13e4464]:
+          - generic [ref=f13e4466]:
+            - generic [ref=f13e4472]:
+              - heading "Saved addresses" [level=4] [ref=f13e4478] [cursor=pointer]
+              - paragraph [ref=f13e4488] [cursor=pointer]: Add another address
+              - generic [ref=f13e4495] [cursor=pointer]:
+                - generic [ref=f13e4496]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4498]:
+                  - paragraph [ref=f13e4499]: Home
+                  - paragraph [ref=f13e4502]: 1, Bengaluru
+              - generic [ref=f13e4513] [cursor=pointer]:
+                - generic [ref=f13e4514]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4516]:
+                  - paragraph [ref=f13e4517]: Home
+                  - paragraph [ref=f13e4520]: 1, Bengaluru
+              - generic [ref=f13e4531] [cursor=pointer]:
+                - generic [ref=f13e4532]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4534]:
+                  - paragraph [ref=f13e4535]: Home
+                  - paragraph [ref=f13e4538]: 1, Bengaluru
+              - generic [ref=f13e4549] [cursor=pointer]:
+                - generic [ref=f13e4550]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4552]:
+                  - paragraph [ref=f13e4553]: Home
+                  - paragraph [ref=f13e4556]: 1, Bengaluru
+              - generic [ref=f13e4567] [cursor=pointer]:
+                - generic [ref=f13e4568]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4570]:
+                  - paragraph [ref=f13e4571]: Home
+                  - paragraph [ref=f13e4574]: 1, Bengaluru
+              - generic [ref=f13e4585] [cursor=pointer]:
+                - generic [ref=f13e4586]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4588]:
+                  - paragraph [ref=f13e4589]: Home
+                  - paragraph [ref=f13e4592]: 1, Bengaluru
+              - generic [ref=f13e4603] [cursor=pointer]:
+                - generic [ref=f13e4604]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4606]:
+                  - paragraph [ref=f13e4607]: Home
+                  - paragraph [ref=f13e4610]: 123, Block H, Saket, New Delhi, Delhi, India
+              - generic [ref=f13e4621] [cursor=pointer]:
+                - generic [ref=f13e4622]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4624]:
+                  - paragraph [ref=f13e4625]: Home
+                  - paragraph [ref=f13e4628]: 1, Kolkata
+              - generic [ref=f13e4639] [cursor=pointer]:
+                - generic [ref=f13e4640]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4642]:
+                  - paragraph [ref=f13e4643]: Home
+                  - paragraph [ref=f13e4646]: 1, Kolkata
+              - generic [ref=f13e4657] [cursor=pointer]:
+                - generic [ref=f13e4658]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4660]:
+                  - paragraph [ref=f13e4661]: Home
+                  - paragraph [ref=f13e4664]: 25, Bansdroni Post Office Road, Naktala, Bansdroni, Kolkata, West Bengal 700070, India
+              - generic [ref=f13e4675] [cursor=pointer]:
+                - generic [ref=f13e4676]:
+                  - radio "radioButton" [disabled]
+                - generic [ref=f13e4678]:
+                  - paragraph [ref=f13e4679]: Home
+                  - paragraph [ref=f13e4682]: 225 , Provash Pally, Ichapur Bidhanpally, Ichhapur Defence Estate, North Barrackpur, West Bengal 743144, India
+            - generic [ref=f13e4699]:
+              - button "Proceed" [disabled]:
+                - generic:
+                  - paragraph: Proceed
+          - generic [ref=f13e4708]:
+            - generic "Close Button" [ref=f13e4710] [cursor=pointer]
+            - generic [ref=f13e4717]:
+              - generic [ref=f13e4727]:
+                - heading "Do you want to update your location to Kolkata?" [level=3] [ref=f13e4728]
+                - paragraph [ref=f13e4731]: Items in your cart will be removed, and you'll need to rebuild your cart
+              - generic [ref=f13e4739]:
+                - button "No, Go back" [ref=f13e4741] [cursor=pointer]:
+                  - paragraph [ref=f13e4743]: Cancel
+                - button "Yes, Update" [ref=f13e4745] [cursor=pointer]:
+                  - paragraph [ref=f13e4747]: Yes, update

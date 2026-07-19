@@ -1,0 +1,6 @@
+▸ session: Suhotra Dey  [c9cc1b29-cb20-4ed8-b5be-3f5fbed96c51]  saved 2026-07-10T20:39:05.332Z
+▸ target : https://www.urbancompany.com/bangalore-spa-at-home
+▸ package: Stress relief Swedish massage
+
+✗ Session cookie injection did not log the browser in — the captured token is likely expired. Log in again via the adapter, then retry.
+  (Chrome left open so you can inspect it.)

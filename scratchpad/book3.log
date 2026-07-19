@@ -1,0 +1,33 @@
+ROUTE Park Street -> Quest Mall
+BOOKING: Bike Saver ₹32.50 (vvid 20065235)  — dispatching a REAL driver now
+BOOK result: {
+  dispatched: false,
+  tripId: undefined,
+  note: 'request did not confirm (TripRequest HTTP 200)',
+  tripReq: {
+    status: 200,
+    bodySlice: '{"errors":[{"message":"not found","path":["tripRequest"],"extensions":{"errorCode":"rtapi.riders.pickup.checkout_actions_required","errorKey":"","result":{"actionParams":"{\\"actions\\":[{\\"uuid\\":\\"d955fea9-6ccd-4841-8203-3bf0411e10d9\\",\\"data\\":{\\"paymentError\\":{\\"errorCause\\":\\"INSUFFICIENT_BALANCE\\",\\"displayPayload\\":{\\"localizedTitle\\":\\"Try another payment method\\",\\"localizedErrorMessage\\":\\"The balance is too low on Amazon Pay. Please use another payment method to continue.\\",\\"actions\\"'
+  }
+}
+--- tracking (20s) ---
+  [1:41:36 pm] status=Looking driver=- eta=?m loc=?,?
+  [1:41:40 pm] status=Looking driver=- eta=?m loc=?,?
+  [1:41:44 pm] status=Looking driver=- eta=?m loc=?,?
+  [1:41:48 pm] status=Looking driver=- eta=?m loc=?,?
+  [1:41:52 pm] status=Looking driver=- eta=?m loc=?,?
+captured 5 status snapshots
+first GetStatus rawSlice: {"data":{"status":{"city":{"countryIso2":"IN","currencyCode":"INR","id":476,"name":"kolkata","timezone":"Asia/Kolkata","__typename":"RVWebCommonCity"},"clientStatus":"Looking","coordinate":{"latitude":22.5486941,"longitude":88.3585077,"__typename":"RVWebCommonCoordinate"},"lastRequest":null,"nearbyVehicles":[{"bearing":0,"coordinate":{"latitude":22.54707,"longitude":88.36055,"__typename":"RVWebCom
+--- CANCELLING ---
+CANCEL result: {
+  cancelled: false,
+  note: "couldn't cancel automatically (locator.click: Timeout 8000ms exceeded.\n" +
+    'Call log:\n' +
+    "\x1B[2m  - waiting for getByRole('button', { name: /cancel/i }).first()\x1B[22m\n" +
+    ')'
+}
+--- confirming cancellation (8s) ---
+  post-cancel status=Looking
+  post-cancel status=Looking
+  post-cancel status=Looking
+post-cancel snapshots: 3
+DONE

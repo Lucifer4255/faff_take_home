@@ -53,6 +53,14 @@ export function userIdFrom(ctx: unknown): string {
   return String(c?.requestContext?.get?.('userId') ?? sessionIdFrom(ctx))
 }
 
+/** A custom delivery address the user set this session, forwarded via
+ * requestContext (empty string → none). Lets confirm pick the right saved address. */
+export function deliveryAddressFrom(ctx: unknown): string | undefined {
+  const c = ctx as { requestContext?: { get?(k: string): unknown } }
+  const v = c?.requestContext?.get?.('deliveryAddress')
+  return typeof v === 'string' && v.trim() ? v.trim() : undefined
+}
+
 /**
  * Wrap an adapter's tool implementations as Mastra tools. `confirm` is marked
  * `requireApproval: true` so the agent stream pauses at a `tool-call-approval`
@@ -70,7 +78,7 @@ export function buildTools(adapter: Adapter): Record<string, ReturnType<typeof c
       inputSchema: SCHEMAS[name],
       ...(name === 'confirm' ? { requireApproval: true } : {}),
       execute: async (input: unknown, ctx: unknown) => {
-        const toolCtx: ToolCtx = { sessionId: sessionIdFrom(ctx), userId: userIdFrom(ctx) }
+        const toolCtx: ToolCtx = { sessionId: sessionIdFrom(ctx), userId: userIdFrom(ctx), deliveryAddress: deliveryAddressFrom(ctx) }
         return (impl as (i: unknown, c: ToolCtx) => Promise<unknown>)(input, toolCtx)
       },
     })
